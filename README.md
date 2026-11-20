@@ -144,6 +144,7 @@ The commands above are the normalised form of those recorded in the `_testResult
 ## 5. Checkpoints and logs
 
 - `DNN_*.pth` are the trained baseline checkpoints (first-trained for the smaller models; retrained last-epoch checkpoints for AlexNet and MLP-1024, see Limitation (iii) of the paper). Files ending `_original` or `_full200` / `_full300` are the earlier snapshot and the full-schedule retrain of the same model.
+- **Superseded AlexNet runs.** `_testResultsAlexNet_CIFAR10_multipleSeed.txt` and `interimExperimentalResultLogs-notUsedEvalOnly/` also contain earlier AlexNet runs (versions up to `v7`). They start from the first-trained checkpoint (test accuracy 84.18 %), which had been early-stopped while the learning rate was still high, and in them the Taylor baseline is marginally ahead of the proposed criterion (WCTG −98.11 ± 0.13 % against −98.00 ± 0.08 %, three seeds). They were replaced by the `v8` runs, which start from the fully annealed `DNN_AlexNet_CIFAR10_full200.pth` (85.78 %). Only the `v8` runs are reported in the paper.
 - The `output_*.log` files and the `_testResults*.txt` summaries are the raw outputs from which the tables were built.
 
 ## 6. Reproducibility notes
