@@ -1,0 +1,1483 @@
+nohup: ignoring input
+
+=== Initial model ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.5273
+F1       : 0.5222
+Precision: 0.5203
+Recall   : 0.5273
+Params   : 806858 trainable
+State size (approx): 3151.79 KB
+Inference time (avg): batch 0.8733 ms | single 0.055557 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.36s
+Best communication cost: 627938.0000
+Mapping (task → core):
+  Task   1  →  Core   2
+  Task   2  →  Core   7
+  Task   3  →  Core  62
+  Task   4  →  Core  58
+  Task   5  →  Core  34
+  Task   6  →  Core   5
+  Task   7  →  Core  64
+  Task   8  →  Core  61
+  Task   9  →  Core  31
+  Task  10  →  Core  19
+  Task  11  →  Core  60
+  Task  12  →  Core  24
+  Task  13  →  Core  41
+  Task  14  →  Core  13
+  Task  15  →  Core  39
+  Task  16  →  Core  53
+  Task  17  →  Core  52
+  Task  18  →  Core  11
+  Task  19  →  Core  54
+  Task  20  →  Core  17
+  Task  21  →  Core  32
+  Task  22  →  Core  59
+  Task  23  →  Core  15
+  Task  24  →  Core   3
+  Task  25  →  Core  49
+  Task  26  →  Core   9
+  Task  27  →  Core  42
+  Task  28  →  Core  12
+  Task  29  →  Core  14
+  Task  30  →  Core  43
+  Task  31  →  Core  46
+  Task  32  →  Core   6
+  Task  33  →  Core  51
+  Task  34  →  Core  25
+  Task  35  →  Core  26
+  Task  36  →  Core  47
+  Task  37  →  Core  48
+  Task  38  →  Core   4
+  Task  39  →  Core  33
+  Task  40  →  Core  23
+  Task  41  →  Core  56
+  Task  42  →  Core  18
+  Task  43  →  Core  40
+  Task  44  →  Core   8
+  Task  45  →  Core  57
+  Task  46  →  Core   1
+  Task  47  →  Core  50
+  Task  48  →  Core  16
+  Task  49  →  Core  38
+  Task  50  →  Core  20
+  Task  51  →  Core  37
+  Task  52  →  Core  44
+  Task  53  →  Core  35
+  Task  54  →  Core  22
+  Task  55  →  Core  36
+  Task  56  →  Core  28
+  Task  57  →  Core  30
+  Task  58  →  Core  45
+  Task  59  →  Core  21
+  Task  60  →  Core  27
+  Task  61  →  Core  29
+  Task  62  →  Core  63
+  Task  63  →  Core  55
+  Task  64  →  Core  10
+Mapping: [(0, 1), (1, 6), (2, 61), (3, 57), (4, 33), (5, 4), (6, 63), (7, 60), (8, 30), (9, 18), (10, 59), (11, 23), (12, 40), (13, 12), (14, 38), (15, 52), (16, 51), (17, 10), (18, 53), (19, 16), (20, 31), (21, 58), (22, 14), (23, 2), (24, 48), (25, 8), (26, 41), (27, 11), (28, 13), (29, 42), (30, 45), (31, 5), (32, 50), (33, 24), (34, 25), (35, 46), (36, 47), (37, 3), (38, 32), (39, 22), (40, 55), (41, 17), (42, 39), (43, 7), (44, 56), (45, 0), (46, 49), (47, 15), (48, 37), (49, 19), (50, 36), (51, 43), (52, 34), (53, 21), (54, 35), (55, 27), (56, 29), (57, 44), (58, 20), (59, 26), (60, 28), (61, 62), (62, 54), (63, 9)]
+Communication cost: 627938.0
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.35s
+Best communication cost: 628037.0000
+Mapping (task → core):
+  Task   1  →  Core  10
+  Task   2  →  Core  51
+  Task   3  →  Core  25
+  Task   4  →  Core  56
+  Task   5  →  Core  34
+  Task   6  →  Core  46
+  Task   7  →  Core  12
+  Task   8  →  Core  59
+  Task   9  →  Core  18
+  Task  10  →  Core   6
+  Task  11  →  Core  22
+  Task  12  →  Core  47
+  Task  13  →  Core   9
+  Task  14  →  Core   4
+  Task  15  →  Core  53
+  Task  16  →  Core  61
+  Task  17  →  Core  40
+  Task  18  →  Core  11
+  Task  19  →  Core  33
+  Task  20  →  Core  60
+  Task  21  →  Core  26
+  Task  22  →  Core  63
+  Task  23  →  Core  48
+  Task  24  →  Core  16
+  Task  25  →  Core  19
+  Task  26  →  Core   5
+  Task  27  →  Core   3
+  Task  28  →  Core  42
+  Task  29  →  Core  62
+  Task  30  →  Core  39
+  Task  31  →  Core  13
+  Task  32  →  Core  41
+  Task  33  →  Core  14
+  Task  34  →  Core  54
+  Task  35  →  Core  31
+  Task  36  →  Core  52
+  Task  37  →  Core  17
+  Task  38  →  Core  23
+  Task  39  →  Core  55
+  Task  40  →  Core  24
+  Task  41  →  Core  32
+  Task  42  →  Core   2
+  Task  43  →  Core  58
+  Task  44  →  Core  57
+  Task  45  →  Core   8
+  Task  46  →  Core   1
+  Task  47  →  Core  15
+  Task  48  →  Core  50
+  Task  49  →  Core  28
+  Task  50  →  Core  30
+  Task  51  →  Core  43
+  Task  52  →  Core  38
+  Task  53  →  Core  35
+  Task  54  →  Core  27
+  Task  55  →  Core  37
+  Task  56  →  Core  45
+  Task  57  →  Core  29
+  Task  58  →  Core  36
+  Task  59  →  Core  21
+  Task  60  →  Core  20
+  Task  61  →  Core  44
+  Task  62  →  Core  49
+  Task  63  →  Core  64
+  Task  64  →  Core   7
+Mapping: [(0, 9), (1, 50), (2, 24), (3, 55), (4, 33), (5, 45), (6, 11), (7, 58), (8, 17), (9, 5), (10, 21), (11, 46), (12, 8), (13, 3), (14, 52), (15, 60), (16, 39), (17, 10), (18, 32), (19, 59), (20, 25), (21, 62), (22, 47), (23, 15), (24, 18), (25, 4), (26, 2), (27, 41), (28, 61), (29, 38), (30, 12), (31, 40), (32, 13), (33, 53), (34, 30), (35, 51), (36, 16), (37, 22), (38, 54), (39, 23), (40, 31), (41, 1), (42, 57), (43, 56), (44, 7), (45, 0), (46, 14), (47, 49), (48, 27), (49, 29), (50, 42), (51, 37), (52, 34), (53, 26), (54, 36), (55, 44), (56, 28), (57, 35), (58, 20), (59, 19), (60, 43), (61, 48), (62, 63), (63, 6)]
+Communication cost: 628037.0
+  [recorded] 'Baseline'  acc=0.5273  cost=628037  sp_cost=874458  edges=402,048  neurons=192
+L1 loop: 1
+  [fine-tune] Epoch   1 | loss 1.5960 | acc 0.7008 f1 0.7005 prec 0.7058 rec 0.7008
+  [fine-tune] Epoch   5 | loss 1.5090 | acc 0.7244 f1 0.7218 prec 0.7253 rec 0.7244
+  [fine-tune] Epoch  10 | loss 1.4240 | acc 0.7672 f1 0.7661 prec 0.7711 rec 0.7672
+  [Step 1/5] Edges removed: 20102/402048 (5.0%)
+L1 loop: 2
+  [fine-tune] Epoch   1 | loss 1.4037 | acc 0.7688 f1 0.7694 prec 0.7770 rec 0.7688
+  [fine-tune] Epoch   5 | loss 1.3418 | acc 0.7821 f1 0.7807 prec 0.7840 rec 0.7821
+  [fine-tune] Epoch  10 | loss 1.2815 | acc 0.8018 f1 0.8032 prec 0.8064 rec 0.8018
+  [Step 2/5] Edges removed: 40204/402048 (10.0%)
+L1 loop: 3
+  [fine-tune] Epoch   1 | loss 1.2636 | acc 0.8081 f1 0.8075 prec 0.8128 rec 0.8081
+  [fine-tune] Epoch   5 | loss 1.2244 | acc 0.8244 f1 0.8240 prec 0.8295 rec 0.8244
+  [fine-tune] Epoch  10 | loss 1.1795 | acc 0.8386 f1 0.8375 prec 0.8395 rec 0.8386
+  [Step 3/5] Edges removed: 60307/402048 (15.0%)
+L1 loop: 4
+  [fine-tune] Epoch   1 | loss 1.1597 | acc 0.8385 f1 0.8373 prec 0.8396 rec 0.8385
+  [fine-tune] Epoch   5 | loss 1.1332 | acc 0.8596 f1 0.8585 prec 0.8612 rec 0.8596
+  [fine-tune] Epoch  10 | loss 1.1063 | acc 0.8682 f1 0.8672 prec 0.8678 rec 0.8682
+  [Step 4/5] Edges removed: 80409/402048 (20.0%)
+L1 loop: 5
+  [fine-tune] Epoch   1 | loss 1.0872 | acc 0.8736 f1 0.8740 prec 0.8753 rec 0.8736
+  [fine-tune] Epoch   5 | loss 1.0579 | acc 0.8796 f1 0.8798 prec 0.8818 rec 0.8796
+  [fine-tune] Epoch  10 | loss 1.0315 | acc 0.8857 f1 0.8854 prec 0.8870 rec 0.8857
+  [Step 5/5] Edges removed: 100512/402048 (25.0%)
+
+=== After iterative L1 pruning (25% removed) ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.4868
+F1       : 0.4872
+Precision: 0.4895
+Recall   : 0.4868
+Params   : 806858 trainable
+State size (approx): 3151.79 KB
+Inference time (avg): batch 0.8523 ms | single 0.055251 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.38s
+Best communication cost: 495428.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core  13
+  Task   3  →  Core  59
+  Task   4  →  Core  22
+  Task   5  →  Core  19
+  Task   6  →  Core  44
+  Task   7  →  Core  30
+  Task   8  →  Core  23
+  Task   9  →  Core  28
+  Task  10  →  Core  27
+  Task  11  →  Core  40
+  Task  12  →  Core  53
+  Task  13  →  Core  50
+  Task  14  →  Core  11
+  Task  15  →  Core  55
+  Task  16  →  Core  45
+  Task  17  →  Core  21
+  Task  18  →  Core  49
+  Task  19  →  Core  41
+  Task  20  →  Core  39
+  Task  21  →  Core  14
+  Task  22  →  Core  31
+  Task  23  →  Core   2
+  Task  24  →  Core  38
+  Task  25  →  Core  10
+  Task  26  →  Core   5
+  Task  27  →  Core  33
+  Task  28  →  Core  60
+  Task  29  →  Core   4
+  Task  30  →  Core  64
+  Task  31  →  Core   8
+  Task  32  →  Core  48
+  Task  33  →  Core  34
+  Task  34  →  Core   1
+  Task  35  →  Core  57
+  Task  36  →  Core  15
+  Task  37  →  Core  20
+  Task  38  →  Core  54
+  Task  39  →  Core  35
+  Task  40  →  Core  46
+  Task  41  →  Core   7
+  Task  42  →  Core  56
+  Task  43  →  Core  17
+  Task  44  →  Core  47
+  Task  45  →  Core  62
+  Task  46  →  Core  25
+  Task  47  →  Core  58
+  Task  48  →  Core  18
+  Task  49  →  Core  29
+  Task  50  →  Core  37
+  Task  51  →  Core  42
+  Task  52  →  Core  16
+  Task  53  →  Core   3
+  Task  54  →  Core  52
+  Task  55  →  Core  26
+  Task  56  →  Core   6
+  Task  57  →  Core  43
+  Task  58  →  Core  61
+  Task  59  →  Core  63
+  Task  60  →  Core  12
+  Task  61  →  Core  32
+  Task  62  →  Core  51
+  Task  63  →  Core  36
+  Task  64  →  Core  24
+Mapping: [(0, 8), (1, 12), (2, 58), (3, 21), (4, 18), (5, 43), (6, 29), (7, 22), (8, 27), (9, 26), (10, 39), (11, 52), (12, 49), (13, 10), (14, 54), (15, 44), (16, 20), (17, 48), (18, 40), (19, 38), (20, 13), (21, 30), (22, 1), (23, 37), (24, 9), (25, 4), (26, 32), (27, 59), (28, 3), (29, 63), (30, 7), (31, 47), (32, 33), (33, 0), (34, 56), (35, 14), (36, 19), (37, 53), (38, 34), (39, 45), (40, 6), (41, 55), (42, 16), (43, 46), (44, 61), (45, 24), (46, 57), (47, 17), (48, 28), (49, 36), (50, 41), (51, 15), (52, 2), (53, 51), (54, 25), (55, 5), (56, 42), (57, 60), (58, 62), (59, 11), (60, 31), (61, 50), (62, 35), (63, 23)]
+Communication cost: 495428.0
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.36s
+Best communication cost: 495422.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core  36
+  Task   3  →  Core  33
+  Task   4  →  Core  37
+  Task   5  →  Core  35
+  Task   6  →  Core  44
+  Task   7  →  Core  13
+  Task   8  →  Core   6
+  Task   9  →  Core  21
+  Task  10  →  Core  12
+  Task  11  →  Core  32
+  Task  12  →  Core  46
+  Task  13  →  Core  59
+  Task  14  →  Core  26
+  Task  15  →  Core  51
+  Task  16  →  Core  53
+  Task  17  →  Core  31
+  Task  18  →  Core  58
+  Task  19  →  Core  41
+  Task  20  →  Core  52
+  Task  21  →  Core  27
+  Task  22  →  Core  30
+  Task  23  →  Core   1
+  Task  24  →  Core  54
+  Task  25  →  Core  10
+  Task  26  →  Core   5
+  Task  27  →  Core  17
+  Task  28  →  Core  23
+  Task  29  →  Core  15
+  Task  30  →  Core  63
+  Task  31  →  Core   8
+  Task  32  →  Core  48
+  Task  33  →  Core  18
+  Task  34  →  Core  57
+  Task  35  →  Core  64
+  Task  36  →  Core  40
+  Task  37  →  Core  14
+  Task  38  →  Core  39
+  Task  39  →  Core  34
+  Task  40  →  Core  45
+  Task  41  →  Core   7
+  Task  42  →  Core  47
+  Task  43  →  Core  43
+  Task  44  →  Core  61
+  Task  45  →  Core  62
+  Task  46  →  Core  25
+  Task  47  →  Core  49
+  Task  48  →  Core  11
+  Task  49  →  Core  29
+  Task  50  →  Core  28
+  Task  51  →  Core  42
+  Task  52  →  Core   3
+  Task  53  →  Core   2
+  Task  54  →  Core  55
+  Task  55  →  Core  19
+  Task  56  →  Core   4
+  Task  57  →  Core  24
+  Task  58  →  Core  60
+  Task  59  →  Core  56
+  Task  60  →  Core  22
+  Task  61  →  Core  16
+  Task  62  →  Core  50
+  Task  63  →  Core  20
+  Task  64  →  Core  38
+Mapping: [(0, 8), (1, 35), (2, 32), (3, 36), (4, 34), (5, 43), (6, 12), (7, 5), (8, 20), (9, 11), (10, 31), (11, 45), (12, 58), (13, 25), (14, 50), (15, 52), (16, 30), (17, 57), (18, 40), (19, 51), (20, 26), (21, 29), (22, 0), (23, 53), (24, 9), (25, 4), (26, 16), (27, 22), (28, 14), (29, 62), (30, 7), (31, 47), (32, 17), (33, 56), (34, 63), (35, 39), (36, 13), (37, 38), (38, 33), (39, 44), (40, 6), (41, 46), (42, 42), (43, 60), (44, 61), (45, 24), (46, 48), (47, 10), (48, 28), (49, 27), (50, 41), (51, 2), (52, 1), (53, 54), (54, 18), (55, 3), (56, 23), (57, 59), (58, 55), (59, 21), (60, 15), (61, 49), (62, 19), (63, 37)]
+Communication cost: 495422.0
+  [recorded] 'After L1 25% pre-pruning'  acc=0.4868  cost=495422  sp_cost=650792  edges=301,536  neurons=192
+
+[Checkpoint] L1 model: 192 neurons, 301,536 edges.
+[Checkpoint] Tolerance anchor: POST-L1 = 0.4868
+[Checkpoint] Hard stop floor : 0.4768
+
+======================================================================
+  BRANCH: Q: GA CC_Biased v2 + Bridge-Link
+  Anchor=0.4868  Tolerance=0.0100  Floor=0.4768
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0500  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[Q: GA CC_Biased v2 + Bridge-Link] Starting accuracy: 0.4868
+  [fine-tune] Epoch   1 | loss 1.1056 | acc 0.8782 f1 0.8789 prec 0.8813 rec 0.8782
+  [fine-tune] Epoch   2 | loss 1.0597 | acc 0.8843 f1 0.8842 prec 0.8851 rec 0.8843
+[Q: GA CC_Biased v2 + Bridge-Link] Step   1 (neuron): acc=0.4881  drop=-0.0013  neurons=189  edges=294,239
+  [fine-tune] Epoch   1 | loss 1.0651 | acc 0.8689 f1 0.8697 prec 0.8723 rec 0.8689
+  [fine-tune] Epoch   2 | loss 1.0438 | acc 0.8889 f1 0.8889 prec 0.8896 rec 0.8889
+[Q: GA CC_Biased v2 + Bridge-Link] Step   2 (edge  ): acc=0.4927  drop=-0.0059  neurons=189  edges=288,355
+  [fine-tune] Epoch   1 | loss 1.0462 | acc 0.8802 f1 0.8797 prec 0.8814 rec 0.8802
+  [fine-tune] Epoch   2 | loss 1.0293 | acc 0.8826 f1 0.8822 prec 0.8835 rec 0.8826
+[Q: GA CC_Biased v2 + Bridge-Link] Step   3 (edge  ): acc=0.4934  drop=-0.0066  neurons=189  edges=282,588
+  [fine-tune] Epoch   1 | loss 1.0253 | acc 0.8995 f1 0.8995 prec 0.9009 rec 0.8995
+  [fine-tune] Epoch   2 | loss 1.0143 | acc 0.8912 f1 0.8916 prec 0.8932 rec 0.8912
+[Q: GA CC_Biased v2 + Bridge-Link] Step   4 (edge  ): acc=0.4943  drop=-0.0075  neurons=189  edges=276,937
+  [fine-tune] Epoch   1 | loss 1.0178 | acc 0.8957 f1 0.8959 prec 0.8984 rec 0.8957
+  [fine-tune] Epoch   2 | loss 1.0028 | acc 0.9061 f1 0.9057 prec 0.9069 rec 0.9061
+[Q: GA CC_Biased v2 + Bridge-Link] Step   5 (edge  ): acc=0.4859  drop=+0.0009  neurons=189  edges=271,399
+  [fine-tune] Epoch   1 | loss 1.0033 | acc 0.8897 f1 0.8895 prec 0.8907 rec 0.8897
+  [fine-tune] Epoch   2 | loss 0.9956 | acc 0.8861 f1 0.8854 prec 0.8875 rec 0.8861
+[Q: GA CC_Biased v2 + Bridge-Link] Step   6 (edge  ): acc=0.4904  drop=-0.0036  neurons=189  edges=265,972
+  [fine-tune] Epoch   1 | loss 0.9886 | acc 0.9112 f1 0.9111 prec 0.9120 rec 0.9112
+  [fine-tune] Epoch   2 | loss 0.9826 | acc 0.9083 f1 0.9086 prec 0.9106 rec 0.9083
+[Q: GA CC_Biased v2 + Bridge-Link] Step   7 (edge  ): acc=0.4867  drop=+0.0001  neurons=189  edges=260,653
+  [fine-tune] Epoch   1 | loss 0.9893 | acc 0.9071 f1 0.9073 prec 0.9083 rec 0.9071
+  [fine-tune] Epoch   2 | loss 0.9618 | acc 0.9005 f1 0.9003 prec 0.9027 rec 0.9005
+[Q: GA CC_Biased v2 + Bridge-Link] Step   8 (edge  ): acc=0.4909  drop=-0.0041  neurons=189  edges=255,440
+  [fine-tune] Epoch   1 | loss 0.9757 | acc 0.9158 f1 0.9158 prec 0.9176 rec 0.9158
+  [fine-tune] Epoch   2 | loss 0.9530 | acc 0.9133 f1 0.9131 prec 0.9137 rec 0.9133
+[Q: GA CC_Biased v2 + Bridge-Link] Step   9 (edge  ): acc=0.4880  drop=-0.0012  neurons=189  edges=250,332
+  [fine-tune] Epoch   1 | loss 0.9620 | acc 0.9164 f1 0.9162 prec 0.9180 rec 0.9164
+  [fine-tune] Epoch   2 | loss 0.9445 | acc 0.9117 f1 0.9119 prec 0.9136 rec 0.9117
+[Q: GA CC_Biased v2 + Bridge-Link] Step  10 (edge  ): acc=0.4902  drop=-0.0034  neurons=189  edges=245,326
+  [fine-tune] Epoch   1 | loss 0.9529 | acc 0.9250 f1 0.9247 prec 0.9250 rec 0.9250
+  [fine-tune] Epoch   2 | loss 0.9351 | acc 0.9267 f1 0.9264 prec 0.9268 rec 0.9267
+[Q: GA CC_Biased v2 + Bridge-Link] Step  11 (edge  ): acc=0.4923  drop=-0.0055  neurons=189  edges=240,420
+  [fine-tune] Epoch   1 | loss 0.9477 | acc 0.9192 f1 0.9191 prec 0.9202 rec 0.9192
+  [fine-tune] Epoch   2 | loss 0.9256 | acc 0.9224 f1 0.9226 prec 0.9241 rec 0.9224
+[Q: GA CC_Biased v2 + Bridge-Link] Step  12 (edge  ): acc=0.4864  drop=+0.0004  neurons=189  edges=235,612
+  [fine-tune] Epoch   1 | loss 0.9295 | acc 0.9163 f1 0.9164 prec 0.9171 rec 0.9163
+  [fine-tune] Epoch   2 | loss 0.9170 | acc 0.9177 f1 0.9178 prec 0.9190 rec 0.9177
+[Q: GA CC_Biased v2 + Bridge-Link] Step  13 (edge  ): acc=0.4800  drop=+0.0068  neurons=189  edges=230,900
+[Q: GA CC_Biased v2 + Bridge-Link] Step 13: neuron tolerance cap (drop=0.0068 ≥ 0.0050). Reserving 0.0032 for edge-only (0.0500).
+[Q: GA CC_Biased v2 + Bridge-Link] → Snapshot at drop≤0.5%
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.39s
+Best communication cost: 370402.0000
+Mapping (task → core):
+  Task   1  →  Core   8
+  Task   2  →  Core  36
+  Task   3  →  Core  27
+  Task   4  →  Core  20
+  Task   5  →  Core  37
+  Task   6  →  Core  39
+  Task   7  →  Core  54
+  Task   8  →  Core  14
+  Task   9  →  Core  29
+  Task  10  →  Core  41
+  Task  11  →  Core  21
+  Task  12  →  Core  47
+  Task  13  →  Core  46
+  Task  14  →  Core  53
+  Task  15  →  Core  43
+  Task  16  →  Core  18
+  Task  17  →  Core  30
+  Task  18  →  Core  34
+  Task  19  →  Core  10
+  Task  20  →  Core  51
+  Task  21  →  Core  11
+  Task  22  →  Core  15
+  Task  23  →  Core  24
+  Task  24  →  Core  60
+  Task  25  →  Core   4
+  Task  26  →  Core  55
+  Task  27  →  Core  57
+  Task  28  →  Core   1
+  Task  29  →  Core  56
+  Task  30  →  Core   7
+  Task  31  →  Core   9
+  Task  32  →  Core  49
+  Task  33  →  Core  62
+  Task  34  →  Core  32
+  Task  35  →  Core  61
+  Task  36  →  Core  44
+  Task  37  →  Core  22
+  Task  38  →  Core   5
+  Task  39  →  Core  33
+  Task  40  →  Core  35
+  Task  41  →  Core  13
+  Task  42  →  Core  12
+  Task  43  →  Core  40
+  Task  44  →  Core  17
+  Task  45  →  Core  48
+  Task  46  →  Core  59
+  Task  47  →  Core  28
+  Task  48  →  Core  52
+  Task  49  →  Core  31
+  Task  50  →  Core  50
+  Task  51  →  Core   6
+  Task  52  →  Core  42
+  Task  53  →  Core  25
+  Task  54  →  Core  38
+  Task  55  →  Core  26
+  Task  56  →  Core  19
+  Task  57  →  Core  45
+  Task  58  →  Core   3
+  Task  59  →  Core  23
+  Task  60  →  Core   2
+  Task  61  →  Core  64
+  Task  62  →  Core  63
+  Task  63  →  Core  58
+  Task  64  →  Core  16
+Mapping: [(0, 7), (1, 35), (2, 26), (3, 19), (4, 36), (5, 38), (6, 53), (7, 13), (8, 28), (9, 40), (10, 20), (11, 46), (12, 45), (13, 52), (14, 42), (15, 17), (16, 29), (17, 33), (18, 9), (19, 50), (20, 10), (21, 14), (22, 23), (23, 59), (24, 3), (25, 54), (26, 56), (27, 0), (28, 55), (29, 6), (30, 8), (31, 48), (32, 61), (33, 31), (34, 60), (35, 43), (36, 21), (37, 4), (38, 32), (39, 34), (40, 12), (41, 11), (42, 39), (43, 16), (44, 47), (45, 58), (46, 27), (47, 51), (48, 30), (49, 49), (50, 5), (51, 41), (52, 24), (53, 37), (54, 25), (55, 18), (56, 44), (57, 2), (58, 22), (59, 1), (60, 63), (61, 62), (62, 57), (63, 15)]
+Communication cost: 370402.0
+  [recorded] 'Q: GA CC_Biased v2 + Bridge-Link @ drop≤0.5%'  acc=0.4800  cost=370402  sp_cost=503615  edges=230,900  neurons=189
+  [fine-tune] Epoch   1 | loss 0.9289 | acc 0.9343 f1 0.9341 prec 0.9345 rec 0.9343
+  [fine-tune] Epoch   2 | loss 0.9023 | acc 0.9235 f1 0.9234 prec 0.9248 rec 0.9235
+[Q: GA CC_Biased v2 + Bridge-Link] Step  14 (edge* ): acc=0.4883  drop=-0.0015  neurons=189  edges=219,355
+  [fine-tune] Epoch   1 | loss 0.9026 | acc 0.9324 f1 0.9325 prec 0.9348 rec 0.9324
+  [fine-tune] Epoch   2 | loss 0.9045 | acc 0.9325 f1 0.9326 prec 0.9335 rec 0.9325
+[Q: GA CC_Biased v2 + Bridge-Link] Step  15 (edge* ): acc=0.4882  drop=-0.0014  neurons=189  edges=208,388
+  [fine-tune] Epoch   1 | loss 0.8988 | acc 0.9462 f1 0.9461 prec 0.9466 rec 0.9462
+  [fine-tune] Epoch   2 | loss 0.8844 | acc 0.9332 f1 0.9333 prec 0.9339 rec 0.9332
+[Q: GA CC_Biased v2 + Bridge-Link] Step  16 (edge* ): acc=0.4891  drop=-0.0023  neurons=189  edges=197,969
+  [fine-tune] Epoch   1 | loss 0.8902 | acc 0.9555 f1 0.9555 prec 0.9556 rec 0.9555
+  [fine-tune] Epoch   2 | loss 0.8630 | acc 0.9304 f1 0.9298 prec 0.9308 rec 0.9304
+[Q: GA CC_Biased v2 + Bridge-Link] Step  17 (edge* ): acc=0.4922  drop=-0.0054  neurons=189  edges=188,071
+  [fine-tune] Epoch   1 | loss 0.8847 | acc 0.9448 f1 0.9447 prec 0.9448 rec 0.9448
+  [fine-tune] Epoch   2 | loss 0.8534 | acc 0.9527 f1 0.9528 prec 0.9533 rec 0.9527
+[Q: GA CC_Biased v2 + Bridge-Link] Step  18 (edge* ): acc=0.4928  drop=-0.0060  neurons=189  edges=178,668
+  [fine-tune] Epoch   1 | loss 0.8718 | acc 0.9404 f1 0.9402 prec 0.9411 rec 0.9404
+  [fine-tune] Epoch   2 | loss 0.8458 | acc 0.9383 f1 0.9383 prec 0.9393 rec 0.9383
+[Q: GA CC_Biased v2 + Bridge-Link] Step  19 (edge* ): acc=0.4862  drop=+0.0006  neurons=189  edges=169,735
+  [fine-tune] Epoch   1 | loss 0.8617 | acc 0.9559 f1 0.9559 prec 0.9562 rec 0.9559
+  [fine-tune] Epoch   2 | loss 0.8361 | acc 0.9458 f1 0.9459 prec 0.9462 rec 0.9458
+[Q: GA CC_Biased v2 + Bridge-Link] Step  20 (edge* ): acc=0.4846  drop=+0.0022  neurons=189  edges=161,249
+  [fine-tune] Epoch   1 | loss 0.8639 | acc 0.9543 f1 0.9543 prec 0.9545 rec 0.9543
+  [fine-tune] Epoch   2 | loss 0.8326 | acc 0.9471 f1 0.9473 prec 0.9482 rec 0.9471
+[Q: GA CC_Biased v2 + Bridge-Link] Step  21 (edge* ): acc=0.4836  drop=+0.0032  neurons=189  edges=153,187
+  [fine-tune] Epoch   1 | loss 0.8603 | acc 0.9526 f1 0.9525 prec 0.9535 rec 0.9526
+  [fine-tune] Epoch   2 | loss 0.8216 | acc 0.9507 f1 0.9507 prec 0.9511 rec 0.9507
+[Q: GA CC_Biased v2 + Bridge-Link] Step  22 (edge* ): acc=0.4827  drop=+0.0041  neurons=189  edges=145,528
+  [fine-tune] Epoch   1 | loss 0.8456 | acc 0.9624 f1 0.9624 prec 0.9627 rec 0.9624
+  [fine-tune] Epoch   2 | loss 0.8289 | acc 0.9579 f1 0.9578 prec 0.9580 rec 0.9579
+[Q: GA CC_Biased v2 + Bridge-Link] Step  23 (edge* ): acc=0.4847  drop=+0.0021  neurons=189  edges=138,252
+  [fine-tune] Epoch   1 | loss 0.8524 | acc 0.9588 f1 0.9587 prec 0.9588 rec 0.9588
+  [fine-tune] Epoch   2 | loss 0.8173 | acc 0.9551 f1 0.9552 prec 0.9557 rec 0.9551
+[Q: GA CC_Biased v2 + Bridge-Link] Step  24 (edge* ): acc=0.4831  drop=+0.0037  neurons=189  edges=131,340
+  [fine-tune] Epoch   1 | loss 0.8424 | acc 0.9579 f1 0.9578 prec 0.9583 rec 0.9579
+  [fine-tune] Epoch   2 | loss 0.8013 | acc 0.9603 f1 0.9604 prec 0.9608 rec 0.9603
+[Q: GA CC_Biased v2 + Bridge-Link] Step  25 (edge* ): acc=0.4865  drop=+0.0003  neurons=189  edges=124,773
+  [fine-tune] Epoch   1 | loss 0.8390 | acc 0.9638 f1 0.9637 prec 0.9642 rec 0.9638
+  [fine-tune] Epoch   2 | loss 0.8066 | acc 0.9612 f1 0.9613 prec 0.9619 rec 0.9612
+[Q: GA CC_Biased v2 + Bridge-Link] Step  26 (edge* ): acc=0.4791  drop=+0.0077  neurons=189  edges=118,535
+  [fine-tune] Epoch   1 | loss 0.8368 | acc 0.9648 f1 0.9647 prec 0.9650 rec 0.9648
+  [fine-tune] Epoch   2 | loss 0.8016 | acc 0.9558 f1 0.9558 prec 0.9563 rec 0.9558
+[Q: GA CC_Biased v2 + Bridge-Link] Step  27 (edge* ): acc=0.4861  drop=+0.0007  neurons=189  edges=112,609
+  [fine-tune] Epoch   1 | loss 0.8330 | acc 0.9656 f1 0.9655 prec 0.9659 rec 0.9656
+  [fine-tune] Epoch   2 | loss 0.7923 | acc 0.9622 f1 0.9622 prec 0.9625 rec 0.9622
+[Q: GA CC_Biased v2 + Bridge-Link] Step  28 (edge* ): acc=0.4809  drop=+0.0059  neurons=189  edges=106,979
+  [fine-tune] Epoch   1 | loss 0.8283 | acc 0.9673 f1 0.9673 prec 0.9676 rec 0.9673
+  [fine-tune] Epoch   2 | loss 0.7925 | acc 0.9738 f1 0.9738 prec 0.9741 rec 0.9738
+[Q: GA CC_Biased v2 + Bridge-Link] Step  29 (edge* ): acc=0.4840  drop=+0.0028  neurons=189  edges=101,631
+  [fine-tune] Epoch   1 | loss 0.8259 | acc 0.9697 f1 0.9696 prec 0.9697 rec 0.9697
+  [fine-tune] Epoch   2 | loss 0.7890 | acc 0.9656 f1 0.9657 prec 0.9662 rec 0.9656
+[Q: GA CC_Biased v2 + Bridge-Link] Step  30 (edge* ): acc=0.4844  drop=+0.0024  neurons=189  edges=96,550
+  [fine-tune] Epoch   1 | loss 0.8314 | acc 0.9735 f1 0.9735 prec 0.9736 rec 0.9735
+  [fine-tune] Epoch   2 | loss 0.7886 | acc 0.9754 f1 0.9755 prec 0.9757 rec 0.9754
+[Q: GA CC_Biased v2 + Bridge-Link] Step  31 (edge* ): acc=0.4815  drop=+0.0053  neurons=189  edges=91,723
+  [fine-tune] Epoch   1 | loss 0.8292 | acc 0.9674 f1 0.9675 prec 0.9678 rec 0.9674
+  [fine-tune] Epoch   2 | loss 0.7825 | acc 0.9672 f1 0.9672 prec 0.9674 rec 0.9672
+[Q: GA CC_Biased v2 + Bridge-Link] Step  32 (edge* ): acc=0.4836  drop=+0.0032  neurons=189  edges=87,137
+  [fine-tune] Epoch   1 | loss 0.8329 | acc 0.9646 f1 0.9646 prec 0.9649 rec 0.9646
+  [fine-tune] Epoch   2 | loss 0.7891 | acc 0.9673 f1 0.9672 prec 0.9674 rec 0.9673
+[Q: GA CC_Biased v2 + Bridge-Link] Step  33 (edge* ): acc=0.4876  drop=-0.0008  neurons=189  edges=82,781
+  [fine-tune] Epoch   1 | loss 0.8351 | acc 0.9689 f1 0.9689 prec 0.9690 rec 0.9689
+  [fine-tune] Epoch   2 | loss 0.7790 | acc 0.9740 f1 0.9740 prec 0.9742 rec 0.9740
+[Q: GA CC_Biased v2 + Bridge-Link] Step  34 (edge* ): acc=0.4860  drop=+0.0008  neurons=189  edges=78,642
+  [fine-tune] Epoch   1 | loss 0.8312 | acc 0.9656 f1 0.9654 prec 0.9659 rec 0.9656
+  [fine-tune] Epoch   2 | loss 0.7844 | acc 0.9670 f1 0.9671 prec 0.9673 rec 0.9670
+[Q: GA CC_Biased v2 + Bridge-Link] Step  35 (edge* ): acc=0.4837  drop=+0.0031  neurons=189  edges=74,710
+  [fine-tune] Epoch   1 | loss 0.8323 | acc 0.9696 f1 0.9695 prec 0.9697 rec 0.9696
+  [fine-tune] Epoch   2 | loss 0.7835 | acc 0.9675 f1 0.9675 prec 0.9677 rec 0.9675
+[Q: GA CC_Biased v2 + Bridge-Link] Step  36 (edge* ): acc=0.4830  drop=+0.0038  neurons=189  edges=70,975
+  [fine-tune] Epoch   1 | loss 0.8388 | acc 0.9699 f1 0.9698 prec 0.9702 rec 0.9699
+  [fine-tune] Epoch   2 | loss 0.7809 | acc 0.9729 f1 0.9729 prec 0.9732 rec 0.9729
+[Q: GA CC_Biased v2 + Bridge-Link] Step  37 (edge* ): acc=0.4836  drop=+0.0032  neurons=189  edges=67,427
+  [fine-tune] Epoch   1 | loss 0.8432 | acc 0.9613 f1 0.9613 prec 0.9615 rec 0.9613
+  [fine-tune] Epoch   2 | loss 0.7900 | acc 0.9671 f1 0.9670 prec 0.9672 rec 0.9671
+[Q: GA CC_Biased v2 + Bridge-Link] Step  38 (edge* ): acc=0.4853  drop=+0.0015  neurons=189  edges=64,056
+  [fine-tune] Epoch   1 | loss 0.8471 | acc 0.9678 f1 0.9678 prec 0.9679 rec 0.9678
+  [fine-tune] Epoch   2 | loss 0.7896 | acc 0.9730 f1 0.9730 prec 0.9731 rec 0.9730
+[Q: GA CC_Biased v2 + Bridge-Link] Step  39 (edge* ): acc=0.4826  drop=+0.0042  neurons=189  edges=60,854
+  [fine-tune] Epoch   1 | loss 0.8533 | acc 0.9604 f1 0.9603 prec 0.9607 rec 0.9604
+  [fine-tune] Epoch   2 | loss 0.7916 | acc 0.9704 f1 0.9704 prec 0.9705 rec 0.9704
+[Q: GA CC_Biased v2 + Bridge-Link] Step  40 (edge* ): acc=0.4869  drop=-0.0001  neurons=189  edges=57,812
+  [fine-tune] Epoch   1 | loss 0.8534 | acc 0.9665 f1 0.9665 prec 0.9668 rec 0.9665
+  [fine-tune] Epoch   2 | loss 0.7966 | acc 0.9687 f1 0.9688 prec 0.9693 rec 0.9687
+[Q: GA CC_Biased v2 + Bridge-Link] Step  41 (edge* ): acc=0.4847  drop=+0.0021  neurons=189  edges=54,922
+  [fine-tune] Epoch   1 | loss 0.8635 | acc 0.9636 f1 0.9636 prec 0.9638 rec 0.9636
+  [fine-tune] Epoch   2 | loss 0.8024 | acc 0.9712 f1 0.9711 prec 0.9713 rec 0.9712
+[Q: GA CC_Biased v2 + Bridge-Link] Step  42 (edge* ): acc=0.4857  drop=+0.0011  neurons=189  edges=52,176
+  [fine-tune] Epoch   1 | loss 0.8679 | acc 0.9589 f1 0.9589 prec 0.9590 rec 0.9589
+  [fine-tune] Epoch   2 | loss 0.8033 | acc 0.9718 f1 0.9718 prec 0.9719 rec 0.9718
+[Q: GA CC_Biased v2 + Bridge-Link] Step  43 (edge* ): acc=0.4846  drop=+0.0022  neurons=189  edges=49,568
+  [fine-tune] Epoch   1 | loss 0.8769 | acc 0.9616 f1 0.9617 prec 0.9620 rec 0.9616
+  [fine-tune] Epoch   2 | loss 0.8105 | acc 0.9683 f1 0.9683 prec 0.9684 rec 0.9683
+[Q: GA CC_Biased v2 + Bridge-Link] Step  44 (edge* ): acc=0.4838  drop=+0.0030  neurons=189  edges=47,090
+  [fine-tune] Epoch   1 | loss 0.8900 | acc 0.9582 f1 0.9582 prec 0.9585 rec 0.9582
+  [fine-tune] Epoch   2 | loss 0.8185 | acc 0.9592 f1 0.9591 prec 0.9593 rec 0.9592
+[Q: GA CC_Biased v2 + Bridge-Link] Step  45 (edge* ): acc=0.4838  drop=+0.0030  neurons=189  edges=44,736
+  [fine-tune] Epoch   1 | loss 0.8990 | acc 0.9574 f1 0.9574 prec 0.9575 rec 0.9574
+  [fine-tune] Epoch   2 | loss 0.8270 | acc 0.9615 f1 0.9615 prec 0.9618 rec 0.9615
+[Q: GA CC_Biased v2 + Bridge-Link] Step  46 (edge* ): acc=0.4812  drop=+0.0056  neurons=189  edges=42,500
+  [fine-tune] Epoch   1 | loss 0.9094 | acc 0.9487 f1 0.9487 prec 0.9492 rec 0.9487
+  [fine-tune] Epoch   2 | loss 0.8357 | acc 0.9529 f1 0.9529 prec 0.9535 rec 0.9529
+[Q: GA CC_Biased v2 + Bridge-Link] Step  47 (edge* ): acc=0.4841  drop=+0.0027  neurons=189  edges=40,375
+  [fine-tune] Epoch   1 | loss 0.9227 | acc 0.9497 f1 0.9497 prec 0.9499 rec 0.9497
+  [fine-tune] Epoch   2 | loss 0.8436 | acc 0.9569 f1 0.9569 prec 0.9572 rec 0.9569
+[Q: GA CC_Biased v2 + Bridge-Link] Step  48 (edge* ): acc=0.4880  drop=-0.0012  neurons=189  edges=38,357
+  [fine-tune] Epoch   1 | loss 0.9281 | acc 0.9393 f1 0.9392 prec 0.9396 rec 0.9393
+  [fine-tune] Epoch   2 | loss 0.8540 | acc 0.9546 f1 0.9546 prec 0.9548 rec 0.9546
+[Q: GA CC_Biased v2 + Bridge-Link] Step  49 (edge* ): acc=0.4778  drop=+0.0090  neurons=189  edges=36,440
+  [fine-tune] Epoch   1 | loss 0.9510 | acc 0.9401 f1 0.9400 prec 0.9403 rec 0.9401
+  [fine-tune] Epoch   2 | loss 0.8732 | acc 0.9490 f1 0.9490 prec 0.9494 rec 0.9490
+[Q: GA CC_Biased v2 + Bridge-Link] Step  50 (edge* ): acc=0.4770  drop=+0.0098  neurons=189  edges=34,618
+  [fine-tune] Epoch   1 | loss 0.9609 | acc 0.9329 f1 0.9328 prec 0.9331 rec 0.9329
+  [fine-tune] Epoch   2 | loss 0.8843 | acc 0.9447 f1 0.9446 prec 0.9450 rec 0.9447
+[Q: GA CC_Biased v2 + Bridge-Link] Step  51 (edge* ): acc=0.4850  drop=+0.0018  neurons=189  edges=32,888
+  [fine-tune] Epoch   1 | loss 0.9861 | acc 0.9282 f1 0.9283 prec 0.9288 rec 0.9282
+  [fine-tune] Epoch   2 | loss 0.9015 | acc 0.9302 f1 0.9298 prec 0.9306 rec 0.9302
+[Q: GA CC_Biased v2 + Bridge-Link] Step  52 (edge* ): acc=0.4829  drop=+0.0039  neurons=189  edges=31,244
+  [fine-tune] Epoch   1 | loss 1.0038 | acc 0.9200 f1 0.9198 prec 0.9203 rec 0.9200
+  [fine-tune] Epoch   2 | loss 0.9200 | acc 0.9333 f1 0.9332 prec 0.9334 rec 0.9333
+[Q: GA CC_Biased v2 + Bridge-Link] Step  53 (edge* ): acc=0.4804  drop=+0.0064  neurons=189  edges=29,682
+  [fine-tune] Epoch   1 | loss 1.0242 | acc 0.9087 f1 0.9087 prec 0.9096 rec 0.9087
+  [fine-tune] Epoch   2 | loss 0.9435 | acc 0.9207 f1 0.9206 prec 0.9214 rec 0.9207
+[Q: GA CC_Biased v2 + Bridge-Link] Step  54 (edge* ): acc=0.4796  drop=+0.0072  neurons=189  edges=28,198
+  [fine-tune] Epoch   1 | loss 1.0428 | acc 0.9068 f1 0.9067 prec 0.9069 rec 0.9068
+  [fine-tune] Epoch   2 | loss 0.9626 | acc 0.9165 f1 0.9163 prec 0.9164 rec 0.9165
+[Q: GA CC_Biased v2 + Bridge-Link] Step  55 (edge* ): acc=0.4832  drop=+0.0036  neurons=189  edges=26,789
+  [fine-tune] Epoch   1 | loss 1.0579 | acc 0.8987 f1 0.8985 prec 0.8988 rec 0.8987
+  [fine-tune] Epoch   2 | loss 0.9818 | acc 0.9091 f1 0.9092 prec 0.9101 rec 0.9091
+[Q: GA CC_Biased v2 + Bridge-Link] Step  56 (edge* ): acc=0.4834  drop=+0.0034  neurons=189  edges=25,450
+  [fine-tune] Epoch   1 | loss 1.0790 | acc 0.8875 f1 0.8878 prec 0.8889 rec 0.8875
+  [fine-tune] Epoch   2 | loss 1.0018 | acc 0.9004 f1 0.9003 prec 0.9011 rec 0.9004
+[Q: GA CC_Biased v2 + Bridge-Link] Step  57 (edge* ): acc=0.4785  drop=+0.0083  neurons=189  edges=24,178
+  [fine-tune] Epoch   1 | loss 1.1130 | acc 0.8794 f1 0.8793 prec 0.8797 rec 0.8794
+  [fine-tune] Epoch   2 | loss 1.0285 | acc 0.8888 f1 0.8888 prec 0.8897 rec 0.8888
+[Q: GA CC_Biased v2 + Bridge-Link] Step  58 (edge* ): acc=0.4856  drop=+0.0012  neurons=189  edges=22,970
+  [fine-tune] Epoch   1 | loss 1.1381 | acc 0.8666 f1 0.8661 prec 0.8674 rec 0.8666
+  [fine-tune] Epoch   2 | loss 1.0598 | acc 0.8805 f1 0.8805 prec 0.8814 rec 0.8805
+[Q: GA CC_Biased v2 + Bridge-Link] Step  59 (edge* ): acc=0.4838  drop=+0.0030  neurons=189  edges=21,822
+  [fine-tune] Epoch   1 | loss 1.1602 | acc 0.8601 f1 0.8601 prec 0.8612 rec 0.8601
+  [fine-tune] Epoch   2 | loss 1.0805 | acc 0.8683 f1 0.8683 prec 0.8690 rec 0.8683
+[Q: GA CC_Biased v2 + Bridge-Link] Step  60 (edge* ): acc=0.4787  drop=+0.0081  neurons=189  edges=20,731
+  [fine-tune] Epoch   1 | loss 1.1963 | acc 0.8438 f1 0.8433 prec 0.8440 rec 0.8438
+  [fine-tune] Epoch   2 | loss 1.1141 | acc 0.8572 f1 0.8568 prec 0.8573 rec 0.8572
+[Q: GA CC_Biased v2 + Bridge-Link] Step  61 (edge* ): acc=0.4827  drop=+0.0041  neurons=189  edges=19,695
+  [fine-tune] Epoch   1 | loss 1.2244 | acc 0.8361 f1 0.8365 prec 0.8376 rec 0.8361
+  [fine-tune] Epoch   2 | loss 1.1467 | acc 0.8466 f1 0.8457 prec 0.8464 rec 0.8466
+[Q: GA CC_Biased v2 + Bridge-Link] Step  62 (edge* ): acc=0.4800  drop=+0.0068  neurons=189  edges=18,711
+  [fine-tune] Epoch   1 | loss 1.2449 | acc 0.8291 f1 0.8293 prec 0.8297 rec 0.8291
+  [fine-tune] Epoch   2 | loss 1.1736 | acc 0.8371 f1 0.8370 prec 0.8370 rec 0.8371
+[Q: GA CC_Biased v2 + Bridge-Link] Step  63 (edge* ): acc=0.4731  drop=+0.0137  neurons=189  edges=17,776
+[Q: GA CC_Biased v2 + Bridge-Link] Tolerance exceeded (drop=0.0137). Reverting.
+
+[Q: GA CC_Biased v2 + Bridge-Link] Finished. 63 steps. Final: acc=0.4800  neurons=189  edges=18,711
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.4800
+F1       : 0.4790
+Precision: 0.4792
+Recall   : 0.4800
+Params   : 797447 trainable
+State size (approx): 3115.03 KB
+Inference time (avg): batch 0.8655 ms | single 0.054270 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.36s
+Best communication cost: 21646.0000
+Mapping (task → core):
+  Task   1  →  Core  56
+  Task   2  →  Core  29
+  Task   3  →  Core  36
+  Task   4  →  Core  16
+  Task   5  →  Core   8
+  Task   6  →  Core  44
+  Task   7  →  Core  60
+  Task   8  →  Core  13
+  Task   9  →  Core  23
+  Task  10  →  Core  11
+  Task  11  →  Core  40
+  Task  12  →  Core  58
+  Task  13  →  Core  32
+  Task  14  →  Core  53
+  Task  15  →  Core  49
+  Task  16  →  Core  17
+  Task  17  →  Core  45
+  Task  18  →  Core  25
+  Task  19  →  Core   2
+  Task  20  →  Core  42
+  Task  21  →  Core  18
+  Task  22  →  Core   4
+  Task  23  →  Core  19
+  Task  24  →  Core  31
+  Task  25  →  Core  27
+  Task  26  →  Core  46
+  Task  27  →  Core  14
+  Task  28  →  Core   1
+  Task  29  →  Core  62
+  Task  30  →  Core  26
+  Task  31  →  Core  63
+  Task  32  →  Core  41
+  Task  33  →  Core  28
+  Task  34  →  Core  37
+  Task  35  →  Core  30
+  Task  36  →  Core  20
+  Task  37  →  Core   7
+  Task  38  →  Core  38
+  Task  39  →  Core  55
+  Task  40  →  Core  21
+  Task  41  →  Core  43
+  Task  42  →  Core  61
+  Task  43  →  Core  22
+  Task  44  →  Core   5
+  Task  45  →  Core  50
+  Task  46  →  Core  39
+  Task  47  →  Core   9
+  Task  48  →  Core  33
+  Task  49  →  Core  47
+  Task  50  →  Core  12
+  Task  51  →  Core  64
+  Task  52  →  Core   3
+  Task  53  →  Core  57
+  Task  54  →  Core  10
+  Task  55  →  Core  24
+  Task  56  →  Core   6
+  Task  57  →  Core  35
+  Task  58  →  Core  54
+  Task  59  →  Core  52
+  Task  60  →  Core  15
+  Task  61  →  Core  59
+  Task  62  →  Core  34
+  Task  63  →  Core  51
+  Task  64  →  Core  48
+Mapping: [(0, 55), (1, 28), (2, 35), (3, 15), (4, 7), (5, 43), (6, 59), (7, 12), (8, 22), (9, 10), (10, 39), (11, 57), (12, 31), (13, 52), (14, 48), (15, 16), (16, 44), (17, 24), (18, 1), (19, 41), (20, 17), (21, 3), (22, 18), (23, 30), (24, 26), (25, 45), (26, 13), (27, 0), (28, 61), (29, 25), (30, 62), (31, 40), (32, 27), (33, 36), (34, 29), (35, 19), (36, 6), (37, 37), (38, 54), (39, 20), (40, 42), (41, 60), (42, 21), (43, 4), (44, 49), (45, 38), (46, 8), (47, 32), (48, 46), (49, 11), (50, 63), (51, 2), (52, 56), (53, 9), (54, 23), (55, 5), (56, 34), (57, 53), (58, 51), (59, 14), (60, 58), (61, 33), (62, 50), (63, 47)]
+Communication cost: 21646.0
+  [recorded] 'Q: GA CC_Biased v2 + Bridge-Link [final]'  acc=0.4800  cost=21646  sp_cost=34646  edges=18,711  neurons=189
+
+======================================================================
+  BRANCH: V: GA Memetic Biased + Bridge-Link
+  Anchor=0.4868  Tolerance=0.0100  Floor=0.4768
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0500  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[V: GA Memetic Biased + Bridge-Link] Starting accuracy: 0.4868
+  [fine-tune] Epoch   1 | loss 1.1080 | acc 0.8799 f1 0.8808 prec 0.8826 rec 0.8799
+  [fine-tune] Epoch   2 | loss 1.0663 | acc 0.8665 f1 0.8668 prec 0.8699 rec 0.8665
+[V: GA Memetic Biased + Bridge-Link] Step   1 (neuron): acc=0.4920  drop=-0.0052  neurons=189  edges=294,186
+  [fine-tune] Epoch   1 | loss 1.0660 | acc 0.8665 f1 0.8672 prec 0.8692 rec 0.8665
+  [fine-tune] Epoch   2 | loss 1.0477 | acc 0.8715 f1 0.8711 prec 0.8736 rec 0.8715
+[V: GA Memetic Biased + Bridge-Link] Step   2 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=288,303
+  [fine-tune] Epoch   1 | loss 1.0535 | acc 0.8887 f1 0.8883 prec 0.8903 rec 0.8887
+  [fine-tune] Epoch   2 | loss 1.0251 | acc 0.8905 f1 0.8900 prec 0.8913 rec 0.8905
+[V: GA Memetic Biased + Bridge-Link] Step   3 (edge  ): acc=0.4952  drop=-0.0084  neurons=189  edges=282,537
+  [fine-tune] Epoch   1 | loss 1.0295 | acc 0.8903 f1 0.8905 prec 0.8918 rec 0.8903
+  [fine-tune] Epoch   2 | loss 1.0212 | acc 0.8947 f1 0.8945 prec 0.8963 rec 0.8947
+[V: GA Memetic Biased + Bridge-Link] Step   4 (edge  ): acc=0.4900  drop=-0.0032  neurons=189  edges=276,887
+  [fine-tune] Epoch   1 | loss 1.0257 | acc 0.8933 f1 0.8934 prec 0.8947 rec 0.8933
+  [fine-tune] Epoch   2 | loss 1.0046 | acc 0.9068 f1 0.9064 prec 0.9070 rec 0.9068
+[V: GA Memetic Biased + Bridge-Link] Step   5 (edge  ): acc=0.4936  drop=-0.0068  neurons=189  edges=271,350
+  [fine-tune] Epoch   1 | loss 1.0133 | acc 0.8934 f1 0.8932 prec 0.8939 rec 0.8934
+  [fine-tune] Epoch   2 | loss 0.9883 | acc 0.8983 f1 0.8978 prec 0.8993 rec 0.8983
+[V: GA Memetic Biased + Bridge-Link] Step   6 (edge  ): acc=0.4889  drop=-0.0021  neurons=189  edges=265,923
+  [fine-tune] Epoch   1 | loss 0.9923 | acc 0.9052 f1 0.9052 prec 0.9064 rec 0.9052
+  [fine-tune] Epoch   2 | loss 0.9787 | acc 0.9064 f1 0.9068 prec 0.9081 rec 0.9064
+[V: GA Memetic Biased + Bridge-Link] Step   7 (edge  ): acc=0.4914  drop=-0.0046  neurons=189  edges=260,605
+  [fine-tune] Epoch   1 | loss 0.9892 | acc 0.9130 f1 0.9129 prec 0.9134 rec 0.9130
+  [fine-tune] Epoch   2 | loss 0.9746 | acc 0.8925 f1 0.8919 prec 0.8949 rec 0.8925
+[V: GA Memetic Biased + Bridge-Link] Step   8 (edge  ): acc=0.4828  drop=+0.0040  neurons=189  edges=255,393
+  [fine-tune] Epoch   1 | loss 0.9787 | acc 0.9128 f1 0.9126 prec 0.9141 rec 0.9128
+  [fine-tune] Epoch   2 | loss 0.9587 | acc 0.9084 f1 0.9081 prec 0.9095 rec 0.9084
+[V: GA Memetic Biased + Bridge-Link] Step   9 (edge  ): acc=0.4930  drop=-0.0062  neurons=189  edges=250,286
+  [fine-tune] Epoch   1 | loss 0.9605 | acc 0.9142 f1 0.9141 prec 0.9154 rec 0.9142
+  [fine-tune] Epoch   2 | loss 0.9405 | acc 0.9126 f1 0.9129 prec 0.9145 rec 0.9126
+[V: GA Memetic Biased + Bridge-Link] Step  10 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=245,281
+  [fine-tune] Epoch   1 | loss 0.9563 | acc 0.9215 f1 0.9214 prec 0.9223 rec 0.9215
+  [fine-tune] Epoch   2 | loss 0.9326 | acc 0.9299 f1 0.9297 prec 0.9301 rec 0.9299
+[V: GA Memetic Biased + Bridge-Link] Step  11 (edge  ): acc=0.4894  drop=-0.0026  neurons=189  edges=240,376
+  [fine-tune] Epoch   1 | loss 0.9525 | acc 0.9352 f1 0.9351 prec 0.9356 rec 0.9352
+  [fine-tune] Epoch   2 | loss 0.9159 | acc 0.9104 f1 0.9105 prec 0.9130 rec 0.9104
+[V: GA Memetic Biased + Bridge-Link] Step  12 (edge  ): acc=0.4811  drop=+0.0057  neurons=189  edges=235,569
+[V: GA Memetic Biased + Bridge-Link] Step 12: neuron tolerance cap (drop=0.0057 ≥ 0.0050). Reserving 0.0043 for edge-only (0.0500).
+[V: GA Memetic Biased + Bridge-Link] → Snapshot at drop≤0.5%
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.37s
+Best communication cost: 370813.0000
+Mapping (task → core):
+  Task   1  →  Core   1
+  Task   2  →  Core  38
+  Task   3  →  Core  21
+  Task   4  →  Core  52
+  Task   5  →  Core  19
+  Task   6  →  Core  44
+  Task   7  →  Core  28
+  Task   8  →  Core  14
+  Task   9  →  Core  29
+  Task  10  →  Core  12
+  Task  11  →  Core  13
+  Task  12  →  Core  27
+  Task  13  →  Core  35
+  Task  14  →  Core  39
+  Task  15  →  Core  42
+  Task  16  →  Core  53
+  Task  17  →  Core  43
+  Task  18  →  Core  18
+  Task  19  →  Core  50
+  Task  20  →  Core   6
+  Task  21  →  Core  23
+  Task  22  →  Core  55
+  Task  23  →  Core  10
+  Task  24  →  Core  33
+  Task  25  →  Core  32
+  Task  26  →  Core  62
+  Task  27  →  Core   8
+  Task  28  →  Core  64
+  Task  29  →  Core   9
+  Task  30  →  Core  56
+  Task  31  →  Core   2
+  Task  32  →  Core  16
+  Task  33  →  Core  25
+  Task  34  →  Core  24
+  Task  35  →  Core  47
+  Task  36  →  Core  30
+  Task  37  →  Core  20
+  Task  38  →  Core  17
+  Task  39  →  Core  60
+  Task  40  →  Core  31
+  Task  41  →  Core  11
+  Task  42  →  Core  48
+  Task  43  →  Core  41
+  Task  44  →  Core  54
+  Task  45  →  Core  59
+  Task  46  →  Core  46
+  Task  47  →  Core  26
+  Task  48  →  Core  45
+  Task  49  →  Core  61
+  Task  50  →  Core  34
+  Task  51  →  Core  51
+  Task  52  →  Core  22
+  Task  53  →  Core   3
+  Task  54  →  Core  15
+  Task  55  →  Core   4
+  Task  56  →  Core  37
+  Task  57  →  Core  36
+  Task  58  →  Core   5
+  Task  59  →  Core  40
+  Task  60  →  Core  57
+  Task  61  →  Core   7
+  Task  62  →  Core  58
+  Task  63  →  Core  49
+  Task  64  →  Core  63
+Mapping: [(0, 0), (1, 37), (2, 20), (3, 51), (4, 18), (5, 43), (6, 27), (7, 13), (8, 28), (9, 11), (10, 12), (11, 26), (12, 34), (13, 38), (14, 41), (15, 52), (16, 42), (17, 17), (18, 49), (19, 5), (20, 22), (21, 54), (22, 9), (23, 32), (24, 31), (25, 61), (26, 7), (27, 63), (28, 8), (29, 55), (30, 1), (31, 15), (32, 24), (33, 23), (34, 46), (35, 29), (36, 19), (37, 16), (38, 59), (39, 30), (40, 10), (41, 47), (42, 40), (43, 53), (44, 58), (45, 45), (46, 25), (47, 44), (48, 60), (49, 33), (50, 50), (51, 21), (52, 2), (53, 14), (54, 3), (55, 36), (56, 35), (57, 4), (58, 39), (59, 56), (60, 6), (61, 57), (62, 48), (63, 62)]
+Communication cost: 370813.0
+  [recorded] 'V: GA Memetic Biased + Bridge-Link @ drop≤0.5%'  acc=0.4811  cost=370813  sp_cost=504231  edges=235,569  neurons=189
+  [fine-tune] Epoch   1 | loss 0.9348 | acc 0.9166 f1 0.9166 prec 0.9171 rec 0.9166
+  [fine-tune] Epoch   2 | loss 0.9135 | acc 0.9272 f1 0.9272 prec 0.9277 rec 0.9272
+[V: GA Memetic Biased + Bridge-Link] Step  13 (edge* ): acc=0.4941  drop=-0.0073  neurons=189  edges=223,791
+  [fine-tune] Epoch   1 | loss 0.9234 | acc 0.9441 f1 0.9439 prec 0.9440 rec 0.9441
+  [fine-tune] Epoch   2 | loss 0.9036 | acc 0.9204 f1 0.9208 prec 0.9226 rec 0.9204
+[V: GA Memetic Biased + Bridge-Link] Step  14 (edge* ): acc=0.4841  drop=+0.0027  neurons=189  edges=212,602
+  [fine-tune] Epoch   1 | loss 0.9078 | acc 0.9421 f1 0.9423 prec 0.9439 rec 0.9421
+  [fine-tune] Epoch   2 | loss 0.8840 | acc 0.9314 f1 0.9315 prec 0.9325 rec 0.9314
+[V: GA Memetic Biased + Bridge-Link] Step  15 (edge* ): acc=0.4805  drop=+0.0063  neurons=189  edges=201,972
+  [fine-tune] Epoch   1 | loss 0.8965 | acc 0.9389 f1 0.9386 prec 0.9392 rec 0.9389
+  [fine-tune] Epoch   2 | loss 0.8798 | acc 0.9405 f1 0.9406 prec 0.9418 rec 0.9405
+[V: GA Memetic Biased + Bridge-Link] Step  16 (edge* ): acc=0.4820  drop=+0.0048  neurons=189  edges=191,874
+  [fine-tune] Epoch   1 | loss 0.8867 | acc 0.9370 f1 0.9373 prec 0.9385 rec 0.9370
+  [fine-tune] Epoch   2 | loss 0.8629 | acc 0.9387 f1 0.9382 prec 0.9389 rec 0.9387
+[V: GA Memetic Biased + Bridge-Link] Step  17 (edge* ): acc=0.4857  drop=+0.0011  neurons=189  edges=182,281
+  [fine-tune] Epoch   1 | loss 0.8843 | acc 0.9341 f1 0.9338 prec 0.9345 rec 0.9341
+  [fine-tune] Epoch   2 | loss 0.8548 | acc 0.9561 f1 0.9561 prec 0.9562 rec 0.9561
+[V: GA Memetic Biased + Bridge-Link] Step  18 (edge* ): acc=0.4867  drop=+0.0001  neurons=189  edges=173,167
+  [fine-tune] Epoch   1 | loss 0.8759 | acc 0.9505 f1 0.9504 prec 0.9509 rec 0.9505
+  [fine-tune] Epoch   2 | loss 0.8496 | acc 0.9470 f1 0.9468 prec 0.9472 rec 0.9470
+[V: GA Memetic Biased + Bridge-Link] Step  19 (edge* ): acc=0.4909  drop=-0.0041  neurons=189  edges=164,509
+  [fine-tune] Epoch   1 | loss 0.8633 | acc 0.9392 f1 0.9393 prec 0.9398 rec 0.9392
+  [fine-tune] Epoch   2 | loss 0.8436 | acc 0.9456 f1 0.9455 prec 0.9457 rec 0.9456
+[V: GA Memetic Biased + Bridge-Link] Step  20 (edge* ): acc=0.4849  drop=+0.0019  neurons=189  edges=156,284
+  [fine-tune] Epoch   1 | loss 0.8552 | acc 0.9440 f1 0.9441 prec 0.9452 rec 0.9440
+  [fine-tune] Epoch   2 | loss 0.8402 | acc 0.9554 f1 0.9555 prec 0.9560 rec 0.9554
+[V: GA Memetic Biased + Bridge-Link] Step  21 (edge* ): acc=0.4838  drop=+0.0030  neurons=189  edges=148,470
+  [fine-tune] Epoch   1 | loss 0.8580 | acc 0.9498 f1 0.9496 prec 0.9503 rec 0.9498
+  [fine-tune] Epoch   2 | loss 0.8207 | acc 0.9536 f1 0.9535 prec 0.9539 rec 0.9536
+[V: GA Memetic Biased + Bridge-Link] Step  22 (edge* ): acc=0.4863  drop=+0.0005  neurons=189  edges=141,047
+  [fine-tune] Epoch   1 | loss 0.8504 | acc 0.9501 f1 0.9500 prec 0.9514 rec 0.9501
+  [fine-tune] Epoch   2 | loss 0.8147 | acc 0.9594 f1 0.9595 prec 0.9600 rec 0.9594
+[V: GA Memetic Biased + Bridge-Link] Step  23 (edge* ): acc=0.4862  drop=+0.0006  neurons=189  edges=133,995
+  [fine-tune] Epoch   1 | loss 0.8435 | acc 0.9569 f1 0.9568 prec 0.9575 rec 0.9569
+  [fine-tune] Epoch   2 | loss 0.8077 | acc 0.9487 f1 0.9488 prec 0.9496 rec 0.9487
+[V: GA Memetic Biased + Bridge-Link] Step  24 (edge* ): acc=0.4787  drop=+0.0081  neurons=189  edges=127,296
+  [fine-tune] Epoch   1 | loss 0.8419 | acc 0.9526 f1 0.9525 prec 0.9530 rec 0.9526
+  [fine-tune] Epoch   2 | loss 0.8042 | acc 0.9610 f1 0.9610 prec 0.9613 rec 0.9610
+[V: GA Memetic Biased + Bridge-Link] Step  25 (edge* ): acc=0.4851  drop=+0.0017  neurons=189  edges=120,932
+  [fine-tune] Epoch   1 | loss 0.8375 | acc 0.9661 f1 0.9660 prec 0.9663 rec 0.9661
+  [fine-tune] Epoch   2 | loss 0.8012 | acc 0.9647 f1 0.9648 prec 0.9653 rec 0.9647
+[V: GA Memetic Biased + Bridge-Link] Step  26 (edge* ): acc=0.4765  drop=+0.0103  neurons=189  edges=114,886
+[V: GA Memetic Biased + Bridge-Link] Tolerance exceeded (drop=0.0103). Reverting.
+
+[V: GA Memetic Biased + Bridge-Link] Finished. 26 steps. Final: acc=0.4851  neurons=189  edges=120,932
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.4851
+F1       : 0.4860
+Precision: 0.4887
+Recall   : 0.4851
+Params   : 797447 trainable
+State size (approx): 3115.03 KB
+Inference time (avg): batch 0.8608 ms | single 0.054425 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.38s
+Best communication cost: 154185.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core  45
+  Task   3  →  Core  36
+  Task   4  →  Core  29
+  Task   5  →  Core  38
+  Task   6  →  Core  37
+  Task   7  →  Core  20
+  Task   8  →  Core  21
+  Task   9  →  Core  44
+  Task  10  →  Core  30
+  Task  11  →  Core  27
+  Task  12  →  Core  35
+  Task  13  →  Core  19
+  Task  14  →  Core  63
+  Task  15  →  Core  64
+  Task  16  →  Core  62
+  Task  17  →  Core  42
+  Task  18  →  Core  61
+  Task  19  →  Core  32
+  Task  20  →  Core   3
+  Task  21  →  Core  15
+  Task  22  →  Core  41
+  Task  23  →  Core  59
+  Task  24  →  Core  14
+  Task  25  →  Core  49
+  Task  26  →  Core   5
+  Task  27  →  Core  47
+  Task  28  →  Core   4
+  Task  29  →  Core  57
+  Task  30  →  Core  55
+  Task  31  →  Core   6
+  Task  32  →  Core  16
+  Task  33  →  Core  22
+  Task  34  →  Core  11
+  Task  35  →  Core  28
+  Task  36  →  Core  34
+  Task  37  →  Core  18
+  Task  38  →  Core  31
+  Task  39  →  Core  43
+  Task  40  →  Core  39
+  Task  41  →  Core  52
+  Task  42  →  Core  13
+  Task  43  →  Core  12
+  Task  44  →  Core  46
+  Task  45  →  Core  26
+  Task  46  →  Core  53
+  Task  47  →  Core  50
+  Task  48  →  Core  10
+  Task  49  →  Core  54
+  Task  50  →  Core  48
+  Task  51  →  Core  25
+  Task  52  →  Core  23
+  Task  53  →  Core  24
+  Task  54  →  Core   2
+  Task  55  →  Core  33
+  Task  56  →  Core  40
+  Task  57  →  Core  17
+  Task  58  →  Core  56
+  Task  59  →  Core  60
+  Task  60  →  Core  51
+  Task  61  →  Core   1
+  Task  62  →  Core   8
+  Task  63  →  Core  58
+  Task  64  →  Core   7
+Mapping: [(0, 8), (1, 44), (2, 35), (3, 28), (4, 37), (5, 36), (6, 19), (7, 20), (8, 43), (9, 29), (10, 26), (11, 34), (12, 18), (13, 62), (14, 63), (15, 61), (16, 41), (17, 60), (18, 31), (19, 2), (20, 14), (21, 40), (22, 58), (23, 13), (24, 48), (25, 4), (26, 46), (27, 3), (28, 56), (29, 54), (30, 5), (31, 15), (32, 21), (33, 10), (34, 27), (35, 33), (36, 17), (37, 30), (38, 42), (39, 38), (40, 51), (41, 12), (42, 11), (43, 45), (44, 25), (45, 52), (46, 49), (47, 9), (48, 53), (49, 47), (50, 24), (51, 22), (52, 23), (53, 1), (54, 32), (55, 39), (56, 16), (57, 55), (58, 59), (59, 50), (60, 0), (61, 7), (62, 57), (63, 6)]
+Communication cost: 154185.0
+  [recorded] 'V: GA Memetic Biased + Bridge-Link [final]'  acc=0.4851  cost=154185  sp_cost=232386  edges=120,932  neurons=189
+
+======================================================================
+  BRANCH: W: GA Memetic Biased + L2 Edge
+  Anchor=0.4868  Tolerance=0.0100  Floor=0.4768
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0500  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[W: GA Memetic Biased + L2 Edge] Starting accuracy: 0.4868
+  [fine-tune] Epoch   1 | loss 1.1080 | acc 0.8799 f1 0.8808 prec 0.8826 rec 0.8799
+  [fine-tune] Epoch   2 | loss 1.0663 | acc 0.8665 f1 0.8668 prec 0.8699 rec 0.8665
+[W: GA Memetic Biased + L2 Edge] Step   1 (neuron): acc=0.4920  drop=-0.0052  neurons=189  edges=294,186
+  [fine-tune] Epoch   1 | loss 1.0660 | acc 0.8665 f1 0.8672 prec 0.8692 rec 0.8665
+  [fine-tune] Epoch   2 | loss 1.0477 | acc 0.8715 f1 0.8711 prec 0.8736 rec 0.8715
+[W: GA Memetic Biased + L2 Edge] Step   2 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=288,303
+  [fine-tune] Epoch   1 | loss 1.0535 | acc 0.8887 f1 0.8883 prec 0.8903 rec 0.8887
+  [fine-tune] Epoch   2 | loss 1.0251 | acc 0.8905 f1 0.8900 prec 0.8913 rec 0.8905
+[W: GA Memetic Biased + L2 Edge] Step   3 (edge  ): acc=0.4952  drop=-0.0084  neurons=189  edges=282,537
+  [fine-tune] Epoch   1 | loss 1.0295 | acc 0.8903 f1 0.8905 prec 0.8918 rec 0.8903
+  [fine-tune] Epoch   2 | loss 1.0212 | acc 0.8947 f1 0.8945 prec 0.8963 rec 0.8947
+[W: GA Memetic Biased + L2 Edge] Step   4 (edge  ): acc=0.4900  drop=-0.0032  neurons=189  edges=276,887
+  [fine-tune] Epoch   1 | loss 1.0257 | acc 0.8933 f1 0.8934 prec 0.8947 rec 0.8933
+  [fine-tune] Epoch   2 | loss 1.0046 | acc 0.9068 f1 0.9064 prec 0.9070 rec 0.9068
+[W: GA Memetic Biased + L2 Edge] Step   5 (edge  ): acc=0.4936  drop=-0.0068  neurons=189  edges=271,350
+  [fine-tune] Epoch   1 | loss 1.0133 | acc 0.8934 f1 0.8932 prec 0.8939 rec 0.8934
+  [fine-tune] Epoch   2 | loss 0.9883 | acc 0.8983 f1 0.8978 prec 0.8993 rec 0.8983
+[W: GA Memetic Biased + L2 Edge] Step   6 (edge  ): acc=0.4889  drop=-0.0021  neurons=189  edges=265,923
+  [fine-tune] Epoch   1 | loss 0.9923 | acc 0.9052 f1 0.9052 prec 0.9064 rec 0.9052
+  [fine-tune] Epoch   2 | loss 0.9787 | acc 0.9064 f1 0.9068 prec 0.9081 rec 0.9064
+[W: GA Memetic Biased + L2 Edge] Step   7 (edge  ): acc=0.4914  drop=-0.0046  neurons=189  edges=260,605
+  [fine-tune] Epoch   1 | loss 0.9892 | acc 0.9130 f1 0.9129 prec 0.9134 rec 0.9130
+  [fine-tune] Epoch   2 | loss 0.9746 | acc 0.8925 f1 0.8919 prec 0.8949 rec 0.8925
+[W: GA Memetic Biased + L2 Edge] Step   8 (edge  ): acc=0.4828  drop=+0.0040  neurons=189  edges=255,393
+  [fine-tune] Epoch   1 | loss 0.9787 | acc 0.9128 f1 0.9126 prec 0.9141 rec 0.9128
+  [fine-tune] Epoch   2 | loss 0.9587 | acc 0.9084 f1 0.9081 prec 0.9095 rec 0.9084
+[W: GA Memetic Biased + L2 Edge] Step   9 (edge  ): acc=0.4930  drop=-0.0062  neurons=189  edges=250,286
+  [fine-tune] Epoch   1 | loss 0.9605 | acc 0.9142 f1 0.9141 prec 0.9154 rec 0.9142
+  [fine-tune] Epoch   2 | loss 0.9405 | acc 0.9126 f1 0.9129 prec 0.9145 rec 0.9126
+[W: GA Memetic Biased + L2 Edge] Step  10 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=245,281
+  [fine-tune] Epoch   1 | loss 0.9563 | acc 0.9215 f1 0.9214 prec 0.9223 rec 0.9215
+  [fine-tune] Epoch   2 | loss 0.9326 | acc 0.9299 f1 0.9297 prec 0.9301 rec 0.9299
+[W: GA Memetic Biased + L2 Edge] Step  11 (edge  ): acc=0.4894  drop=-0.0026  neurons=189  edges=240,376
+  [fine-tune] Epoch   1 | loss 0.9525 | acc 0.9352 f1 0.9351 prec 0.9356 rec 0.9352
+  [fine-tune] Epoch   2 | loss 0.9159 | acc 0.9104 f1 0.9105 prec 0.9130 rec 0.9104
+[W: GA Memetic Biased + L2 Edge] Step  12 (edge  ): acc=0.4811  drop=+0.0057  neurons=189  edges=235,569
+[W: GA Memetic Biased + L2 Edge] Step 12: neuron tolerance cap (drop=0.0057 ≥ 0.0050). Reserving 0.0043 for edge-only (0.0500).
+[W: GA Memetic Biased + L2 Edge] → Snapshot at drop≤0.5%
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.40s
+Best communication cost: 370860.0000
+Mapping (task → core):
+  Task   1  →  Core   2
+  Task   2  →  Core  22
+  Task   3  →  Core  30
+  Task   4  →  Core  19
+  Task   5  →  Core  35
+  Task   6  →  Core  52
+  Task   7  →  Core  44
+  Task   8  →  Core  39
+  Task   9  →  Core  29
+  Task  10  →  Core  20
+  Task  11  →  Core  37
+  Task  12  →  Core  26
+  Task  13  →  Core  43
+  Task  14  →  Core  54
+  Task  15  →  Core  51
+  Task  16  →  Core  13
+  Task  17  →  Core  45
+  Task  18  →  Core  34
+  Task  19  →  Core  10
+  Task  20  →  Core  15
+  Task  21  →  Core  62
+  Task  22  →  Core  55
+  Task  23  →  Core   4
+  Task  24  →  Core  17
+  Task  25  →  Core  32
+  Task  26  →  Core  47
+  Task  27  →  Core  57
+  Task  28  →  Core   1
+  Task  29  →  Core  64
+  Task  30  →  Core  56
+  Task  31  →  Core  49
+  Task  32  →  Core  16
+  Task  33  →  Core  33
+  Task  34  →  Core  61
+  Task  35  →  Core  46
+  Task  36  →  Core  38
+  Task  37  →  Core  28
+  Task  38  →  Core  41
+  Task  39  →  Core   3
+  Task  40  →  Core  40
+  Task  41  →  Core  12
+  Task  42  →  Core   6
+  Task  43  →  Core  50
+  Task  44  →  Core  23
+  Task  45  →  Core  59
+  Task  46  →  Core  53
+  Task  47  →  Core  27
+  Task  48  →  Core  31
+  Task  49  →  Core  14
+  Task  50  →  Core  42
+  Task  51  →  Core  60
+  Task  52  →  Core  11
+  Task  53  →  Core  18
+  Task  54  →  Core  24
+  Task  55  →  Core  25
+  Task  56  →  Core  21
+  Task  57  →  Core  36
+  Task  58  →  Core   5
+  Task  59  →  Core  48
+  Task  60  →  Core  58
+  Task  61  →  Core   8
+  Task  62  →  Core   7
+  Task  63  →  Core   9
+  Task  64  →  Core  63
+Mapping: [(0, 1), (1, 21), (2, 29), (3, 18), (4, 34), (5, 51), (6, 43), (7, 38), (8, 28), (9, 19), (10, 36), (11, 25), (12, 42), (13, 53), (14, 50), (15, 12), (16, 44), (17, 33), (18, 9), (19, 14), (20, 61), (21, 54), (22, 3), (23, 16), (24, 31), (25, 46), (26, 56), (27, 0), (28, 63), (29, 55), (30, 48), (31, 15), (32, 32), (33, 60), (34, 45), (35, 37), (36, 27), (37, 40), (38, 2), (39, 39), (40, 11), (41, 5), (42, 49), (43, 22), (44, 58), (45, 52), (46, 26), (47, 30), (48, 13), (49, 41), (50, 59), (51, 10), (52, 17), (53, 23), (54, 24), (55, 20), (56, 35), (57, 4), (58, 47), (59, 57), (60, 7), (61, 6), (62, 8), (63, 62)]
+Communication cost: 370860.0
+  [recorded] 'W: GA Memetic Biased + L2 Edge @ drop≤0.5%'  acc=0.4811  cost=370860  sp_cost=504231  edges=235,569  neurons=189
+  [fine-tune] Epoch   1 | loss 0.9348 | acc 0.9166 f1 0.9166 prec 0.9171 rec 0.9166
+  [fine-tune] Epoch   2 | loss 0.9135 | acc 0.9272 f1 0.9272 prec 0.9277 rec 0.9272
+[W: GA Memetic Biased + L2 Edge] Step  13 (edge* ): acc=0.4941  drop=-0.0073  neurons=189  edges=223,791
+  [fine-tune] Epoch   1 | loss 0.9234 | acc 0.9441 f1 0.9439 prec 0.9440 rec 0.9441
+  [fine-tune] Epoch   2 | loss 0.9036 | acc 0.9204 f1 0.9208 prec 0.9226 rec 0.9204
+[W: GA Memetic Biased + L2 Edge] Step  14 (edge* ): acc=0.4841  drop=+0.0027  neurons=189  edges=212,602
+  [fine-tune] Epoch   1 | loss 0.9078 | acc 0.9421 f1 0.9423 prec 0.9439 rec 0.9421
+  [fine-tune] Epoch   2 | loss 0.8840 | acc 0.9314 f1 0.9315 prec 0.9325 rec 0.9314
+[W: GA Memetic Biased + L2 Edge] Step  15 (edge* ): acc=0.4805  drop=+0.0063  neurons=189  edges=201,972
+  [fine-tune] Epoch   1 | loss 0.8965 | acc 0.9389 f1 0.9386 prec 0.9392 rec 0.9389
+  [fine-tune] Epoch   2 | loss 0.8798 | acc 0.9405 f1 0.9406 prec 0.9418 rec 0.9405
+[W: GA Memetic Biased + L2 Edge] Step  16 (edge* ): acc=0.4820  drop=+0.0048  neurons=189  edges=191,874
+  [fine-tune] Epoch   1 | loss 0.8867 | acc 0.9370 f1 0.9373 prec 0.9385 rec 0.9370
+  [fine-tune] Epoch   2 | loss 0.8629 | acc 0.9387 f1 0.9382 prec 0.9389 rec 0.9387
+[W: GA Memetic Biased + L2 Edge] Step  17 (edge* ): acc=0.4857  drop=+0.0011  neurons=189  edges=182,281
+  [fine-tune] Epoch   1 | loss 0.8843 | acc 0.9341 f1 0.9338 prec 0.9345 rec 0.9341
+  [fine-tune] Epoch   2 | loss 0.8548 | acc 0.9561 f1 0.9561 prec 0.9562 rec 0.9561
+[W: GA Memetic Biased + L2 Edge] Step  18 (edge* ): acc=0.4867  drop=+0.0001  neurons=189  edges=173,167
+  [fine-tune] Epoch   1 | loss 0.8759 | acc 0.9505 f1 0.9504 prec 0.9509 rec 0.9505
+  [fine-tune] Epoch   2 | loss 0.8496 | acc 0.9470 f1 0.9468 prec 0.9472 rec 0.9470
+[W: GA Memetic Biased + L2 Edge] Step  19 (edge* ): acc=0.4909  drop=-0.0041  neurons=189  edges=164,509
+  [fine-tune] Epoch   1 | loss 0.8633 | acc 0.9392 f1 0.9393 prec 0.9398 rec 0.9392
+  [fine-tune] Epoch   2 | loss 0.8436 | acc 0.9456 f1 0.9455 prec 0.9457 rec 0.9456
+[W: GA Memetic Biased + L2 Edge] Step  20 (edge* ): acc=0.4849  drop=+0.0019  neurons=189  edges=156,284
+  [fine-tune] Epoch   1 | loss 0.8552 | acc 0.9440 f1 0.9441 prec 0.9452 rec 0.9440
+  [fine-tune] Epoch   2 | loss 0.8402 | acc 0.9554 f1 0.9555 prec 0.9560 rec 0.9554
+[W: GA Memetic Biased + L2 Edge] Step  21 (edge* ): acc=0.4838  drop=+0.0030  neurons=189  edges=148,470
+  [fine-tune] Epoch   1 | loss 0.8580 | acc 0.9498 f1 0.9496 prec 0.9503 rec 0.9498
+  [fine-tune] Epoch   2 | loss 0.8207 | acc 0.9536 f1 0.9535 prec 0.9539 rec 0.9536
+[W: GA Memetic Biased + L2 Edge] Step  22 (edge* ): acc=0.4863  drop=+0.0005  neurons=189  edges=141,047
+  [fine-tune] Epoch   1 | loss 0.8504 | acc 0.9501 f1 0.9500 prec 0.9514 rec 0.9501
+  [fine-tune] Epoch   2 | loss 0.8147 | acc 0.9594 f1 0.9595 prec 0.9600 rec 0.9594
+[W: GA Memetic Biased + L2 Edge] Step  23 (edge* ): acc=0.4862  drop=+0.0006  neurons=189  edges=133,995
+  [fine-tune] Epoch   1 | loss 0.8435 | acc 0.9569 f1 0.9568 prec 0.9575 rec 0.9569
+  [fine-tune] Epoch   2 | loss 0.8077 | acc 0.9487 f1 0.9488 prec 0.9496 rec 0.9487
+[W: GA Memetic Biased + L2 Edge] Step  24 (edge* ): acc=0.4787  drop=+0.0081  neurons=189  edges=127,296
+  [fine-tune] Epoch   1 | loss 0.8419 | acc 0.9526 f1 0.9525 prec 0.9530 rec 0.9526
+  [fine-tune] Epoch   2 | loss 0.8042 | acc 0.9610 f1 0.9610 prec 0.9613 rec 0.9610
+[W: GA Memetic Biased + L2 Edge] Step  25 (edge* ): acc=0.4851  drop=+0.0017  neurons=189  edges=120,932
+  [fine-tune] Epoch   1 | loss 0.8375 | acc 0.9661 f1 0.9660 prec 0.9663 rec 0.9661
+  [fine-tune] Epoch   2 | loss 0.8012 | acc 0.9647 f1 0.9648 prec 0.9653 rec 0.9647
+[W: GA Memetic Biased + L2 Edge] Step  26 (edge* ): acc=0.4765  drop=+0.0103  neurons=189  edges=114,886
+[W: GA Memetic Biased + L2 Edge] Tolerance exceeded (drop=0.0103). Reverting.
+
+[W: GA Memetic Biased + L2 Edge] Finished. 26 steps. Final: acc=0.4851  neurons=189  edges=120,932
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.4851
+F1       : 0.4860
+Precision: 0.4887
+Recall   : 0.4851
+Params   : 797447 trainable
+State size (approx): 3115.03 KB
+Inference time (avg): batch 0.8628 ms | single 0.053948 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.37s
+Best communication cost: 154159.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core  38
+  Task   3  →  Core  44
+  Task   4  →  Core  22
+  Task   5  →  Core  37
+  Task   6  →  Core  20
+  Task   7  →  Core  36
+  Task   8  →  Core  29
+  Task   9  →  Core  43
+  Task  10  →  Core  30
+  Task  11  →  Core  28
+  Task  12  →  Core  45
+  Task  13  →  Core  27
+  Task  14  →  Core   2
+  Task  15  →  Core   1
+  Task  16  →  Core  62
+  Task  17  →  Core  48
+  Task  18  →  Core  61
+  Task  19  →  Core  40
+  Task  20  →  Core  18
+  Task  21  →  Core  63
+  Task  22  →  Core  33
+  Task  23  →  Core  41
+  Task  24  →  Core  11
+  Task  25  →  Core  58
+  Task  26  →  Core  24
+  Task  27  →  Core  14
+  Task  28  →  Core  25
+  Task  29  →  Core  64
+  Task  30  →  Core  56
+  Task  31  →  Core   6
+  Task  32  →  Core  50
+  Task  33  →  Core  31
+  Task  34  →  Core  26
+  Task  35  →  Core  46
+  Task  36  →  Core  34
+  Task  37  →  Core  13
+  Task  38  →  Core  47
+  Task  39  →  Core  39
+  Task  40  →  Core  21
+  Task  41  →  Core  52
+  Task  42  →  Core  12
+  Task  43  →  Core  19
+  Task  44  →  Core  35
+  Task  45  →  Core  53
+  Task  46  →  Core  54
+  Task  47  →  Core  10
+  Task  48  →  Core   4
+  Task  49  →  Core  55
+  Task  50  →  Core  15
+  Task  51  →  Core  32
+  Task  52  →  Core   5
+  Task  53  →  Core   3
+  Task  54  →  Core  17
+  Task  55  →  Core  51
+  Task  56  →  Core  23
+  Task  57  →  Core  59
+  Task  58  →  Core  16
+  Task  59  →  Core  60
+  Task  60  →  Core  42
+  Task  61  →  Core  57
+  Task  62  →  Core   8
+  Task  63  →  Core  49
+  Task  64  →  Core   7
+Mapping: [(0, 8), (1, 37), (2, 43), (3, 21), (4, 36), (5, 19), (6, 35), (7, 28), (8, 42), (9, 29), (10, 27), (11, 44), (12, 26), (13, 1), (14, 0), (15, 61), (16, 47), (17, 60), (18, 39), (19, 17), (20, 62), (21, 32), (22, 40), (23, 10), (24, 57), (25, 23), (26, 13), (27, 24), (28, 63), (29, 55), (30, 5), (31, 49), (32, 30), (33, 25), (34, 45), (35, 33), (36, 12), (37, 46), (38, 38), (39, 20), (40, 51), (41, 11), (42, 18), (43, 34), (44, 52), (45, 53), (46, 9), (47, 3), (48, 54), (49, 14), (50, 31), (51, 4), (52, 2), (53, 16), (54, 50), (55, 22), (56, 58), (57, 15), (58, 59), (59, 41), (60, 56), (61, 7), (62, 48), (63, 6)]
+Communication cost: 154159.0
+  [recorded] 'W: GA Memetic Biased + L2 Edge [final]'  acc=0.4851  cost=154159  sp_cost=232386  edges=120,932  neurons=189
+
+======================================================================
+  BRANCH: V2: GA Memetic Biased + Bridge-Link (small)
+  Anchor=0.4868  Tolerance=0.0100  Floor=0.4768
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0100  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[V2: GA Memetic Biased + Bridge-Link (small)] Starting accuracy: 0.4868
+  [fine-tune] Epoch   1 | loss 1.1080 | acc 0.8799 f1 0.8808 prec 0.8826 rec 0.8799
+  [fine-tune] Epoch   2 | loss 1.0663 | acc 0.8665 f1 0.8668 prec 0.8699 rec 0.8665
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   1 (neuron): acc=0.4920  drop=-0.0052  neurons=189  edges=294,186
+  [fine-tune] Epoch   1 | loss 1.0660 | acc 0.8665 f1 0.8672 prec 0.8692 rec 0.8665
+  [fine-tune] Epoch   2 | loss 1.0477 | acc 0.8715 f1 0.8711 prec 0.8736 rec 0.8715
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   2 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=288,303
+  [fine-tune] Epoch   1 | loss 1.0535 | acc 0.8887 f1 0.8883 prec 0.8903 rec 0.8887
+  [fine-tune] Epoch   2 | loss 1.0251 | acc 0.8905 f1 0.8900 prec 0.8913 rec 0.8905
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   3 (edge  ): acc=0.4952  drop=-0.0084  neurons=189  edges=282,537
+  [fine-tune] Epoch   1 | loss 1.0295 | acc 0.8903 f1 0.8905 prec 0.8918 rec 0.8903
+  [fine-tune] Epoch   2 | loss 1.0212 | acc 0.8947 f1 0.8945 prec 0.8963 rec 0.8947
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   4 (edge  ): acc=0.4900  drop=-0.0032  neurons=189  edges=276,887
+  [fine-tune] Epoch   1 | loss 1.0257 | acc 0.8933 f1 0.8934 prec 0.8947 rec 0.8933
+  [fine-tune] Epoch   2 | loss 1.0046 | acc 0.9068 f1 0.9064 prec 0.9070 rec 0.9068
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   5 (edge  ): acc=0.4936  drop=-0.0068  neurons=189  edges=271,350
+  [fine-tune] Epoch   1 | loss 1.0133 | acc 0.8934 f1 0.8932 prec 0.8939 rec 0.8934
+  [fine-tune] Epoch   2 | loss 0.9883 | acc 0.8983 f1 0.8978 prec 0.8993 rec 0.8983
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   6 (edge  ): acc=0.4889  drop=-0.0021  neurons=189  edges=265,923
+  [fine-tune] Epoch   1 | loss 0.9923 | acc 0.9052 f1 0.9052 prec 0.9064 rec 0.9052
+  [fine-tune] Epoch   2 | loss 0.9787 | acc 0.9064 f1 0.9068 prec 0.9081 rec 0.9064
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   7 (edge  ): acc=0.4914  drop=-0.0046  neurons=189  edges=260,605
+  [fine-tune] Epoch   1 | loss 0.9892 | acc 0.9130 f1 0.9129 prec 0.9134 rec 0.9130
+  [fine-tune] Epoch   2 | loss 0.9746 | acc 0.8925 f1 0.8919 prec 0.8949 rec 0.8925
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   8 (edge  ): acc=0.4828  drop=+0.0040  neurons=189  edges=255,393
+  [fine-tune] Epoch   1 | loss 0.9787 | acc 0.9128 f1 0.9126 prec 0.9141 rec 0.9128
+  [fine-tune] Epoch   2 | loss 0.9587 | acc 0.9084 f1 0.9081 prec 0.9095 rec 0.9084
+[V2: GA Memetic Biased + Bridge-Link (small)] Step   9 (edge  ): acc=0.4930  drop=-0.0062  neurons=189  edges=250,286
+  [fine-tune] Epoch   1 | loss 0.9605 | acc 0.9142 f1 0.9141 prec 0.9154 rec 0.9142
+  [fine-tune] Epoch   2 | loss 0.9405 | acc 0.9126 f1 0.9129 prec 0.9145 rec 0.9126
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  10 (edge  ): acc=0.4876  drop=-0.0008  neurons=189  edges=245,281
+  [fine-tune] Epoch   1 | loss 0.9563 | acc 0.9215 f1 0.9214 prec 0.9223 rec 0.9215
+  [fine-tune] Epoch   2 | loss 0.9326 | acc 0.9299 f1 0.9297 prec 0.9301 rec 0.9299
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  11 (edge  ): acc=0.4894  drop=-0.0026  neurons=189  edges=240,376
+  [fine-tune] Epoch   1 | loss 0.9525 | acc 0.9352 f1 0.9351 prec 0.9356 rec 0.9352
+  [fine-tune] Epoch   2 | loss 0.9159 | acc 0.9104 f1 0.9105 prec 0.9130 rec 0.9104
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  12 (edge  ): acc=0.4811  drop=+0.0057  neurons=189  edges=235,569
+[V2: GA Memetic Biased + Bridge-Link (small)] Step 12: neuron tolerance cap (drop=0.0057 ≥ 0.0050). Reserving 0.0043 for edge-only (0.0100).
+[V2: GA Memetic Biased + Bridge-Link (small)] → Snapshot at drop≤0.5%
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.41s
+Best communication cost: 370829.0000
+Mapping (task → core):
+  Task   1  →  Core  64
+  Task   2  →  Core  22
+  Task   3  →  Core  20
+  Task   4  →  Core  42
+  Task   5  →  Core  38
+  Task   6  →  Core  34
+  Task   7  →  Core  52
+  Task   8  →  Core  13
+  Task   9  →  Core  30
+  Task  10  →  Core  36
+  Task  11  →  Core  31
+  Task  12  →  Core  54
+  Task  13  →  Core  43
+  Task  14  →  Core  12
+  Task  15  →  Core  61
+  Task  16  →  Core  26
+  Task  17  →  Core  51
+  Task  18  →  Core  45
+  Task  19  →  Core  39
+  Task  20  →  Core  24
+  Task  21  →  Core  19
+  Task  22  →  Core  10
+  Task  23  →  Core  55
+  Task  24  →  Core  47
+  Task  25  →  Core   5
+  Task  26  →  Core  25
+  Task  27  →  Core   8
+  Task  28  →  Core   1
+  Task  29  →  Core   7
+  Task  30  →  Core   9
+  Task  31  →  Core  56
+  Task  32  →  Core  49
+  Task  33  →  Core  53
+  Task  34  →  Core  11
+  Task  35  →  Core  27
+  Task  36  →  Core  21
+  Task  37  →  Core  37
+  Task  38  →  Core  59
+  Task  39  →  Core  60
+  Task  40  →  Core   4
+  Task  41  →  Core  40
+  Task  42  →  Core  17
+  Task  43  →  Core  62
+  Task  44  →  Core  18
+  Task  45  →  Core  41
+  Task  46  →  Core  33
+  Task  47  →  Core  29
+  Task  48  →  Core  14
+  Task  49  →  Core   6
+  Task  50  →  Core  46
+  Task  51  →  Core  50
+  Task  52  →  Core  23
+  Task  53  →  Core  48
+  Task  54  →  Core  15
+  Task  55  →  Core  44
+  Task  56  →  Core  35
+  Task  57  →  Core  28
+  Task  58  →  Core  32
+  Task  59  →  Core   3
+  Task  60  →  Core  57
+  Task  61  →  Core  16
+  Task  62  →  Core  58
+  Task  63  →  Core  63
+  Task  64  →  Core   2
+Mapping: [(0, 63), (1, 21), (2, 19), (3, 41), (4, 37), (5, 33), (6, 51), (7, 12), (8, 29), (9, 35), (10, 30), (11, 53), (12, 42), (13, 11), (14, 60), (15, 25), (16, 50), (17, 44), (18, 38), (19, 23), (20, 18), (21, 9), (22, 54), (23, 46), (24, 4), (25, 24), (26, 7), (27, 0), (28, 6), (29, 8), (30, 55), (31, 48), (32, 52), (33, 10), (34, 26), (35, 20), (36, 36), (37, 58), (38, 59), (39, 3), (40, 39), (41, 16), (42, 61), (43, 17), (44, 40), (45, 32), (46, 28), (47, 13), (48, 5), (49, 45), (50, 49), (51, 22), (52, 47), (53, 14), (54, 43), (55, 34), (56, 27), (57, 31), (58, 2), (59, 56), (60, 15), (61, 57), (62, 62), (63, 1)]
+Communication cost: 370829.0
+  [recorded] 'V2: GA Memetic Biased + Bridge-Link (small) @ drop≤0.5%'  acc=0.4811  cost=370829  sp_cost=504231  edges=235,569  neurons=189
+  [fine-tune] Epoch   1 | loss 0.9340 | acc 0.9302 f1 0.9301 prec 0.9303 rec 0.9302
+  [fine-tune] Epoch   2 | loss 0.9140 | acc 0.9252 f1 0.9251 prec 0.9253 rec 0.9252
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  13 (edge* ): acc=0.4860  drop=+0.0008  neurons=189  edges=233,214
+  [fine-tune] Epoch   1 | loss 0.9320 | acc 0.9188 f1 0.9183 prec 0.9193 rec 0.9188
+  [fine-tune] Epoch   2 | loss 0.9181 | acc 0.9143 f1 0.9146 prec 0.9160 rec 0.9143
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  14 (edge* ): acc=0.4843  drop=+0.0025  neurons=189  edges=230,882
+  [fine-tune] Epoch   1 | loss 0.9231 | acc 0.9294 f1 0.9295 prec 0.9308 rec 0.9294
+  [fine-tune] Epoch   2 | loss 0.9010 | acc 0.9327 f1 0.9330 prec 0.9340 rec 0.9327
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  15 (edge* ): acc=0.4803  drop=+0.0065  neurons=189  edges=228,574
+  [fine-tune] Epoch   1 | loss 0.9116 | acc 0.9324 f1 0.9321 prec 0.9337 rec 0.9324
+  [fine-tune] Epoch   2 | loss 0.9159 | acc 0.9282 f1 0.9283 prec 0.9291 rec 0.9282
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  16 (edge* ): acc=0.4841  drop=+0.0027  neurons=189  edges=226,289
+  [fine-tune] Epoch   1 | loss 0.9099 | acc 0.9351 f1 0.9351 prec 0.9355 rec 0.9351
+  [fine-tune] Epoch   2 | loss 0.9010 | acc 0.9154 f1 0.9148 prec 0.9165 rec 0.9154
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  17 (edge* ): acc=0.4818  drop=+0.0050  neurons=189  edges=224,027
+  [fine-tune] Epoch   1 | loss 0.9103 | acc 0.9229 f1 0.9226 prec 0.9242 rec 0.9229
+  [fine-tune] Epoch   2 | loss 0.8901 | acc 0.9281 f1 0.9282 prec 0.9293 rec 0.9281
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  18 (edge* ): acc=0.4800  drop=+0.0068  neurons=189  edges=221,787
+  [fine-tune] Epoch   1 | loss 0.8961 | acc 0.9394 f1 0.9394 prec 0.9398 rec 0.9394
+  [fine-tune] Epoch   2 | loss 0.8952 | acc 0.9294 f1 0.9293 prec 0.9305 rec 0.9294
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  19 (edge* ): acc=0.4836  drop=+0.0032  neurons=189  edges=219,570
+  [fine-tune] Epoch   1 | loss 0.8949 | acc 0.9298 f1 0.9298 prec 0.9302 rec 0.9298
+  [fine-tune] Epoch   2 | loss 0.8901 | acc 0.9365 f1 0.9365 prec 0.9368 rec 0.9365
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  20 (edge* ): acc=0.4850  drop=+0.0018  neurons=189  edges=217,375
+  [fine-tune] Epoch   1 | loss 0.8892 | acc 0.9399 f1 0.9398 prec 0.9408 rec 0.9399
+  [fine-tune] Epoch   2 | loss 0.8734 | acc 0.9377 f1 0.9379 prec 0.9398 rec 0.9377
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  21 (edge* ): acc=0.4908  drop=-0.0040  neurons=189  edges=215,202
+  [fine-tune] Epoch   1 | loss 0.8918 | acc 0.9219 f1 0.9216 prec 0.9226 rec 0.9219
+  [fine-tune] Epoch   2 | loss 0.8657 | acc 0.9196 f1 0.9197 prec 0.9216 rec 0.9196
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  22 (edge* ): acc=0.4779  drop=+0.0089  neurons=189  edges=213,050
+  [fine-tune] Epoch   1 | loss 0.8816 | acc 0.9406 f1 0.9406 prec 0.9415 rec 0.9406
+  [fine-tune] Epoch   2 | loss 0.8748 | acc 0.9291 f1 0.9291 prec 0.9301 rec 0.9291
+[V2: GA Memetic Biased + Bridge-Link (small)] Step  23 (edge* ): acc=0.4758  drop=+0.0110  neurons=189  edges=210,920
+[V2: GA Memetic Biased + Bridge-Link (small)] Tolerance exceeded (drop=0.0110). Reverting.
+
+[V2: GA Memetic Biased + Bridge-Link (small)] Finished. 23 steps. Final: acc=0.4779  neurons=189  edges=213,050
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.4779
+F1       : 0.4798
+Precision: 0.4836
+Recall   : 0.4779
+Params   : 797447 trainable
+State size (approx): 3115.03 KB
+Inference time (avg): batch 0.8601 ms | single 0.055107 ms
+Simulated annealing  [N=64, P=64, iters=200,000]
+
+Done in 2.37s
+Best communication cost: 316529.0000
+Mapping (task → core):
+  Task   1  →  Core  24
+  Task   2  →  Core  42
+  Task   3  →  Core  51
+  Task   4  →  Core  53
+  Task   5  →  Core  31
+  Task   6  →  Core  50
+  Task   7  →  Core  37
+  Task   8  →  Core  35
+  Task   9  →  Core  28
+  Task  10  →  Core  45
+  Task  11  →  Core  13
+  Task  12  →  Core  27
+  Task  13  →  Core  22
+  Task  14  →  Core  36
+  Task  15  →  Core  44
+  Task  16  →  Core  38
+  Task  17  →  Core  26
+  Task  18  →  Core  19
+  Task  19  →  Core  47
+  Task  20  →  Core  23
+  Task  21  →  Core  14
+  Task  22  →  Core  12
+  Task  23  →  Core  17
+  Task  24  →  Core   8
+  Task  25  →  Core  64
+  Task  26  →  Core   2
+  Task  27  →  Core  15
+  Task  28  →  Core  57
+  Task  29  →  Core   6
+  Task  30  →  Core  63
+  Task  31  →  Core  56
+  Task  32  →  Core   7
+  Task  33  →  Core  11
+  Task  34  →  Core  18
+  Task  35  →  Core  40
+  Task  36  →  Core  59
+  Task  37  →  Core  33
+  Task  38  →  Core  29
+  Task  39  →  Core   5
+  Task  40  →  Core  54
+  Task  41  →  Core  60
+  Task  42  →  Core  39
+  Task  43  →  Core  55
+  Task  44  →  Core  30
+  Task  45  →  Core  25
+  Task  46  →  Core  34
+  Task  47  →  Core  46
+  Task  48  →  Core   4
+  Task  49  →  Core  61
+  Task  50  →  Core  10
+  Task  51  →  Core  32
+  Task  52  →  Core  43
+  Task  53  →  Core  21
+  Task  54  →  Core  20
+  Task  55  →  Core  52
+  Task  56  →  Core  41
+  Task  57  →  Core  16
+  Task  58  →  Core   9
+  Task  59  →  Core  62
+  Task  60  →  Core  48
+  Task  61  →  Core  58
+  Task  62  →  Core  49
+  Task  63  →  Core   3
+  Task  64  →  Core   1
+Mapping: [(0, 23), (1, 41), (2, 50), (3, 52), (4, 30), (5, 49), (6, 36), (7, 34), (8, 27), (9, 44), (10, 12), (11, 26), (12, 21), (13, 35), (14, 43), (15, 37), (16, 25), (17, 18), (18, 46), (19, 22), (20, 13), (21, 11), (22, 16), (23, 7), (24, 63), (25, 1), (26, 14), (27, 56), (28, 5), (29, 62), (30, 55), (31, 6), (32, 10), (33, 17), (34, 39), (35, 58), (36, 32), (37, 28), (38, 4), (39, 53), (40, 59), (41, 38), (42, 54), (43, 29), (44, 24), (45, 33), (46, 45), (47, 3), (48, 60), (49, 9), (50, 31), (51, 42), (52, 20), (53, 19), (54, 51), (55, 40), (56, 15), (57, 8), (58, 61), (59, 47), (60, 57), (61, 48), (62, 2), (63, 0)]
+Communication cost: 316529.0
+  [recorded] 'V2: GA Memetic Biased + Bridge-Link (small) [final]'  acc=0.4779  cost=316529  sp_cost=435969  edges=213,050  neurons=189
+
+
+=======================================================================================================================================================================================================================================================================================================================
+  ISO-ACCURACY TABLE — snapshot at each accuracy-drop threshold
+  Snapshot interval: every 0.5%
+  Model: Autoencoder+Classifier [3072→128→64→128→3072 + 64→10] | Dataset: CIFAR-10
+  Tolerance: ≤1.0% drop from POST-L1 anchor
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2
+  G=Activation+L2  H=Activation+L1  I=Activation+Bridge
+  K=StructL2+L2  L=StructL2+Bridge
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.01)
+  Deltas relative to Baseline.
+=======================================================================================================================================================================================================================================================================================================================
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                          Stage                          |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                                 |    0.5273  (baseline)|628037.0000  (baseline)|874458.0000  (baseline)|   402,048  (baseline)|     3,274  (baseline)|   0.87 ms  (baseline)|   804,096  (baseline)|3151.79 KB  (baseline)|    0.5222  (baseline)|    0.5203  (baseline)|    0.5273  (baseline)|
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Q: GA CC_Biased v2 + Bridge-Link @ drop≤0.5%             |      0.4800  (-8.97%)|370402.0000  (-41.02%)|503615.0000  (-42.41%)|    230,900  (-42.57%)|       3,271  (-0.09%)|     0.86 ms  (-1.64%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4815  (-7.79%)|      0.4865  (-6.50%)|      0.4800  (-8.97%)|
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V: GA Memetic Biased + Bridge-Link @ drop≤0.5%           |      0.4811  (-8.76%)|370813.0000  (-40.96%)|504231.0000  (-42.34%)|    235,569  (-41.41%)|       3,271  (-0.09%)|     0.86 ms  (-1.78%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4828  (-7.54%)|      0.4901  (-5.79%)|      0.4811  (-8.76%)|
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|W: GA Memetic Biased + L2 Edge @ drop≤0.5%               |      0.4811  (-8.76%)|370860.0000  (-40.95%)|504231.0000  (-42.34%)|    235,569  (-41.41%)|       3,271  (-0.09%)|     0.86 ms  (-1.56%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4828  (-7.54%)|      0.4901  (-5.79%)|      0.4811  (-8.76%)|
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V2: GA Memetic Biased + Bridge-Link (small) @ drop≤0.5%  |      0.4811  (-8.76%)|370829.0000  (-40.95%)|504231.0000  (-42.34%)|    235,569  (-41.41%)|       3,271  (-0.09%)|     0.86 ms  (-1.71%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4828  (-7.54%)|      0.4901  (-5.79%)|      0.4811  (-8.76%)|
++---------------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+
+===================================================================================================================================================================================================================================================================================================================
+  FINAL TABLE — each branch at its stopping point (last within tolerance)
+  Model: Autoencoder+Classifier [3072→128→64→128→3072 + 64→10] | Dataset: CIFAR-10
+  Tolerance: ≤1.0% drop from POST-L1 anchor
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2
+  G=Activation+L2  H=Activation+L1  I=Activation+Bridge
+  K=StructL2+L2  L=StructL2+Bridge
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.01)
+  Deltas relative to Baseline.
+===================================================================================================================================================================================================================================================================================================================
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                        Stage                        |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                             |    0.5273  (baseline)|628037.0000  (baseline)|874458.0000  (baseline)|   402,048  (baseline)|     3,274  (baseline)|   0.87 ms  (baseline)|   804,096  (baseline)|3151.79 KB  (baseline)|    0.5222  (baseline)|    0.5203  (baseline)|    0.5273  (baseline)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|After L1 25% pre-pruning                             |      0.4868  (-7.68%)|495422.0000  (-21.12%)|650792.0000  (-25.58%)|    301,536  (-25.00%)|       3,274  (+0.00%)|     0.85 ms  (-2.45%)|     804,096  (+0.00%)|  3151.79 KB  (+0.00%)|      0.4872  (-6.71%)|      0.4895  (-5.92%)|      0.4868  (-7.68%)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Q: GA CC_Biased v2 + Bridge-Link [final]             |      0.4800  (-8.97%)| 21646.0000  (-96.55%)| 34646.0000  (-96.04%)|     18,711  (-95.35%)|       3,271  (-0.09%)|     0.87 ms  (-0.97%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4790  (-8.27%)|      0.4792  (-7.89%)|      0.4800  (-8.97%)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V: GA Memetic Biased + Bridge-Link [final]           |      0.4851  (-8.00%)|154185.0000  (-75.45%)|232386.0000  (-73.43%)|    120,932  (-69.92%)|       3,271  (-0.09%)|     0.86 ms  (-1.54%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4860  (-6.92%)|      0.4887  (-6.08%)|      0.4851  (-8.00%)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|W: GA Memetic Biased + L2 Edge [final]               |      0.4851  (-8.00%)|154159.0000  (-75.45%)|232386.0000  (-73.43%)|    120,932  (-69.92%)|       3,271  (-0.09%)|     0.86 ms  (-1.31%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4860  (-6.92%)|      0.4887  (-6.08%)|      0.4851  (-8.00%)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V2: GA Memetic Biased + Bridge-Link (small) [final]  |      0.4779  (-9.37%)|316529.0000  (-49.60%)|435969.0000  (-50.14%)|    213,050  (-47.01%)|       3,271  (-0.09%)|     0.86 ms  (-1.46%)|     785,280  (-2.34%)|  3115.03 KB  (-1.17%)|      0.4798  (-8.13%)|      0.4836  (-7.04%)|      0.4779  (-9.37%)|
++-----------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+[trajectory] Saved 138 rows → trajectory_Autoenc3072_64_CIFAR10_Meta_Q-V2.csv
+[trajectory] Saved 138 rows → trajectory_Autoenc3072_64_CIFAR10_Meta_Q-V2.json

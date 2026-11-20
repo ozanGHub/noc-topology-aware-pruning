@@ -1,0 +1,29 @@
+{
+  "seed": 10042,
+  "shared_pre": {
+    "l1_stage_total_s": 35.14318513000035,
+    "l1_grouping_sa_s": 6.5567106870003045
+  },
+  "branches": [
+    {
+      "branch": "A: IterCC Neuron + Bridge-Link",
+      "seed": 10042,
+      "final_grouping_sa_s": 5.990550859001814,
+      "final_cost_eval_s": 0.011803351997514255,
+      "total_wall_s": 586.3631915029982,
+      "core_wall_s": 570.4706085621001,
+      "loop_wall_s": 579.2009519429994,
+      "final_eval_s": 7.161822530993959,
+      "neuron_step_s": 57.30364684901724,
+      "edge_step_s": 56.617404317090404,
+      "bridge_grouping_sa_s": 0.3470566809992306,
+      "finetune_s": 397.95530913009134,
+      "eval_s": 15.532864275941392,
+      "graph_sync_s": 35.187011839967454,
+      "snapshot_s": 15.303862918008235,
+      "trajectory_log_s": 0.5887200228899019,
+      "accepted_steps": 222,
+      "finetune_rounds": 266
+    }
+  ]
+}

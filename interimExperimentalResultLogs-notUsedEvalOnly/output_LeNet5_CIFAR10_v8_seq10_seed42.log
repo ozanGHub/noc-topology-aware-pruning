@@ -1,0 +1,1584 @@
+PrunableNetworkConv(layers=[3, 6, 16, 120, 84, 10], nodes=239, edges=12954)
+Graph layers     : [3, 6, 16, 120, 84, 10]
+Layer types      : ['conv', 'conv', 'linear', 'linear', 'linear']
+Spatial sizes    : [1, 1, 25, 1, 1]
+Graph nodes      : 239
+Graph edges      : 12,954
+
+=== Baseline ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6482
+F1       : 0.6454
+Precision: 0.6482
+Recall   : 0.6482
+Params   : 62006 trainable
+State size (approx): 242.21 KB
+Inference time (avg): batch 3.6681 ms | single 0.071498 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.98s
+Best communication cost: 639.0000
+Mapping (task → core):
+  Task   1  →  Core   3
+  Task   2  →  Core   2
+  Task   3  →  Core   1
+  Task   4  →  Core   5
+  Task   5  →  Core   8
+  Task   6  →  Core   4
+  Task   7  →  Core   9
+  Task   8  →  Core   7
+  Task   9  →  Core   6
+Mapping: [(0, 2), (1, 1), (2, 0), (3, 4), (4, 7), (5, 3), (6, 8), (7, 6), (8, 5)]
+Communication cost: 639.0
+  [recorded] 'Baseline'  acc=0.6482  cost=639  sp_cost=866  graph_edges=12,954  fc_neurons=204
+L1 step 1/5
+  [fine-tune] Epoch   1 | loss 0.5387 | acc 0.8244 f1 0.8242
+  [fine-tune] Epoch   5 | loss 0.5064 | acc 0.8309 f1 0.8303
+  [fine-tune] Epoch  10 | loss 0.4918 | acc 0.8375 f1 0.8373
+  Active weights: 61,770 / 61,770 (100.0%)
+L1 step 2/5
+  [fine-tune] Epoch   1 | loss 0.4900 | acc 0.8377 f1 0.8378
+  [fine-tune] Epoch   5 | loss 0.4810 | acc 0.8398 f1 0.8394
+  [fine-tune] Epoch  10 | loss 0.4708 | acc 0.8432 f1 0.8423
+  Active weights: 60,592 / 61,770 (98.1%)
+L1 step 3/5
+  [fine-tune] Epoch   1 | loss 0.4693 | acc 0.8449 f1 0.8447
+  [fine-tune] Epoch   5 | loss 0.4612 | acc 0.8480 f1 0.8477
+  [fine-tune] Epoch  10 | loss 0.4518 | acc 0.8517 f1 0.8514
+  Active weights: 60,297 / 61,770 (97.6%)
+L1 step 4/5
+  [fine-tune] Epoch   1 | loss 0.4507 | acc 0.8530 f1 0.8529
+  [fine-tune] Epoch   5 | loss 0.4427 | acc 0.8560 f1 0.8557
+  [fine-tune] Epoch  10 | loss 0.4335 | acc 0.8579 f1 0.8577
+  Active weights: 59,057 / 61,770 (95.6%)
+L1 step 5/5
+  [fine-tune] Epoch   1 | loss 0.4322 | acc 0.8600 f1 0.8598
+  [fine-tune] Epoch   5 | loss 0.4248 | acc 0.8620 f1 0.8618
+  [fine-tune] Epoch  10 | loss 0.4156 | acc 0.8668 f1 0.8667
+  Active weights: 58,121 / 61,770 (94.1%)
+
+=== After L1 10% pre-pruning ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6452
+F1       : 0.6451
+Precision: 0.6455
+Recall   : 0.6452
+Params   : 59455 trainable
+State size (approx): 232.25 KB
+Inference time (avg): batch 3.6533 ms | single 0.071208 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.97s
+Best communication cost: 505.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core   7
+  Task   3  →  Core   4
+  Task   4  →  Core   8
+  Task   5  →  Core   6
+  Task   6  →  Core   3
+  Task   7  →  Core   5
+  Task   8  →  Core   2
+  Task   9  →  Core   1
+Mapping: [(0, 8), (1, 6), (2, 3), (3, 7), (4, 5), (5, 2), (6, 4), (7, 1), (8, 0)]
+Communication cost: 505.0
+  [recorded] 'After L1 10% pre-pruning'  acc=0.6452  cost=505  sp_cost=608  graph_edges=11,655  fc_neurons=198
+[timing] Shared L1 pre-pruning stage: 38.9s (grouping+SA of the L1 model: 1.0s)
+
+[Checkpoint] BASELINE anchor = 0.6482
+[Checkpoint] Post-L1 accuracy = 0.6452  (drop from baseline: 0.30 pp)
+[Checkpoint] Remaining budget: 1.70 pp
+[Checkpoint] fc_neurons = 198
+[Checkpoint] graph nodes = 233, edges = 11,655
+[Checkpoint] fine_tune_lr = 5e-05  l1_target = 0.1
+[Checkpoint] v8 neuron switches: NEURON_TOL=0.01  NEURON_CAP_FROM_L1=True  NEURONS_PER_STEP=3  RUN_TAG='_seq10'  L2_LONELY=True  INTERLEAVE_FIX=False  NEURON_SEQUENTIAL=True
+[Checkpoint] cross-group edges after L1: 11,655 / 11,655 (100.0%); groups = 9; edges with ungrouped endpoint = 0
+
+======================================================================
+  BRANCH: A: IterCC Neuron + Bridge
+  Anchor=0.6482  Floor=0.6282  Tolerance=0.0200 (2.0 pp)
+  Neuron phase cap: 0.0100 (measured from post-L1 accuracy)  neurons_per_step=3
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[A: IterCC Neuron + Bridge] Start: acc=0.6452  fc_neurons=198  graph_edges=11,655
+[select_neurons] Selected 41 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 43)', '(4, 46)', '(4, 47)', '(4, 51)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 67)', '(4, 69)', '(4, 70)', '(4, 72)', '(4, 74)', '(4, 77)', '(4, 79)', '(4, 82)']
+[select_neurons] Selected 40 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 66)', '(4, 68)', '(4, 69)', '(4, 71)', '(4, 73)', '(4, 76)', '(4, 78)', '(4, 81)']
+[select_neurons] Selected 39 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 65)', '(4, 67)', '(4, 68)', '(4, 70)', '(4, 72)', '(4, 75)', '(4, 77)', '(4, 80)']
+  [fine-tune] Epoch   1 | loss 0.4467 | acc 0.8565 f1 0.8563
+  [fine-tune] Epoch   2 | loss 0.4341 | acc 0.8591 f1 0.8587
+[A: IterCC Neuron + Bridge] Step   1 (neuron): acc=0.6419  drop=+0.0063  fc_neurons=195  graph_edges=11,285  scale=1.000
+[select_neurons] Selected 39 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 64)', '(4, 66)', '(4, 67)', '(4, 69)', '(4, 71)', '(4, 74)', '(4, 76)', '(4, 79)']
+[select_neurons] Selected 38 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 66)', '(4, 68)', '(4, 70)', '(4, 73)', '(4, 75)', '(4, 78)']
+[select_neurons] Selected 37 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 69)', '(4, 72)', '(4, 74)', '(4, 77)']
+  [fine-tune] Epoch   1 | loss 0.4535 | acc 0.8529 f1 0.8530
+  [fine-tune] Epoch   2 | loss 0.4415 | acc 0.8553 f1 0.8549
+[A: IterCC Neuron + Bridge] Step   2 (neuron): acc=0.6460  drop=+0.0022  fc_neurons=192  graph_edges=10,919  scale=1.000
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 69)', '(4, 72)', '(4, 76)']
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 48)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 62)', '(4, 64)', '(4, 66)', '(4, 68)', '(4, 71)', '(4, 75)']
+[select_neurons] Selected 35 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 24)', '(4, 28)', '(4, 31)', '(4, 33)', '(4, 34)', '(4, 38)', '(4, 39)', '(4, 43)', '(4, 47)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 61)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 70)', '(4, 74)']
+  [fine-tune] Epoch   1 | loss 0.4625 | acc 0.8473 f1 0.8471
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8521 f1 0.8515
+[A: IterCC Neuron + Bridge] Step   3 (neuron): acc=0.6439  drop=+0.0043  fc_neurons=189  graph_edges=10,549  scale=1.000
+[select_neurons] Selected 34 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 24)', '(4, 28)', '(4, 31)', '(4, 33)', '(4, 34)', '(4, 38)', '(4, 39)', '(4, 43)', '(4, 47)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 60)', '(4, 62)', '(4, 64)', '(4, 66)', '(4, 69)', '(4, 73)']
+[select_neurons] Selected 33 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 8)', '(4, 10)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 17)', '(4, 18)', '(4, 20)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 30)', '(4, 32)', '(4, 33)', '(4, 37)', '(4, 38)', '(4, 42)', '(4, 46)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 59)', '(4, 61)', '(4, 63)', '(4, 65)', '(4, 68)', '(4, 72)']
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 10)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 22)', '(4, 26)', '(4, 29)', '(4, 31)', '(4, 32)', '(4, 36)', '(4, 37)', '(4, 41)', '(4, 45)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 58)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 63)', '(4, 64)', '(4, 67)', '(4, 69)', '(4, 71)']
+  [fine-tune] Epoch   1 | loss 0.4706 | acc 0.8460 f1 0.8460
+  [fine-tune] Epoch   2 | loss 0.4578 | acc 0.8493 f1 0.8489
+[A: IterCC Neuron + Bridge] Step   4 (neuron): acc=0.6439  drop=+0.0043  fc_neurons=186  graph_edges=10,180  scale=1.000
+[select_neurons] Selected 35 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 31)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 44)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 57)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 63)', '(4, 66)', '(4, 68)', '(4, 70)']
+[select_neurons] Selected 34 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 31)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 44)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 57)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 65)', '(4, 67)', '(4, 69)']
+[select_neurons] Selected 33 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 43)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 56)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 64)', '(4, 66)', '(4, 68)']
+  [fine-tune] Epoch   1 | loss 0.4771 | acc 0.8444 f1 0.8440
+  [fine-tune] Epoch   2 | loss 0.4645 | acc 0.8477 f1 0.8473
+[A: IterCC Neuron + Bridge] Step   5 (neuron): acc=0.6434  drop=+0.0048  fc_neurons=183  graph_edges=9,814  scale=1.000
+[select_neurons] Selected 34 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 24)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 34)', '(4, 38)', '(4, 42)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 55)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 63)', '(4, 65)', '(4, 67)']
+[select_neurons] Selected 33 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 24)', '(4, 27)', '(4, 29)', '(4, 33)', '(4, 37)', '(4, 41)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 54)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 62)', '(4, 64)', '(4, 66)']
+[select_neurons] Selected 32 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 23)', '(4, 26)', '(4, 28)', '(4, 32)', '(4, 36)', '(4, 40)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 53)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 61)', '(4, 63)', '(4, 65)']
+  [fine-tune] Epoch   1 | loss 0.4832 | acc 0.8417 f1 0.8420
+  [fine-tune] Epoch   2 | loss 0.4710 | acc 0.8439 f1 0.8430
+[A: IterCC Neuron + Bridge] Step   6 (neuron): acc=0.6442  drop=+0.0040  fc_neurons=180  graph_edges=9,445  scale=1.000
+[select_neurons] Selected 31 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 23)', '(4, 26)', '(4, 28)', '(4, 32)', '(4, 36)', '(4, 40)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 52)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 60)', '(4, 62)', '(4, 64)']
+[select_neurons] Selected 32 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 39)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 51)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 59)', '(4, 61)', '(4, 63)']
+[select_neurons] Selected 31 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 58)', '(4, 60)', '(4, 62)']
+  [fine-tune] Epoch   1 | loss 0.4931 | acc 0.8389 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4794 | acc 0.8435 f1 0.8428
+[A: IterCC Neuron + Bridge] Step   7 (neuron): acc=0.6434  drop=+0.0048  fc_neurons=177  graph_edges=9,076  scale=1.000
+[select_neurons] Selected 30 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 58)', '(4, 60)']
+[select_neurons] Selected 29 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 59)']
+[select_neurons] Selected 29 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 24)', '(4, 26)', '(4, 30)', '(4, 34)', '(4, 37)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 49)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 58)']
+  [fine-tune] Epoch   1 | loss 0.5087 | acc 0.8327 f1 0.8318
+  [fine-tune] Epoch   2 | loss 0.4929 | acc 0.8374 f1 0.8373
+[A: IterCC Neuron + Bridge] Step   8 (neuron): acc=0.6423  drop=+0.0059  fc_neurons=174  graph_edges=8,710  scale=1.000
+[select_neurons] Selected 28 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 48)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 57)']
+[select_neurons] Selected 27 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 56)']
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 55)']
+  [fine-tune] Epoch   1 | loss 0.5399 | acc 0.8244 f1 0.8239
+  [fine-tune] Epoch   2 | loss 0.5114 | acc 0.8318 f1 0.8314
+[A: IterCC Neuron + Bridge] Step   9 (neuron): acc=0.6412  drop=+0.0070  fc_neurons=171  graph_edges=8,340  scale=1.000
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 11)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 24)', '(4, 28)', '(4, 32)', '(4, 35)', '(4, 38)', '(4, 39)', '(4, 40)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 54)']
+[select_neurons] Selected 25 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 9)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 21)', '(4, 23)', '(4, 27)', '(4, 31)', '(4, 34)', '(4, 37)', '(4, 38)', '(4, 39)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 53)']
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 20)', '(4, 22)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 36)', '(4, 37)', '(4, 38)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 52)']
+  [fine-tune] Epoch   1 | loss 0.5579 | acc 0.8150 f1 0.8143
+  [fine-tune] Epoch   2 | loss 0.5325 | acc 0.8216 f1 0.8214
+[A: IterCC Neuron + Bridge] Step  10 (neuron): acc=0.6369  drop=+0.0113  fc_neurons=168  graph_edges=7,971  scale=1.000
+[A: IterCC Neuron + Bridge] → Snapshot at drop≤1.0%: 'A: IterCC Neuron + Bridge @ drop≤1.0%'
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.97s
+Best communication cost: 329.0000
+Mapping (task → core):
+  Task   1  →  Core   1
+  Task   2  →  Core   7
+  Task   3  →  Core   9
+  Task   4  →  Core   6
+  Task   5  →  Core   5
+  Task   6  →  Core   2
+  Task   7  →  Core   8
+  Task   8  →  Core   4
+  Task   9  →  Core   3
+Mapping: [(0, 0), (1, 6), (2, 8), (3, 5), (4, 4), (5, 1), (6, 7), (7, 3), (8, 2)]
+Communication cost: 329.0
+  [recorded] 'A: IterCC Neuron + Bridge @ drop≤1.0%'  acc=0.6412  cost=329  sp_cost=427  graph_edges=8,340  fc_neurons=171
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 19)', '(4, 21)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 35)', '(4, 36)', '(4, 37)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 51)']
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 30)', '(4, 32)', '(4, 35)', '(4, 36)', '(4, 37)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 50)']
+[select_neurons] Selected 25 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 24)', '(4, 28)', '(4, 29)', '(4, 31)', '(4, 34)', '(4, 35)', '(4, 36)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 49)']
+  [fine-tune] Epoch   1 | loss 0.5662 | acc 0.8126 f1 0.8112
+  [fine-tune] Epoch   2 | loss 0.5413 | acc 0.8192 f1 0.8182
+[A: IterCC Neuron + Bridge] Step  11 (neuron): acc=0.6393  drop=+0.0089  fc_neurons=165  graph_edges=7,602  scale=1.000
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 27)', '(4, 28)', '(4, 30)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 48)']
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 27)', '(4, 28)', '(4, 30)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 42)', '(4, 43)', '(4, 44)']
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 29)', '(4, 32)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 41)', '(4, 42)', '(4, 43)']
+  [fine-tune] Epoch   1 | loss 0.5959 | acc 0.8042 f1 0.8046
+  [fine-tune] Epoch   2 | loss 0.5631 | acc 0.8120 f1 0.8114
+[A: IterCC Neuron + Bridge] Step  12 (neuron): acc=0.6385  drop=+0.0097  fc_neurons=162  graph_edges=7,236  scale=1.000
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 29)', '(4, 32)', '(4, 33)', '(4, 34)', '(4, 40)', '(4, 41)', '(4, 42)']
+[select_neurons] Selected 22 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 26)', '(4, 28)', '(4, 31)', '(4, 32)', '(4, 33)', '(4, 39)', '(4, 40)', '(4, 41)']
+[select_neurons] Selected 21 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 18)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 27)', '(4, 30)', '(4, 31)', '(4, 32)', '(4, 38)', '(4, 39)', '(4, 40)']
+  [fine-tune] Epoch   1 | loss 0.5968 | acc 0.8046 f1 0.8035
+  [fine-tune] Epoch   2 | loss 0.5697 | acc 0.8097 f1 0.8091
+[A: IterCC Neuron + Bridge] Step  13 (neuron): acc=0.6381  drop=+0.0101  fc_neurons=159  graph_edges=6,866  scale=1.000
+[select_neurons] Selected 22 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 26)', '(4, 29)', '(4, 30)', '(4, 31)', '(4, 37)', '(4, 38)', '(4, 39)']
+[select_neurons] Selected 21 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 4)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 16)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 28)', '(4, 29)', '(4, 30)', '(4, 36)', '(4, 37)', '(4, 38)']
+[select_neurons] Selected 20 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 4)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 16)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 28)', '(4, 29)', '(4, 30)', '(4, 36)', '(4, 37)']
+  [fine-tune] Epoch   1 | loss 0.6434 | acc 0.7929 f1 0.7916
+  [fine-tune] Epoch   2 | loss 0.6011 | acc 0.8018 f1 0.8013
+[A: IterCC Neuron + Bridge] Step  14 (neuron): acc=0.6351  drop=+0.0131  fc_neurons=156  graph_edges=6,496  scale=1.000
+[A: IterCC Neuron + Bridge] Step 14: neuron tol cap (drop=0.0131, L1 part=0.0030, cap=0.0100). Reserving 0.0069 for edge-only (0.0200).
+[A: IterCC Neuron + Bridge] Neuron phase ended: 14 neuron steps, 42 FC neurons removed so far (198 -> 156).
+[A: IterCC Neuron + Bridge] Layer widths at end of neuron phase: conv 6-16 | fc 115-41-10  graph_edges=6,496
+  [fine-tune] Epoch   1 | loss 0.5813 | acc 0.8080 f1 0.8077
+  [fine-tune] Epoch   2 | loss 0.5671 | acc 0.8123 f1 0.8116
+[A: IterCC Neuron + Bridge] Step  15 (edge* ): acc=0.6421  drop=+0.0061  fc_neurons=156  graph_edges=6,367  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5563 | acc 0.8160 f1 0.8155
+  [fine-tune] Epoch   2 | loss 0.5469 | acc 0.8196 f1 0.8191
+[A: IterCC Neuron + Bridge] Step  16 (edge* ): acc=0.6407  drop=+0.0075  fc_neurons=155  graph_edges=6,240  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5392 | acc 0.8220 f1 0.8210
+  [fine-tune] Epoch   2 | loss 0.5324 | acc 0.8233 f1 0.8231
+[A: IterCC Neuron + Bridge] Step  17 (edge* ): acc=0.6415  drop=+0.0067  fc_neurons=155  graph_edges=6,116  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5263 | acc 0.8251 f1 0.8239
+  [fine-tune] Epoch   2 | loss 0.5206 | acc 0.8268 f1 0.8262
+[A: IterCC Neuron + Bridge] Step  18 (edge* ): acc=0.6428  drop=+0.0054  fc_neurons=155  graph_edges=5,994  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5155 | acc 0.8285 f1 0.8285
+  [fine-tune] Epoch   2 | loss 0.5106 | acc 0.8318 f1 0.8309
+[A: IterCC Neuron + Bridge] Step  19 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,875  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5067 | acc 0.8337 f1 0.8335
+  [fine-tune] Epoch   2 | loss 0.5023 | acc 0.8346 f1 0.8345
+[A: IterCC Neuron + Bridge] Step  20 (edge* ): acc=0.6406  drop=+0.0076  fc_neurons=155  graph_edges=5,758  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4985 | acc 0.8361 f1 0.8360
+  [fine-tune] Epoch   2 | loss 0.4945 | acc 0.8381 f1 0.8375
+[A: IterCC Neuron + Bridge] Step  21 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,643  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4917 | acc 0.8388 f1 0.8385
+  [fine-tune] Epoch   2 | loss 0.4876 | acc 0.8404 f1 0.8402
+[A: IterCC Neuron + Bridge] Step  22 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,531  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4855 | acc 0.8409 f1 0.8405
+  [fine-tune] Epoch   2 | loss 0.4814 | acc 0.8415 f1 0.8414
+[A: IterCC Neuron + Bridge] Step  23 (edge* ): acc=0.6406  drop=+0.0076  fc_neurons=155  graph_edges=5,421  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4796 | acc 0.8426 f1 0.8419
+  [fine-tune] Epoch   2 | loss 0.4759 | acc 0.8437 f1 0.8431
+[A: IterCC Neuron + Bridge] Step  24 (edge* ): acc=0.6441  drop=+0.0041  fc_neurons=155  graph_edges=5,313  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4745 | acc 0.8454 f1 0.8447
+  [fine-tune] Epoch   2 | loss 0.4705 | acc 0.8467 f1 0.8465
+[A: IterCC Neuron + Bridge] Step  25 (edge* ): acc=0.6410  drop=+0.0072  fc_neurons=155  graph_edges=5,207  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4692 | acc 0.8473 f1 0.8476
+  [fine-tune] Epoch   2 | loss 0.4659 | acc 0.8474 f1 0.8477
+[A: IterCC Neuron + Bridge] Step  26 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=154  graph_edges=5,103  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4645 | acc 0.8475 f1 0.8466
+  [fine-tune] Epoch   2 | loss 0.4614 | acc 0.8499 f1 0.8496
+[A: IterCC Neuron + Bridge] Step  27 (edge* ): acc=0.6424  drop=+0.0058  fc_neurons=154  graph_edges=5,001  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4610 | acc 0.8494 f1 0.8494
+  [fine-tune] Epoch   2 | loss 0.4572 | acc 0.8486 f1 0.8481
+[A: IterCC Neuron + Bridge] Step  28 (edge* ): acc=0.6419  drop=+0.0063  fc_neurons=154  graph_edges=4,901  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4576 | acc 0.8505 f1 0.8501
+  [fine-tune] Epoch   2 | loss 0.4537 | acc 0.8524 f1 0.8521
+[A: IterCC Neuron + Bridge] Step  29 (edge* ): acc=0.6409  drop=+0.0073  fc_neurons=154  graph_edges=4,803  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4537 | acc 0.8518 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8524 f1 0.8525
+[A: IterCC Neuron + Bridge] Step  30 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=153  graph_edges=4,707  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4515 | acc 0.8526 f1 0.8520
+  [fine-tune] Epoch   2 | loss 0.4471 | acc 0.8533 f1 0.8528
+[A: IterCC Neuron + Bridge] Step  31 (edge* ): acc=0.6411  drop=+0.0071  fc_neurons=153  graph_edges=4,613  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4482 | acc 0.8549 f1 0.8544
+  [fine-tune] Epoch   2 | loss 0.4443 | acc 0.8546 f1 0.8540
+[A: IterCC Neuron + Bridge] Step  32 (edge* ): acc=0.6393  drop=+0.0089  fc_neurons=153  graph_edges=4,521  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4463 | acc 0.8554 f1 0.8554
+  [fine-tune] Epoch   2 | loss 0.4420 | acc 0.8565 f1 0.8562
+[A: IterCC Neuron + Bridge] Step  33 (edge* ): acc=0.6404  drop=+0.0078  fc_neurons=153  graph_edges=4,431  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4432 | acc 0.8563 f1 0.8559
+  [fine-tune] Epoch   2 | loss 0.4395 | acc 0.8571 f1 0.8571
+[A: IterCC Neuron + Bridge] Step  34 (edge* ): acc=0.6394  drop=+0.0088  fc_neurons=152  graph_edges=4,330  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4415 | acc 0.8565 f1 0.8564
+  [fine-tune] Epoch   2 | loss 0.4377 | acc 0.8581 f1 0.8579
+[A: IterCC Neuron + Bridge] Step  35 (edge* ): acc=0.6425  drop=+0.0057  fc_neurons=151  graph_edges=4,244  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4408 | acc 0.8574 f1 0.8571
+  [fine-tune] Epoch   2 | loss 0.4359 | acc 0.8591 f1 0.8588
+[A: IterCC Neuron + Bridge] Step  36 (edge* ): acc=0.6392  drop=+0.0090  fc_neurons=151  graph_edges=4,160  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4396 | acc 0.8587 f1 0.8585
+  [fine-tune] Epoch   2 | loss 0.4346 | acc 0.8579 f1 0.8579
+[A: IterCC Neuron + Bridge] Step  37 (edge* ): acc=0.6383  drop=+0.0099  fc_neurons=150  graph_edges=4,064  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4397 | acc 0.8584 f1 0.8582
+  [fine-tune] Epoch   2 | loss 0.4344 | acc 0.8592 f1 0.8586
+[A: IterCC Neuron + Bridge] Step  38 (edge* ): acc=0.6382  drop=+0.0100  fc_neurons=150  graph_edges=3,983  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4390 | acc 0.8558 f1 0.8556
+  [fine-tune] Epoch   2 | loss 0.4343 | acc 0.8573 f1 0.8567
+[A: IterCC Neuron + Bridge] Step  39 (edge* ): acc=0.6375  drop=+0.0107  fc_neurons=148  graph_edges=3,896  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4411 | acc 0.8582 f1 0.8576
+  [fine-tune] Epoch   2 | loss 0.4345 | acc 0.8583 f1 0.8581
+[A: IterCC Neuron + Bridge] Step  40 (edge* ): acc=0.6372  drop=+0.0110  fc_neurons=148  graph_edges=3,819  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4416 | acc 0.8555 f1 0.8555
+  [fine-tune] Epoch   2 | loss 0.4358 | acc 0.8572 f1 0.8567
+[A: IterCC Neuron + Bridge] Step  41 (edge* ): acc=0.6362  drop=+0.0120  fc_neurons=148  graph_edges=3,743  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4405 | acc 0.8569 f1 0.8567
+  [fine-tune] Epoch   2 | loss 0.4355 | acc 0.8582 f1 0.8579
+[A: IterCC Neuron + Bridge] Step  42 (edge* ): acc=0.6353  drop=+0.0129  fc_neurons=146  graph_edges=3,647  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4443 | acc 0.8547 f1 0.8546
+  [fine-tune] Epoch   2 | loss 0.4371 | acc 0.8573 f1 0.8571
+[A: IterCC Neuron + Bridge] Step  43 (edge* ): acc=0.6325  drop=+0.0157  fc_neurons=145  graph_edges=3,565  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4449 | acc 0.8556 f1 0.8555
+  [fine-tune] Epoch   2 | loss 0.4381 | acc 0.8563 f1 0.8562
+[A: IterCC Neuron + Bridge] Step  44 (edge* ): acc=0.6350  drop=+0.0132  fc_neurons=145  graph_edges=3,494  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4469 | acc 0.8519 f1 0.8512
+  [fine-tune] Epoch   2 | loss 0.4405 | acc 0.8555 f1 0.8553
+[A: IterCC Neuron + Bridge] Step  45 (edge* ): acc=0.6327  drop=+0.0155  fc_neurons=145  graph_edges=3,425  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4478 | acc 0.8519 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4414 | acc 0.8547 f1 0.8545
+[A: IterCC Neuron + Bridge] Step  46 (edge* ): acc=0.6329  drop=+0.0153  fc_neurons=144  graph_edges=3,348  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4528 | acc 0.8509 f1 0.8506
+  [fine-tune] Epoch   2 | loss 0.4444 | acc 0.8525 f1 0.8521
+[A: IterCC Neuron + Bridge] Step  47 (edge* ): acc=0.6321  drop=+0.0161  fc_neurons=144  graph_edges=3,282  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4538 | acc 0.8502 f1 0.8502
+  [fine-tune] Epoch   2 | loss 0.4462 | acc 0.8526 f1 0.8523
+[A: IterCC Neuron + Bridge] Step  48 (edge* ): acc=0.6310  drop=+0.0172  fc_neurons=144  graph_edges=3,217  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4620 | acc 0.8474 f1 0.8470
+  [fine-tune] Epoch   2 | loss 0.4522 | acc 0.8493 f1 0.8493
+[A: IterCC Neuron + Bridge] Step  49 (edge* ): acc=0.6305  drop=+0.0177  fc_neurons=143  graph_edges=3,142  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4666 | acc 0.8463 f1 0.8460
+  [fine-tune] Epoch   2 | loss 0.4563 | acc 0.8494 f1 0.8490
+[A: IterCC Neuron + Bridge] Step  50 (edge* ): acc=0.6299  drop=+0.0183  fc_neurons=143  graph_edges=3,080  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4686 | acc 0.8441 f1 0.8444
+  [fine-tune] Epoch   2 | loss 0.4594 | acc 0.8457 f1 0.8455
+[A: IterCC Neuron + Bridge] Step  51 (edge* ): acc=0.6296  drop=+0.0186  fc_neurons=142  graph_edges=3,019  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4745 | acc 0.8419 f1 0.8417
+  [fine-tune] Epoch   2 | loss 0.4650 | acc 0.8428 f1 0.8420
+[A: IterCC Neuron + Bridge] Step  52 (edge* ): drop=+0.0222 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4608 | acc 0.8474 f1 0.8471
+  [fine-tune] Epoch   2 | loss 0.4556 | acc 0.8497 f1 0.8495
+[A: IterCC Neuron + Bridge] Step  52 (edge* ): acc=0.6283  drop=+0.0199  fc_neurons=142  graph_edges=2,959  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4737 | acc 0.8438 f1 0.8435
+  [fine-tune] Epoch   2 | loss 0.4638 | acc 0.8465 f1 0.8461
+[A: IterCC Neuron + Bridge] Step  53 (edge* ): drop=+0.0237 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4585 | acc 0.8492 f1 0.8491
+  [fine-tune] Epoch   2 | loss 0.4539 | acc 0.8499 f1 0.8503
+[A: IterCC Neuron + Bridge] Step  53 (edge* ): drop=+0.0238 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4513 | acc 0.8520 f1 0.8520
+  [fine-tune] Epoch   2 | loss 0.4473 | acc 0.8533 f1 0.8531
+[A: IterCC Neuron + Bridge] Step  53: over budget (drop=+0.0219); reverted, step scale -> 0.5000
+  [fine-tune] Epoch   1 | loss 0.4626 | acc 0.8471 f1 0.8472
+  [fine-tune] Epoch   2 | loss 0.4556 | acc 0.8489 f1 0.8489
+[A: IterCC Neuron + Bridge] Step  54 (edge* ): drop=+0.0231 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4519 | acc 0.8517 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4475 | acc 0.8529 f1 0.8529
+[A: IterCC Neuron + Bridge] Step  54 (edge* ): drop=+0.0233 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4453 | acc 0.8547 f1 0.8541
+  [fine-tune] Epoch   2 | loss 0.4417 | acc 0.8527 f1 0.8524
+[A: IterCC Neuron + Bridge] Step  54: over budget (drop=+0.0219); reverted, step scale -> 0.2500
+  [fine-tune] Epoch   1 | loss 0.4582 | acc 0.8494 f1 0.8493
+  [fine-tune] Epoch   2 | loss 0.4529 | acc 0.8509 f1 0.8507
+[A: IterCC Neuron + Bridge] Step  55 (edge* ): drop=+0.0205 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4492 | acc 0.8510 f1 0.8511
+  [fine-tune] Epoch   2 | loss 0.4453 | acc 0.8528 f1 0.8524
+[A: IterCC Neuron + Bridge] Step  55 (edge* ): drop=+0.0209 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4428 | acc 0.8554 f1 0.8552
+  [fine-tune] Epoch   2 | loss 0.4397 | acc 0.8560 f1 0.8557
+[A: IterCC Neuron + Bridge] Step  55: over budget (drop=+0.0207); reverted, step scale -> 0.1250
+  [fine-tune] Epoch   1 | loss 0.4555 | acc 0.8503 f1 0.8504
+  [fine-tune] Epoch   2 | loss 0.4505 | acc 0.8508 f1 0.8507
+[A: IterCC Neuron + Bridge] Step  56 (edge* ): drop=+0.0218 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4476 | acc 0.8536 f1 0.8537
+  [fine-tune] Epoch   2 | loss 0.4439 | acc 0.8539 f1 0.8535
+[A: IterCC Neuron + Bridge] Step  56 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4418 | acc 0.8551 f1 0.8548
+  [fine-tune] Epoch   2 | loss 0.4386 | acc 0.8570 f1 0.8569
+[A: IterCC Neuron + Bridge] Step  56: over budget at min step scale (1/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.4553 | acc 0.8498 f1 0.8495
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8520 f1 0.8516
+[A: IterCC Neuron + Bridge] Step  57 (edge* ): drop=+0.0215 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4474 | acc 0.8538 f1 0.8535
+  [fine-tune] Epoch   2 | loss 0.4440 | acc 0.8536 f1 0.8533
+[A: IterCC Neuron + Bridge] Step  57 (edge* ): drop=+0.0222 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4417 | acc 0.8564 f1 0.8562
+  [fine-tune] Epoch   2 | loss 0.4384 | acc 0.8570 f1 0.8569
+[A: IterCC Neuron + Bridge] Step  57: over budget at min step scale (2/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.4553 | acc 0.8495 f1 0.8489
+  [fine-tune] Epoch   2 | loss 0.4504 | acc 0.8513 f1 0.8511
+[A: IterCC Neuron + Bridge] Step  58 (edge* ): drop=+0.0208 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4473 | acc 0.8531 f1 0.8528
+  [fine-tune] Epoch   2 | loss 0.4438 | acc 0.8537 f1 0.8534
+[A: IterCC Neuron + Bridge] Step  58 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4416 | acc 0.8535 f1 0.8532
+  [fine-tune] Epoch   2 | loss 0.4384 | acc 0.8555 f1 0.8553
+[A: IterCC Neuron + Bridge] Step  58: over budget at min step scale (3/3); reverted.
+[A: IterCC Neuron + Bridge] Budget consumed. Stopping.
+
+[A: IterCC Neuron + Bridge] Done. 52 steps. acc=0.6283  fc_neurons=142
+[A: IterCC Neuron + Bridge] Final layer widths: conv 6-16 | fc 103-39-10  graph_edges=2,959
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6283
+F1       : 0.6281
+Precision: 0.6281
+Recall   : 0.6283
+Params   : 48631 trainable
+State size (approx): 189.96 KB
+Inference time (avg): batch 3.5821 ms | single 0.071727 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.97s
+Best communication cost: 297.0000
+Mapping (task → core):
+  Task   1  →  Core   3
+  Task   2  →  Core   9
+  Task   3  →  Core   7
+  Task   4  →  Core   4
+  Task   5  →  Core   5
+  Task   6  →  Core   2
+  Task   7  →  Core   6
+  Task   8  →  Core   8
+  Task   9  →  Core   1
+Mapping: [(0, 2), (1, 8), (2, 6), (3, 3), (4, 4), (5, 1), (6, 5), (7, 7), (8, 0)]
+Communication cost: 297.0
+  [recorded] 'A: IterCC Neuron + Bridge [final]'  acc=0.6283  cost=297  sp_cost=394  graph_edges=2,959  fc_neurons=142
+[A: IterCC Neuron + Bridge] TIMING: total=154.8s  core=151.6s  final grouping+SA=1.0s  neuron=0.7s  edge=0.5s (bridge grouping+SA 0.0s, prep 0.0s)  finetune=139.2s  graph_sync=0.3s  eval=5.1s
+
+======================================================================
+  BRANCH: B: IterCC Neuron + L2
+  Anchor=0.6482  Floor=0.6282  Tolerance=0.0200 (2.0 pp)
+  Neuron phase cap: 0.0100 (measured from post-L1 accuracy)  neurons_per_step=3
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[B: IterCC Neuron + L2] Start: acc=0.6452  fc_neurons=198  graph_edges=11,655
+[select_neurons] Selected 41 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 43)', '(4, 46)', '(4, 47)', '(4, 51)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 67)', '(4, 69)', '(4, 70)', '(4, 72)', '(4, 74)', '(4, 77)', '(4, 79)', '(4, 82)']
+[select_neurons] Selected 40 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 66)', '(4, 68)', '(4, 69)', '(4, 71)', '(4, 73)', '(4, 76)', '(4, 78)', '(4, 81)']
+[select_neurons] Selected 39 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 65)', '(4, 67)', '(4, 68)', '(4, 70)', '(4, 72)', '(4, 75)', '(4, 77)', '(4, 80)']
+  [fine-tune] Epoch   1 | loss 0.4467 | acc 0.8565 f1 0.8563
+  [fine-tune] Epoch   2 | loss 0.4341 | acc 0.8591 f1 0.8587
+[B: IterCC Neuron + L2] Step   1 (neuron): acc=0.6419  drop=+0.0063  fc_neurons=195  graph_edges=11,285  scale=1.000
+[select_neurons] Selected 39 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 41)', '(4, 45)', '(4, 46)', '(4, 50)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 64)', '(4, 66)', '(4, 67)', '(4, 69)', '(4, 71)', '(4, 74)', '(4, 76)', '(4, 79)']
+[select_neurons] Selected 38 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 66)', '(4, 68)', '(4, 70)', '(4, 73)', '(4, 75)', '(4, 78)']
+[select_neurons] Selected 37 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 69)', '(4, 72)', '(4, 74)', '(4, 77)']
+  [fine-tune] Epoch   1 | loss 0.4535 | acc 0.8529 f1 0.8530
+  [fine-tune] Epoch   2 | loss 0.4415 | acc 0.8553 f1 0.8549
+[B: IterCC Neuron + L2] Step   2 (neuron): acc=0.6460  drop=+0.0022  fc_neurons=192  graph_edges=10,919  scale=1.000
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 45)', '(4, 49)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 69)', '(4, 72)', '(4, 76)']
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 40)', '(4, 44)', '(4, 48)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 62)', '(4, 64)', '(4, 66)', '(4, 68)', '(4, 71)', '(4, 75)']
+[select_neurons] Selected 35 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 24)', '(4, 28)', '(4, 31)', '(4, 33)', '(4, 34)', '(4, 38)', '(4, 39)', '(4, 43)', '(4, 47)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 61)', '(4, 63)', '(4, 65)', '(4, 67)', '(4, 70)', '(4, 74)']
+  [fine-tune] Epoch   1 | loss 0.4625 | acc 0.8473 f1 0.8471
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8521 f1 0.8515
+[B: IterCC Neuron + L2] Step   3 (neuron): acc=0.6439  drop=+0.0043  fc_neurons=189  graph_edges=10,549  scale=1.000
+[select_neurons] Selected 34 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 24)', '(4, 28)', '(4, 31)', '(4, 33)', '(4, 34)', '(4, 38)', '(4, 39)', '(4, 43)', '(4, 47)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 60)', '(4, 62)', '(4, 64)', '(4, 66)', '(4, 69)', '(4, 73)']
+[select_neurons] Selected 33 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 8)', '(4, 10)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 17)', '(4, 18)', '(4, 20)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 30)', '(4, 32)', '(4, 33)', '(4, 37)', '(4, 38)', '(4, 42)', '(4, 46)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 59)', '(4, 61)', '(4, 63)', '(4, 65)', '(4, 68)', '(4, 72)']
+[select_neurons] Selected 36 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 10)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 22)', '(4, 26)', '(4, 29)', '(4, 31)', '(4, 32)', '(4, 36)', '(4, 37)', '(4, 41)', '(4, 45)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 58)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 63)', '(4, 64)', '(4, 67)', '(4, 69)', '(4, 71)']
+  [fine-tune] Epoch   1 | loss 0.4706 | acc 0.8460 f1 0.8460
+  [fine-tune] Epoch   2 | loss 0.4578 | acc 0.8493 f1 0.8489
+[B: IterCC Neuron + L2] Step   4 (neuron): acc=0.6439  drop=+0.0043  fc_neurons=186  graph_edges=10,180  scale=1.000
+[select_neurons] Selected 35 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 31)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 44)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 57)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 63)', '(4, 66)', '(4, 68)', '(4, 70)']
+[select_neurons] Selected 34 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 31)', '(4, 35)', '(4, 36)', '(4, 40)', '(4, 44)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 57)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 62)', '(4, 65)', '(4, 67)', '(4, 69)']
+[select_neurons] Selected 33 neuron(s): ['(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 34)', '(4, 35)', '(4, 39)', '(4, 43)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 56)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 61)', '(4, 64)', '(4, 66)', '(4, 68)']
+  [fine-tune] Epoch   1 | loss 0.4771 | acc 0.8444 f1 0.8440
+  [fine-tune] Epoch   2 | loss 0.4645 | acc 0.8477 f1 0.8473
+[B: IterCC Neuron + L2] Step   5 (neuron): acc=0.6434  drop=+0.0048  fc_neurons=183  graph_edges=9,814  scale=1.000
+[select_neurons] Selected 34 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 24)', '(4, 25)', '(4, 28)', '(4, 30)', '(4, 34)', '(4, 38)', '(4, 42)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 55)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 60)', '(4, 63)', '(4, 65)', '(4, 67)']
+[select_neurons] Selected 33 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 24)', '(4, 27)', '(4, 29)', '(4, 33)', '(4, 37)', '(4, 41)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 54)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 59)', '(4, 62)', '(4, 64)', '(4, 66)']
+[select_neurons] Selected 32 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 23)', '(4, 26)', '(4, 28)', '(4, 32)', '(4, 36)', '(4, 40)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 53)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 58)', '(4, 61)', '(4, 63)', '(4, 65)']
+  [fine-tune] Epoch   1 | loss 0.4832 | acc 0.8417 f1 0.8420
+  [fine-tune] Epoch   2 | loss 0.4710 | acc 0.8439 f1 0.8430
+[B: IterCC Neuron + L2] Step   6 (neuron): acc=0.6442  drop=+0.0040  fc_neurons=180  graph_edges=9,445  scale=1.000
+[select_neurons] Selected 31 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 20)', '(4, 23)', '(4, 26)', '(4, 28)', '(4, 32)', '(4, 36)', '(4, 40)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 52)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 57)', '(4, 60)', '(4, 62)', '(4, 64)']
+[select_neurons] Selected 32 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 39)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 51)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 56)', '(4, 59)', '(4, 61)', '(4, 63)']
+[select_neurons] Selected 31 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 58)', '(4, 60)', '(4, 62)']
+  [fine-tune] Epoch   1 | loss 0.4931 | acc 0.8389 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4794 | acc 0.8435 f1 0.8428
+[B: IterCC Neuron + L2] Step   7 (neuron): acc=0.6434  drop=+0.0048  fc_neurons=177  graph_edges=9,076  scale=1.000
+[select_neurons] Selected 30 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 58)', '(4, 60)']
+[select_neurons] Selected 29 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 25)', '(4, 27)', '(4, 31)', '(4, 35)', '(4, 38)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 50)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 55)', '(4, 59)']
+[select_neurons] Selected 29 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 24)', '(4, 26)', '(4, 30)', '(4, 34)', '(4, 37)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 43)', '(4, 49)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 54)', '(4, 58)']
+  [fine-tune] Epoch   1 | loss 0.5087 | acc 0.8327 f1 0.8318
+  [fine-tune] Epoch   2 | loss 0.4929 | acc 0.8374 f1 0.8373
+[B: IterCC Neuron + L2] Step   8 (neuron): acc=0.6423  drop=+0.0059  fc_neurons=174  graph_edges=8,710  scale=1.000
+[select_neurons] Selected 28 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 48)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 53)', '(4, 57)']
+[select_neurons] Selected 27 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 42)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 52)', '(4, 56)']
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 33)', '(4, 36)', '(4, 39)', '(4, 40)', '(4, 41)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 51)', '(4, 55)']
+  [fine-tune] Epoch   1 | loss 0.5399 | acc 0.8244 f1 0.8239
+  [fine-tune] Epoch   2 | loss 0.5114 | acc 0.8318 f1 0.8314
+[B: IterCC Neuron + L2] Step   9 (neuron): acc=0.6412  drop=+0.0070  fc_neurons=171  graph_edges=8,340  scale=1.000
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 11)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 19)', '(4, 22)', '(4, 24)', '(4, 28)', '(4, 32)', '(4, 35)', '(4, 38)', '(4, 39)', '(4, 40)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 50)', '(4, 54)']
+[select_neurons] Selected 25 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 7)', '(4, 9)', '(4, 10)', '(4, 12)', '(4, 14)', '(4, 16)', '(4, 18)', '(4, 21)', '(4, 23)', '(4, 27)', '(4, 31)', '(4, 34)', '(4, 37)', '(4, 38)', '(4, 39)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 49)', '(4, 53)']
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 15)', '(4, 17)', '(4, 20)', '(4, 22)', '(4, 26)', '(4, 30)', '(4, 33)', '(4, 36)', '(4, 37)', '(4, 38)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 48)', '(4, 52)']
+  [fine-tune] Epoch   1 | loss 0.5579 | acc 0.8150 f1 0.8143
+  [fine-tune] Epoch   2 | loss 0.5325 | acc 0.8216 f1 0.8214
+[B: IterCC Neuron + L2] Step  10 (neuron): acc=0.6369  drop=+0.0113  fc_neurons=168  graph_edges=7,971  scale=1.000
+[B: IterCC Neuron + L2] → Snapshot at drop≤1.0%: 'B: IterCC Neuron + L2 @ drop≤1.0%'
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.96s
+Best communication cost: 329.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core   7
+  Task   3  →  Core   1
+  Task   4  →  Core   2
+  Task   5  →  Core   5
+  Task   6  →  Core   8
+  Task   7  →  Core   6
+  Task   8  →  Core   4
+  Task   9  →  Core   3
+Mapping: [(0, 8), (1, 6), (2, 0), (3, 1), (4, 4), (5, 7), (6, 5), (7, 3), (8, 2)]
+Communication cost: 329.0
+  [recorded] 'B: IterCC Neuron + L2 @ drop≤1.0%'  acc=0.6412  cost=329  sp_cost=427  graph_edges=8,340  fc_neurons=171
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 19)', '(4, 21)', '(4, 25)', '(4, 29)', '(4, 32)', '(4, 35)', '(4, 36)', '(4, 37)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 47)', '(4, 51)']
+[select_neurons] Selected 26 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 17)', '(4, 19)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 25)', '(4, 29)', '(4, 30)', '(4, 32)', '(4, 35)', '(4, 36)', '(4, 37)', '(4, 44)', '(4, 45)', '(4, 46)', '(4, 50)']
+[select_neurons] Selected 25 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 24)', '(4, 28)', '(4, 29)', '(4, 31)', '(4, 34)', '(4, 35)', '(4, 36)', '(4, 43)', '(4, 44)', '(4, 45)', '(4, 49)']
+  [fine-tune] Epoch   1 | loss 0.5662 | acc 0.8126 f1 0.8112
+  [fine-tune] Epoch   2 | loss 0.5413 | acc 0.8192 f1 0.8182
+[B: IterCC Neuron + L2] Step  11 (neuron): acc=0.6393  drop=+0.0089  fc_neurons=165  graph_edges=7,602  scale=1.000
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 27)', '(4, 28)', '(4, 30)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 42)', '(4, 43)', '(4, 44)', '(4, 48)']
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 27)', '(4, 28)', '(4, 30)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 42)', '(4, 43)', '(4, 44)']
+[select_neurons] Selected 24 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 29)', '(4, 32)', '(4, 33)', '(4, 34)', '(4, 35)', '(4, 41)', '(4, 42)', '(4, 43)']
+  [fine-tune] Epoch   1 | loss 0.5959 | acc 0.8042 f1 0.8046
+  [fine-tune] Epoch   2 | loss 0.5631 | acc 0.8120 f1 0.8114
+[B: IterCC Neuron + L2] Step  12 (neuron): acc=0.6385  drop=+0.0097  fc_neurons=162  graph_edges=7,236  scale=1.000
+[select_neurons] Selected 23 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 18)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 23)', '(4, 27)', '(4, 29)', '(4, 32)', '(4, 33)', '(4, 34)', '(4, 40)', '(4, 41)', '(4, 42)']
+[select_neurons] Selected 22 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 16)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 22)', '(4, 26)', '(4, 28)', '(4, 31)', '(4, 32)', '(4, 33)', '(4, 39)', '(4, 40)', '(4, 41)']
+[select_neurons] Selected 21 neuron(s): ['(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 13)', '(4, 18)', '(4, 19)', '(4, 20)', '(4, 21)', '(4, 25)', '(4, 27)', '(4, 30)', '(4, 31)', '(4, 32)', '(4, 38)', '(4, 39)', '(4, 40)']
+  [fine-tune] Epoch   1 | loss 0.5968 | acc 0.8046 f1 0.8035
+  [fine-tune] Epoch   2 | loss 0.5697 | acc 0.8097 f1 0.8091
+[B: IterCC Neuron + L2] Step  13 (neuron): acc=0.6381  drop=+0.0101  fc_neurons=159  graph_edges=6,866  scale=1.000
+[select_neurons] Selected 22 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 3)', '(4, 5)', '(4, 6)', '(4, 8)', '(4, 9)', '(4, 11)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 20)', '(4, 22)', '(4, 24)', '(4, 26)', '(4, 29)', '(4, 30)', '(4, 31)', '(4, 37)', '(4, 38)', '(4, 39)']
+[select_neurons] Selected 21 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 4)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 16)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 28)', '(4, 29)', '(4, 30)', '(4, 36)', '(4, 37)', '(4, 38)']
+[select_neurons] Selected 20 neuron(s): ['(4, 0)', '(4, 1)', '(4, 2)', '(4, 4)', '(4, 5)', '(4, 7)', '(4, 8)', '(4, 10)', '(4, 16)', '(4, 17)', '(4, 18)', '(4, 19)', '(4, 21)', '(4, 23)', '(4, 25)', '(4, 28)', '(4, 29)', '(4, 30)', '(4, 36)', '(4, 37)']
+  [fine-tune] Epoch   1 | loss 0.6434 | acc 0.7929 f1 0.7916
+  [fine-tune] Epoch   2 | loss 0.6011 | acc 0.8018 f1 0.8013
+[B: IterCC Neuron + L2] Step  14 (neuron): acc=0.6351  drop=+0.0131  fc_neurons=156  graph_edges=6,496  scale=1.000
+[B: IterCC Neuron + L2] Step 14: neuron tol cap (drop=0.0131, L1 part=0.0030, cap=0.0100). Reserving 0.0069 for edge-only (0.0200).
+[B: IterCC Neuron + L2] Neuron phase ended: 14 neuron steps, 42 FC neurons removed so far (198 -> 156).
+[B: IterCC Neuron + L2] Layer widths at end of neuron phase: conv 6-16 | fc 115-41-10  graph_edges=6,496
+  [fine-tune] Epoch   1 | loss 0.5813 | acc 0.8080 f1 0.8077
+  [fine-tune] Epoch   2 | loss 0.5671 | acc 0.8123 f1 0.8116
+[B: IterCC Neuron + L2] Step  15 (edge* ): acc=0.6421  drop=+0.0061  fc_neurons=156  graph_edges=6,367  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5563 | acc 0.8160 f1 0.8155
+  [fine-tune] Epoch   2 | loss 0.5469 | acc 0.8196 f1 0.8191
+[B: IterCC Neuron + L2] Step  16 (edge* ): acc=0.6407  drop=+0.0075  fc_neurons=155  graph_edges=6,240  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5392 | acc 0.8220 f1 0.8210
+  [fine-tune] Epoch   2 | loss 0.5324 | acc 0.8233 f1 0.8231
+[B: IterCC Neuron + L2] Step  17 (edge* ): acc=0.6415  drop=+0.0067  fc_neurons=155  graph_edges=6,116  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5263 | acc 0.8251 f1 0.8239
+  [fine-tune] Epoch   2 | loss 0.5206 | acc 0.8268 f1 0.8262
+[B: IterCC Neuron + L2] Step  18 (edge* ): acc=0.6428  drop=+0.0054  fc_neurons=155  graph_edges=5,994  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5155 | acc 0.8285 f1 0.8285
+  [fine-tune] Epoch   2 | loss 0.5106 | acc 0.8318 f1 0.8309
+[B: IterCC Neuron + L2] Step  19 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,875  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5067 | acc 0.8337 f1 0.8335
+  [fine-tune] Epoch   2 | loss 0.5023 | acc 0.8346 f1 0.8345
+[B: IterCC Neuron + L2] Step  20 (edge* ): acc=0.6406  drop=+0.0076  fc_neurons=155  graph_edges=5,758  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4985 | acc 0.8361 f1 0.8360
+  [fine-tune] Epoch   2 | loss 0.4945 | acc 0.8381 f1 0.8375
+[B: IterCC Neuron + L2] Step  21 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,643  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4917 | acc 0.8388 f1 0.8385
+  [fine-tune] Epoch   2 | loss 0.4876 | acc 0.8404 f1 0.8402
+[B: IterCC Neuron + L2] Step  22 (edge* ): acc=0.6431  drop=+0.0051  fc_neurons=155  graph_edges=5,531  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4855 | acc 0.8409 f1 0.8405
+  [fine-tune] Epoch   2 | loss 0.4814 | acc 0.8415 f1 0.8414
+[B: IterCC Neuron + L2] Step  23 (edge* ): acc=0.6406  drop=+0.0076  fc_neurons=155  graph_edges=5,421  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4796 | acc 0.8426 f1 0.8419
+  [fine-tune] Epoch   2 | loss 0.4759 | acc 0.8437 f1 0.8431
+[B: IterCC Neuron + L2] Step  24 (edge* ): acc=0.6441  drop=+0.0041  fc_neurons=155  graph_edges=5,313  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4745 | acc 0.8454 f1 0.8447
+  [fine-tune] Epoch   2 | loss 0.4705 | acc 0.8467 f1 0.8465
+[B: IterCC Neuron + L2] Step  25 (edge* ): acc=0.6410  drop=+0.0072  fc_neurons=155  graph_edges=5,207  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4692 | acc 0.8473 f1 0.8476
+  [fine-tune] Epoch   2 | loss 0.4659 | acc 0.8474 f1 0.8477
+[B: IterCC Neuron + L2] Step  26 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=154  graph_edges=5,103  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4645 | acc 0.8475 f1 0.8466
+  [fine-tune] Epoch   2 | loss 0.4614 | acc 0.8499 f1 0.8496
+[B: IterCC Neuron + L2] Step  27 (edge* ): acc=0.6424  drop=+0.0058  fc_neurons=154  graph_edges=5,001  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4610 | acc 0.8494 f1 0.8494
+  [fine-tune] Epoch   2 | loss 0.4572 | acc 0.8486 f1 0.8481
+[B: IterCC Neuron + L2] Step  28 (edge* ): acc=0.6419  drop=+0.0063  fc_neurons=154  graph_edges=4,901  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4576 | acc 0.8505 f1 0.8501
+  [fine-tune] Epoch   2 | loss 0.4537 | acc 0.8524 f1 0.8521
+[B: IterCC Neuron + L2] Step  29 (edge* ): acc=0.6409  drop=+0.0073  fc_neurons=154  graph_edges=4,803  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4537 | acc 0.8518 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8524 f1 0.8525
+[B: IterCC Neuron + L2] Step  30 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=153  graph_edges=4,707  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4515 | acc 0.8526 f1 0.8520
+  [fine-tune] Epoch   2 | loss 0.4471 | acc 0.8533 f1 0.8528
+[B: IterCC Neuron + L2] Step  31 (edge* ): acc=0.6411  drop=+0.0071  fc_neurons=153  graph_edges=4,613  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4482 | acc 0.8549 f1 0.8544
+  [fine-tune] Epoch   2 | loss 0.4443 | acc 0.8546 f1 0.8540
+[B: IterCC Neuron + L2] Step  32 (edge* ): acc=0.6393  drop=+0.0089  fc_neurons=153  graph_edges=4,521  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4463 | acc 0.8554 f1 0.8554
+  [fine-tune] Epoch   2 | loss 0.4420 | acc 0.8565 f1 0.8562
+[B: IterCC Neuron + L2] Step  33 (edge* ): acc=0.6404  drop=+0.0078  fc_neurons=153  graph_edges=4,431  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4432 | acc 0.8563 f1 0.8559
+  [fine-tune] Epoch   2 | loss 0.4395 | acc 0.8571 f1 0.8571
+[B: IterCC Neuron + L2] Step  34 (edge* ): acc=0.6394  drop=+0.0088  fc_neurons=152  graph_edges=4,330  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4415 | acc 0.8565 f1 0.8564
+  [fine-tune] Epoch   2 | loss 0.4377 | acc 0.8581 f1 0.8579
+[B: IterCC Neuron + L2] Step  35 (edge* ): acc=0.6425  drop=+0.0057  fc_neurons=151  graph_edges=4,244  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4408 | acc 0.8574 f1 0.8571
+  [fine-tune] Epoch   2 | loss 0.4359 | acc 0.8591 f1 0.8588
+[B: IterCC Neuron + L2] Step  36 (edge* ): acc=0.6392  drop=+0.0090  fc_neurons=151  graph_edges=4,160  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4396 | acc 0.8587 f1 0.8585
+  [fine-tune] Epoch   2 | loss 0.4346 | acc 0.8579 f1 0.8579
+[B: IterCC Neuron + L2] Step  37 (edge* ): acc=0.6383  drop=+0.0099  fc_neurons=150  graph_edges=4,064  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4397 | acc 0.8584 f1 0.8582
+  [fine-tune] Epoch   2 | loss 0.4344 | acc 0.8592 f1 0.8586
+[B: IterCC Neuron + L2] Step  38 (edge* ): acc=0.6382  drop=+0.0100  fc_neurons=150  graph_edges=3,983  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4390 | acc 0.8558 f1 0.8556
+  [fine-tune] Epoch   2 | loss 0.4343 | acc 0.8573 f1 0.8567
+[B: IterCC Neuron + L2] Step  39 (edge* ): acc=0.6375  drop=+0.0107  fc_neurons=148  graph_edges=3,896  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4411 | acc 0.8582 f1 0.8576
+  [fine-tune] Epoch   2 | loss 0.4345 | acc 0.8583 f1 0.8581
+[B: IterCC Neuron + L2] Step  40 (edge* ): acc=0.6372  drop=+0.0110  fc_neurons=148  graph_edges=3,819  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4416 | acc 0.8555 f1 0.8555
+  [fine-tune] Epoch   2 | loss 0.4358 | acc 0.8572 f1 0.8567
+[B: IterCC Neuron + L2] Step  41 (edge* ): acc=0.6362  drop=+0.0120  fc_neurons=148  graph_edges=3,743  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4405 | acc 0.8569 f1 0.8567
+  [fine-tune] Epoch   2 | loss 0.4355 | acc 0.8582 f1 0.8579
+[B: IterCC Neuron + L2] Step  42 (edge* ): acc=0.6353  drop=+0.0129  fc_neurons=146  graph_edges=3,647  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4443 | acc 0.8547 f1 0.8546
+  [fine-tune] Epoch   2 | loss 0.4371 | acc 0.8573 f1 0.8571
+[B: IterCC Neuron + L2] Step  43 (edge* ): acc=0.6325  drop=+0.0157  fc_neurons=145  graph_edges=3,565  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4449 | acc 0.8556 f1 0.8555
+  [fine-tune] Epoch   2 | loss 0.4381 | acc 0.8563 f1 0.8562
+[B: IterCC Neuron + L2] Step  44 (edge* ): acc=0.6350  drop=+0.0132  fc_neurons=145  graph_edges=3,494  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4469 | acc 0.8519 f1 0.8512
+  [fine-tune] Epoch   2 | loss 0.4405 | acc 0.8555 f1 0.8553
+[B: IterCC Neuron + L2] Step  45 (edge* ): acc=0.6327  drop=+0.0155  fc_neurons=145  graph_edges=3,425  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4478 | acc 0.8519 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4414 | acc 0.8547 f1 0.8545
+[B: IterCC Neuron + L2] Step  46 (edge* ): acc=0.6329  drop=+0.0153  fc_neurons=144  graph_edges=3,348  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4528 | acc 0.8509 f1 0.8506
+  [fine-tune] Epoch   2 | loss 0.4444 | acc 0.8525 f1 0.8521
+[B: IterCC Neuron + L2] Step  47 (edge* ): acc=0.6321  drop=+0.0161  fc_neurons=144  graph_edges=3,282  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4538 | acc 0.8502 f1 0.8502
+  [fine-tune] Epoch   2 | loss 0.4462 | acc 0.8526 f1 0.8523
+[B: IterCC Neuron + L2] Step  48 (edge* ): acc=0.6310  drop=+0.0172  fc_neurons=144  graph_edges=3,217  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4620 | acc 0.8474 f1 0.8470
+  [fine-tune] Epoch   2 | loss 0.4522 | acc 0.8493 f1 0.8493
+[B: IterCC Neuron + L2] Step  49 (edge* ): acc=0.6305  drop=+0.0177  fc_neurons=143  graph_edges=3,142  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4666 | acc 0.8463 f1 0.8460
+  [fine-tune] Epoch   2 | loss 0.4563 | acc 0.8494 f1 0.8490
+[B: IterCC Neuron + L2] Step  50 (edge* ): acc=0.6299  drop=+0.0183  fc_neurons=143  graph_edges=3,080  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4686 | acc 0.8441 f1 0.8444
+  [fine-tune] Epoch   2 | loss 0.4594 | acc 0.8457 f1 0.8455
+[B: IterCC Neuron + L2] Step  51 (edge* ): acc=0.6296  drop=+0.0186  fc_neurons=142  graph_edges=3,019  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4745 | acc 0.8419 f1 0.8417
+  [fine-tune] Epoch   2 | loss 0.4650 | acc 0.8428 f1 0.8420
+[B: IterCC Neuron + L2] Step  52 (edge* ): drop=+0.0222 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4608 | acc 0.8474 f1 0.8471
+  [fine-tune] Epoch   2 | loss 0.4556 | acc 0.8497 f1 0.8495
+[B: IterCC Neuron + L2] Step  52 (edge* ): acc=0.6283  drop=+0.0199  fc_neurons=142  graph_edges=2,959  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4737 | acc 0.8438 f1 0.8435
+  [fine-tune] Epoch   2 | loss 0.4638 | acc 0.8465 f1 0.8461
+[B: IterCC Neuron + L2] Step  53 (edge* ): drop=+0.0237 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4585 | acc 0.8492 f1 0.8491
+  [fine-tune] Epoch   2 | loss 0.4539 | acc 0.8499 f1 0.8503
+[B: IterCC Neuron + L2] Step  53 (edge* ): drop=+0.0238 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4513 | acc 0.8520 f1 0.8520
+  [fine-tune] Epoch   2 | loss 0.4473 | acc 0.8533 f1 0.8531
+[B: IterCC Neuron + L2] Step  53: over budget (drop=+0.0219); reverted, step scale -> 0.5000
+  [fine-tune] Epoch   1 | loss 0.4626 | acc 0.8471 f1 0.8472
+  [fine-tune] Epoch   2 | loss 0.4556 | acc 0.8489 f1 0.8489
+[B: IterCC Neuron + L2] Step  54 (edge* ): drop=+0.0231 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4519 | acc 0.8517 f1 0.8514
+  [fine-tune] Epoch   2 | loss 0.4475 | acc 0.8529 f1 0.8529
+[B: IterCC Neuron + L2] Step  54 (edge* ): drop=+0.0233 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4453 | acc 0.8547 f1 0.8541
+  [fine-tune] Epoch   2 | loss 0.4417 | acc 0.8527 f1 0.8524
+[B: IterCC Neuron + L2] Step  54: over budget (drop=+0.0219); reverted, step scale -> 0.2500
+  [fine-tune] Epoch   1 | loss 0.4582 | acc 0.8494 f1 0.8493
+  [fine-tune] Epoch   2 | loss 0.4529 | acc 0.8509 f1 0.8507
+[B: IterCC Neuron + L2] Step  55 (edge* ): drop=+0.0205 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4492 | acc 0.8510 f1 0.8511
+  [fine-tune] Epoch   2 | loss 0.4453 | acc 0.8528 f1 0.8524
+[B: IterCC Neuron + L2] Step  55 (edge* ): drop=+0.0209 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4428 | acc 0.8554 f1 0.8552
+  [fine-tune] Epoch   2 | loss 0.4397 | acc 0.8560 f1 0.8557
+[B: IterCC Neuron + L2] Step  55: over budget (drop=+0.0207); reverted, step scale -> 0.1250
+  [fine-tune] Epoch   1 | loss 0.4555 | acc 0.8503 f1 0.8504
+  [fine-tune] Epoch   2 | loss 0.4505 | acc 0.8508 f1 0.8507
+[B: IterCC Neuron + L2] Step  56 (edge* ): drop=+0.0218 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4476 | acc 0.8536 f1 0.8537
+  [fine-tune] Epoch   2 | loss 0.4439 | acc 0.8539 f1 0.8535
+[B: IterCC Neuron + L2] Step  56 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4418 | acc 0.8551 f1 0.8548
+  [fine-tune] Epoch   2 | loss 0.4386 | acc 0.8570 f1 0.8569
+[B: IterCC Neuron + L2] Step  56: over budget at min step scale (1/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.4553 | acc 0.8498 f1 0.8495
+  [fine-tune] Epoch   2 | loss 0.4506 | acc 0.8520 f1 0.8516
+[B: IterCC Neuron + L2] Step  57 (edge* ): drop=+0.0215 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4474 | acc 0.8538 f1 0.8535
+  [fine-tune] Epoch   2 | loss 0.4440 | acc 0.8536 f1 0.8533
+[B: IterCC Neuron + L2] Step  57 (edge* ): drop=+0.0222 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4417 | acc 0.8564 f1 0.8562
+  [fine-tune] Epoch   2 | loss 0.4384 | acc 0.8570 f1 0.8569
+[B: IterCC Neuron + L2] Step  57: over budget at min step scale (2/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.4553 | acc 0.8495 f1 0.8489
+  [fine-tune] Epoch   2 | loss 0.4504 | acc 0.8513 f1 0.8511
+[B: IterCC Neuron + L2] Step  58 (edge* ): drop=+0.0208 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.4473 | acc 0.8531 f1 0.8528
+  [fine-tune] Epoch   2 | loss 0.4438 | acc 0.8537 f1 0.8534
+[B: IterCC Neuron + L2] Step  58 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.4416 | acc 0.8535 f1 0.8532
+  [fine-tune] Epoch   2 | loss 0.4384 | acc 0.8555 f1 0.8553
+[B: IterCC Neuron + L2] Step  58: over budget at min step scale (3/3); reverted.
+[B: IterCC Neuron + L2] Budget consumed. Stopping.
+
+[B: IterCC Neuron + L2] Done. 52 steps. acc=0.6283  fc_neurons=142
+[B: IterCC Neuron + L2] Final layer widths: conv 6-16 | fc 103-39-10  graph_edges=2,959
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6283
+F1       : 0.6281
+Precision: 0.6281
+Recall   : 0.6283
+Params   : 48631 trainable
+State size (approx): 189.96 KB
+Inference time (avg): batch 3.6576 ms | single 0.071256 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.97s
+Best communication cost: 297.0000
+Mapping (task → core):
+  Task   1  →  Core   3
+  Task   2  →  Core   9
+  Task   3  →  Core   7
+  Task   4  →  Core   2
+  Task   5  →  Core   5
+  Task   6  →  Core   6
+  Task   7  →  Core   8
+  Task   8  →  Core   4
+  Task   9  →  Core   1
+Mapping: [(0, 2), (1, 8), (2, 6), (3, 1), (4, 4), (5, 5), (6, 7), (7, 3), (8, 0)]
+Communication cost: 297.0
+  [recorded] 'B: IterCC Neuron + L2 [final]'  acc=0.6283  cost=297  sp_cost=394  graph_edges=2,959  fc_neurons=142
+[B: IterCC Neuron + L2] TIMING: total=153.6s  core=148.8s  final grouping+SA=1.0s  neuron=0.7s  edge=0.4s (bridge grouping+SA 0.0s, prep 0.0s)  finetune=136.4s  graph_sync=0.3s  eval=5.1s
+
+======================================================================
+  BRANCH: D: Taylor Neuron + L2
+  Anchor=0.6482  Floor=0.6282  Tolerance=0.0200 (2.0 pp)
+  Neuron phase cap: 0.0100 (measured from post-L1 accuracy)  neurons_per_step=3
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[D: Taylor Neuron + L2] Start: acc=0.6452  fc_neurons=198  graph_edges=11,655
+  [fine-tune] Epoch   1 | loss 0.4141 | acc 0.8674 f1 0.8673
+  [fine-tune] Epoch   2 | loss 0.4119 | acc 0.8683 f1 0.8679
+[D: Taylor Neuron + L2] Step   1 (neuron): acc=0.6459  drop=+0.0023  fc_neurons=195  graph_edges=11,465  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4106 | acc 0.8683 f1 0.8683
+  [fine-tune] Epoch   2 | loss 0.4081 | acc 0.8692 f1 0.8687
+[D: Taylor Neuron + L2] Step   2 (neuron): acc=0.6467  drop=+0.0015  fc_neurons=192  graph_edges=11,315  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4070 | acc 0.8693 f1 0.8691
+  [fine-tune] Epoch   2 | loss 0.4046 | acc 0.8696 f1 0.8692
+[D: Taylor Neuron + L2] Step   3 (neuron): acc=0.6452  drop=+0.0030  fc_neurons=189  graph_edges=11,202  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4038 | acc 0.8716 f1 0.8714
+  [fine-tune] Epoch   2 | loss 0.4012 | acc 0.8726 f1 0.8723
+[D: Taylor Neuron + L2] Step   4 (neuron): acc=0.6437  drop=+0.0045  fc_neurons=186  graph_edges=10,959  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3999 | acc 0.8724 f1 0.8722
+  [fine-tune] Epoch   2 | loss 0.3976 | acc 0.8729 f1 0.8726
+[D: Taylor Neuron + L2] Step   5 (neuron): acc=0.6435  drop=+0.0047  fc_neurons=183  graph_edges=10,623  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3968 | acc 0.8731 f1 0.8731
+  [fine-tune] Epoch   2 | loss 0.3949 | acc 0.8726 f1 0.8718
+[D: Taylor Neuron + L2] Step   6 (neuron): acc=0.6429  drop=+0.0053  fc_neurons=180  graph_edges=10,285  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3939 | acc 0.8746 f1 0.8746
+  [fine-tune] Epoch   2 | loss 0.3917 | acc 0.8757 f1 0.8752
+[D: Taylor Neuron + L2] Step   7 (neuron): acc=0.6425  drop=+0.0057  fc_neurons=177  graph_edges=9,978  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3909 | acc 0.8757 f1 0.8751
+  [fine-tune] Epoch   2 | loss 0.3887 | acc 0.8769 f1 0.8767
+[D: Taylor Neuron + L2] Step   8 (neuron): acc=0.6432  drop=+0.0050  fc_neurons=174  graph_edges=9,697  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3882 | acc 0.8768 f1 0.8766
+  [fine-tune] Epoch   2 | loss 0.3860 | acc 0.8781 f1 0.8779
+[D: Taylor Neuron + L2] Step   9 (neuron): acc=0.6430  drop=+0.0052  fc_neurons=171  graph_edges=9,391  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3859 | acc 0.8782 f1 0.8781
+  [fine-tune] Epoch   2 | loss 0.3837 | acc 0.8781 f1 0.8781
+[D: Taylor Neuron + L2] Step  10 (neuron): acc=0.6414  drop=+0.0068  fc_neurons=168  graph_edges=9,144  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3839 | acc 0.8775 f1 0.8769
+  [fine-tune] Epoch   2 | loss 0.3816 | acc 0.8786 f1 0.8781
+[D: Taylor Neuron + L2] Step  11 (neuron): acc=0.6430  drop=+0.0052  fc_neurons=165  graph_edges=8,842  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3827 | acc 0.8797 f1 0.8797
+  [fine-tune] Epoch   2 | loss 0.3808 | acc 0.8790 f1 0.8786
+[D: Taylor Neuron + L2] Step  12 (neuron): acc=0.6436  drop=+0.0046  fc_neurons=162  graph_edges=8,585  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3841 | acc 0.8780 f1 0.8776
+  [fine-tune] Epoch   2 | loss 0.3810 | acc 0.8776 f1 0.8775
+[D: Taylor Neuron + L2] Step  13 (neuron): acc=0.6414  drop=+0.0068  fc_neurons=159  graph_edges=8,350  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3865 | acc 0.8757 f1 0.8754
+  [fine-tune] Epoch   2 | loss 0.3828 | acc 0.8785 f1 0.8782
+[D: Taylor Neuron + L2] Step  14 (neuron): acc=0.6416  drop=+0.0066  fc_neurons=156  graph_edges=8,091  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3948 | acc 0.8740 f1 0.8741
+  [fine-tune] Epoch   2 | loss 0.3889 | acc 0.8748 f1 0.8744
+[D: Taylor Neuron + L2] Step  15 (neuron): acc=0.6411  drop=+0.0071  fc_neurons=153  graph_edges=7,808  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4024 | acc 0.8684 f1 0.8683
+  [fine-tune] Epoch   2 | loss 0.3959 | acc 0.8708 f1 0.8705
+[D: Taylor Neuron + L2] Step  16 (neuron): acc=0.6404  drop=+0.0078  fc_neurons=150  graph_edges=7,502  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4110 | acc 0.8670 f1 0.8666
+  [fine-tune] Epoch   2 | loss 0.4028 | acc 0.8688 f1 0.8687
+[D: Taylor Neuron + L2] Step  17 (neuron): acc=0.6402  drop=+0.0080  fc_neurons=147  graph_edges=7,196  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4170 | acc 0.8633 f1 0.8626
+  [fine-tune] Epoch   2 | loss 0.4088 | acc 0.8646 f1 0.8643
+[D: Taylor Neuron + L2] Step  18 (neuron): acc=0.6406  drop=+0.0076  fc_neurons=144  graph_edges=6,923  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4300 | acc 0.8601 f1 0.8600
+  [fine-tune] Epoch   2 | loss 0.4171 | acc 0.8633 f1 0.8627
+[D: Taylor Neuron + L2] Step  19 (neuron): acc=0.6378  drop=+0.0104  fc_neurons=141  graph_edges=6,620  scale=1.000
+[D: Taylor Neuron + L2] → Snapshot at drop≤1.0%: 'D: Taylor Neuron + L2 @ drop≤1.0%'
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.96s
+Best communication cost: 403.0000
+Mapping (task → core):
+  Task   1  →  Core   1
+  Task   2  →  Core   3
+  Task   3  →  Core   6
+  Task   4  →  Core   2
+  Task   5  →  Core   8
+  Task   6  →  Core   7
+  Task   7  →  Core   5
+  Task   8  →  Core   4
+  Task   9  →  Core   9
+Mapping: [(0, 0), (1, 2), (2, 5), (3, 1), (4, 7), (5, 6), (6, 4), (7, 3), (8, 8)]
+Communication cost: 403.0
+  [recorded] 'D: Taylor Neuron + L2 @ drop≤1.0%'  acc=0.6406  cost=403  sp_cost=505  graph_edges=6,923  fc_neurons=144
+  [fine-tune] Epoch   1 | loss 0.4320 | acc 0.8586 f1 0.8586
+  [fine-tune] Epoch   2 | loss 0.4235 | acc 0.8613 f1 0.8614
+[D: Taylor Neuron + L2] Step  20 (neuron): acc=0.6399  drop=+0.0083  fc_neurons=138  graph_edges=6,317  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4409 | acc 0.8549 f1 0.8549
+  [fine-tune] Epoch   2 | loss 0.4309 | acc 0.8579 f1 0.8573
+[D: Taylor Neuron + L2] Step  21 (neuron): acc=0.6392  drop=+0.0090  fc_neurons=135  graph_edges=6,054  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4572 | acc 0.8490 f1 0.8488
+  [fine-tune] Epoch   2 | loss 0.4423 | acc 0.8520 f1 0.8518
+[D: Taylor Neuron + L2] Step  22 (neuron): acc=0.6381  drop=+0.0101  fc_neurons=132  graph_edges=5,754  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4648 | acc 0.8444 f1 0.8438
+  [fine-tune] Epoch   2 | loss 0.4526 | acc 0.8499 f1 0.8495
+[D: Taylor Neuron + L2] Step  23 (neuron): acc=0.6393  drop=+0.0089  fc_neurons=129  graph_edges=5,454  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4862 | acc 0.8393 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4662 | acc 0.8462 f1 0.8458
+[D: Taylor Neuron + L2] Step  24 (neuron): acc=0.6421  drop=+0.0061  fc_neurons=126  graph_edges=5,154  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5052 | acc 0.8304 f1 0.8295
+  [fine-tune] Epoch   2 | loss 0.4876 | acc 0.8363 f1 0.8355
+[D: Taylor Neuron + L2] Step  25 (neuron): acc=0.6380  drop=+0.0102  fc_neurons=123  graph_edges=4,854  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5242 | acc 0.8236 f1 0.8234
+  [fine-tune] Epoch   2 | loss 0.5041 | acc 0.8302 f1 0.8297
+[D: Taylor Neuron + L2] Step  26 (neuron): acc=0.6399  drop=+0.0083  fc_neurons=120  graph_edges=4,554  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5546 | acc 0.8117 f1 0.8096
+  [fine-tune] Epoch   2 | loss 0.5296 | acc 0.8190 f1 0.8184
+[D: Taylor Neuron + L2] Step  27 (neuron): acc=0.6362  drop=+0.0120  fc_neurons=117  graph_edges=4,254  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6152 | acc 0.7994 f1 0.7994
+  [fine-tune] Epoch   2 | loss 0.5717 | acc 0.8075 f1 0.8068
+[D: Taylor Neuron + L2] Step  28 (neuron): acc=0.6321  drop=+0.0161  fc_neurons=114  graph_edges=3,954  scale=1.000
+[D: Taylor Neuron + L2] Step 28: neuron tol cap (drop=0.0161, L1 part=0.0030, cap=0.0100). Reserving 0.0039 for edge-only (0.0200).
+[D: Taylor Neuron + L2] Neuron phase ended: 28 neuron steps, 84 FC neurons removed so far (198 -> 114).
+[D: Taylor Neuron + L2] Layer widths at end of neuron phase: conv 6-16 | fc 90-24-10  graph_edges=3,954
+  [fine-tune] Epoch   1 | loss 0.5550 | acc 0.8122 f1 0.8113
+  [fine-tune] Epoch   2 | loss 0.5424 | acc 0.8168 f1 0.8163
+[D: Taylor Neuron + L2] Step  29 (edge* ): acc=0.6368  drop=+0.0114  fc_neurons=114  graph_edges=3,875  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5333 | acc 0.8200 f1 0.8191
+  [fine-tune] Epoch   2 | loss 0.5256 | acc 0.8232 f1 0.8227
+[D: Taylor Neuron + L2] Step  30 (edge* ): acc=0.6361  drop=+0.0121  fc_neurons=114  graph_edges=3,798  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5193 | acc 0.8246 f1 0.8241
+  [fine-tune] Epoch   2 | loss 0.5132 | acc 0.8262 f1 0.8252
+[D: Taylor Neuron + L2] Step  31 (edge* ): acc=0.6381  drop=+0.0101  fc_neurons=114  graph_edges=3,723  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5089 | acc 0.8292 f1 0.8281
+  [fine-tune] Epoch   2 | loss 0.5037 | acc 0.8299 f1 0.8289
+[D: Taylor Neuron + L2] Step  32 (edge* ): acc=0.6421  drop=+0.0061  fc_neurons=114  graph_edges=3,649  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5007 | acc 0.8338 f1 0.8336
+  [fine-tune] Epoch   2 | loss 0.4962 | acc 0.8339 f1 0.8332
+[D: Taylor Neuron + L2] Step  33 (edge* ): acc=0.6364  drop=+0.0118  fc_neurons=114  graph_edges=3,577  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4942 | acc 0.8348 f1 0.8339
+  [fine-tune] Epoch   2 | loss 0.4897 | acc 0.8356 f1 0.8351
+[D: Taylor Neuron + L2] Step  34 (edge* ): acc=0.6384  drop=+0.0098  fc_neurons=114  graph_edges=3,506  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4891 | acc 0.8371 f1 0.8366
+  [fine-tune] Epoch   2 | loss 0.4852 | acc 0.8382 f1 0.8379
+[D: Taylor Neuron + L2] Step  35 (edge* ): acc=0.6396  drop=+0.0086  fc_neurons=114  graph_edges=3,436  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4846 | acc 0.8385 f1 0.8379
+  [fine-tune] Epoch   2 | loss 0.4800 | acc 0.8403 f1 0.8396
+[D: Taylor Neuron + L2] Step  36 (edge* ): acc=0.6386  drop=+0.0096  fc_neurons=114  graph_edges=3,368  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4817 | acc 0.8394 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4770 | acc 0.8403 f1 0.8401
+[D: Taylor Neuron + L2] Step  37 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=114  graph_edges=3,301  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4793 | acc 0.8402 f1 0.8396
+  [fine-tune] Epoch   2 | loss 0.4740 | acc 0.8417 f1 0.8406
+[D: Taylor Neuron + L2] Step  38 (edge* ): acc=0.6379  drop=+0.0103  fc_neurons=114  graph_edges=3,235  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4785 | acc 0.8401 f1 0.8394
+  [fine-tune] Epoch   2 | loss 0.4738 | acc 0.8422 f1 0.8416
+[D: Taylor Neuron + L2] Step  39 (edge* ): acc=0.6382  drop=+0.0100  fc_neurons=114  graph_edges=3,171  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4805 | acc 0.8410 f1 0.8404
+  [fine-tune] Epoch   2 | loss 0.4742 | acc 0.8419 f1 0.8413
+[D: Taylor Neuron + L2] Step  40 (edge* ): acc=0.6398  drop=+0.0084  fc_neurons=114  graph_edges=3,108  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4779 | acc 0.8413 f1 0.8412
+  [fine-tune] Epoch   2 | loss 0.4729 | acc 0.8430 f1 0.8426
+[D: Taylor Neuron + L2] Step  41 (edge* ): acc=0.6384  drop=+0.0098  fc_neurons=114  graph_edges=3,046  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4797 | acc 0.8407 f1 0.8400
+  [fine-tune] Epoch   2 | loss 0.4738 | acc 0.8420 f1 0.8417
+[D: Taylor Neuron + L2] Step  42 (edge* ): acc=0.6391  drop=+0.0091  fc_neurons=114  graph_edges=2,986  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4788 | acc 0.8405 f1 0.8401
+  [fine-tune] Epoch   2 | loss 0.4734 | acc 0.8427 f1 0.8422
+[D: Taylor Neuron + L2] Step  43 (edge* ): acc=0.6380  drop=+0.0102  fc_neurons=114  graph_edges=2,927  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4826 | acc 0.8391 f1 0.8385
+  [fine-tune] Epoch   2 | loss 0.4762 | acc 0.8407 f1 0.8403
+[D: Taylor Neuron + L2] Step  44 (edge* ): acc=0.6352  drop=+0.0130  fc_neurons=114  graph_edges=2,869  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4912 | acc 0.8349 f1 0.8339
+  [fine-tune] Epoch   2 | loss 0.4826 | acc 0.8393 f1 0.8390
+[D: Taylor Neuron + L2] Step  45 (edge* ): acc=0.6321  drop=+0.0161  fc_neurons=114  graph_edges=2,812  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4950 | acc 0.8339 f1 0.8327
+  [fine-tune] Epoch   2 | loss 0.4868 | acc 0.8361 f1 0.8356
+[D: Taylor Neuron + L2] Step  46 (edge* ): acc=0.6329  drop=+0.0153  fc_neurons=114  graph_edges=2,756  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4999 | acc 0.8326 f1 0.8317
+  [fine-tune] Epoch   2 | loss 0.4904 | acc 0.8355 f1 0.8347
+[D: Taylor Neuron + L2] Step  47 (edge* ): acc=0.6338  drop=+0.0144  fc_neurons=114  graph_edges=2,701  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5052 | acc 0.8306 f1 0.8302
+  [fine-tune] Epoch   2 | loss 0.4955 | acc 0.8332 f1 0.8326
+[D: Taylor Neuron + L2] Step  48 (edge* ): acc=0.6310  drop=+0.0172  fc_neurons=114  graph_edges=2,647  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5158 | acc 0.8265 f1 0.8258
+  [fine-tune] Epoch   2 | loss 0.5032 | acc 0.8288 f1 0.8283
+[D: Taylor Neuron + L2] Step  49 (edge* ): acc=0.6308  drop=+0.0174  fc_neurons=114  graph_edges=2,595  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5184 | acc 0.8227 f1 0.8220
+  [fine-tune] Epoch   2 | loss 0.5081 | acc 0.8258 f1 0.8252
+[D: Taylor Neuron + L2] Step  50 (edge* ): acc=0.6307  drop=+0.0175  fc_neurons=114  graph_edges=2,544  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5252 | acc 0.8218 f1 0.8213
+  [fine-tune] Epoch   2 | loss 0.5148 | acc 0.8250 f1 0.8242
+[D: Taylor Neuron + L2] Step  51 (edge* ): acc=0.6299  drop=+0.0183  fc_neurons=114  graph_edges=2,494  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5392 | acc 0.8168 f1 0.8165
+  [fine-tune] Epoch   2 | loss 0.5254 | acc 0.8223 f1 0.8214
+[D: Taylor Neuron + L2] Step  52 (edge* ): acc=0.6327  drop=+0.0155  fc_neurons=114  graph_edges=2,445  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5460 | acc 0.8152 f1 0.8146
+  [fine-tune] Epoch   2 | loss 0.5328 | acc 0.8184 f1 0.8174
+[D: Taylor Neuron + L2] Step  53 (edge* ): acc=0.6340  drop=+0.0142  fc_neurons=114  graph_edges=2,397  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5627 | acc 0.8072 f1 0.8071
+  [fine-tune] Epoch   2 | loss 0.5475 | acc 0.8118 f1 0.8114
+[D: Taylor Neuron + L2] Step  54 (edge* ): acc=0.6297  drop=+0.0185  fc_neurons=114  graph_edges=2,350  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5710 | acc 0.8036 f1 0.8029
+  [fine-tune] Epoch   2 | loss 0.5567 | acc 0.8088 f1 0.8080
+[D: Taylor Neuron + L2] Step  55 (edge* ): acc=0.6315  drop=+0.0167  fc_neurons=114  graph_edges=2,303  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5980 | acc 0.7953 f1 0.7953
+  [fine-tune] Epoch   2 | loss 0.5774 | acc 0.7996 f1 0.7990
+[D: Taylor Neuron + L2] Step  56 (edge* ): acc=0.6309  drop=+0.0173  fc_neurons=114  graph_edges=2,257  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6045 | acc 0.7923 f1 0.7915
+  [fine-tune] Epoch   2 | loss 0.5867 | acc 0.7961 f1 0.7952
+[D: Taylor Neuron + L2] Step  57 (edge* ): acc=0.6303  drop=+0.0179  fc_neurons=114  graph_edges=2,212  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6226 | acc 0.7862 f1 0.7855
+  [fine-tune] Epoch   2 | loss 0.6047 | acc 0.7907 f1 0.7900
+[D: Taylor Neuron + L2] Step  58 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5953 | acc 0.7932 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5872 | acc 0.7961 f1 0.7955
+[D: Taylor Neuron + L2] Step  58 (edge* ): acc=0.6292  drop=+0.0190  fc_neurons=114  graph_edges=2,168  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6340 | acc 0.7809 f1 0.7800
+  [fine-tune] Epoch   2 | loss 0.6160 | acc 0.7850 f1 0.7843
+[D: Taylor Neuron + L2] Step  59 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6064 | acc 0.7885 f1 0.7873
+  [fine-tune] Epoch   2 | loss 0.5983 | acc 0.7919 f1 0.7907
+[D: Taylor Neuron + L2] Step  59 (edge* ): drop=+0.0205 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5919 | acc 0.7943 f1 0.7936
+  [fine-tune] Epoch   2 | loss 0.5861 | acc 0.7962 f1 0.7957
+[D: Taylor Neuron + L2] Step  59 (edge* ): acc=0.6290  drop=+0.0192  fc_neurons=114  graph_edges=2,125  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6283 | acc 0.7836 f1 0.7829
+  [fine-tune] Epoch   2 | loss 0.6099 | acc 0.7900 f1 0.7894
+[D: Taylor Neuron + L2] Step  60 (edge* ): acc=0.6291  drop=+0.0191  fc_neurons=114  graph_edges=2,083  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6754 | acc 0.7688 f1 0.7684
+  [fine-tune] Epoch   2 | loss 0.6485 | acc 0.7756 f1 0.7750
+[D: Taylor Neuron + L2] Step  61 (edge* ): drop=+0.0211 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6363 | acc 0.7807 f1 0.7803
+  [fine-tune] Epoch   2 | loss 0.6263 | acc 0.7821 f1 0.7812
+[D: Taylor Neuron + L2] Step  61 (edge* ): drop=+0.0200 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6199 | acc 0.7854 f1 0.7852
+  [fine-tune] Epoch   2 | loss 0.6133 | acc 0.7879 f1 0.7873
+[D: Taylor Neuron + L2] Step  61 (edge* ): acc=0.6296  drop=+0.0186  fc_neurons=114  graph_edges=2,042  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6573 | acc 0.7720 f1 0.7714
+  [fine-tune] Epoch   2 | loss 0.6410 | acc 0.7759 f1 0.7751
+[D: Taylor Neuron + L2] Step  62 (edge* ): drop=+0.0226 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6326 | acc 0.7800 f1 0.7790
+  [fine-tune] Epoch   2 | loss 0.6255 | acc 0.7817 f1 0.7813
+[D: Taylor Neuron + L2] Step  62 (edge* ): acc=0.6287  drop=+0.0195  fc_neurons=114  graph_edges=2,002  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6985 | acc 0.7608 f1 0.7598
+  [fine-tune] Epoch   2 | loss 0.6730 | acc 0.7669 f1 0.7659
+[D: Taylor Neuron + L2] Step  63 (edge* ): drop=+0.0265 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6612 | acc 0.7695 f1 0.7678
+  [fine-tune] Epoch   2 | loss 0.6519 | acc 0.7738 f1 0.7726
+[D: Taylor Neuron + L2] Step  63 (edge* ): drop=+0.0235 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6449 | acc 0.7760 f1 0.7751
+  [fine-tune] Epoch   2 | loss 0.6384 | acc 0.7805 f1 0.7797
+[D: Taylor Neuron + L2] Step  63: over budget (drop=+0.0209); reverted, step scale -> 0.5000
+  [fine-tune] Epoch   1 | loss 0.6459 | acc 0.7783 f1 0.7774
+  [fine-tune] Epoch   2 | loss 0.6337 | acc 0.7799 f1 0.7794
+[D: Taylor Neuron + L2] Step  64 (edge* ): drop=+0.0207 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6271 | acc 0.7825 f1 0.7818
+  [fine-tune] Epoch   2 | loss 0.6210 | acc 0.7859 f1 0.7854
+[D: Taylor Neuron + L2] Step  64 (edge* ): drop=+0.0215 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6159 | acc 0.7857 f1 0.7848
+  [fine-tune] Epoch   2 | loss 0.6113 | acc 0.7888 f1 0.7879
+[D: Taylor Neuron + L2] Step  64 (edge* ): acc=0.6284  drop=+0.0198  fc_neurons=114  graph_edges=1,982  scale=0.500
+  [fine-tune] Epoch   1 | loss 0.6478 | acc 0.7767 f1 0.7755
+  [fine-tune] Epoch   2 | loss 0.6331 | acc 0.7794 f1 0.7782
+[D: Taylor Neuron + L2] Step  65 (edge* ): drop=+0.0244 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6258 | acc 0.7835 f1 0.7823
+  [fine-tune] Epoch   2 | loss 0.6202 | acc 0.7850 f1 0.7838
+[D: Taylor Neuron + L2] Step  65 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6154 | acc 0.7863 f1 0.7851
+  [fine-tune] Epoch   2 | loss 0.6112 | acc 0.7889 f1 0.7877
+[D: Taylor Neuron + L2] Step  65: over budget (drop=+0.0217); reverted, step scale -> 0.2500
+  [fine-tune] Epoch   1 | loss 0.6177 | acc 0.7864 f1 0.7851
+  [fine-tune] Epoch   2 | loss 0.6111 | acc 0.7879 f1 0.7870
+[D: Taylor Neuron + L2] Step  66 (edge* ): drop=+0.0202 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6071 | acc 0.7893 f1 0.7881
+  [fine-tune] Epoch   2 | loss 0.6028 | acc 0.7906 f1 0.7896
+[D: Taylor Neuron + L2] Step  66 (edge* ): acc=0.6285  drop=+0.0197  fc_neurons=114  graph_edges=1,973  scale=0.250
+  [fine-tune] Epoch   1 | loss 0.6207 | acc 0.7856 f1 0.7845
+  [fine-tune] Epoch   2 | loss 0.6114 | acc 0.7879 f1 0.7871
+[D: Taylor Neuron + L2] Step  67 (edge* ): acc=0.6291  drop=+0.0191  fc_neurons=114  graph_edges=1,964  scale=0.250
+  [fine-tune] Epoch   1 | loss 0.6298 | acc 0.7832 f1 0.7823
+  [fine-tune] Epoch   2 | loss 0.6188 | acc 0.7855 f1 0.7849
+[D: Taylor Neuron + L2] Step  68 (edge* ): drop=+0.0220 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6133 | acc 0.7879 f1 0.7871
+  [fine-tune] Epoch   2 | loss 0.6081 | acc 0.7889 f1 0.7875
+[D: Taylor Neuron + L2] Step  68 (edge* ): drop=+0.0230 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6045 | acc 0.7906 f1 0.7895
+  [fine-tune] Epoch   2 | loss 0.6002 | acc 0.7928 f1 0.7917
+[D: Taylor Neuron + L2] Step  68: over budget (drop=+0.0215); reverted, step scale -> 0.1250
+  [fine-tune] Epoch   1 | loss 0.6118 | acc 0.7881 f1 0.7867
+  [fine-tune] Epoch   2 | loss 0.6056 | acc 0.7903 f1 0.7893
+[D: Taylor Neuron + L2] Step  69 (edge* ): acc=0.6295  drop=+0.0187  fc_neurons=114  graph_edges=1,960  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6073 | acc 0.7903 f1 0.7891
+  [fine-tune] Epoch   2 | loss 0.6016 | acc 0.7916 f1 0.7903
+[D: Taylor Neuron + L2] Step  70 (edge* ): acc=0.6289  drop=+0.0193  fc_neurons=114  graph_edges=1,956  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6039 | acc 0.7911 f1 0.7902
+  [fine-tune] Epoch   2 | loss 0.5984 | acc 0.7936 f1 0.7933
+[D: Taylor Neuron + L2] Step  71 (edge* ): drop=+0.0208 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5950 | acc 0.7949 f1 0.7942
+  [fine-tune] Epoch   2 | loss 0.5915 | acc 0.7959 f1 0.7952
+[D: Taylor Neuron + L2] Step  71 (edge* ): acc=0.6286  drop=+0.0196  fc_neurons=114  graph_edges=1,952  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5966 | acc 0.7940 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5915 | acc 0.7970 f1 0.7966
+[D: Taylor Neuron + L2] Step  72 (edge* ): acc=0.6297  drop=+0.0185  fc_neurons=114  graph_edges=1,948  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5932 | acc 0.7960 f1 0.7950
+  [fine-tune] Epoch   2 | loss 0.5888 | acc 0.7984 f1 0.7976
+[D: Taylor Neuron + L2] Step  73 (edge* ): acc=0.6298  drop=+0.0184  fc_neurons=114  graph_edges=1,944  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5894 | acc 0.7974 f1 0.7965
+  [fine-tune] Epoch   2 | loss 0.5853 | acc 0.7995 f1 0.7984
+[D: Taylor Neuron + L2] Step  74 (edge* ): acc=0.6302  drop=+0.0180  fc_neurons=114  graph_edges=1,940  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5873 | acc 0.7984 f1 0.7977
+  [fine-tune] Epoch   2 | loss 0.5831 | acc 0.7989 f1 0.7982
+[D: Taylor Neuron + L2] Step  75 (edge* ): acc=0.6289  drop=+0.0193  fc_neurons=114  graph_edges=1,936  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5836 | acc 0.7998 f1 0.7990
+  [fine-tune] Epoch   2 | loss 0.5798 | acc 0.8011 f1 0.8008
+[D: Taylor Neuron + L2] Step  76 (edge* ): drop=+0.0200 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5772 | acc 0.8014 f1 0.8013
+  [fine-tune] Epoch   2 | loss 0.5744 | acc 0.8015 f1 0.8019
+[D: Taylor Neuron + L2] Step  76 (edge* ): acc=0.6288  drop=+0.0194  fc_neurons=114  graph_edges=1,932  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5797 | acc 0.8028 f1 0.8027
+  [fine-tune] Epoch   2 | loss 0.5753 | acc 0.8039 f1 0.8031
+[D: Taylor Neuron + L2] Step  77 (edge* ): acc=0.6316  drop=+0.0166  fc_neurons=114  graph_edges=1,928  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5823 | acc 0.8022 f1 0.8016
+  [fine-tune] Epoch   2 | loss 0.5763 | acc 0.8031 f1 0.8025
+[D: Taylor Neuron + L2] Step  78 (edge* ): acc=0.6323  drop=+0.0159  fc_neurons=114  graph_edges=1,924  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5831 | acc 0.8012 f1 0.8006
+  [fine-tune] Epoch   2 | loss 0.5778 | acc 0.8014 f1 0.8002
+[D: Taylor Neuron + L2] Step  79 (edge* ): acc=0.6304  drop=+0.0178  fc_neurons=114  graph_edges=1,920  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5855 | acc 0.7980 f1 0.7972
+  [fine-tune] Epoch   2 | loss 0.5796 | acc 0.7990 f1 0.7983
+[D: Taylor Neuron + L2] Step  80 (edge* ): acc=0.6293  drop=+0.0189  fc_neurons=114  graph_edges=1,916  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5860 | acc 0.7984 f1 0.7979
+  [fine-tune] Epoch   2 | loss 0.5802 | acc 0.8006 f1 0.7996
+[D: Taylor Neuron + L2] Step  81 (edge* ): acc=0.6288  drop=+0.0194  fc_neurons=114  graph_edges=1,912  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5938 | acc 0.7954 f1 0.7944
+  [fine-tune] Epoch   2 | loss 0.5855 | acc 0.7975 f1 0.7971
+[D: Taylor Neuron + L2] Step  82 (edge* ): acc=0.6307  drop=+0.0175  fc_neurons=114  graph_edges=1,908  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5896 | acc 0.7981 f1 0.7981
+  [fine-tune] Epoch   2 | loss 0.5830 | acc 0.7997 f1 0.7987
+[D: Taylor Neuron + L2] Step  83 (edge* ): acc=0.6301  drop=+0.0181  fc_neurons=114  graph_edges=1,904  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6105 | acc 0.7913 f1 0.7900
+  [fine-tune] Epoch   2 | loss 0.5971 | acc 0.7941 f1 0.7934
+[D: Taylor Neuron + L2] Step  84 (edge* ): acc=0.6302  drop=+0.0180  fc_neurons=114  graph_edges=1,900  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6021 | acc 0.7926 f1 0.7920
+  [fine-tune] Epoch   2 | loss 0.5942 | acc 0.7947 f1 0.7942
+[D: Taylor Neuron + L2] Step  85 (edge* ): drop=+0.0232 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5896 | acc 0.7973 f1 0.7963
+  [fine-tune] Epoch   2 | loss 0.5854 | acc 0.7987 f1 0.7981
+[D: Taylor Neuron + L2] Step  85 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5824 | acc 0.8007 f1 0.8000
+  [fine-tune] Epoch   2 | loss 0.5787 | acc 0.8016 f1 0.8016
+[D: Taylor Neuron + L2] Step  85: over budget at min step scale (1/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.6017 | acc 0.7920 f1 0.7905
+  [fine-tune] Epoch   2 | loss 0.5942 | acc 0.7951 f1 0.7941
+[D: Taylor Neuron + L2] Step  86 (edge* ): drop=+0.0218 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5899 | acc 0.7971 f1 0.7964
+  [fine-tune] Epoch   2 | loss 0.5851 | acc 0.7982 f1 0.7976
+[D: Taylor Neuron + L2] Step  86 (edge* ): drop=+0.0200 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5820 | acc 0.7996 f1 0.7990
+  [fine-tune] Epoch   2 | loss 0.5784 | acc 0.8023 f1 0.8019
+[D: Taylor Neuron + L2] Step  86: over budget at min step scale (2/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.6019 | acc 0.7936 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5941 | acc 0.7949 f1 0.7936
+[D: Taylor Neuron + L2] Step  87 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5895 | acc 0.7972 f1 0.7963
+  [fine-tune] Epoch   2 | loss 0.5852 | acc 0.7981 f1 0.7976
+[D: Taylor Neuron + L2] Step  87 (edge* ): drop=+0.0224 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5823 | acc 0.8002 f1 0.7996
+  [fine-tune] Epoch   2 | loss 0.5786 | acc 0.8015 f1 0.8006
+[D: Taylor Neuron + L2] Step  87: over budget at min step scale (3/3); reverted.
+[D: Taylor Neuron + L2] Budget consumed. Stopping.
+
+[D: Taylor Neuron + L2] Done. 81 steps. acc=0.6302  fc_neurons=114
+[D: Taylor Neuron + L2] Final layer widths: conv 6-16 | fc 90-24-10  graph_edges=1,900
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6302
+F1       : 0.6292
+Precision: 0.6286
+Recall   : 0.6302
+Params   : 41396 trainable
+State size (approx): 161.70 KB
+Inference time (avg): batch 3.5844 ms | single 0.070829 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.99s
+Best communication cost: 265.0000
+Mapping (task → core):
+  Task   1  →  Core   3
+  Task   2  →  Core   9
+  Task   3  →  Core   7
+  Task   4  →  Core   1
+  Task   5  →  Core   5
+  Task   6  →  Core   2
+  Task   7  →  Core   4
+  Task   8  →  Core   6
+  Task   9  →  Core   8
+Mapping: [(0, 2), (1, 8), (2, 6), (3, 0), (4, 4), (5, 1), (6, 3), (7, 5), (8, 7)]
+Communication cost: 265.0
+  [recorded] 'D: Taylor Neuron + L2 [final]'  acc=0.6302  cost=265  sp_cost=359  graph_edges=1,900  fc_neurons=114
+[D: Taylor Neuron + L2] TIMING: total=231.7s  core=228.4s  final grouping+SA=1.0s  neuron=3.1s  edge=0.3s (bridge grouping+SA 0.0s, prep 0.0s)  finetune=210.9s  graph_sync=0.4s  eval=7.9s
+
+======================================================================
+  BRANCH: G: Taylor Neuron + Bridge
+  Anchor=0.6482  Floor=0.6282  Tolerance=0.0200 (2.0 pp)
+  Neuron phase cap: 0.0100 (measured from post-L1 accuracy)  neurons_per_step=3
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[G: Taylor Neuron + Bridge] Start: acc=0.6452  fc_neurons=198  graph_edges=11,655
+  [fine-tune] Epoch   1 | loss 0.4141 | acc 0.8674 f1 0.8673
+  [fine-tune] Epoch   2 | loss 0.4119 | acc 0.8683 f1 0.8679
+[G: Taylor Neuron + Bridge] Step   1 (neuron): acc=0.6459  drop=+0.0023  fc_neurons=195  graph_edges=11,465  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4106 | acc 0.8683 f1 0.8683
+  [fine-tune] Epoch   2 | loss 0.4081 | acc 0.8692 f1 0.8687
+[G: Taylor Neuron + Bridge] Step   2 (neuron): acc=0.6467  drop=+0.0015  fc_neurons=192  graph_edges=11,315  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4070 | acc 0.8693 f1 0.8691
+  [fine-tune] Epoch   2 | loss 0.4046 | acc 0.8696 f1 0.8692
+[G: Taylor Neuron + Bridge] Step   3 (neuron): acc=0.6452  drop=+0.0030  fc_neurons=189  graph_edges=11,202  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4038 | acc 0.8716 f1 0.8714
+  [fine-tune] Epoch   2 | loss 0.4012 | acc 0.8726 f1 0.8723
+[G: Taylor Neuron + Bridge] Step   4 (neuron): acc=0.6437  drop=+0.0045  fc_neurons=186  graph_edges=10,959  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3999 | acc 0.8724 f1 0.8722
+  [fine-tune] Epoch   2 | loss 0.3976 | acc 0.8729 f1 0.8726
+[G: Taylor Neuron + Bridge] Step   5 (neuron): acc=0.6435  drop=+0.0047  fc_neurons=183  graph_edges=10,623  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3968 | acc 0.8731 f1 0.8731
+  [fine-tune] Epoch   2 | loss 0.3949 | acc 0.8726 f1 0.8718
+[G: Taylor Neuron + Bridge] Step   6 (neuron): acc=0.6429  drop=+0.0053  fc_neurons=180  graph_edges=10,285  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3939 | acc 0.8746 f1 0.8746
+  [fine-tune] Epoch   2 | loss 0.3917 | acc 0.8757 f1 0.8752
+[G: Taylor Neuron + Bridge] Step   7 (neuron): acc=0.6425  drop=+0.0057  fc_neurons=177  graph_edges=9,978  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3909 | acc 0.8757 f1 0.8751
+  [fine-tune] Epoch   2 | loss 0.3887 | acc 0.8769 f1 0.8767
+[G: Taylor Neuron + Bridge] Step   8 (neuron): acc=0.6432  drop=+0.0050  fc_neurons=174  graph_edges=9,697  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3882 | acc 0.8768 f1 0.8766
+  [fine-tune] Epoch   2 | loss 0.3860 | acc 0.8781 f1 0.8779
+[G: Taylor Neuron + Bridge] Step   9 (neuron): acc=0.6430  drop=+0.0052  fc_neurons=171  graph_edges=9,391  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3859 | acc 0.8782 f1 0.8781
+  [fine-tune] Epoch   2 | loss 0.3837 | acc 0.8781 f1 0.8781
+[G: Taylor Neuron + Bridge] Step  10 (neuron): acc=0.6414  drop=+0.0068  fc_neurons=168  graph_edges=9,144  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3839 | acc 0.8775 f1 0.8769
+  [fine-tune] Epoch   2 | loss 0.3816 | acc 0.8786 f1 0.8781
+[G: Taylor Neuron + Bridge] Step  11 (neuron): acc=0.6430  drop=+0.0052  fc_neurons=165  graph_edges=8,842  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3827 | acc 0.8797 f1 0.8797
+  [fine-tune] Epoch   2 | loss 0.3808 | acc 0.8790 f1 0.8786
+[G: Taylor Neuron + Bridge] Step  12 (neuron): acc=0.6436  drop=+0.0046  fc_neurons=162  graph_edges=8,585  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3841 | acc 0.8780 f1 0.8776
+  [fine-tune] Epoch   2 | loss 0.3810 | acc 0.8776 f1 0.8775
+[G: Taylor Neuron + Bridge] Step  13 (neuron): acc=0.6414  drop=+0.0068  fc_neurons=159  graph_edges=8,350  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3865 | acc 0.8757 f1 0.8754
+  [fine-tune] Epoch   2 | loss 0.3828 | acc 0.8785 f1 0.8782
+[G: Taylor Neuron + Bridge] Step  14 (neuron): acc=0.6416  drop=+0.0066  fc_neurons=156  graph_edges=8,091  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.3948 | acc 0.8740 f1 0.8741
+  [fine-tune] Epoch   2 | loss 0.3889 | acc 0.8748 f1 0.8744
+[G: Taylor Neuron + Bridge] Step  15 (neuron): acc=0.6411  drop=+0.0071  fc_neurons=153  graph_edges=7,808  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4024 | acc 0.8684 f1 0.8683
+  [fine-tune] Epoch   2 | loss 0.3959 | acc 0.8708 f1 0.8705
+[G: Taylor Neuron + Bridge] Step  16 (neuron): acc=0.6404  drop=+0.0078  fc_neurons=150  graph_edges=7,502  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4110 | acc 0.8670 f1 0.8666
+  [fine-tune] Epoch   2 | loss 0.4028 | acc 0.8688 f1 0.8687
+[G: Taylor Neuron + Bridge] Step  17 (neuron): acc=0.6402  drop=+0.0080  fc_neurons=147  graph_edges=7,196  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4170 | acc 0.8633 f1 0.8626
+  [fine-tune] Epoch   2 | loss 0.4088 | acc 0.8646 f1 0.8643
+[G: Taylor Neuron + Bridge] Step  18 (neuron): acc=0.6406  drop=+0.0076  fc_neurons=144  graph_edges=6,923  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4300 | acc 0.8601 f1 0.8600
+  [fine-tune] Epoch   2 | loss 0.4171 | acc 0.8633 f1 0.8627
+[G: Taylor Neuron + Bridge] Step  19 (neuron): acc=0.6378  drop=+0.0104  fc_neurons=141  graph_edges=6,620  scale=1.000
+[G: Taylor Neuron + Bridge] → Snapshot at drop≤1.0%: 'G: Taylor Neuron + Bridge @ drop≤1.0%'
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.97s
+Best communication cost: 403.0000
+Mapping (task → core):
+  Task   1  →  Core   3
+  Task   2  →  Core   1
+  Task   3  →  Core   4
+  Task   4  →  Core   7
+  Task   5  →  Core   6
+  Task   6  →  Core   9
+  Task   7  →  Core   5
+  Task   8  →  Core   8
+  Task   9  →  Core   2
+Mapping: [(0, 2), (1, 0), (2, 3), (3, 6), (4, 5), (5, 8), (6, 4), (7, 7), (8, 1)]
+Communication cost: 403.0
+  [recorded] 'G: Taylor Neuron + Bridge @ drop≤1.0%'  acc=0.6406  cost=403  sp_cost=505  graph_edges=6,923  fc_neurons=144
+  [fine-tune] Epoch   1 | loss 0.4320 | acc 0.8586 f1 0.8586
+  [fine-tune] Epoch   2 | loss 0.4235 | acc 0.8613 f1 0.8614
+[G: Taylor Neuron + Bridge] Step  20 (neuron): acc=0.6399  drop=+0.0083  fc_neurons=138  graph_edges=6,317  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4409 | acc 0.8549 f1 0.8549
+  [fine-tune] Epoch   2 | loss 0.4309 | acc 0.8579 f1 0.8573
+[G: Taylor Neuron + Bridge] Step  21 (neuron): acc=0.6392  drop=+0.0090  fc_neurons=135  graph_edges=6,054  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4572 | acc 0.8490 f1 0.8488
+  [fine-tune] Epoch   2 | loss 0.4423 | acc 0.8520 f1 0.8518
+[G: Taylor Neuron + Bridge] Step  22 (neuron): acc=0.6381  drop=+0.0101  fc_neurons=132  graph_edges=5,754  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4648 | acc 0.8444 f1 0.8438
+  [fine-tune] Epoch   2 | loss 0.4526 | acc 0.8499 f1 0.8495
+[G: Taylor Neuron + Bridge] Step  23 (neuron): acc=0.6393  drop=+0.0089  fc_neurons=129  graph_edges=5,454  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4862 | acc 0.8393 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4662 | acc 0.8462 f1 0.8458
+[G: Taylor Neuron + Bridge] Step  24 (neuron): acc=0.6421  drop=+0.0061  fc_neurons=126  graph_edges=5,154  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5052 | acc 0.8304 f1 0.8295
+  [fine-tune] Epoch   2 | loss 0.4876 | acc 0.8363 f1 0.8355
+[G: Taylor Neuron + Bridge] Step  25 (neuron): acc=0.6380  drop=+0.0102  fc_neurons=123  graph_edges=4,854  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5242 | acc 0.8236 f1 0.8234
+  [fine-tune] Epoch   2 | loss 0.5041 | acc 0.8302 f1 0.8297
+[G: Taylor Neuron + Bridge] Step  26 (neuron): acc=0.6399  drop=+0.0083  fc_neurons=120  graph_edges=4,554  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5546 | acc 0.8117 f1 0.8096
+  [fine-tune] Epoch   2 | loss 0.5296 | acc 0.8190 f1 0.8184
+[G: Taylor Neuron + Bridge] Step  27 (neuron): acc=0.6362  drop=+0.0120  fc_neurons=117  graph_edges=4,254  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6152 | acc 0.7994 f1 0.7994
+  [fine-tune] Epoch   2 | loss 0.5717 | acc 0.8075 f1 0.8068
+[G: Taylor Neuron + Bridge] Step  28 (neuron): acc=0.6321  drop=+0.0161  fc_neurons=114  graph_edges=3,954  scale=1.000
+[G: Taylor Neuron + Bridge] Step 28: neuron tol cap (drop=0.0161, L1 part=0.0030, cap=0.0100). Reserving 0.0039 for edge-only (0.0200).
+[G: Taylor Neuron + Bridge] Neuron phase ended: 28 neuron steps, 84 FC neurons removed so far (198 -> 114).
+[G: Taylor Neuron + Bridge] Layer widths at end of neuron phase: conv 6-16 | fc 90-24-10  graph_edges=3,954
+  [fine-tune] Epoch   1 | loss 0.5550 | acc 0.8122 f1 0.8113
+  [fine-tune] Epoch   2 | loss 0.5424 | acc 0.8168 f1 0.8163
+[G: Taylor Neuron + Bridge] Step  29 (edge* ): acc=0.6368  drop=+0.0114  fc_neurons=114  graph_edges=3,875  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5333 | acc 0.8200 f1 0.8191
+  [fine-tune] Epoch   2 | loss 0.5256 | acc 0.8232 f1 0.8227
+[G: Taylor Neuron + Bridge] Step  30 (edge* ): acc=0.6361  drop=+0.0121  fc_neurons=114  graph_edges=3,798  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5193 | acc 0.8246 f1 0.8241
+  [fine-tune] Epoch   2 | loss 0.5132 | acc 0.8262 f1 0.8252
+[G: Taylor Neuron + Bridge] Step  31 (edge* ): acc=0.6381  drop=+0.0101  fc_neurons=114  graph_edges=3,723  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5089 | acc 0.8292 f1 0.8281
+  [fine-tune] Epoch   2 | loss 0.5037 | acc 0.8299 f1 0.8289
+[G: Taylor Neuron + Bridge] Step  32 (edge* ): acc=0.6421  drop=+0.0061  fc_neurons=114  graph_edges=3,649  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5007 | acc 0.8338 f1 0.8336
+  [fine-tune] Epoch   2 | loss 0.4962 | acc 0.8339 f1 0.8332
+[G: Taylor Neuron + Bridge] Step  33 (edge* ): acc=0.6364  drop=+0.0118  fc_neurons=114  graph_edges=3,577  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4942 | acc 0.8348 f1 0.8339
+  [fine-tune] Epoch   2 | loss 0.4897 | acc 0.8356 f1 0.8351
+[G: Taylor Neuron + Bridge] Step  34 (edge* ): acc=0.6384  drop=+0.0098  fc_neurons=114  graph_edges=3,506  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4891 | acc 0.8371 f1 0.8366
+  [fine-tune] Epoch   2 | loss 0.4852 | acc 0.8382 f1 0.8379
+[G: Taylor Neuron + Bridge] Step  35 (edge* ): acc=0.6396  drop=+0.0086  fc_neurons=114  graph_edges=3,436  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4846 | acc 0.8385 f1 0.8379
+  [fine-tune] Epoch   2 | loss 0.4800 | acc 0.8403 f1 0.8396
+[G: Taylor Neuron + Bridge] Step  36 (edge* ): acc=0.6386  drop=+0.0096  fc_neurons=114  graph_edges=3,368  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4817 | acc 0.8394 f1 0.8390
+  [fine-tune] Epoch   2 | loss 0.4770 | acc 0.8403 f1 0.8401
+[G: Taylor Neuron + Bridge] Step  37 (edge* ): acc=0.6397  drop=+0.0085  fc_neurons=114  graph_edges=3,301  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4793 | acc 0.8402 f1 0.8396
+  [fine-tune] Epoch   2 | loss 0.4740 | acc 0.8417 f1 0.8406
+[G: Taylor Neuron + Bridge] Step  38 (edge* ): acc=0.6379  drop=+0.0103  fc_neurons=114  graph_edges=3,235  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4785 | acc 0.8401 f1 0.8394
+  [fine-tune] Epoch   2 | loss 0.4738 | acc 0.8422 f1 0.8416
+[G: Taylor Neuron + Bridge] Step  39 (edge* ): acc=0.6382  drop=+0.0100  fc_neurons=114  graph_edges=3,171  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4805 | acc 0.8410 f1 0.8404
+  [fine-tune] Epoch   2 | loss 0.4742 | acc 0.8419 f1 0.8413
+[G: Taylor Neuron + Bridge] Step  40 (edge* ): acc=0.6398  drop=+0.0084  fc_neurons=114  graph_edges=3,108  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4779 | acc 0.8413 f1 0.8412
+  [fine-tune] Epoch   2 | loss 0.4729 | acc 0.8430 f1 0.8426
+[G: Taylor Neuron + Bridge] Step  41 (edge* ): acc=0.6384  drop=+0.0098  fc_neurons=114  graph_edges=3,046  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4797 | acc 0.8407 f1 0.8400
+  [fine-tune] Epoch   2 | loss 0.4738 | acc 0.8420 f1 0.8417
+[G: Taylor Neuron + Bridge] Step  42 (edge* ): acc=0.6391  drop=+0.0091  fc_neurons=114  graph_edges=2,986  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4788 | acc 0.8405 f1 0.8401
+  [fine-tune] Epoch   2 | loss 0.4734 | acc 0.8427 f1 0.8422
+[G: Taylor Neuron + Bridge] Step  43 (edge* ): acc=0.6380  drop=+0.0102  fc_neurons=114  graph_edges=2,927  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4826 | acc 0.8391 f1 0.8385
+  [fine-tune] Epoch   2 | loss 0.4762 | acc 0.8407 f1 0.8403
+[G: Taylor Neuron + Bridge] Step  44 (edge* ): acc=0.6352  drop=+0.0130  fc_neurons=114  graph_edges=2,869  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4912 | acc 0.8349 f1 0.8339
+  [fine-tune] Epoch   2 | loss 0.4826 | acc 0.8393 f1 0.8390
+[G: Taylor Neuron + Bridge] Step  45 (edge* ): acc=0.6321  drop=+0.0161  fc_neurons=114  graph_edges=2,812  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4950 | acc 0.8339 f1 0.8327
+  [fine-tune] Epoch   2 | loss 0.4868 | acc 0.8361 f1 0.8356
+[G: Taylor Neuron + Bridge] Step  46 (edge* ): acc=0.6329  drop=+0.0153  fc_neurons=114  graph_edges=2,756  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.4999 | acc 0.8326 f1 0.8317
+  [fine-tune] Epoch   2 | loss 0.4904 | acc 0.8355 f1 0.8347
+[G: Taylor Neuron + Bridge] Step  47 (edge* ): acc=0.6338  drop=+0.0144  fc_neurons=114  graph_edges=2,701  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5052 | acc 0.8306 f1 0.8302
+  [fine-tune] Epoch   2 | loss 0.4955 | acc 0.8332 f1 0.8326
+[G: Taylor Neuron + Bridge] Step  48 (edge* ): acc=0.6310  drop=+0.0172  fc_neurons=114  graph_edges=2,647  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5158 | acc 0.8265 f1 0.8258
+  [fine-tune] Epoch   2 | loss 0.5032 | acc 0.8288 f1 0.8283
+[G: Taylor Neuron + Bridge] Step  49 (edge* ): acc=0.6308  drop=+0.0174  fc_neurons=114  graph_edges=2,595  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5184 | acc 0.8227 f1 0.8220
+  [fine-tune] Epoch   2 | loss 0.5081 | acc 0.8258 f1 0.8252
+[G: Taylor Neuron + Bridge] Step  50 (edge* ): acc=0.6307  drop=+0.0175  fc_neurons=114  graph_edges=2,544  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5252 | acc 0.8218 f1 0.8213
+  [fine-tune] Epoch   2 | loss 0.5148 | acc 0.8250 f1 0.8242
+[G: Taylor Neuron + Bridge] Step  51 (edge* ): acc=0.6299  drop=+0.0183  fc_neurons=114  graph_edges=2,494  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5392 | acc 0.8168 f1 0.8165
+  [fine-tune] Epoch   2 | loss 0.5254 | acc 0.8223 f1 0.8214
+[G: Taylor Neuron + Bridge] Step  52 (edge* ): acc=0.6327  drop=+0.0155  fc_neurons=114  graph_edges=2,445  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5460 | acc 0.8152 f1 0.8146
+  [fine-tune] Epoch   2 | loss 0.5328 | acc 0.8184 f1 0.8174
+[G: Taylor Neuron + Bridge] Step  53 (edge* ): acc=0.6340  drop=+0.0142  fc_neurons=114  graph_edges=2,397  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5627 | acc 0.8072 f1 0.8071
+  [fine-tune] Epoch   2 | loss 0.5475 | acc 0.8118 f1 0.8114
+[G: Taylor Neuron + Bridge] Step  54 (edge* ): acc=0.6297  drop=+0.0185  fc_neurons=114  graph_edges=2,350  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5710 | acc 0.8036 f1 0.8029
+  [fine-tune] Epoch   2 | loss 0.5567 | acc 0.8088 f1 0.8080
+[G: Taylor Neuron + Bridge] Step  55 (edge* ): acc=0.6315  drop=+0.0167  fc_neurons=114  graph_edges=2,303  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.5980 | acc 0.7953 f1 0.7953
+  [fine-tune] Epoch   2 | loss 0.5774 | acc 0.7996 f1 0.7990
+[G: Taylor Neuron + Bridge] Step  56 (edge* ): acc=0.6309  drop=+0.0173  fc_neurons=114  graph_edges=2,257  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6045 | acc 0.7923 f1 0.7915
+  [fine-tune] Epoch   2 | loss 0.5867 | acc 0.7961 f1 0.7952
+[G: Taylor Neuron + Bridge] Step  57 (edge* ): acc=0.6303  drop=+0.0179  fc_neurons=114  graph_edges=2,212  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6226 | acc 0.7862 f1 0.7855
+  [fine-tune] Epoch   2 | loss 0.6047 | acc 0.7907 f1 0.7900
+[G: Taylor Neuron + Bridge] Step  58 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5953 | acc 0.7932 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5872 | acc 0.7961 f1 0.7955
+[G: Taylor Neuron + Bridge] Step  58 (edge* ): acc=0.6292  drop=+0.0190  fc_neurons=114  graph_edges=2,168  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6340 | acc 0.7809 f1 0.7800
+  [fine-tune] Epoch   2 | loss 0.6160 | acc 0.7850 f1 0.7843
+[G: Taylor Neuron + Bridge] Step  59 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6064 | acc 0.7885 f1 0.7873
+  [fine-tune] Epoch   2 | loss 0.5983 | acc 0.7919 f1 0.7907
+[G: Taylor Neuron + Bridge] Step  59 (edge* ): drop=+0.0205 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5919 | acc 0.7943 f1 0.7936
+  [fine-tune] Epoch   2 | loss 0.5861 | acc 0.7962 f1 0.7957
+[G: Taylor Neuron + Bridge] Step  59 (edge* ): acc=0.6290  drop=+0.0192  fc_neurons=114  graph_edges=2,125  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6283 | acc 0.7836 f1 0.7829
+  [fine-tune] Epoch   2 | loss 0.6099 | acc 0.7900 f1 0.7894
+[G: Taylor Neuron + Bridge] Step  60 (edge* ): acc=0.6291  drop=+0.0191  fc_neurons=114  graph_edges=2,083  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6754 | acc 0.7688 f1 0.7684
+  [fine-tune] Epoch   2 | loss 0.6485 | acc 0.7756 f1 0.7750
+[G: Taylor Neuron + Bridge] Step  61 (edge* ): drop=+0.0211 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6363 | acc 0.7807 f1 0.7803
+  [fine-tune] Epoch   2 | loss 0.6263 | acc 0.7821 f1 0.7812
+[G: Taylor Neuron + Bridge] Step  61 (edge* ): drop=+0.0200 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6199 | acc 0.7854 f1 0.7852
+  [fine-tune] Epoch   2 | loss 0.6133 | acc 0.7879 f1 0.7873
+[G: Taylor Neuron + Bridge] Step  61 (edge* ): acc=0.6296  drop=+0.0186  fc_neurons=114  graph_edges=2,042  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6573 | acc 0.7720 f1 0.7714
+  [fine-tune] Epoch   2 | loss 0.6410 | acc 0.7759 f1 0.7751
+[G: Taylor Neuron + Bridge] Step  62 (edge* ): drop=+0.0226 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6326 | acc 0.7800 f1 0.7790
+  [fine-tune] Epoch   2 | loss 0.6255 | acc 0.7817 f1 0.7813
+[G: Taylor Neuron + Bridge] Step  62 (edge* ): acc=0.6287  drop=+0.0195  fc_neurons=114  graph_edges=2,002  scale=1.000
+  [fine-tune] Epoch   1 | loss 0.6985 | acc 0.7608 f1 0.7598
+  [fine-tune] Epoch   2 | loss 0.6730 | acc 0.7669 f1 0.7659
+[G: Taylor Neuron + Bridge] Step  63 (edge* ): drop=+0.0265 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6612 | acc 0.7695 f1 0.7678
+  [fine-tune] Epoch   2 | loss 0.6519 | acc 0.7738 f1 0.7726
+[G: Taylor Neuron + Bridge] Step  63 (edge* ): drop=+0.0235 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6449 | acc 0.7760 f1 0.7751
+  [fine-tune] Epoch   2 | loss 0.6384 | acc 0.7805 f1 0.7797
+[G: Taylor Neuron + Bridge] Step  63: over budget (drop=+0.0209); reverted, step scale -> 0.5000
+  [fine-tune] Epoch   1 | loss 0.6459 | acc 0.7783 f1 0.7774
+  [fine-tune] Epoch   2 | loss 0.6337 | acc 0.7799 f1 0.7794
+[G: Taylor Neuron + Bridge] Step  64 (edge* ): drop=+0.0207 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6271 | acc 0.7825 f1 0.7818
+  [fine-tune] Epoch   2 | loss 0.6210 | acc 0.7859 f1 0.7854
+[G: Taylor Neuron + Bridge] Step  64 (edge* ): drop=+0.0215 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6159 | acc 0.7857 f1 0.7848
+  [fine-tune] Epoch   2 | loss 0.6113 | acc 0.7888 f1 0.7879
+[G: Taylor Neuron + Bridge] Step  64 (edge* ): acc=0.6284  drop=+0.0198  fc_neurons=114  graph_edges=1,982  scale=0.500
+  [fine-tune] Epoch   1 | loss 0.6478 | acc 0.7767 f1 0.7755
+  [fine-tune] Epoch   2 | loss 0.6331 | acc 0.7794 f1 0.7782
+[G: Taylor Neuron + Bridge] Step  65 (edge* ): drop=+0.0244 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6258 | acc 0.7835 f1 0.7823
+  [fine-tune] Epoch   2 | loss 0.6202 | acc 0.7850 f1 0.7838
+[G: Taylor Neuron + Bridge] Step  65 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6154 | acc 0.7863 f1 0.7851
+  [fine-tune] Epoch   2 | loss 0.6112 | acc 0.7889 f1 0.7877
+[G: Taylor Neuron + Bridge] Step  65: over budget (drop=+0.0217); reverted, step scale -> 0.2500
+  [fine-tune] Epoch   1 | loss 0.6177 | acc 0.7864 f1 0.7851
+  [fine-tune] Epoch   2 | loss 0.6111 | acc 0.7879 f1 0.7870
+[G: Taylor Neuron + Bridge] Step  66 (edge* ): drop=+0.0202 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6071 | acc 0.7893 f1 0.7881
+  [fine-tune] Epoch   2 | loss 0.6028 | acc 0.7906 f1 0.7896
+[G: Taylor Neuron + Bridge] Step  66 (edge* ): acc=0.6285  drop=+0.0197  fc_neurons=114  graph_edges=1,973  scale=0.250
+  [fine-tune] Epoch   1 | loss 0.6207 | acc 0.7856 f1 0.7845
+  [fine-tune] Epoch   2 | loss 0.6114 | acc 0.7879 f1 0.7871
+[G: Taylor Neuron + Bridge] Step  67 (edge* ): acc=0.6291  drop=+0.0191  fc_neurons=114  graph_edges=1,964  scale=0.250
+  [fine-tune] Epoch   1 | loss 0.6298 | acc 0.7832 f1 0.7823
+  [fine-tune] Epoch   2 | loss 0.6188 | acc 0.7855 f1 0.7849
+[G: Taylor Neuron + Bridge] Step  68 (edge* ): drop=+0.0220 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.6133 | acc 0.7879 f1 0.7871
+  [fine-tune] Epoch   2 | loss 0.6081 | acc 0.7889 f1 0.7875
+[G: Taylor Neuron + Bridge] Step  68 (edge* ): drop=+0.0230 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.6045 | acc 0.7906 f1 0.7895
+  [fine-tune] Epoch   2 | loss 0.6002 | acc 0.7928 f1 0.7917
+[G: Taylor Neuron + Bridge] Step  68: over budget (drop=+0.0215); reverted, step scale -> 0.1250
+  [fine-tune] Epoch   1 | loss 0.6118 | acc 0.7881 f1 0.7867
+  [fine-tune] Epoch   2 | loss 0.6056 | acc 0.7903 f1 0.7893
+[G: Taylor Neuron + Bridge] Step  69 (edge* ): acc=0.6295  drop=+0.0187  fc_neurons=114  graph_edges=1,960  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6073 | acc 0.7903 f1 0.7891
+  [fine-tune] Epoch   2 | loss 0.6016 | acc 0.7916 f1 0.7903
+[G: Taylor Neuron + Bridge] Step  70 (edge* ): acc=0.6289  drop=+0.0193  fc_neurons=114  graph_edges=1,956  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6039 | acc 0.7911 f1 0.7902
+  [fine-tune] Epoch   2 | loss 0.5984 | acc 0.7936 f1 0.7933
+[G: Taylor Neuron + Bridge] Step  71 (edge* ): drop=+0.0208 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5950 | acc 0.7949 f1 0.7942
+  [fine-tune] Epoch   2 | loss 0.5915 | acc 0.7959 f1 0.7952
+[G: Taylor Neuron + Bridge] Step  71 (edge* ): acc=0.6286  drop=+0.0196  fc_neurons=114  graph_edges=1,952  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5966 | acc 0.7940 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5915 | acc 0.7970 f1 0.7966
+[G: Taylor Neuron + Bridge] Step  72 (edge* ): acc=0.6297  drop=+0.0185  fc_neurons=114  graph_edges=1,948  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5932 | acc 0.7960 f1 0.7950
+  [fine-tune] Epoch   2 | loss 0.5888 | acc 0.7984 f1 0.7976
+[G: Taylor Neuron + Bridge] Step  73 (edge* ): acc=0.6298  drop=+0.0184  fc_neurons=114  graph_edges=1,944  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5894 | acc 0.7974 f1 0.7965
+  [fine-tune] Epoch   2 | loss 0.5853 | acc 0.7995 f1 0.7984
+[G: Taylor Neuron + Bridge] Step  74 (edge* ): acc=0.6302  drop=+0.0180  fc_neurons=114  graph_edges=1,940  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5873 | acc 0.7984 f1 0.7977
+  [fine-tune] Epoch   2 | loss 0.5831 | acc 0.7989 f1 0.7982
+[G: Taylor Neuron + Bridge] Step  75 (edge* ): acc=0.6289  drop=+0.0193  fc_neurons=114  graph_edges=1,936  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5836 | acc 0.7998 f1 0.7990
+  [fine-tune] Epoch   2 | loss 0.5798 | acc 0.8011 f1 0.8008
+[G: Taylor Neuron + Bridge] Step  76 (edge* ): drop=+0.0200 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5772 | acc 0.8014 f1 0.8013
+  [fine-tune] Epoch   2 | loss 0.5744 | acc 0.8015 f1 0.8019
+[G: Taylor Neuron + Bridge] Step  76 (edge* ): acc=0.6288  drop=+0.0194  fc_neurons=114  graph_edges=1,932  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5797 | acc 0.8028 f1 0.8027
+  [fine-tune] Epoch   2 | loss 0.5753 | acc 0.8039 f1 0.8031
+[G: Taylor Neuron + Bridge] Step  77 (edge* ): acc=0.6316  drop=+0.0166  fc_neurons=114  graph_edges=1,928  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5823 | acc 0.8022 f1 0.8016
+  [fine-tune] Epoch   2 | loss 0.5763 | acc 0.8031 f1 0.8025
+[G: Taylor Neuron + Bridge] Step  78 (edge* ): acc=0.6323  drop=+0.0159  fc_neurons=114  graph_edges=1,924  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5831 | acc 0.8012 f1 0.8006
+  [fine-tune] Epoch   2 | loss 0.5778 | acc 0.8014 f1 0.8002
+[G: Taylor Neuron + Bridge] Step  79 (edge* ): acc=0.6304  drop=+0.0178  fc_neurons=114  graph_edges=1,920  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5855 | acc 0.7980 f1 0.7972
+  [fine-tune] Epoch   2 | loss 0.5796 | acc 0.7990 f1 0.7983
+[G: Taylor Neuron + Bridge] Step  80 (edge* ): acc=0.6293  drop=+0.0189  fc_neurons=114  graph_edges=1,916  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5860 | acc 0.7984 f1 0.7979
+  [fine-tune] Epoch   2 | loss 0.5802 | acc 0.8006 f1 0.7996
+[G: Taylor Neuron + Bridge] Step  81 (edge* ): acc=0.6288  drop=+0.0194  fc_neurons=114  graph_edges=1,912  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5938 | acc 0.7954 f1 0.7944
+  [fine-tune] Epoch   2 | loss 0.5855 | acc 0.7975 f1 0.7971
+[G: Taylor Neuron + Bridge] Step  82 (edge* ): acc=0.6307  drop=+0.0175  fc_neurons=114  graph_edges=1,908  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.5896 | acc 0.7981 f1 0.7981
+  [fine-tune] Epoch   2 | loss 0.5830 | acc 0.7997 f1 0.7987
+[G: Taylor Neuron + Bridge] Step  83 (edge* ): acc=0.6301  drop=+0.0181  fc_neurons=114  graph_edges=1,904  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6105 | acc 0.7913 f1 0.7900
+  [fine-tune] Epoch   2 | loss 0.5971 | acc 0.7941 f1 0.7934
+[G: Taylor Neuron + Bridge] Step  84 (edge* ): acc=0.6302  drop=+0.0180  fc_neurons=114  graph_edges=1,900  scale=0.125
+  [fine-tune] Epoch   1 | loss 0.6021 | acc 0.7926 f1 0.7920
+  [fine-tune] Epoch   2 | loss 0.5942 | acc 0.7947 f1 0.7942
+[G: Taylor Neuron + Bridge] Step  85 (edge* ): drop=+0.0232 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5896 | acc 0.7973 f1 0.7963
+  [fine-tune] Epoch   2 | loss 0.5854 | acc 0.7987 f1 0.7981
+[G: Taylor Neuron + Bridge] Step  85 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5824 | acc 0.8007 f1 0.8000
+  [fine-tune] Epoch   2 | loss 0.5787 | acc 0.8016 f1 0.8016
+[G: Taylor Neuron + Bridge] Step  85: over budget at min step scale (1/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.6017 | acc 0.7920 f1 0.7905
+  [fine-tune] Epoch   2 | loss 0.5942 | acc 0.7951 f1 0.7941
+[G: Taylor Neuron + Bridge] Step  86 (edge* ): drop=+0.0218 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5899 | acc 0.7971 f1 0.7964
+  [fine-tune] Epoch   2 | loss 0.5851 | acc 0.7982 f1 0.7976
+[G: Taylor Neuron + Bridge] Step  86 (edge* ): drop=+0.0200 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5820 | acc 0.7996 f1 0.7990
+  [fine-tune] Epoch   2 | loss 0.5784 | acc 0.8023 f1 0.8019
+[G: Taylor Neuron + Bridge] Step  86: over budget at min step scale (2/3); reverted.
+  [fine-tune] Epoch   1 | loss 0.6019 | acc 0.7936 f1 0.7927
+  [fine-tune] Epoch   2 | loss 0.5941 | acc 0.7949 f1 0.7936
+[G: Taylor Neuron + Bridge] Step  87 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+  [fine-tune] Epoch   1 | loss 0.5895 | acc 0.7972 f1 0.7963
+  [fine-tune] Epoch   2 | loss 0.5852 | acc 0.7981 f1 0.7976
+[G: Taylor Neuron + Bridge] Step  87 (edge* ): drop=+0.0224 over budget -> recovery round 2/2
+  [fine-tune] Epoch   1 | loss 0.5823 | acc 0.8002 f1 0.7996
+  [fine-tune] Epoch   2 | loss 0.5786 | acc 0.8015 f1 0.8006
+[G: Taylor Neuron + Bridge] Step  87: over budget at min step scale (3/3); reverted.
+[G: Taylor Neuron + Bridge] Budget consumed. Stopping.
+
+[G: Taylor Neuron + Bridge] Done. 81 steps. acc=0.6302  fc_neurons=114
+[G: Taylor Neuron + Bridge] Final layer widths: conv 6-16 | fc 90-24-10  graph_edges=1,900
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6302
+F1       : 0.6292
+Precision: 0.6286
+Recall   : 0.6302
+Params   : 41396 trainable
+State size (approx): 161.70 KB
+Inference time (avg): batch 3.0483 ms | single 0.069129 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.94s
+Best communication cost: 265.0000
+Mapping (task → core):
+  Task   1  →  Core   7
+  Task   2  →  Core   9
+  Task   3  →  Core   3
+  Task   4  →  Core   2
+  Task   5  →  Core   5
+  Task   6  →  Core   8
+  Task   7  →  Core   6
+  Task   8  →  Core   1
+  Task   9  →  Core   4
+Mapping: [(0, 6), (1, 8), (2, 2), (3, 1), (4, 4), (5, 7), (6, 5), (7, 0), (8, 3)]
+Communication cost: 265.0
+  [recorded] 'G: Taylor Neuron + Bridge [final]'  acc=0.6302  cost=265  sp_cost=359  graph_edges=1,900  fc_neurons=114
+[G: Taylor Neuron + Bridge] TIMING: total=219.0s  core=215.6s  final grouping+SA=0.9s  neuron=3.0s  edge=0.5s (bridge grouping+SA 0.0s, prep 0.0s)  finetune=199.0s  graph_sync=0.4s  eval=7.5s
+
+
+=====================================================================================================================================================================================================================================================================================================
+  ISO-ACCURACY TABLE — snapshot at each accuracy-drop threshold
+  Snapshot interval: every 1.0 pp
+  Model: LeNet-5 (conv1/c3/c5/f6/output) | Dataset: CIFAR-10
+  Tolerance: ≤2.0 pp drop from BASELINE
+  Graph: channel-level (Conv2d channels + FC neurons) | Mesh: 3×3=9 cores
+  Edge step: kernel-level for Conv2d, weight-block (sp=25) for c5, weight for f6
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2  G=Taylor+Bridge
+  Deltas: accuracy/F1/precision/recall in pp; cost/edges/FLOPs/size relative to Baseline.
+=====================================================================================================================================================================================================================================================================================================
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                 Stage                 |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|     Graph Edges      |     Graph Nodes      |   Batch Inf. (ms)    |      FLOPs (FC)      |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                               |    0.6482  (baseline)|  639.0000  (baseline)|  866.0000  (baseline)|    12,954  (baseline)|       239  (baseline)|   3.61 ms  (baseline)|   117,840  (baseline)| 242.21 KB  (baseline)|    0.6454  (baseline)|    0.6482  (baseline)|    0.6482  (baseline)|
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|A: IterCC Neuron + Bridge @ drop≤1.0%  |    0.6412  (-0.70 pp)|   329.0000  (-48.51%)|   427.0000  (-50.69%)|      8,340  (-35.62%)|        206  (-13.81%)|    3.24 ms  (-10.20%)|    106,000  (-10.05%)|   218.96 KB  (-9.60%)|    0.6407  (-0.46 pp)|    0.6408  (-0.74 pp)|    0.6412  (-0.70 pp)|
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|B: IterCC Neuron + L2 @ drop≤1.0%      |    0.6412  (-0.70 pp)|   329.0000  (-48.51%)|   427.0000  (-50.69%)|      8,340  (-35.62%)|        206  (-13.81%)|    6.42 ms  (+77.99%)|    106,000  (-10.05%)|   218.96 KB  (-9.60%)|    0.6407  (-0.46 pp)|    0.6408  (-0.74 pp)|    0.6412  (-0.70 pp)|
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|D: Taylor Neuron + L2 @ drop≤1.0%      |    0.6406  (-0.76 pp)|   403.0000  (-36.93%)|   505.0000  (-41.69%)|      6,923  (-46.56%)|        179  (-25.10%)|     3.63 ms  (+0.74%)|     83,506  (-29.14%)|  174.92 KB  (-27.78%)|    0.6405  (-0.49 pp)|    0.6409  (-0.73 pp)|    0.6406  (-0.76 pp)|
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|G: Taylor Neuron + Bridge @ drop≤1.0%  |    0.6406  (-0.76 pp)|   403.0000  (-36.93%)|   505.0000  (-41.69%)|      6,923  (-46.56%)|        179  (-25.10%)|     3.54 ms  (-1.87%)|     83,506  (-29.14%)|  174.92 KB  (-27.78%)|    0.6405  (-0.49 pp)|    0.6409  (-0.73 pp)|    0.6406  (-0.76 pp)|
++---------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+
+=================================================================================================================================================================================================================================================================================================
+  FINAL TABLE — each branch at its stopping point (last within tolerance)
+  Snapshot interval: every 1.0 pp
+  Model: LeNet-5 (conv1/c3/c5/f6/output) | Dataset: CIFAR-10
+  Tolerance: ≤2.0 pp drop from BASELINE
+  Graph: channel-level (Conv2d channels + FC neurons) | Mesh: 3×3=9 cores
+  Edge step: kernel-level for Conv2d, weight-block (sp=25) for c5, weight for f6
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2  G=Taylor+Bridge
+  Deltas: accuracy/F1/precision/recall in pp; cost/edges/FLOPs/size relative to Baseline.
+=================================================================================================================================================================================================================================================================================================
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|               Stage               |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|     Graph Edges      |     Graph Nodes      |   Batch Inf. (ms)    |      FLOPs (FC)      |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                           |    0.6482  (baseline)|  639.0000  (baseline)|  866.0000  (baseline)|    12,954  (baseline)|       239  (baseline)|   3.61 ms  (baseline)|   117,840  (baseline)| 242.21 KB  (baseline)|    0.6454  (baseline)|    0.6482  (baseline)|    0.6482  (baseline)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|After L1 10% pre-pruning           |    0.6452  (-0.30 pp)|   505.0000  (-20.97%)|   608.0000  (-29.79%)|     11,655  (-10.03%)|         233  (-2.51%)|     3.63 ms  (+0.60%)|     112,750  (-4.32%)|   232.25 KB  (-4.11%)|    0.6451  (-0.02 pp)|    0.6455  (-0.27 pp)|    0.6452  (-0.30 pp)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|A: IterCC Neuron + Bridge [final]  |    0.6283  (-1.99 pp)|   297.0000  (-53.52%)|   394.0000  (-54.50%)|      2,959  (-77.16%)|        177  (-25.94%)|     3.58 ms  (-0.64%)|     91,214  (-22.60%)|  189.96 KB  (-21.57%)|    0.6281  (-1.73 pp)|    0.6281  (-2.01 pp)|    0.6283  (-1.99 pp)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|B: IterCC Neuron + L2 [final]      |    0.6283  (-1.99 pp)|   297.0000  (-53.52%)|   394.0000  (-54.50%)|      2,959  (-77.16%)|        177  (-25.94%)|     3.64 ms  (+0.82%)|     91,214  (-22.60%)|  189.96 KB  (-21.57%)|    0.6281  (-1.73 pp)|    0.6281  (-2.01 pp)|    0.6283  (-1.99 pp)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|D: Taylor Neuron + L2 [final]      |    0.6302  (-1.80 pp)|   265.0000  (-58.53%)|   359.0000  (-58.55%)|      1,900  (-85.33%)|        149  (-37.66%)|     3.59 ms  (-0.56%)|     76,800  (-34.83%)|  161.70 KB  (-33.24%)|    0.6292  (-1.62 pp)|    0.6286  (-1.96 pp)|    0.6302  (-1.80 pp)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|G: Taylor Neuron + Bridge [final]  |    0.6302  (-1.80 pp)|   265.0000  (-58.53%)|   359.0000  (-58.55%)|      1,900  (-85.33%)|        149  (-37.66%)|    3.05 ms  (-15.53%)|     76,800  (-34.83%)|  161.70 KB  (-33.24%)|    0.6292  (-1.62 pp)|    0.6286  (-1.96 pp)|    0.6302  (-1.80 pp)|
++-----------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+====================================================================================================================================================================================
+  WALL-CLOCK TIMING per branch (seconds, seed 42).  Total = whole branch incl. snapshots/logging/final eval;  Core = Total minus snapshots and trajectory logging.
+  Shared L1 pre-pruning (not in any branch): 38.9s
+====================================================================================================================================================================================
+Branch                                              Total             Core     Final grp+SA           Neuron             Edge  (Bridge grp+SA)        Edge prep        Fine-tune       Graph sync             Eval        Snapshots         Traj log            Steps        FT rounds
+A: IterCC Neuron + Bridge                           154.8            151.6              1.0              0.7              0.5              0.0              0.0            139.2              0.3              5.1              3.2              0.0               52               71
+B: IterCC Neuron + L2                               153.6            148.8              1.0              0.7              0.4              0.0              0.0            136.4              0.3              5.1              4.8              0.0               52               71
+D: Taylor Neuron + L2                               231.7            228.4              1.0              3.1              0.3              0.0              0.0            210.9              0.4              7.9              3.4              0.0               81              110
+G: Taylor Neuron + Bridge                           219.0            215.6              0.9              3.0              0.5              0.0              0.0            199.0              0.4              7.5              3.3              0.0               81              110
+[timing] Saved timing_LeNet5_CIFAR10_v8_seq10_seed42.json / .csv
+[trajectory] 266 rows → trajectory_LeNet5_CIFAR10_v8_seq10_seed42.csv
+[trajectory] 266 rows → trajectory_LeNet5_CIFAR10_v8_seq10_seed42.json

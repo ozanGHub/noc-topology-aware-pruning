@@ -1,0 +1,24 @@
+[
+  {
+    "branch": "G: Taylor Neuron + Bridge",
+    "step": 0,
+    "phase": "neuron",
+    "accuracy": 0.831,
+    "accuracy_drop": 0.010800000000000032,
+    "fc_neurons": 1533,
+    "fc_edges": 4238977,
+    "graph_edges": 943618,
+    "flops": 9419776
+  },
+  {
+    "branch": "G: Taylor Neuron + Bridge",
+    "step": 1,
+    "phase": "edge*",
+    "accuracy": 0.8344,
+    "accuracy_drop": 0.007399999999999962,
+    "fc_neurons": 1533,
+    "fc_edges": 3329317,
+    "graph_edges": 647371,
+    "flops": 9419776
+  }
+]

@@ -1,0 +1,3 @@
+branch,step,phase,accuracy,accuracy_drop,fc_neurons,fc_edges,graph_edges,flops
+G: Taylor Neuron + Bridge,0,neuron,0.831,0.010800000000000032,1533,4238977,943618,9419776
+G: Taylor Neuron + Bridge,1,edge*,0.8344,0.007399999999999962,1533,3329317,647371,9419776

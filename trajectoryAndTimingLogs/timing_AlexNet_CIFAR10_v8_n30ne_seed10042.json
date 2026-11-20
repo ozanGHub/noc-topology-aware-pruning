@@ -1,0 +1,51 @@
+{
+  "seed": 10042,
+  "shared_pre": {
+    "l1_stage_total_s": 158.07015734200104,
+    "l1_grouping_sa_s": 6.812331967998034
+  },
+  "branches": [
+    {
+      "branch": "A: IterCC Neuron + Bridge",
+      "seed": 10042,
+      "final_grouping_sa_s": 6.0887339530017925,
+      "final_cost_eval_s": 0.02431250299923704,
+      "total_wall_s": 3435.8332756870004,
+      "core_wall_s": 3305.153275934026,
+      "loop_wall_s": 3384.2772860769983,
+      "final_eval_s": 51.55570687599902,
+      "neuron_step_s": 679.9576389100002,
+      "edge_step_s": 40.56654599693866,
+      "edge_prep_s": 0.1980077929874824,
+      "bridge_grouping_sa_s": 0.3806806880347722,
+      "finetune_s": 2418.2743965999725,
+      "eval_s": 69.5577294349896,
+      "graph_sync_s": 43.39879038600702,
+      "snapshot_s": 130.58818112100198,
+      "trajectory_log_s": 0.09181863197227358,
+      "accepted_steps": 328,
+      "finetune_rounds": 513
+    },
+    {
+      "branch": "D: Taylor Neuron + L2",
+      "seed": 10042,
+      "final_grouping_sa_s": 6.005975088002742,
+      "final_cost_eval_s": 0.024106505999952788,
+      "total_wall_s": 2353.3276901749996,
+      "core_wall_s": 2221.8603987580136,
+      "loop_wall_s": 2301.8846559779995,
+      "final_eval_s": 51.44275269699938,
+      "neuron_step_s": 43.02466543799892,
+      "edge_step_s": 25.086667865005438,
+      "edge_prep_s": 0.16935406297488953,
+      "bridge_grouping_sa_s": 0.0,
+      "finetune_s": 2003.644455449008,
+      "eval_s": 57.4686707809924,
+      "graph_sync_s": 39.719430979996105,
+      "snapshot_s": 131.38505124800213,
+      "trajectory_log_s": 0.08224016898384434,
+      "accepted_steps": 286,
+      "finetune_rounds": 423
+    }
+  ]
+}

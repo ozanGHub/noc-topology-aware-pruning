@@ -1,0 +1,72 @@
+{
+  "seed": 20042,
+  "shared_pre": {
+    "l1_stage_total_s": 158.2322743179975,
+    "l1_grouping_sa_s": 6.853264295030385
+  },
+  "branches": [
+    {
+      "branch": "B: IterCC Neuron + L2",
+      "seed": 20042,
+      "final_grouping_sa_s": 6.10611058602808,
+      "final_cost_eval_s": 0.030794671969488263,
+      "total_wall_s": 4370.733961712976,
+      "core_wall_s": 4239.386184046511,
+      "loop_wall_s": 4318.418078743969,
+      "final_eval_s": 52.31548203894636,
+      "neuron_step_s": 678.5219719120068,
+      "edge_step_s": 39.439265251217876,
+      "edge_prep_s": 0.27360534720355645,
+      "bridge_grouping_sa_s": 0.0,
+      "finetune_s": 3312.542321909219,
+      "eval_s": 91.82466606574599,
+      "graph_sync_s": 62.3426498604822,
+      "snapshot_s": 131.19073617906542,
+      "trajectory_log_s": 0.15704148740042,
+      "accepted_steps": 443,
+      "finetune_rounds": 670
+    },
+    {
+      "branch": "D: Taylor Neuron + L2",
+      "seed": 20042,
+      "final_grouping_sa_s": 5.986608791979961,
+      "final_cost_eval_s": 0.02519786497578025,
+      "total_wall_s": 2304.4581998959766,
+      "core_wall_s": 2173.958958781208,
+      "loop_wall_s": 2252.5976705169887,
+      "final_eval_s": 51.86005302192643,
+      "neuron_step_s": 41.217674327024724,
+      "edge_step_s": 26.03409375139745,
+      "edge_prep_s": 0.1627217290806584,
+      "bridge_grouping_sa_s": 0.0,
+      "finetune_s": 1949.7236485665198,
+      "eval_s": 54.385030182951596,
+      "graph_sync_s": 49.04973740654532,
+      "snapshot_s": 130.4017334910459,
+      "trajectory_log_s": 0.09750762372277677,
+      "accepted_steps": 272,
+      "finetune_rounds": 396
+    },
+    {
+      "branch": "G: Taylor Neuron + Bridge",
+      "seed": 20042,
+      "final_grouping_sa_s": 6.1250893929973245,
+      "final_cost_eval_s": 0.030713024956639856,
+      "total_wall_s": 3351.3800544230035,
+      "core_wall_s": 3220.367093170178,
+      "loop_wall_s": 3299.8028824549983,
+      "final_eval_s": 51.57690308301244,
+      "neuron_step_s": 41.45540608104784,
+      "edge_step_s": 50.71445856423816,
+      "edge_prep_s": 0.23252413823502138,
+      "bridge_grouping_sa_s": 0.4553312931675464,
+      "finetune_s": 2939.664157320047,
+      "eval_s": 84.38471482420573,
+      "graph_sync_s": 50.30035938741639,
+      "snapshot_s": 130.90874726197217,
+      "trajectory_log_s": 0.10421399085316807,
+      "accepted_steps": 373,
+      "finetune_rounds": 619
+    }
+  ]
+}

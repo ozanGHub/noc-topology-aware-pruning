@@ -1,0 +1,2 @@
+branch,seed,final_grouping_sa_s,final_cost_eval_s,total_wall_s,core_wall_s,loop_wall_s,final_eval_s,neuron_step_s,edge_step_s,bridge_grouping_sa_s,finetune_s,eval_s,graph_sync_s,snapshot_s,trajectory_log_s,accepted_steps,finetune_rounds
+A: IterCC Neuron + Bridge-Link,20042,6.159739202004857,0.01640103300451301,507.20947982500365,491.34711745608365,499.87989030800236,7.329099851005594,55.160831008979585,54.8845283161354,0.2920070690452121,326.1231310641597,12.763457302033203,34.37015381192032,15.368114816999878,0.49424755192012526,187,221

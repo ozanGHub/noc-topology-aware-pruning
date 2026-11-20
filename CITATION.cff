@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper and this repository."
+title: "Topology-Aware Pruning and Mapping Algorithms for Deep Neural Network Accelerators"
+type: software
+license: MIT
+authors:
+  - family-names: "Tekdur"
+    given-names: "Ozan"
+  - family-names: "Cakin"
+    given-names: "Alperen"
+  - family-names: "Dilek"
+    given-names: "Selma"
+  - family-names: "Tosun"
+    given-names: "Suleyman"
+keywords:
+  - neural network pruning
+  - network-on-chip
+  - DNN accelerators
+  - communication cost

@@ -1,0 +1,233 @@
+[
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 0,
+    "phase": "neuron",
+    "accuracy": 0.8481,
+    "accuracy_drop": 0.009700000000000042,
+    "fc_neurons": 1513,
+    "fc_edges": 4184818,
+    "graph_edges": 976047,
+    "flops": 9307196
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 1,
+    "phase": "edge*",
+    "accuracy": 0.8492,
+    "accuracy_drop": 0.008600000000000052,
+    "fc_neurons": 1513,
+    "fc_edges": 4165298,
+    "graph_edges": 956527,
+    "flops": 9307196
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 2,
+    "phase": "edge*",
+    "accuracy": 0.8479,
+    "accuracy_drop": 0.00990000000000002,
+    "fc_neurons": 1513,
+    "fc_edges": 4146168,
+    "graph_edges": 937397,
+    "flops": 9307196
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 3,
+    "phase": "edge*",
+    "accuracy": 0.8497,
+    "accuracy_drop": 0.008099999999999996,
+    "fc_neurons": 1510,
+    "fc_edges": 4134367,
+    "graph_edges": 925625,
+    "flops": 9301070
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 4,
+    "phase": "edge*",
+    "accuracy": 0.8491,
+    "accuracy_drop": 0.008700000000000041,
+    "fc_neurons": 1508,
+    "fc_edges": 4128058,
+    "graph_edges": 919316,
+    "flops": 9296986
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 5,
+    "phase": "edge*",
+    "accuracy": 0.8494,
+    "accuracy_drop": 0.008399999999999963,
+    "fc_neurons": 1507,
+    "fc_edges": 4124913,
+    "graph_edges": 916171,
+    "flops": 9294944
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 6,
+    "phase": "edge*",
+    "accuracy": 0.8481,
+    "accuracy_drop": 0.009700000000000042,
+    "fc_neurons": 1506,
+    "fc_edges": 4121710,
+    "graph_edges": 912997,
+    "flops": 9292902
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 7,
+    "phase": "edge*",
+    "accuracy": 0.8511,
+    "accuracy_drop": 0.006700000000000039,
+    "fc_neurons": 1504,
+    "fc_edges": 4117671,
+    "graph_edges": 908973,
+    "flops": 9288818
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 8,
+    "phase": "edge*",
+    "accuracy": 0.8504,
+    "accuracy_drop": 0.007399999999999962,
+    "fc_neurons": 1503,
+    "fc_edges": 4114520,
+    "graph_edges": 905822,
+    "flops": 9286776
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 9,
+    "phase": "edge*",
+    "accuracy": 0.8507,
+    "accuracy_drop": 0.007099999999999995,
+    "fc_neurons": 1503,
+    "fc_edges": 4112226,
+    "graph_edges": 903558,
+    "flops": 9286776
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 10,
+    "phase": "edge*",
+    "accuracy": 0.8488,
+    "accuracy_drop": 0.009000000000000008,
+    "fc_neurons": 1501,
+    "fc_edges": 4108308,
+    "graph_edges": 899640,
+    "flops": 9282692
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 11,
+    "phase": "edge*",
+    "accuracy": 0.8511,
+    "accuracy_drop": 0.006700000000000039,
+    "fc_neurons": 1499,
+    "fc_edges": 4104362,
+    "graph_edges": 895722,
+    "flops": 9278608
+  },
+  {
+    "branch": "A: IterCC Neuron + Bridge",
+    "step": 12,
+    "phase": "edge*",
+    "accuracy": 0.8508,
+    "accuracy_drop": 0.007000000000000006,
+    "fc_neurons": 1498,
+    "fc_edges": 4101274,
+    "graph_edges": 892647,
+    "flops": 9276566
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 0,
+    "phase": "neuron",
+    "accuracy": 0.8517,
+    "accuracy_drop": 0.006099999999999994,
+    "fc_neurons": 1513,
+    "fc_edges": 4155190,
+    "graph_edges": 978545,
+    "flops": 9235456
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 1,
+    "phase": "edge*",
+    "accuracy": 0.8522,
+    "accuracy_drop": 0.005600000000000049,
+    "fc_neurons": 1513,
+    "fc_edges": 4145405,
+    "graph_edges": 968760,
+    "flops": 9235456
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 2,
+    "phase": "edge*",
+    "accuracy": 0.849,
+    "accuracy_drop": 0.00880000000000003,
+    "fc_neurons": 1513,
+    "fc_edges": 4135718,
+    "graph_edges": 959073,
+    "flops": 9235456
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 3,
+    "phase": "edge*",
+    "accuracy": 0.8482,
+    "accuracy_drop": 0.009600000000000053,
+    "fc_neurons": 1513,
+    "fc_edges": 4126041,
+    "graph_edges": 949483,
+    "flops": 9235456
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 4,
+    "phase": "edge*",
+    "accuracy": 0.8485,
+    "accuracy_drop": 0.009299999999999975,
+    "fc_neurons": 1513,
+    "fc_edges": 4116547,
+    "graph_edges": 939989,
+    "flops": 9235456
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 5,
+    "phase": "edge*",
+    "accuracy": 0.8482,
+    "accuracy_drop": 0.009600000000000053,
+    "fc_neurons": 1511,
+    "fc_edges": 4105416,
+    "graph_edges": 928858,
+    "flops": 9231412
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 6,
+    "phase": "edge*",
+    "accuracy": 0.8506,
+    "accuracy_drop": 0.007199999999999984,
+    "fc_neurons": 1509,
+    "fc_edges": 4099120,
+    "graph_edges": 922562,
+    "flops": 9227368
+  },
+  {
+    "branch": "D: Taylor Neuron + L2",
+    "step": 7,
+    "phase": "edge*",
+    "accuracy": 0.8503,
+    "accuracy_drop": 0.007500000000000062,
+    "fc_neurons": 1508,
+    "fc_edges": 4095975,
+    "graph_edges": 919417,
+    "flops": 9225346
+  }
+]

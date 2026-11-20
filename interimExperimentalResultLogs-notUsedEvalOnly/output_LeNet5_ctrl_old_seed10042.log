@@ -1,0 +1,121 @@
+[Checkpoint] model_path=DNN_LeNet5_CIFAR10.pth  FORCE_TRAIN=''  TRAIN_PATIENCE=''  RESTORE_BEST=''
+[Checkpoint] IterCC filter: low_mag_pct=75.0  degree_q=0.25  min_in_degree=0
+PrunableNetworkConv(layers=[3, 6, 16, 120, 84, 10], nodes=239, edges=12954)
+Graph layers     : [3, 6, 16, 120, 84, 10]
+Layer types      : ['conv', 'conv', 'linear', 'linear', 'linear']
+Spatial sizes    : [1, 1, 25, 1, 1]
+Graph nodes      : 239
+Graph edges      : 12,954
+
+=== Baseline ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6482
+F1       : 0.6454
+Precision: 0.6482
+Recall   : 0.6482
+Params   : 62006 trainable
+State size (approx): 242.21 KB
+Inference time (avg): batch 3.0663 ms | single 0.068643 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.92s
+Best communication cost: 639.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core   8
+  Task   3  →  Core   7
+  Task   4  →  Core   1
+  Task   5  →  Core   2
+  Task   6  →  Core   4
+  Task   7  →  Core   3
+  Task   8  →  Core   5
+  Task   9  →  Core   6
+Mapping: [(0, 8), (1, 7), (2, 6), (3, 0), (4, 1), (5, 3), (6, 2), (7, 4), (8, 5)]
+Communication cost: 639.0
+  [recorded] 'Baseline'  acc=0.6482  cost=639  sp_cost=866  graph_edges=12,954  fc_neurons=204
+L1 step 1/5
+  [fine-tune] Epoch   1 | loss 0.5387 | acc 0.8244 f1 0.8241
+  [fine-tune] Epoch   5 | loss 0.5063 | acc 0.8310 f1 0.8307
+  [fine-tune] Epoch  10 | loss 0.4926 | acc 0.8359 f1 0.8355
+  Active weights: 61,770 / 61,770 (100.0%)
+L1 step 2/5
+  [fine-tune] Epoch   1 | loss 0.4900 | acc 0.8366 f1 0.8361
+  [fine-tune] Epoch   5 | loss 0.4811 | acc 0.8407 f1 0.8410
+  [fine-tune] Epoch  10 | loss 0.4708 | acc 0.8448 f1 0.8443
+  Active weights: 61,759 / 61,770 (100.0%)
+L1 step 3/5
+  [fine-tune] Epoch   1 | loss 0.4696 | acc 0.8457 f1 0.8454
+  [fine-tune] Epoch   5 | loss 0.4615 | acc 0.8476 f1 0.8471
+  [fine-tune] Epoch  10 | loss 0.4528 | acc 0.8509 f1 0.8506
+  Active weights: 61,755 / 61,770 (100.0%)
+L1 step 4/5
+  [fine-tune] Epoch   1 | loss 0.4509 | acc 0.8515 f1 0.8511
+  [fine-tune] Epoch   5 | loss 0.4437 | acc 0.8552 f1 0.8551
+  [fine-tune] Epoch  10 | loss 0.4347 | acc 0.8593 f1 0.8592
+  Active weights: 61,743 / 61,770 (100.0%)
+L1 step 5/5
+  [fine-tune] Epoch   1 | loss 0.4337 | acc 0.8592 f1 0.8586
+  [fine-tune] Epoch   5 | loss 0.4262 | acc 0.8605 f1 0.8604
+  [fine-tune] Epoch  10 | loss 0.4175 | acc 0.8657 f1 0.8657
+  Active weights: 61,733 / 61,770 (99.9%)
+
+=== After L1 0% pre-pruning ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6490
+F1       : 0.6490
+Precision: 0.6494
+Recall   : 0.6490
+Params   : 62006 trainable
+State size (approx): 242.21 KB
+Inference time (avg): batch 3.0683 ms | single 0.068729 ms
+Simulated annealing  [N=9, P=9, iters=200,000]
+
+Done in 0.93s
+Best communication cost: 636.0000
+Mapping (task → core):
+  Task   1  →  Core   9
+  Task   2  →  Core   8
+  Task   3  →  Core   7
+  Task   4  →  Core   4
+  Task   5  →  Core   5
+  Task   6  →  Core   1
+  Task   7  →  Core   6
+  Task   8  →  Core   2
+  Task   9  →  Core   3
+Mapping: [(0, 8), (1, 7), (2, 6), (3, 3), (4, 4), (5, 0), (6, 5), (7, 1), (8, 2)]
+Communication cost: 636.0
+  [recorded] 'After L1 0% pre-pruning'  acc=0.6490  cost=636  sp_cost=829  graph_edges=12,946  fc_neurons=204
+[timing] Shared L1 pre-pruning stage: 33.9s (grouping+SA of the L1 model: 0.9s)
+
+[Checkpoint] BASELINE anchor = 0.6482
+[Checkpoint] Post-L1 accuracy = 0.6490  (drop from baseline: -0.08 pp)
+[Checkpoint] Remaining budget: 1.08 pp
+[Checkpoint] fc_neurons = 204
+[Checkpoint] graph nodes = 239, edges = 12,946
+[Checkpoint] fine_tune_lr = 5e-05  l1_target = 0.001
+[Checkpoint] v8 neuron switches: NEURON_TOL=0.008  NEURON_CAP_FROM_L1=False  NEURONS_PER_STEP=3  RUN_TAG=''  L2_LONELY=True  INTERLEAVE_FIX=False  NEURON_SEQUENTIAL=True  NEURON_MAX_FRAC=None  NEURON_STEP_FRAC=None  ACCURACY_TOLERANCE=0.01  NEURON_SHARE=None  NEURON_SHARE_BASIS=total  NEURON_CAP_FROM_L1=False
+[Checkpoint] cross-group edges after L1: 12,946 / 12,946 (100.0%); groups = 9; edges with ungrouped endpoint = 0
+
+
+=======================================================================================================================================================================================================================================================================================
+  FINAL TABLE — each branch at its stopping point (last within tolerance)
+  Snapshot interval: every 0.2 pp
+  Model: LeNet-5 (conv1/c3/c5/f6/output) | Dataset: CIFAR-10
+  Tolerance: ≤1.0 pp drop from BASELINE
+  Graph: channel-level (Conv2d channels + FC neurons) | Mesh: 3×3=9 cores
+  Edge step: kernel-level for Conv2d, weight-block (sp=25) for c5, weight for f6
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2  G=Taylor+Bridge
+  Deltas: accuracy/F1/precision/recall in pp; cost/edges/FLOPs/size relative to Baseline.
+=======================================================================================================================================================================================================================================================================================
++-------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|          Stage          |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|     Graph Edges      |     Graph Nodes      |   Batch Inf. (ms)    |      FLOPs (FC)      |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++-------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                 |    0.6482  (baseline)|  639.0000  (baseline)|  866.0000  (baseline)|    12,954  (baseline)|       239  (baseline)|   3.07 ms  (baseline)|   117,840  (baseline)| 242.21 KB  (baseline)|    0.6454  (baseline)|    0.6482  (baseline)|    0.6482  (baseline)|
++-------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|After L1 0% pre-pruning  |    0.6490  (+0.08 pp)|    636.0000  (-0.47%)|    829.0000  (-4.27%)|      12,946  (-0.06%)|         239  (+0.00%)|     3.07 ms  (-0.04%)|     117,840  (+0.00%)|   242.21 KB  (+0.00%)|    0.6490  (+0.36 pp)|    0.6494  (+0.12 pp)|    0.6490  (+0.08 pp)|
++-------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+

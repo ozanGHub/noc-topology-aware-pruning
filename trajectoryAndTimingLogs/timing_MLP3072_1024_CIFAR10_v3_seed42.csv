@@ -1,0 +1,2 @@
+branch,seed,final_grouping_sa_s,final_cost_eval_s,total_wall_s,core_wall_s,loop_wall_s,final_eval_s,neuron_step_s,edge_step_s,bridge_grouping_sa_s,finetune_s,eval_s,graph_sync_s,snapshot_s,trajectory_log_s,accepted_steps,finetune_rounds
+Ir: Random Neuron + L2 edge,42,94.16870270401705,1.1383551610051654,778.3212812810089,675.5768545558676,679.8873899879982,98.43304134492064,7.386911856010556,157.14156063721748,0.0,207.4766400057124,6.769927943998482,193.6449579364271,101.8946851619985,0.849741563142743,92,124

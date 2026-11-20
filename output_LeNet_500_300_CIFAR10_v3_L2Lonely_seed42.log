@@ -1,0 +1,3464 @@
+nohup: ignoring input
+[load_or_train] device=cuda
+[load_or_train] Loaded from DNN_LeNet_500_300_CIFAR10.pth
+
+=== Initial model ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6393
+F1       : 0.6352
+Precision: 0.6353
+Recall   : 0.6393
+Params   : 1691410 trainable
+State size (approx): 6613.34 KB
+Inference time (avg): batch 0.9482 ms | single 0.059415 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.58s
+Best communication cost: 3685373.0000
+Mapping (task → core):
+  Task   1  →  Core  77
+  Task   2  →  Core  96
+  Task   3  →  Core 109
+  Task   4  →  Core  48
+  Task   5  →  Core  87
+  Task   6  →  Core 123
+  Task   7  →  Core 137
+  Task   8  →  Core  52
+  Task   9  →  Core 167
+  Task  10  →  Core 138
+  Task  11  →  Core  34
+  Task  12  →  Core  53
+  Task  13  →  Core  38
+  Task  14  →  Core 101
+  Task  15  →  Core 125
+  Task  16  →  Core 162
+  Task  17  →  Core  88
+  Task  18  →  Core  80
+  Task  19  →  Core  85
+  Task  20  →  Core  71
+  Task  21  →  Core  99
+  Task  22  →  Core   9
+  Task  23  →  Core 193
+  Task  24  →  Core 189
+  Task  25  →  Core  25
+  Task  26  →  Core  58
+  Task  27  →  Core 151
+  Task  28  →  Core  20
+  Task  29  →  Core  46
+  Task  30  →  Core 159
+  Task  31  →  Core  26
+  Task  32  →  Core  36
+  Task  33  →  Core  94
+  Task  34  →  Core  72
+  Task  35  →  Core 146
+  Task  36  →  Core 165
+  Task  37  →  Core  66
+  Task  38  →  Core 108
+  Task  39  →  Core  24
+  Task  40  →  Core 117
+  Task  41  →  Core 131
+  Task  42  →  Core  33
+  Task  43  →  Core 135
+  Task  44  →  Core 140
+  Task  45  →  Core 128
+  Task  46  →  Core 192
+  Task  47  →  Core  74
+  Task  48  →  Core  81
+  Task  49  →  Core 114
+  Task  50  →  Core 166
+  Task  51  →  Core  11
+  Task  52  →  Core 103
+  Task  53  →  Core 191
+  Task  54  →  Core  40
+  Task  55  →  Core 161
+  Task  56  →  Core  10
+  Task  57  →  Core 124
+  Task  58  →  Core 190
+  Task  59  →  Core 178
+  Task  60  →  Core 116
+  Task  61  →  Core  32
+  Task  62  →  Core   7
+  Task  63  →  Core 173
+  Task  64  →  Core  83
+  Task  65  →  Core 112
+  Task  66  →  Core  27
+  Task  67  →  Core 143
+  Task  68  →  Core  23
+  Task  69  →  Core  29
+  Task  70  →  Core  73
+  Task  71  →  Core  75
+  Task  72  →  Core  42
+  Task  73  →  Core 157
+  Task  74  →  Core  39
+  Task  75  →  Core  35
+  Task  76  →  Core  17
+  Task  77  →  Core 132
+  Task  78  →  Core 154
+  Task  79  →  Core 149
+  Task  80  →  Core   8
+  Task  81  →  Core  89
+  Task  82  →  Core 130
+  Task  83  →  Core 111
+  Task  84  →  Core 164
+  Task  85  →  Core  82
+  Task  86  →  Core 179
+  Task  87  →  Core 150
+  Task  88  →  Core  70
+  Task  89  →  Core  41
+  Task  90  →  Core 134
+  Task  91  →  Core 129
+  Task  92  →  Core  56
+  Task  93  →  Core 122
+  Task  94  →  Core 153
+  Task  95  →  Core  84
+  Task  96  →  Core  51
+  Task  97  →  Core  16
+  Task  98  →  Core 147
+  Task  99  →  Core 186
+  Task 100  →  Core   3
+  Task 101  →  Core 100
+  Task 102  →  Core 180
+  Task 103  →  Core  49
+  Task 104  →  Core 102
+  Task 105  →  Core  69
+  Task 106  →  Core 113
+  Task 107  →  Core  55
+  Task 108  →  Core  31
+  Task 109  →  Core 126
+  Task 110  →  Core 142
+  Task 111  →  Core 188
+  Task 112  →  Core 144
+  Task 113  →  Core 187
+  Task 114  →  Core 133
+  Task 115  →  Core  18
+  Task 116  →  Core 141
+  Task 117  →  Core 136
+  Task 118  →  Core 171
+  Task 119  →  Core  44
+  Task 120  →  Core 172
+  Task 121  →  Core 194
+  Task 122  →  Core 115
+  Task 123  →  Core  45
+  Task 124  →  Core  68
+  Task 125  →  Core 163
+  Task 126  →  Core 121
+  Task 127  →  Core  67
+  Task 128  →  Core   6
+  Task 129  →  Core 127
+  Task 130  →  Core 145
+  Task 131  →  Core  62
+  Task 132  →  Core 156
+  Task 133  →  Core  98
+  Task 134  →  Core 118
+  Task 135  →  Core  60
+  Task 136  →  Core 176
+  Task 137  →  Core  43
+  Task 138  →  Core  30
+  Task 139  →  Core  50
+  Task 140  →  Core   4
+  Task 141  →  Core 148
+  Task 142  →  Core  37
+  Task 143  →  Core 175
+  Task 144  →  Core  95
+  Task 145  →  Core 152
+  Task 146  →  Core  97
+  Task 147  →  Core  76
+  Task 148  →  Core  19
+  Task 149  →  Core  63
+  Task 150  →  Core  86
+  Task 151  →  Core 177
+  Task 152  →  Core  21
+  Task 153  →  Core  64
+  Task 154  →  Core  47
+  Task 155  →  Core 160
+  Task 156  →  Core 139
+  Task 157  →  Core  65
+  Task 158  →  Core  61
+  Task 159  →  Core   5
+  Task 160  →  Core 110
+  Task 161  →  Core  57
+  Task 162  →  Core 168
+  Task 163  →  Core  22
+  Task 164  →  Core  59
+  Task 165  →  Core 174
+  Task 166  →  Core 158
+  Task 167  →  Core  54
+  Task 168  →  Core  12
+  Task 169  →  Core 182
+  Task 170  →  Core  14
+  Task 171  →  Core 184
+  Task 172  →  Core   1
+  Task 173  →  Core  15
+  Task 174  →  Core 170
+  Task 175  →  Core  28
+  Task 176  →  Core 155
+  Task 177  →  Core 169
+  Task 178  →  Core 195
+  Task 179  →  Core   2
+  Task 180  →  Core 196
+  Task 181  →  Core  13
+  Task 182  →  Core 181
+  Task 183  →  Core 185
+  Task 184  →  Core 183
+  Task 185  →  Core 119
+  Task 186  →  Core 107
+  Task 187  →  Core  93
+  Task 188  →  Core  78
+  Task 189  →  Core  91
+  Task 190  →  Core  92
+  Task 191  →  Core 106
+  Task 192  →  Core  90
+  Task 193  →  Core  79
+  Task 194  →  Core 104
+  Task 195  →  Core 105
+  Task 196  →  Core 120
+Mapping: [(0, 76), (1, 95), (2, 108), (3, 47), (4, 86), (5, 122), (6, 136), (7, 51), (8, 166), (9, 137), (10, 33), (11, 52), (12, 37), (13, 100), (14, 124), (15, 161), (16, 87), (17, 79), (18, 84), (19, 70), (20, 98), (21, 8), (22, 192), (23, 188), (24, 24), (25, 57), (26, 150), (27, 19), (28, 45), (29, 158), (30, 25), (31, 35), (32, 93), (33, 71), (34, 145), (35, 164), (36, 65), (37, 107), (38, 23), (39, 116), (40, 130), (41, 32), (42, 134), (43, 139), (44, 127), (45, 191), (46, 73), (47, 80), (48, 113), (49, 165), (50, 10), (51, 102), (52, 190), (53, 39), (54, 160), (55, 9), (56, 123), (57, 189), (58, 177), (59, 115), (60, 31), (61, 6), (62, 172), (63, 82), (64, 111), (65, 26), (66, 142), (67, 22), (68, 28), (69, 72), (70, 74), (71, 41), (72, 156), (73, 38), (74, 34), (75, 16), (76, 131), (77, 153), (78, 148), (79, 7), (80, 88), (81, 129), (82, 110), (83, 163), (84, 81), (85, 178), (86, 149), (87, 69), (88, 40), (89, 133), (90, 128), (91, 55), (92, 121), (93, 152), (94, 83), (95, 50), (96, 15), (97, 146), (98, 185), (99, 2), (100, 99), (101, 179), (102, 48), (103, 101), (104, 68), (105, 112), (106, 54), (107, 30), (108, 125), (109, 141), (110, 187), (111, 143), (112, 186), (113, 132), (114, 17), (115, 140), (116, 135), (117, 170), (118, 43), (119, 171), (120, 193), (121, 114), (122, 44), (123, 67), (124, 162), (125, 120), (126, 66), (127, 5), (128, 126), (129, 144), (130, 61), (131, 155), (132, 97), (133, 117), (134, 59), (135, 175), (136, 42), (137, 29), (138, 49), (139, 3), (140, 147), (141, 36), (142, 174), (143, 94), (144, 151), (145, 96), (146, 75), (147, 18), (148, 62), (149, 85), (150, 176), (151, 20), (152, 63), (153, 46), (154, 159), (155, 138), (156, 64), (157, 60), (158, 4), (159, 109), (160, 56), (161, 167), (162, 21), (163, 58), (164, 173), (165, 157), (166, 53), (167, 11), (168, 181), (169, 13), (170, 183), (171, 0), (172, 14), (173, 169), (174, 27), (175, 154), (176, 168), (177, 194), (178, 1), (179, 195), (180, 12), (181, 180), (182, 184), (183, 182), (184, 118), (185, 106), (186, 92), (187, 77), (188, 90), (189, 91), (190, 105), (191, 89), (192, 78), (193, 103), (194, 104), (195, 119)]
+Communication cost: 3685373.0
+  [recorded] 'Baseline'  acc=0.6393  cost=3685373  sp_cost=6052119  edges=1,689,000  neurons=800
+L1 loop: 1
+  [Step 1/5] Edges removed: 33780/1689000 (2.0%)
+L1 loop: 2
+  [Step 2/5] Edges removed: 67560/1689000 (4.0%)
+L1 loop: 3
+  [Step 3/5] Edges removed: 101340/1689000 (6.0%)
+L1 loop: 4
+  [Step 4/5] Edges removed: 135120/1689000 (8.0%)
+L1 loop: 5
+  [Step 5/5] Edges removed: 168900/1689000 (10.0%)
+
+=== After iterative L1 pruning (10% removed) ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6364
+F1       : 0.6365
+Precision: 0.6379
+Recall   : 0.6364
+Params   : 1691410 trainable
+State size (approx): 6613.34 KB
+Inference time (avg): batch 0.9518 ms | single 0.059463 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.46s
+Best communication cost: 3566428.0000
+Mapping (task → core):
+  Task   1  →  Core 105
+  Task   2  →  Core 140
+  Task   3  →  Core  97
+  Task   4  →  Core 152
+  Task   5  →  Core 192
+  Task   6  →  Core 178
+  Task   7  →  Core 138
+  Task   8  →  Core 179
+  Task   9  →  Core 153
+  Task  10  →  Core 165
+  Task  11  →  Core 164
+  Task  12  →  Core 177
+  Task  13  →  Core 139
+  Task  14  →  Core 125
+  Task  15  →  Core 166
+  Task  16  →  Core 167
+  Task  17  →  Core  99
+  Task  18  →  Core  16
+  Task  19  →  Core  56
+  Task  20  →  Core   7
+  Task  21  →  Core   4
+  Task  22  →  Core 186
+  Task  23  →  Core  51
+  Task  24  →  Core 171
+  Task  25  →  Core  19
+  Task  26  →  Core 123
+  Task  27  →  Core  33
+  Task  28  →  Core  48
+  Task  29  →  Core 170
+  Task  30  →  Core   3
+  Task  31  →  Core 176
+  Task  32  →  Core 112
+  Task  33  →  Core   5
+  Task  34  →  Core 109
+  Task  35  →  Core  22
+  Task  36  →  Core  17
+  Task  37  →  Core  69
+  Task  38  →  Core  31
+  Task  39  →  Core 126
+  Task  40  →  Core   9
+  Task  41  →  Core  52
+  Task  42  →  Core 149
+  Task  43  →  Core  40
+  Task  44  →  Core 163
+  Task  45  →  Core 142
+  Task  46  →  Core 145
+  Task  47  →  Core  29
+  Task  48  →  Core 148
+  Task  49  →  Core   6
+  Task  50  →  Core 100
+  Task  51  →  Core 110
+  Task  52  →  Core 161
+  Task  53  →  Core  74
+  Task  54  →  Core  23
+  Task  55  →  Core 174
+  Task  56  →  Core  20
+  Task  57  →  Core 128
+  Task  58  →  Core  21
+  Task  59  →  Core  84
+  Task  60  →  Core  55
+  Task  61  →  Core  66
+  Task  62  →  Core 131
+  Task  63  →  Core  34
+  Task  64  →  Core  30
+  Task  65  →  Core 173
+  Task  66  →  Core  57
+  Task  67  →  Core 189
+  Task  68  →  Core   8
+  Task  69  →  Core 141
+  Task  70  →  Core 156
+  Task  71  →  Core  68
+  Task  72  →  Core  73
+  Task  73  →  Core 101
+  Task  74  →  Core  46
+  Task  75  →  Core  86
+  Task  76  →  Core 124
+  Task  77  →  Core 162
+  Task  78  →  Core 175
+  Task  79  →  Core  59
+  Task  80  →  Core  95
+  Task  81  →  Core 116
+  Task  82  →  Core  49
+  Task  83  →  Core  32
+  Task  84  →  Core  81
+  Task  85  →  Core 188
+  Task  86  →  Core 190
+  Task  87  →  Core  11
+  Task  88  →  Core  45
+  Task  89  →  Core  10
+  Task  90  →  Core  88
+  Task  91  →  Core  25
+  Task  92  →  Core  47
+  Task  93  →  Core 143
+  Task  94  →  Core  71
+  Task  95  →  Core 150
+  Task  96  →  Core  87
+  Task  97  →  Core 155
+  Task  98  →  Core  72
+  Task  99  →  Core 127
+  Task 100  →  Core  39
+  Task 101  →  Core  18
+  Task 102  →  Core  53
+  Task 103  →  Core  98
+  Task 104  →  Core  50
+  Task 105  →  Core 114
+  Task 106  →  Core 113
+  Task 107  →  Core 122
+  Task 108  →  Core 115
+  Task 109  →  Core 157
+  Task 110  →  Core 187
+  Task 111  →  Core  82
+  Task 112  →  Core  37
+  Task 113  →  Core 191
+  Task 114  →  Core 160
+  Task 115  →  Core 136
+  Task 116  →  Core 158
+  Task 117  →  Core  54
+  Task 118  →  Core  42
+  Task 119  →  Core 159
+  Task 120  →  Core  43
+  Task 121  →  Core  70
+  Task 122  →  Core 111
+  Task 123  →  Core  24
+  Task 124  →  Core 146
+  Task 125  →  Core  27
+  Task 126  →  Core 102
+  Task 127  →  Core 172
+  Task 128  →  Core  58
+  Task 129  →  Core  36
+  Task 130  →  Core 147
+  Task 131  →  Core  26
+  Task 132  →  Core  83
+  Task 133  →  Core  41
+  Task 134  →  Core 144
+  Task 135  →  Core  96
+  Task 136  →  Core  38
+  Task 137  →  Core  44
+  Task 138  →  Core 185
+  Task 139  →  Core  85
+  Task 140  →  Core 129
+  Task 141  →  Core  35
+  Task 142  →  Core  60
+  Task 143  →  Core 130
+  Task 144  →  Core  67
+  Task 145  →  Core 151
+  Task 146  →  Core 137
+  Task 147  →  Core 154
+  Task 148  →  Core 193
+  Task 149  →  Core 180
+  Task 150  →  Core  12
+  Task 151  →  Core 194
+  Task 152  →  Core 181
+  Task 153  →  Core 182
+  Task 154  →  Core 168
+  Task 155  →  Core 195
+  Task 156  →  Core  14
+  Task 157  →  Core  28
+  Task 158  →  Core  15
+  Task 159  →  Core 183
+  Task 160  →  Core   2
+  Task 161  →  Core  13
+  Task 162  →  Core 184
+  Task 163  →  Core 169
+  Task 164  →  Core   1
+  Task 165  →  Core 196
+  Task 166  →  Core 103
+  Task 167  →  Core 120
+  Task 168  →  Core 106
+  Task 169  →  Core  62
+  Task 170  →  Core  78
+  Task 171  →  Core  80
+  Task 172  →  Core  64
+  Task 173  →  Core 117
+  Task 174  →  Core 121
+  Task 175  →  Core 104
+  Task 176  →  Core  90
+  Task 177  →  Core 119
+  Task 178  →  Core  77
+  Task 179  →  Core 135
+  Task 180  →  Core  79
+  Task 181  →  Core 118
+  Task 182  →  Core  91
+  Task 183  →  Core  75
+  Task 184  →  Core  94
+  Task 185  →  Core 107
+  Task 186  →  Core  92
+  Task 187  →  Core 134
+  Task 188  →  Core 133
+  Task 189  →  Core  65
+  Task 190  →  Core 108
+  Task 191  →  Core 132
+  Task 192  →  Core  63
+  Task 193  →  Core  76
+  Task 194  →  Core  61
+  Task 195  →  Core  93
+  Task 196  →  Core  89
+Mapping: [(0, 104), (1, 139), (2, 96), (3, 151), (4, 191), (5, 177), (6, 137), (7, 178), (8, 152), (9, 164), (10, 163), (11, 176), (12, 138), (13, 124), (14, 165), (15, 166), (16, 98), (17, 15), (18, 55), (19, 6), (20, 3), (21, 185), (22, 50), (23, 170), (24, 18), (25, 122), (26, 32), (27, 47), (28, 169), (29, 2), (30, 175), (31, 111), (32, 4), (33, 108), (34, 21), (35, 16), (36, 68), (37, 30), (38, 125), (39, 8), (40, 51), (41, 148), (42, 39), (43, 162), (44, 141), (45, 144), (46, 28), (47, 147), (48, 5), (49, 99), (50, 109), (51, 160), (52, 73), (53, 22), (54, 173), (55, 19), (56, 127), (57, 20), (58, 83), (59, 54), (60, 65), (61, 130), (62, 33), (63, 29), (64, 172), (65, 56), (66, 188), (67, 7), (68, 140), (69, 155), (70, 67), (71, 72), (72, 100), (73, 45), (74, 85), (75, 123), (76, 161), (77, 174), (78, 58), (79, 94), (80, 115), (81, 48), (82, 31), (83, 80), (84, 187), (85, 189), (86, 10), (87, 44), (88, 9), (89, 87), (90, 24), (91, 46), (92, 142), (93, 70), (94, 149), (95, 86), (96, 154), (97, 71), (98, 126), (99, 38), (100, 17), (101, 52), (102, 97), (103, 49), (104, 113), (105, 112), (106, 121), (107, 114), (108, 156), (109, 186), (110, 81), (111, 36), (112, 190), (113, 159), (114, 135), (115, 157), (116, 53), (117, 41), (118, 158), (119, 42), (120, 69), (121, 110), (122, 23), (123, 145), (124, 26), (125, 101), (126, 171), (127, 57), (128, 35), (129, 146), (130, 25), (131, 82), (132, 40), (133, 143), (134, 95), (135, 37), (136, 43), (137, 184), (138, 84), (139, 128), (140, 34), (141, 59), (142, 129), (143, 66), (144, 150), (145, 136), (146, 153), (147, 192), (148, 179), (149, 11), (150, 193), (151, 180), (152, 181), (153, 167), (154, 194), (155, 13), (156, 27), (157, 14), (158, 182), (159, 1), (160, 12), (161, 183), (162, 168), (163, 0), (164, 195), (165, 102), (166, 119), (167, 105), (168, 61), (169, 77), (170, 79), (171, 63), (172, 116), (173, 120), (174, 103), (175, 89), (176, 118), (177, 76), (178, 134), (179, 78), (180, 117), (181, 90), (182, 74), (183, 93), (184, 106), (185, 91), (186, 133), (187, 132), (188, 64), (189, 107), (190, 131), (191, 62), (192, 75), (193, 60), (194, 92), (195, 88)]
+Communication cost: 3566428.0
+  [recorded] 'After L1 10% pre-pruning'  acc=0.6364  cost=3566428  sp_cost=5596883  edges=1,520,100  neurons=800
+[timing] Shared L1 pre-pruning stage: 45.5s (grouping+SA of the L1 model: 15.9s)
+
+[Checkpoint] L1 model: 800 neurons, 1,520,100 edges.
+[Checkpoint] Tolerance anchor : BASELINE = 0.6393
+[Checkpoint] Post-L1 accuracy : 0.6364  (already 0.29 pp below baseline)
+[Checkpoint] Hard stop floor  : 0.6193 (baseline - 2.0 pp)
+[Checkpoint] Remaining budget for pruning: 1.71 pp
+[Checkpoint] fine_tune_lr = 0.0001  l1_target = 0.1  seed = 42
+[Checkpoint] cross-group edges after L1: 1,520,100 / 1,520,100 (100.0%); groups = 196; edges with ungrouped endpoint = 0
+
+======================================================================
+  BRANCH: A: IterCC Neuron + Bridge-Link
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[A: IterCC Neuron + Bridge-Link] Starting accuracy: 0.6364
+[select_neurons] Selected 172 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 75)', '(2, 80)', '(2, 81)', '(2, 84)', '(2, 88)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 96)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 104)', '(2, 107)', '(2, 108)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 115)', '(2, 117)', '(2, 118)', '(2, 119)', '(2, 122)', '(2, 123)', '(2, 127)', '(2, 128)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 135)', '(2, 140)', '(2, 141)', '(2, 145)', '(2, 146)', '(2, 148)', '(2, 150)', '(2, 151)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 157)', '(2, 159)', '(2, 160)', '(2, 161)', '(2, 163)', '(2, 166)', '(2, 168)', '(2, 170)', '(2, 171)', '(2, 176)', '(2, 177)', '(2, 179)', '(2, 181)', '(2, 182)', '(2, 184)', '(2, 186)', '(2, 188)', '(2, 190)', '(2, 191)', '(2, 192)', '(2, 195)', '(2, 197)', '(2, 198)', '(2, 200)', '(2, 201)', '(2, 202)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 209)', '(2, 215)', '(2, 216)', '(2, 221)', '(2, 223)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 229)', '(2, 232)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 239)', '(2, 241)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 250)', '(2, 253)', '(2, 255)', '(2, 256)', '(2, 258)', '(2, 261)', '(2, 263)', '(2, 265)', '(2, 270)', '(2, 271)', '(2, 272)', '(2, 274)', '(2, 275)', '(2, 277)', '(2, 279)', '(2, 280)', '(2, 283)', '(2, 286)', '(2, 288)', '(2, 289)', '(2, 290)', '(2, 292)', '(2, 293)', '(2, 294)', '(2, 298)']
+[select_neurons] Selected 171 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 244)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 252)', '(2, 254)', '(2, 255)', '(2, 257)', '(2, 260)', '(2, 262)', '(2, 264)', '(2, 269)', '(2, 270)', '(2, 271)', '(2, 273)', '(2, 274)', '(2, 276)', '(2, 278)', '(2, 279)', '(2, 282)', '(2, 285)', '(2, 287)', '(2, 288)', '(2, 289)', '(2, 291)', '(2, 292)', '(2, 293)', '(2, 297)']
+[select_neurons] Selected 170 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 245)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 251)', '(2, 253)', '(2, 254)', '(2, 256)', '(2, 259)', '(2, 261)', '(2, 263)', '(2, 268)', '(2, 269)', '(2, 270)', '(2, 272)', '(2, 273)', '(2, 275)', '(2, 277)', '(2, 278)', '(2, 281)', '(2, 284)', '(2, 286)', '(2, 287)', '(2, 288)', '(2, 290)', '(2, 291)', '(2, 292)', '(2, 296)']
+[A: IterCC Neuron + Bridge-Link] Step   1 (neuron): acc=0.6374  drop=+0.0019 pp  neurons=797  edges=1,518,698  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   2 (edge  ): acc=0.6336  drop=+0.0057 pp  neurons=797  edges=1,503,512  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step 2: neuron tolerance cap (drop=0.0057 ≥ 0.0050). Reserving 0.0143 for edge-only (0.0200).
+[A: IterCC Neuron + Bridge-Link] Step   3 (edge* ): acc=0.6322  drop=+0.0071 pp  neurons=752  edges=1,473,051  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   4 (edge* ): acc=0.6353  drop=+0.0040 pp  neurons=747  edges=1,443,565  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   5 (edge* ): acc=0.6304  drop=+0.0089 pp  neurons=747  edges=1,414,694  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   6 (edge* ): acc=0.6334  drop=+0.0059 pp  neurons=744  edges=1,386,401  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   7 (edge* ): acc=0.6316  drop=+0.0077 pp  neurons=743  edges=1,358,673  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   8 (edge* ): acc=0.6318  drop=+0.0075 pp  neurons=741  edges=1,331,500  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step   9 (edge* ): acc=0.6337  drop=+0.0056 pp  neurons=740  edges=1,304,870  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  10 (edge* ): acc=0.6297  drop=+0.0096 pp  neurons=740  edges=1,278,773  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  11 (edge* ): acc=0.6292  drop=+0.0101 pp  neurons=740  edges=1,253,198  scale=1.000
+[A: IterCC Neuron + Bridge-Link] → Snapshot at drop≤1.0%: 'A: IterCC Neuron + Bridge-Link @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.61s
+Best communication cost: 3487492.0000
+Mapping (task → core):
+  Task   1  →  Core 130
+  Task   2  →  Core 167
+  Task   3  →  Core  48
+  Task   4  →  Core 146
+  Task   5  →  Core  62
+  Task   6  →  Core  34
+  Task   7  →  Core  61
+  Task   8  →  Core 110
+  Task   9  →  Core 132
+  Task  10  →  Core 111
+  Task  11  →  Core 109
+  Task  12  →  Core  57
+  Task  13  →  Core 122
+  Task  14  →  Core  50
+  Task  15  →  Core  81
+  Task  16  →  Core 147
+  Task  17  →  Core 149
+  Task  18  →  Core 117
+  Task  19  →  Core 164
+  Task  20  →  Core 158
+  Task  21  →  Core  86
+  Task  22  →  Core  36
+  Task  23  →  Core 129
+  Task  24  →  Core  88
+  Task  25  →  Core  58
+  Task  26  →  Core 160
+  Task  27  →  Core  22
+  Task  28  →  Core  80
+  Task  29  →  Core 174
+  Task  30  →  Core  35
+  Task  31  →  Core 116
+  Task  32  →  Core 148
+  Task  33  →  Core 138
+  Task  34  →  Core  51
+  Task  35  →  Core  66
+  Task  36  →  Core  73
+  Task  37  →  Core  19
+  Task  38  →  Core  97
+  Task  39  →  Core 124
+  Task  40  →  Core  87
+  Task  41  →  Core 114
+  Task  42  →  Core 162
+  Task  43  →  Core  99
+  Task  44  →  Core  43
+  Task  45  →  Core 152
+  Task  46  →  Core  72
+  Task  47  →  Core 102
+  Task  48  →  Core  98
+  Task  49  →  Core 115
+  Task  50  →  Core  38
+  Task  51  →  Core 128
+  Task  52  →  Core  95
+  Task  53  →  Core  31
+  Task  54  →  Core 135
+  Task  55  →  Core  83
+  Task  56  →  Core  24
+  Task  57  →  Core  82
+  Task  58  →  Core  56
+  Task  59  →  Core  96
+  Task  60  →  Core 100
+  Task  61  →  Core  26
+  Task  62  →  Core   5
+  Task  63  →  Core  17
+  Task  64  →  Core 176
+  Task  65  →  Core  25
+  Task  66  →  Core 161
+  Task  67  →  Core 134
+  Task  68  →  Core  21
+  Task  69  →  Core 125
+  Task  70  →  Core  74
+  Task  71  →  Core 101
+  Task  72  →  Core  44
+  Task  73  →  Core 178
+  Task  74  →  Core   9
+  Task  75  →  Core   4
+  Task  76  →  Core  49
+  Task  77  →  Core 159
+  Task  78  →  Core 175
+  Task  79  →  Core 173
+  Task  80  →  Core 190
+  Task  81  →  Core  85
+  Task  82  →  Core  18
+  Task  83  →  Core  37
+  Task  84  →  Core  33
+  Task  85  →  Core 191
+  Task  86  →  Core   7
+  Task  87  →  Core   6
+  Task  88  →  Core 177
+  Task  89  →  Core  84
+  Task  90  →  Core   8
+  Task  91  →  Core 163
+  Task  92  →  Core  55
+  Task  93  →  Core  59
+  Task  94  →  Core 127
+  Task  95  →  Core  32
+  Task  96  →  Core  69
+  Task  97  →  Core  39
+  Task  98  →  Core  54
+  Task  99  →  Core 187
+  Task 100  →  Core 139
+  Task 101  →  Core 126
+  Task 102  →  Core 172
+  Task 103  →  Core 141
+  Task 104  →  Core 192
+  Task 105  →  Core  70
+  Task 106  →  Core  68
+  Task 107  →  Core  40
+  Task 108  →  Core  23
+  Task 109  →  Core 157
+  Task 110  →  Core 123
+  Task 111  →  Core   3
+  Task 112  →  Core 189
+  Task 113  →  Core 180
+  Task 114  →  Core 143
+  Task 115  →  Core  10
+  Task 116  →  Core 113
+  Task 117  →  Core 171
+  Task 118  →  Core 142
+  Task 119  →  Core 186
+  Task 120  →  Core 188
+  Task 121  →  Core 155
+  Task 122  →  Core  42
+  Task 123  →  Core 112
+  Task 124  →  Core 170
+  Task 125  →  Core 156
+  Task 126  →  Core  71
+  Task 127  →  Core  45
+  Task 128  →  Core  30
+  Task 129  →  Core 193
+  Task 130  →  Core 140
+  Task 131  →  Core  12
+  Task 132  →  Core 179
+  Task 133  →  Core  20
+  Task 134  →  Core 166
+  Task 135  →  Core  27
+  Task 136  →  Core 185
+  Task 137  →  Core  16
+  Task 138  →  Core  29
+  Task 139  →  Core  41
+  Task 140  →  Core 153
+  Task 141  →  Core  11
+  Task 142  →  Core 154
+  Task 143  →  Core 194
+  Task 144  →  Core 165
+  Task 145  →  Core 168
+  Task 146  →  Core 181
+  Task 147  →  Core 169
+  Task 148  →  Core   2
+  Task 149  →  Core  13
+  Task 150  →  Core  15
+  Task 151  →  Core 195
+  Task 152  →  Core  14
+  Task 153  →  Core 182
+  Task 154  →  Core  28
+  Task 155  →  Core 184
+  Task 156  →  Core 183
+  Task 157  →  Core   1
+  Task 158  →  Core 196
+  Task 159  →  Core 136
+  Task 160  →  Core 137
+  Task 161  →  Core 145
+  Task 162  →  Core  46
+  Task 163  →  Core 144
+  Task 164  →  Core  67
+  Task 165  →  Core 108
+  Task 166  →  Core  92
+  Task 167  →  Core 106
+  Task 168  →  Core  89
+  Task 169  →  Core 118
+  Task 170  →  Core  77
+  Task 171  →  Core  78
+  Task 172  →  Core  65
+  Task 173  →  Core 133
+  Task 174  →  Core  93
+  Task 175  →  Core 120
+  Task 176  →  Core  64
+  Task 177  →  Core  76
+  Task 178  →  Core  94
+  Task 179  →  Core 105
+  Task 180  →  Core  75
+  Task 181  →  Core 121
+  Task 182  →  Core 107
+  Task 183  →  Core 119
+  Task 184  →  Core  79
+  Task 185  →  Core  63
+  Task 186  →  Core  91
+  Task 187  →  Core  90
+  Task 188  →  Core 104
+  Task 189  →  Core 103
+  Task 190  →  Core 151
+  Task 191  →  Core  60
+  Task 192  →  Core 150
+  Task 193  →  Core 131
+  Task 194  →  Core  52
+  Task 195  →  Core  53
+  Task 196  →  Core  47
+Mapping: [(0, 129), (1, 166), (2, 47), (3, 145), (4, 61), (5, 33), (6, 60), (7, 109), (8, 131), (9, 110), (10, 108), (11, 56), (12, 121), (13, 49), (14, 80), (15, 146), (16, 148), (17, 116), (18, 163), (19, 157), (20, 85), (21, 35), (22, 128), (23, 87), (24, 57), (25, 159), (26, 21), (27, 79), (28, 173), (29, 34), (30, 115), (31, 147), (32, 137), (33, 50), (34, 65), (35, 72), (36, 18), (37, 96), (38, 123), (39, 86), (40, 113), (41, 161), (42, 98), (43, 42), (44, 151), (45, 71), (46, 101), (47, 97), (48, 114), (49, 37), (50, 127), (51, 94), (52, 30), (53, 134), (54, 82), (55, 23), (56, 81), (57, 55), (58, 95), (59, 99), (60, 25), (61, 4), (62, 16), (63, 175), (64, 24), (65, 160), (66, 133), (67, 20), (68, 124), (69, 73), (70, 100), (71, 43), (72, 177), (73, 8), (74, 3), (75, 48), (76, 158), (77, 174), (78, 172), (79, 189), (80, 84), (81, 17), (82, 36), (83, 32), (84, 190), (85, 6), (86, 5), (87, 176), (88, 83), (89, 7), (90, 162), (91, 54), (92, 58), (93, 126), (94, 31), (95, 68), (96, 38), (97, 53), (98, 186), (99, 138), (100, 125), (101, 171), (102, 140), (103, 191), (104, 69), (105, 67), (106, 39), (107, 22), (108, 156), (109, 122), (110, 2), (111, 188), (112, 179), (113, 142), (114, 9), (115, 112), (116, 170), (117, 141), (118, 185), (119, 187), (120, 154), (121, 41), (122, 111), (123, 169), (124, 155), (125, 70), (126, 44), (127, 29), (128, 192), (129, 139), (130, 11), (131, 178), (132, 19), (133, 165), (134, 26), (135, 184), (136, 15), (137, 28), (138, 40), (139, 152), (140, 10), (141, 153), (142, 193), (143, 164), (144, 167), (145, 180), (146, 168), (147, 1), (148, 12), (149, 14), (150, 194), (151, 13), (152, 181), (153, 27), (154, 183), (155, 182), (156, 0), (157, 195), (158, 135), (159, 136), (160, 144), (161, 45), (162, 143), (163, 66), (164, 107), (165, 91), (166, 105), (167, 88), (168, 117), (169, 76), (170, 77), (171, 64), (172, 132), (173, 92), (174, 119), (175, 63), (176, 75), (177, 93), (178, 104), (179, 74), (180, 120), (181, 106), (182, 118), (183, 78), (184, 62), (185, 90), (186, 89), (187, 103), (188, 102), (189, 150), (190, 59), (191, 149), (192, 130), (193, 51), (194, 52), (195, 46)]
+Communication cost: 3487492.0
+  [recorded] 'A: IterCC Neuron + Bridge-Link @ drop≤1.0%'  acc=0.6297  cost=3487492  sp_cost=5349894  edges=1,278,773  neurons=740
+[A: IterCC Neuron + Bridge-Link] Step  12 (edge* ): acc=0.6257  drop=+0.0136 pp  neurons=740  edges=1,228,135  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  13 (edge* ): acc=0.6287  drop=+0.0106 pp  neurons=740  edges=1,203,573  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  14 (edge* ): acc=0.6291  drop=+0.0102 pp  neurons=740  edges=1,179,502  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  15 (edge* ): acc=0.6276  drop=+0.0117 pp  neurons=740  edges=1,155,912  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  16 (edge* ): acc=0.6274  drop=+0.0119 pp  neurons=740  edges=1,132,794  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  17 (edge* ): acc=0.6244  drop=+0.0149 pp  neurons=740  edges=1,110,139  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  18 (edge* ): acc=0.6283  drop=+0.0110 pp  neurons=740  edges=1,087,937  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  19 (edge* ): acc=0.6270  drop=+0.0123 pp  neurons=740  edges=1,066,179  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  20 (edge* ): acc=0.6253  drop=+0.0140 pp  neurons=740  edges=1,044,856  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  21 (edge* ): acc=0.6215  drop=+0.0178 pp  neurons=740  edges=1,023,959  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  22 (edge* ): acc=0.6239  drop=+0.0154 pp  neurons=740  edges=1,003,480  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  23 (edge* ): acc=0.6237  drop=+0.0156 pp  neurons=739  edges=983,407  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  24 (edge* ): drop=+0.0207 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  24 (edge* ): acc=0.6210  drop=+0.0183 pp  neurons=739  edges=963,739  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  25 (edge* ): acc=0.6254  drop=+0.0139 pp  neurons=739  edges=944,465  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  26 (edge* ): acc=0.6204  drop=+0.0189 pp  neurons=739  edges=925,576  scale=1.000
+[A: IterCC Neuron + Bridge-Link] Step  27 (edge* ): drop=+0.0209 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  27 (edge* ): drop=+0.0220 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  27: over budget (drop=+0.0262); reverted, step scale -> 0.5000
+[A: IterCC Neuron + Bridge-Link] Step  28 (edge* ): drop=+0.0225 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  28 (edge* ): drop=+0.0229 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  28: over budget (drop=+0.0231); reverted, step scale -> 0.2500
+[A: IterCC Neuron + Bridge-Link] Step  29 (edge* ): drop=+0.0206 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  29 (edge* ): acc=0.6211  drop=+0.0182 pp  neurons=739  edges=920,949  scale=0.250
+[A: IterCC Neuron + Bridge-Link] Step  30 (edge* ): acc=0.6195  drop=+0.0198 pp  neurons=739  edges=916,345  scale=0.250
+[A: IterCC Neuron + Bridge-Link] Step  31 (edge* ): acc=0.6195  drop=+0.0198 pp  neurons=739  edges=911,764  scale=0.250
+[A: IterCC Neuron + Bridge-Link] Step  32 (edge* ): drop=+0.0229 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  32 (edge* ): drop=+0.0230 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  32: over budget (drop=+0.0225); reverted, step scale -> 0.1250
+[A: IterCC Neuron + Bridge-Link] Step  33 (edge* ): drop=+0.0255 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  33 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  33: over budget at min step scale (1/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Step  34 (edge* ): drop=+0.0215 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  34 (edge* ): drop=+0.0206 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  34: over budget at min step scale (2/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Step  35 (edge* ): acc=0.6214  drop=+0.0179 pp  neurons=738  edges=909,484  scale=0.125
+[A: IterCC Neuron + Bridge-Link] Step  36 (edge* ): drop=+0.0224 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  36 (edge* ): drop=+0.0251 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  36: over budget at min step scale (1/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Step  37 (edge* ): acc=0.6202  drop=+0.0191 pp  neurons=738  edges=907,211  scale=0.125
+[A: IterCC Neuron + Bridge-Link] Step  38 (edge* ): drop=+0.0213 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  38 (edge* ): drop=+0.0246 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  38: over budget at min step scale (1/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Step  39 (edge* ): drop=+0.0245 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  39 (edge* ): drop=+0.0223 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  39: over budget at min step scale (2/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Step  40 (edge* ): drop=+0.0205 over budget -> recovery round 1/2
+[A: IterCC Neuron + Bridge-Link] Step  40 (edge* ): drop=+0.0240 over budget -> recovery round 2/2
+[A: IterCC Neuron + Bridge-Link] Step  40: over budget at min step scale (3/3); reverted.
+[A: IterCC Neuron + Bridge-Link] Budget consumed. Stopping.
+
+[A: IterCC Neuron + Bridge-Link] Finished. 31 micro-steps completed.
+  Final: acc=0.6202  neurons=738  edges=907,211
+
+=== Final evaluation: A: IterCC Neuron + Bridge-Link ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6202
+F1       : 0.6197
+Precision: 0.6206
+Recall   : 0.6202
+Params   : 1490923 trainable
+State size (approx): 5829.70 KB
+Inference time (avg): batch 1.0399 ms | single 0.060149 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.48s
+Best communication cost: 2221014.0000
+Mapping (task → core):
+  Task   1  →  Core 181
+  Task   2  →  Core 112
+  Task   3  →  Core  87
+  Task   4  →  Core  37
+  Task   5  →  Core 176
+  Task   6  →  Core 144
+  Task   7  →  Core  74
+  Task   8  →  Core 129
+  Task   9  →  Core 162
+  Task  10  →  Core  73
+  Task  11  →  Core  47
+  Task  12  →  Core 145
+  Task  13  →  Core 101
+  Task  14  →  Core 131
+  Task  15  →  Core 122
+  Task  16  →  Core  49
+  Task  17  →  Core  96
+  Task  18  →  Core  88
+  Task  19  →  Core  80
+  Task  20  →  Core 146
+  Task  21  →  Core  60
+  Task  22  →  Core  52
+  Task  23  →  Core  51
+  Task  24  →  Core  59
+  Task  25  →  Core  65
+  Task  26  →  Core 149
+  Task  27  →  Core 161
+  Task  28  →  Core 109
+  Task  29  →  Core  95
+  Task  30  →  Core  67
+  Task  31  →  Core  35
+  Task  32  →  Core 102
+  Task  33  →  Core  61
+  Task  34  →  Core  66
+  Task  35  →  Core 137
+  Task  36  →  Core 147
+  Task  37  →  Core 148
+  Task  38  →  Core 124
+  Task  39  →  Core 123
+  Task  40  →  Core  81
+  Task  41  →  Core 130
+  Task  42  →  Core  34
+  Task  43  →  Core 150
+  Task  44  →  Core  36
+  Task  45  →  Core 115
+  Task  46  →  Core 160
+  Task  47  →  Core  21
+  Task  48  →  Core  38
+  Task  49  →  Core 174
+  Task  50  →  Core 136
+  Task  51  →  Core 159
+  Task  52  →  Core 100
+  Task  53  →  Core 175
+  Task  54  →  Core  19
+  Task  55  →  Core 164
+  Task  56  →  Core  72
+  Task  57  →  Core 139
+  Task  58  →  Core 138
+  Task  59  →  Core 163
+  Task  60  →  Core 151
+  Task  61  →  Core 189
+  Task  62  →  Core 190
+  Task  63  →  Core  83
+  Task  64  →  Core  22
+  Task  65  →  Core  33
+  Task  66  →  Core 125
+  Task  67  →  Core 177
+  Task  68  →  Core 173
+  Task  69  →  Core  68
+  Task  70  →  Core  20
+  Task  71  →  Core 114
+  Task  72  →  Core  99
+  Task  73  →  Core 128
+  Task  74  →  Core  46
+  Task  75  →  Core   7
+  Task  76  →  Core 116
+  Task  77  →  Core  48
+  Task  78  →  Core  86
+  Task  79  →  Core  97
+  Task  80  →  Core 110
+  Task  81  →  Core  50
+  Task  82  →  Core 111
+  Task  83  →  Core  23
+  Task  84  →  Core  53
+  Task  85  →  Core  82
+  Task  86  →  Core  58
+  Task  87  →  Core  85
+  Task  88  →  Core 195
+  Task  89  →  Core  12
+  Task  90  →  Core 196
+  Task  91  →  Core   1
+  Task  92  →  Core   2
+  Task  93  →  Core  15
+  Task  94  →  Core 182
+  Task  95  →  Core  28
+  Task  96  →  Core  13
+  Task  97  →  Core 183
+  Task  98  →  Core  14
+  Task  99  →  Core 113
+  Task 100  →  Core  45
+  Task 101  →  Core  55
+  Task 102  →  Core 127
+  Task 103  →  Core   8
+  Task 104  →  Core   9
+  Task 105  →  Core  17
+  Task 106  →  Core 167
+  Task 107  →  Core  69
+  Task 108  →  Core 194
+  Task 109  →  Core 180
+  Task 110  →  Core 187
+  Task 111  →  Core  40
+  Task 112  →  Core 154
+  Task 113  →  Core  42
+  Task 114  →  Core  26
+  Task 115  →  Core  25
+  Task 116  →  Core   6
+  Task 117  →  Core 140
+  Task 118  →  Core 152
+  Task 119  →  Core 172
+  Task 120  →  Core 170
+  Task 121  →  Core 169
+  Task 122  →  Core 157
+  Task 123  →  Core  39
+  Task 124  →  Core  18
+  Task 125  →  Core 126
+  Task 126  →  Core  32
+  Task 127  →  Core 178
+  Task 128  →  Core  84
+  Task 129  →  Core 186
+  Task 130  →  Core  10
+  Task 131  →  Core 185
+  Task 132  →  Core  71
+  Task 133  →  Core 132
+  Task 134  →  Core 118
+  Task 135  →  Core 103
+  Task 136  →  Core  94
+  Task 137  →  Core  92
+  Task 138  →  Core 134
+  Task 139  →  Core  91
+  Task 140  →  Core  79
+  Task 141  →  Core 120
+  Task 142  →  Core 117
+  Task 143  →  Core  90
+  Task 144  →  Core 108
+  Task 145  →  Core  75
+  Task 146  →  Core  63
+  Task 147  →  Core 105
+  Task 148  →  Core 104
+  Task 149  →  Core 106
+  Task 150  →  Core 133
+  Task 151  →  Core  64
+  Task 152  →  Core 119
+  Task 153  →  Core 121
+  Task 154  →  Core  62
+  Task 155  →  Core  78
+  Task 156  →  Core  89
+  Task 157  →  Core 135
+  Task 158  →  Core  76
+  Task 159  →  Core  93
+  Task 160  →  Core  77
+  Task 161  →  Core 107
+  Task 162  →  Core  57
+  Task 163  →  Core 192
+  Task 164  →  Core  24
+  Task 165  →  Core 191
+  Task 166  →  Core  31
+  Task 167  →  Core 153
+  Task 168  →  Core 155
+  Task 169  →  Core   5
+  Task 170  →  Core  54
+  Task 171  →  Core  56
+  Task 172  →  Core 168
+  Task 173  →  Core   4
+  Task 174  →  Core 141
+  Task 175  →  Core 179
+  Task 176  →  Core  11
+  Task 177  →  Core  27
+  Task 178  →  Core  41
+  Task 179  →  Core 193
+  Task 180  →  Core 156
+  Task 181  →  Core  30
+  Task 182  →  Core 158
+  Task 183  →  Core 188
+  Task 184  →  Core  98
+  Task 185  →  Core  29
+  Task 186  →  Core  70
+  Task 187  →  Core  16
+  Task 188  →  Core  44
+  Task 189  →  Core 142
+  Task 190  →  Core 165
+  Task 191  →  Core 171
+  Task 192  →  Core 166
+  Task 193  →  Core  43
+  Task 194  →  Core 184
+  Task 195  →  Core   3
+  Task 196  →  Core 143
+Mapping: [(0, 180), (1, 111), (2, 86), (3, 36), (4, 175), (5, 143), (6, 73), (7, 128), (8, 161), (9, 72), (10, 46), (11, 144), (12, 100), (13, 130), (14, 121), (15, 48), (16, 95), (17, 87), (18, 79), (19, 145), (20, 59), (21, 51), (22, 50), (23, 58), (24, 64), (25, 148), (26, 160), (27, 108), (28, 94), (29, 66), (30, 34), (31, 101), (32, 60), (33, 65), (34, 136), (35, 146), (36, 147), (37, 123), (38, 122), (39, 80), (40, 129), (41, 33), (42, 149), (43, 35), (44, 114), (45, 159), (46, 20), (47, 37), (48, 173), (49, 135), (50, 158), (51, 99), (52, 174), (53, 18), (54, 163), (55, 71), (56, 138), (57, 137), (58, 162), (59, 150), (60, 188), (61, 189), (62, 82), (63, 21), (64, 32), (65, 124), (66, 176), (67, 172), (68, 67), (69, 19), (70, 113), (71, 98), (72, 127), (73, 45), (74, 6), (75, 115), (76, 47), (77, 85), (78, 96), (79, 109), (80, 49), (81, 110), (82, 22), (83, 52), (84, 81), (85, 57), (86, 84), (87, 194), (88, 11), (89, 195), (90, 0), (91, 1), (92, 14), (93, 181), (94, 27), (95, 12), (96, 182), (97, 13), (98, 112), (99, 44), (100, 54), (101, 126), (102, 7), (103, 8), (104, 16), (105, 166), (106, 68), (107, 193), (108, 179), (109, 186), (110, 39), (111, 153), (112, 41), (113, 25), (114, 24), (115, 5), (116, 139), (117, 151), (118, 171), (119, 169), (120, 168), (121, 156), (122, 38), (123, 17), (124, 125), (125, 31), (126, 177), (127, 83), (128, 185), (129, 9), (130, 184), (131, 70), (132, 131), (133, 117), (134, 102), (135, 93), (136, 91), (137, 133), (138, 90), (139, 78), (140, 119), (141, 116), (142, 89), (143, 107), (144, 74), (145, 62), (146, 104), (147, 103), (148, 105), (149, 132), (150, 63), (151, 118), (152, 120), (153, 61), (154, 77), (155, 88), (156, 134), (157, 75), (158, 92), (159, 76), (160, 106), (161, 56), (162, 191), (163, 23), (164, 190), (165, 30), (166, 152), (167, 154), (168, 4), (169, 53), (170, 55), (171, 167), (172, 3), (173, 140), (174, 178), (175, 10), (176, 26), (177, 40), (178, 192), (179, 155), (180, 29), (181, 157), (182, 187), (183, 97), (184, 28), (185, 69), (186, 15), (187, 43), (188, 141), (189, 164), (190, 170), (191, 165), (192, 42), (193, 183), (194, 2), (195, 142)]
+Communication cost: 2221014.0
+  [recorded] 'A: IterCC Neuron + Bridge-Link [final]'  acc=0.6202  cost=2221014  sp_cost=3163878  edges=907,211  neurons=738
+[A: IterCC Neuron + Bridge-Link] TIMING: total=223.5s  core=206.2s  final grouping+SA=14.8s  neuron=7.4s  edge=67.5s (bridge grouping+SA 0.1s)  finetune=59.7s  eval=3.7s
+
+======================================================================
+  BRANCH: B: IterCC Neuron + L2 edge
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=3:1  FT epochs=2  Max steps=2000
+======================================================================
+[B: IterCC Neuron + L2 edge] Starting accuracy: 0.6364
+[select_neurons] Selected 172 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 75)', '(2, 80)', '(2, 81)', '(2, 84)', '(2, 88)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 96)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 104)', '(2, 107)', '(2, 108)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 115)', '(2, 117)', '(2, 118)', '(2, 119)', '(2, 122)', '(2, 123)', '(2, 127)', '(2, 128)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 135)', '(2, 140)', '(2, 141)', '(2, 145)', '(2, 146)', '(2, 148)', '(2, 150)', '(2, 151)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 157)', '(2, 159)', '(2, 160)', '(2, 161)', '(2, 163)', '(2, 166)', '(2, 168)', '(2, 170)', '(2, 171)', '(2, 176)', '(2, 177)', '(2, 179)', '(2, 181)', '(2, 182)', '(2, 184)', '(2, 186)', '(2, 188)', '(2, 190)', '(2, 191)', '(2, 192)', '(2, 195)', '(2, 197)', '(2, 198)', '(2, 200)', '(2, 201)', '(2, 202)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 209)', '(2, 215)', '(2, 216)', '(2, 221)', '(2, 223)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 229)', '(2, 232)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 239)', '(2, 241)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 250)', '(2, 253)', '(2, 255)', '(2, 256)', '(2, 258)', '(2, 261)', '(2, 263)', '(2, 265)', '(2, 270)', '(2, 271)', '(2, 272)', '(2, 274)', '(2, 275)', '(2, 277)', '(2, 279)', '(2, 280)', '(2, 283)', '(2, 286)', '(2, 288)', '(2, 289)', '(2, 290)', '(2, 292)', '(2, 293)', '(2, 294)', '(2, 298)']
+[select_neurons] Selected 171 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 244)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 252)', '(2, 254)', '(2, 255)', '(2, 257)', '(2, 260)', '(2, 262)', '(2, 264)', '(2, 269)', '(2, 270)', '(2, 271)', '(2, 273)', '(2, 274)', '(2, 276)', '(2, 278)', '(2, 279)', '(2, 282)', '(2, 285)', '(2, 287)', '(2, 288)', '(2, 289)', '(2, 291)', '(2, 292)', '(2, 293)', '(2, 297)']
+[select_neurons] Selected 170 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 245)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 251)', '(2, 253)', '(2, 254)', '(2, 256)', '(2, 259)', '(2, 261)', '(2, 263)', '(2, 268)', '(2, 269)', '(2, 270)', '(2, 272)', '(2, 273)', '(2, 275)', '(2, 277)', '(2, 278)', '(2, 281)', '(2, 284)', '(2, 286)', '(2, 287)', '(2, 288)', '(2, 290)', '(2, 291)', '(2, 292)', '(2, 296)']
+[B: IterCC Neuron + L2 edge] Step   1 (neuron): acc=0.6374  drop=+0.0019 pp  neurons=797  edges=1,518,698  scale=1.000
+[select_neurons] Selected 168 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 46)', '(2, 47)', '(2, 48)', '(2, 50)', '(2, 51)', '(2, 52)', '(2, 54)', '(2, 55)', '(2, 58)', '(2, 61)', '(2, 62)', '(2, 64)', '(2, 65)', '(2, 67)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 78)', '(2, 79)', '(2, 82)', '(2, 86)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 105)', '(2, 106)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 115)', '(2, 116)', '(2, 120)', '(2, 121)', '(2, 125)', '(2, 126)', '(2, 127)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 138)', '(2, 139)', '(2, 141)', '(2, 143)', '(2, 144)', '(2, 146)', '(2, 148)', '(2, 149)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 157)', '(2, 158)', '(2, 159)', '(2, 161)', '(2, 164)', '(2, 166)', '(2, 168)', '(2, 169)', '(2, 174)', '(2, 175)', '(2, 177)', '(2, 179)', '(2, 180)', '(2, 182)', '(2, 184)', '(2, 186)', '(2, 188)', '(2, 189)', '(2, 190)', '(2, 193)', '(2, 195)', '(2, 196)', '(2, 198)', '(2, 199)', '(2, 200)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 213)', '(2, 214)', '(2, 219)', '(2, 221)', '(2, 223)', '(2, 224)', '(2, 226)', '(2, 227)', '(2, 230)', '(2, 234)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 239)', '(2, 241)', '(2, 242)', '(2, 244)', '(2, 245)', '(2, 246)', '(2, 247)', '(2, 250)', '(2, 252)', '(2, 253)', '(2, 255)', '(2, 258)', '(2, 260)', '(2, 262)', '(2, 267)', '(2, 268)', '(2, 269)', '(2, 271)', '(2, 272)', '(2, 274)', '(2, 276)', '(2, 277)', '(2, 280)', '(2, 283)', '(2, 285)', '(2, 286)', '(2, 287)', '(2, 289)', '(2, 290)', '(2, 291)', '(2, 295)']
+[select_neurons] Selected 168 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 46)', '(2, 47)', '(2, 48)', '(2, 50)', '(2, 51)', '(2, 52)', '(2, 54)', '(2, 55)', '(2, 58)', '(2, 61)', '(2, 62)', '(2, 64)', '(2, 65)', '(2, 67)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 78)', '(2, 79)', '(2, 82)', '(2, 86)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 105)', '(2, 106)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 115)', '(2, 116)', '(2, 120)', '(2, 121)', '(2, 125)', '(2, 126)', '(2, 127)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 138)', '(2, 139)', '(2, 141)', '(2, 143)', '(2, 144)', '(2, 146)', '(2, 148)', '(2, 149)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 157)', '(2, 158)', '(2, 159)', '(2, 161)', '(2, 164)', '(2, 166)', '(2, 168)', '(2, 169)', '(2, 174)', '(2, 175)', '(2, 177)', '(2, 179)', '(2, 180)', '(2, 182)', '(2, 185)', '(2, 187)', '(2, 188)', '(2, 189)', '(2, 192)', '(2, 194)', '(2, 195)', '(2, 197)', '(2, 198)', '(2, 199)', '(2, 201)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 212)', '(2, 213)', '(2, 218)', '(2, 220)', '(2, 222)', '(2, 223)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 229)', '(2, 233)', '(2, 234)', '(2, 235)', '(2, 236)', '(2, 238)', '(2, 240)', '(2, 241)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 246)', '(2, 249)', '(2, 251)', '(2, 252)', '(2, 254)', '(2, 257)', '(2, 259)', '(2, 261)', '(2, 266)', '(2, 267)', '(2, 268)', '(2, 270)', '(2, 271)', '(2, 273)', '(2, 275)', '(2, 276)', '(2, 279)', '(2, 282)', '(2, 284)', '(2, 285)', '(2, 286)', '(2, 288)', '(2, 289)', '(2, 290)', '(2, 294)']
+[select_neurons] Selected 167 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 33)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 39)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 45)', '(2, 46)', '(2, 47)', '(2, 49)', '(2, 50)', '(2, 51)', '(2, 53)', '(2, 54)', '(2, 57)', '(2, 60)', '(2, 61)', '(2, 63)', '(2, 64)', '(2, 66)', '(2, 68)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 77)', '(2, 78)', '(2, 81)', '(2, 85)', '(2, 87)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 96)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 104)', '(2, 105)', '(2, 107)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 114)', '(2, 115)', '(2, 119)', '(2, 120)', '(2, 124)', '(2, 125)', '(2, 126)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 137)', '(2, 138)', '(2, 140)', '(2, 142)', '(2, 143)', '(2, 145)', '(2, 147)', '(2, 148)', '(2, 150)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 156)', '(2, 157)', '(2, 158)', '(2, 160)', '(2, 163)', '(2, 165)', '(2, 167)', '(2, 168)', '(2, 173)', '(2, 174)', '(2, 176)', '(2, 178)', '(2, 179)', '(2, 181)', '(2, 184)', '(2, 186)', '(2, 187)', '(2, 188)', '(2, 191)', '(2, 193)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 198)', '(2, 200)', '(2, 201)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 211)', '(2, 212)', '(2, 217)', '(2, 219)', '(2, 221)', '(2, 222)', '(2, 223)', '(2, 224)', '(2, 225)', '(2, 228)', '(2, 232)', '(2, 233)', '(2, 234)', '(2, 235)', '(2, 237)', '(2, 239)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 248)', '(2, 250)', '(2, 251)', '(2, 253)', '(2, 256)', '(2, 258)', '(2, 260)', '(2, 265)', '(2, 266)', '(2, 267)', '(2, 269)', '(2, 270)', '(2, 272)', '(2, 274)', '(2, 275)', '(2, 278)', '(2, 281)', '(2, 283)', '(2, 284)', '(2, 285)', '(2, 287)', '(2, 288)', '(2, 289)', '(2, 293)']
+[B: IterCC Neuron + L2 edge] Step   2 (neuron): acc=0.6324  drop=+0.0069 pp  neurons=794  edges=1,517,304  scale=1.000
+[B: IterCC Neuron + L2 edge] Step 2: neuron tolerance cap (drop=0.0069 ≥ 0.0050). Reserving 0.0131 for edge-only (0.0200).
+[B: IterCC Neuron + L2 edge] Step   3 (edge* ): acc=0.6322  drop=+0.0071 pp  neurons=754  edges=1,486,307  scale=1.000
+[B: IterCC Neuron + L2 edge] Step   4 (edge* ): acc=0.6353  drop=+0.0040 pp  neurons=739  edges=1,456,351  scale=1.000
+[B: IterCC Neuron + L2 edge] Step   5 (edge* ): acc=0.6330  drop=+0.0063 pp  neurons=736  edges=1,427,215  scale=1.000
+[B: IterCC Neuron + L2 edge] Step   6 (edge* ): acc=0.6314  drop=+0.0079 pp  neurons=734  edges=1,398,671  scale=1.000
+[B: IterCC Neuron + L2 edge] Step   7 (edge* ): acc=0.6250  drop=+0.0143 pp  neurons=734  edges=1,370,698  scale=1.000
+[B: IterCC Neuron + L2 edge] → Snapshot at drop≤1.0%: 'B: IterCC Neuron + L2 edge @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.47s
+Best communication cost: 3511767.0000
+Mapping (task → core):
+  Task   1  →  Core  52
+  Task   2  →  Core 156
+  Task   3  →  Core 171
+  Task   4  →  Core 149
+  Task   5  →  Core  11
+  Task   6  →  Core 163
+  Task   7  →  Core  54
+  Task   8  →  Core 123
+  Task   9  →  Core  45
+  Task  10  →  Core 166
+  Task  11  →  Core 189
+  Task  12  →  Core 160
+  Task  13  →  Core   5
+  Task  14  →  Core 162
+  Task  15  →  Core  95
+  Task  16  →  Core 177
+  Task  17  →  Core  83
+  Task  18  →  Core  38
+  Task  19  →  Core 142
+  Task  20  →  Core 191
+  Task  21  →  Core  55
+  Task  22  →  Core  12
+  Task  23  →  Core 188
+  Task  24  →  Core  81
+  Task  25  →  Core  50
+  Task  26  →  Core 148
+  Task  27  →  Core  34
+  Task  28  →  Core 102
+  Task  29  →  Core 194
+  Task  30  →  Core 192
+  Task  31  →  Core 147
+  Task  32  →  Core 113
+  Task  33  →  Core 117
+  Task  34  →  Core 116
+  Task  35  →  Core  71
+  Task  36  →  Core  36
+  Task  37  →  Core  59
+  Task  38  →  Core 141
+  Task  39  →  Core 128
+  Task  40  →  Core  75
+  Task  41  →  Core  39
+  Task  42  →  Core 139
+  Task  43  →  Core 122
+  Task  44  →  Core 165
+  Task  45  →  Core 115
+  Task  46  →  Core  10
+  Task  47  →  Core  23
+  Task  48  →  Core 167
+  Task  49  →  Core 109
+  Task  50  →  Core  27
+  Task  51  →  Core  22
+  Task  52  →  Core 159
+  Task  53  →  Core   6
+  Task  54  →  Core 180
+  Task  55  →  Core  97
+  Task  56  →  Core 175
+  Task  57  →  Core 111
+  Task  58  →  Core  51
+  Task  59  →  Core  74
+  Task  60  →  Core 129
+  Task  61  →  Core  68
+  Task  62  →  Core  43
+  Task  63  →  Core  25
+  Task  64  →  Core 101
+  Task  65  →  Core   7
+  Task  66  →  Core 127
+  Task  67  →  Core 190
+  Task  68  →  Core  33
+  Task  69  →  Core 173
+  Task  70  →  Core 158
+  Task  71  →  Core 186
+  Task  72  →  Core  88
+  Task  73  →  Core 125
+  Task  74  →  Core 154
+  Task  75  →  Core  70
+  Task  76  →  Core 140
+  Task  77  →  Core  18
+  Task  78  →  Core 187
+  Task  79  →  Core  56
+  Task  80  →  Core  19
+  Task  81  →  Core  69
+  Task  82  →  Core  61
+  Task  83  →  Core 132
+  Task  84  →  Core 179
+  Task  85  →  Core  40
+  Task  86  →  Core 161
+  Task  87  →  Core  35
+  Task  88  →  Core  96
+  Task  89  →  Core 126
+  Task  90  →  Core 168
+  Task  91  →  Core 146
+  Task  92  →  Core 152
+  Task  93  →  Core 178
+  Task  94  →  Core  49
+  Task  95  →  Core  67
+  Task  96  →  Core 138
+  Task  97  →  Core 172
+  Task  98  →  Core  82
+  Task  99  →  Core  37
+  Task 100  →  Core 100
+  Task 101  →  Core 157
+  Task 102  →  Core  24
+  Task 103  →  Core  29
+  Task 104  →  Core  72
+  Task 105  →  Core  30
+  Task 106  →  Core  48
+  Task 107  →  Core  20
+  Task 108  →  Core  41
+  Task 109  →  Core  85
+  Task 110  →  Core  21
+  Task 111  →  Core  32
+  Task 112  →  Core  42
+  Task 113  →  Core  86
+  Task 114  →  Core 112
+  Task 115  →  Core 176
+  Task 116  →  Core 110
+  Task 117  →  Core  73
+  Task 118  →  Core 174
+  Task 119  →  Core   3
+  Task 120  →  Core  62
+  Task 121  →  Core 136
+  Task 122  →  Core 193
+  Task 123  →  Core  66
+  Task 124  →  Core  31
+  Task 125  →  Core 164
+  Task 126  →  Core   8
+  Task 127  →  Core  84
+  Task 128  →  Core 153
+  Task 129  →  Core   4
+  Task 130  →  Core  98
+  Task 131  →  Core 185
+  Task 132  →  Core  58
+  Task 133  →  Core  99
+  Task 134  →  Core 135
+  Task 135  →  Core  57
+  Task 136  →  Core  44
+  Task 137  →  Core  17
+  Task 138  →  Core  16
+  Task 139  →  Core 143
+  Task 140  →  Core 124
+  Task 141  →  Core  26
+  Task 142  →  Core  87
+  Task 143  →  Core 114
+  Task 144  →  Core   9
+  Task 145  →  Core 155
+  Task 146  →  Core 170
+  Task 147  →  Core  15
+  Task 148  →  Core 183
+  Task 149  →  Core 184
+  Task 150  →  Core 181
+  Task 151  →  Core  13
+  Task 152  →  Core   2
+  Task 153  →  Core 169
+  Task 154  →  Core 182
+  Task 155  →  Core  28
+  Task 156  →  Core  14
+  Task 157  →  Core 195
+  Task 158  →  Core   1
+  Task 159  →  Core 196
+  Task 160  →  Core 131
+  Task 161  →  Core 144
+  Task 162  →  Core 137
+  Task 163  →  Core 150
+  Task 164  →  Core  46
+  Task 165  →  Core  78
+  Task 166  →  Core  77
+  Task 167  →  Core 106
+  Task 168  →  Core  63
+  Task 169  →  Core  94
+  Task 170  →  Core  65
+  Task 171  →  Core  92
+  Task 172  →  Core 119
+  Task 173  →  Core  89
+  Task 174  →  Core 133
+  Task 175  →  Core 118
+  Task 176  →  Core  91
+  Task 177  →  Core  90
+  Task 178  →  Core  93
+  Task 179  →  Core 134
+  Task 180  →  Core  80
+  Task 181  →  Core 103
+  Task 182  →  Core 121
+  Task 183  →  Core 120
+  Task 184  →  Core 108
+  Task 185  →  Core 105
+  Task 186  →  Core 107
+  Task 187  →  Core  79
+  Task 188  →  Core 104
+  Task 189  →  Core  76
+  Task 190  →  Core  64
+  Task 191  →  Core  53
+  Task 192  →  Core 145
+  Task 193  →  Core  60
+  Task 194  →  Core  47
+  Task 195  →  Core 130
+  Task 196  →  Core 151
+Mapping: [(0, 51), (1, 155), (2, 170), (3, 148), (4, 10), (5, 162), (6, 53), (7, 122), (8, 44), (9, 165), (10, 188), (11, 159), (12, 4), (13, 161), (14, 94), (15, 176), (16, 82), (17, 37), (18, 141), (19, 190), (20, 54), (21, 11), (22, 187), (23, 80), (24, 49), (25, 147), (26, 33), (27, 101), (28, 193), (29, 191), (30, 146), (31, 112), (32, 116), (33, 115), (34, 70), (35, 35), (36, 58), (37, 140), (38, 127), (39, 74), (40, 38), (41, 138), (42, 121), (43, 164), (44, 114), (45, 9), (46, 22), (47, 166), (48, 108), (49, 26), (50, 21), (51, 158), (52, 5), (53, 179), (54, 96), (55, 174), (56, 110), (57, 50), (58, 73), (59, 128), (60, 67), (61, 42), (62, 24), (63, 100), (64, 6), (65, 126), (66, 189), (67, 32), (68, 172), (69, 157), (70, 185), (71, 87), (72, 124), (73, 153), (74, 69), (75, 139), (76, 17), (77, 186), (78, 55), (79, 18), (80, 68), (81, 60), (82, 131), (83, 178), (84, 39), (85, 160), (86, 34), (87, 95), (88, 125), (89, 167), (90, 145), (91, 151), (92, 177), (93, 48), (94, 66), (95, 137), (96, 171), (97, 81), (98, 36), (99, 99), (100, 156), (101, 23), (102, 28), (103, 71), (104, 29), (105, 47), (106, 19), (107, 40), (108, 84), (109, 20), (110, 31), (111, 41), (112, 85), (113, 111), (114, 175), (115, 109), (116, 72), (117, 173), (118, 2), (119, 61), (120, 135), (121, 192), (122, 65), (123, 30), (124, 163), (125, 7), (126, 83), (127, 152), (128, 3), (129, 97), (130, 184), (131, 57), (132, 98), (133, 134), (134, 56), (135, 43), (136, 16), (137, 15), (138, 142), (139, 123), (140, 25), (141, 86), (142, 113), (143, 8), (144, 154), (145, 169), (146, 14), (147, 182), (148, 183), (149, 180), (150, 12), (151, 1), (152, 168), (153, 181), (154, 27), (155, 13), (156, 194), (157, 0), (158, 195), (159, 130), (160, 143), (161, 136), (162, 149), (163, 45), (164, 77), (165, 76), (166, 105), (167, 62), (168, 93), (169, 64), (170, 91), (171, 118), (172, 88), (173, 132), (174, 117), (175, 90), (176, 89), (177, 92), (178, 133), (179, 79), (180, 102), (181, 120), (182, 119), (183, 107), (184, 104), (185, 106), (186, 78), (187, 103), (188, 75), (189, 63), (190, 52), (191, 144), (192, 59), (193, 46), (194, 129), (195, 150)]
+Communication cost: 3511767.0
+  [recorded] 'B: IterCC Neuron + L2 edge @ drop≤1.0%'  acc=0.6314  cost=3511767  sp_cost=5390412  edges=1,398,671  neurons=734
+[B: IterCC Neuron + L2 edge] Step   8 (edge* ): acc=0.6279  drop=+0.0114 pp  neurons=734  edges=1,343,285  scale=1.000
+[B: IterCC Neuron + L2 edge] Step   9 (edge* ): acc=0.6278  drop=+0.0115 pp  neurons=734  edges=1,316,420  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  10 (edge* ): acc=0.6277  drop=+0.0116 pp  neurons=734  edges=1,290,092  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  11 (edge* ): acc=0.6261  drop=+0.0132 pp  neurons=734  edges=1,264,291  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  12 (edge* ): acc=0.6282  drop=+0.0111 pp  neurons=734  edges=1,239,006  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  13 (edge* ): acc=0.6235  drop=+0.0158 pp  neurons=734  edges=1,214,226  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  14 (edge* ): acc=0.6319  drop=+0.0074 pp  neurons=734  edges=1,189,942  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  15 (edge* ): acc=0.6263  drop=+0.0130 pp  neurons=734  edges=1,166,144  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  16 (edge* ): acc=0.6258  drop=+0.0135 pp  neurons=734  edges=1,142,822  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  17 (edge* ): acc=0.6220  drop=+0.0173 pp  neurons=734  edges=1,119,966  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  18 (edge* ): acc=0.6244  drop=+0.0149 pp  neurons=734  edges=1,097,567  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  19 (edge* ): acc=0.6245  drop=+0.0148 pp  neurons=734  edges=1,075,616  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  20 (edge* ): acc=0.6235  drop=+0.0158 pp  neurons=734  edges=1,054,104  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  21 (edge* ): acc=0.6217  drop=+0.0176 pp  neurons=734  edges=1,033,022  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  22 (edge* ): acc=0.6218  drop=+0.0175 pp  neurons=734  edges=1,012,362  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  23 (edge* ): drop=+0.0221 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  23 (edge* ): acc=0.6199  drop=+0.0194 pp  neurons=734  edges=992,115  scale=1.000
+[B: IterCC Neuron + L2 edge] Step  24 (edge* ): drop=+0.0201 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  24 (edge* ): drop=+0.0208 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  24: over budget (drop=+0.0232); reverted, step scale -> 0.5000
+[B: IterCC Neuron + L2 edge] Step  25 (edge* ): acc=0.6203  drop=+0.0190 pp  neurons=734  edges=982,194  scale=0.500
+[B: IterCC Neuron + L2 edge] Step  26 (edge* ): acc=0.6207  drop=+0.0186 pp  neurons=734  edges=972,373  scale=0.500
+[B: IterCC Neuron + L2 edge] Step  27 (edge* ): drop=+0.0215 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  27 (edge* ): drop=+0.0215 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  27 (edge* ): acc=0.6203  drop=+0.0190 pp  neurons=734  edges=962,650  scale=0.500
+[B: IterCC Neuron + L2 edge] Step  28 (edge* ): drop=+0.0235 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  28 (edge* ): drop=+0.0229 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  28: over budget (drop=+0.0241); reverted, step scale -> 0.2500
+[B: IterCC Neuron + L2 edge] Step  29 (edge* ): acc=0.6203  drop=+0.0190 pp  neurons=734  edges=957,837  scale=0.250
+[B: IterCC Neuron + L2 edge] Step  30 (edge* ): drop=+0.0236 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  30 (edge* ): drop=+0.0223 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  30: over budget (drop=+0.0230); reverted, step scale -> 0.1250
+[B: IterCC Neuron + L2 edge] Step  31 (edge* ): drop=+0.0254 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  31 (edge* ): drop=+0.0256 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  31 (edge* ): acc=0.6195  drop=+0.0198 pp  neurons=734  edges=955,443  scale=0.125
+[B: IterCC Neuron + L2 edge] Step  32 (edge* ): drop=+0.0239 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  32 (edge* ): drop=+0.0211 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  32: over budget at min step scale (1/3); reverted.
+[B: IterCC Neuron + L2 edge] Step  33 (edge* ): drop=+0.0231 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  33 (edge* ): acc=0.6214  drop=+0.0179 pp  neurons=734  edges=953,055  scale=0.125
+[B: IterCC Neuron + L2 edge] Step  34 (edge* ): drop=+0.0232 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  34 (edge* ): acc=0.6200  drop=+0.0193 pp  neurons=734  edges=950,673  scale=0.125
+[B: IterCC Neuron + L2 edge] Step  35 (edge* ): drop=+0.0235 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  35 (edge* ): drop=+0.0250 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  35: over budget at min step scale (1/3); reverted.
+[B: IterCC Neuron + L2 edge] Step  36 (edge* ): drop=+0.0210 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  36 (edge* ): drop=+0.0206 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  36: over budget at min step scale (2/3); reverted.
+[B: IterCC Neuron + L2 edge] Step  37 (edge* ): drop=+0.0273 over budget -> recovery round 1/2
+[B: IterCC Neuron + L2 edge] Step  37 (edge* ): drop=+0.0223 over budget -> recovery round 2/2
+[B: IterCC Neuron + L2 edge] Step  37: over budget at min step scale (3/3); reverted.
+[B: IterCC Neuron + L2 edge] Budget consumed. Stopping.
+
+[B: IterCC Neuron + L2 edge] Finished. 30 micro-steps completed.
+  Final: acc=0.6200  neurons=734  edges=950,673
+
+=== Final evaluation: B: IterCC Neuron + L2 edge ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6200
+F1       : 0.6189
+Precision: 0.6195
+Recall   : 0.6200
+Params   : 1486192 trainable
+State size (approx): 5811.19 KB
+Inference time (avg): batch 1.0218 ms | single 0.058925 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.48s
+Best communication cost: 2356771.0000
+Mapping (task → core):
+  Task   1  →  Core 184
+  Task   2  →  Core  37
+  Task   3  →  Core  67
+  Task   4  →  Core  66
+  Task   5  →  Core  74
+  Task   6  →  Core 161
+  Task   7  →  Core  23
+  Task   8  →  Core  52
+  Task   9  →  Core  50
+  Task  10  →  Core  97
+  Task  11  →  Core  87
+  Task  12  →  Core 115
+  Task  13  →  Core 100
+  Task  14  →  Core  47
+  Task  15  →  Core 164
+  Task  16  →  Core  36
+  Task  17  →  Core 114
+  Task  18  →  Core  96
+  Task  19  →  Core 110
+  Task  20  →  Core  69
+  Task  21  →  Core 129
+  Task  22  →  Core 163
+  Task  23  →  Core 136
+  Task  24  →  Core  83
+  Task  25  →  Core 159
+  Task  26  →  Core 189
+  Task  27  →  Core 101
+  Task  28  →  Core 139
+  Task  29  →  Core 116
+  Task  30  →  Core  81
+  Task  31  →  Core  53
+  Task  32  →  Core 149
+  Task  33  →  Core 109
+  Task  34  →  Core  48
+  Task  35  →  Core 102
+  Task  36  →  Core 147
+  Task  37  →  Core  82
+  Task  38  →  Core 144
+  Task  39  →  Core  95
+  Task  40  →  Core 137
+  Task  41  →  Core 148
+  Task  42  →  Core  59
+  Task  43  →  Core  60
+  Task  44  →  Core  22
+  Task  45  →  Core  54
+  Task  46  →  Core 145
+  Task  47  →  Core  88
+  Task  48  →  Core 146
+  Task  49  →  Core 162
+  Task  50  →  Core  46
+  Task  51  →  Core  73
+  Task  52  →  Core  51
+  Task  53  →  Core 131
+  Task  54  →  Core  21
+  Task  55  →  Core 150
+  Task  56  →  Core 123
+  Task  57  →  Core  68
+  Task  58  →  Core  45
+  Task  59  →  Core 124
+  Task  60  →  Core 176
+  Task  61  →  Core 138
+  Task  62  →  Core  38
+  Task  63  →  Core 160
+  Task  64  →  Core 125
+  Task  65  →  Core  34
+  Task  66  →  Core  33
+  Task  67  →  Core  35
+  Task  68  →  Core  20
+  Task  69  →  Core 130
+  Task  70  →  Core 151
+  Task  71  →  Core 111
+  Task  72  →  Core 173
+  Task  73  →  Core  72
+  Task  74  →  Core 178
+  Task  75  →  Core  85
+  Task  76  →  Core  98
+  Task  77  →  Core 174
+  Task  78  →  Core  58
+  Task  79  →  Core   7
+  Task  80  →  Core  24
+  Task  81  →  Core  19
+  Task  82  →  Core 177
+  Task  83  →  Core 128
+  Task  84  →  Core 175
+  Task  85  →  Core 112
+  Task  86  →  Core 190
+  Task  87  →  Core  71
+  Task  88  →  Core  99
+  Task  89  →  Core  86
+  Task  90  →  Core   8
+  Task  91  →  Core 188
+  Task  92  →  Core   6
+  Task  93  →  Core 169
+  Task  94  →  Core  15
+  Task  95  →  Core 196
+  Task  96  →  Core   1
+  Task  97  →  Core   2
+  Task  98  →  Core 182
+  Task  99  →  Core 195
+  Task 100  →  Core  13
+  Task 101  →  Core  28
+  Task 102  →  Core 183
+  Task 103  →  Core  14
+  Task 104  →  Core 142
+  Task 105  →  Core  84
+  Task 106  →  Core 157
+  Task 107  →  Core  30
+  Task 108  →  Core 180
+  Task 109  →  Core  40
+  Task 110  →  Core  10
+  Task 111  →  Core  31
+  Task 112  →  Core 166
+  Task 113  →  Core  43
+  Task 114  →  Core   5
+  Task 115  →  Core 152
+  Task 116  →  Core 191
+  Task 117  →  Core 153
+  Task 118  →  Core 181
+  Task 119  →  Core 167
+  Task 120  →  Core  26
+  Task 121  →  Core 168
+  Task 122  →  Core 165
+  Task 123  →  Core  32
+  Task 124  →  Core 143
+  Task 125  →  Core 193
+  Task 126  →  Core  27
+  Task 127  →  Core 113
+  Task 128  →  Core  57
+  Task 129  →  Core  39
+  Task 130  →  Core 171
+  Task 131  →  Core  44
+  Task 132  →  Core 126
+  Task 133  →  Core  75
+  Task 134  →  Core  80
+  Task 135  →  Core 117
+  Task 136  →  Core  76
+  Task 137  →  Core 120
+  Task 138  →  Core  92
+  Task 139  →  Core  79
+  Task 140  →  Core 108
+  Task 141  →  Core 103
+  Task 142  →  Core 133
+  Task 143  →  Core 118
+  Task 144  →  Core 105
+  Task 145  →  Core  94
+  Task 146  →  Core  62
+  Task 147  →  Core 134
+  Task 148  →  Core 106
+  Task 149  →  Core  61
+  Task 150  →  Core  63
+  Task 151  →  Core 122
+  Task 152  →  Core  78
+  Task 153  →  Core  91
+  Task 154  →  Core  89
+  Task 155  →  Core  77
+  Task 156  →  Core  65
+  Task 157  →  Core 119
+  Task 158  →  Core 135
+  Task 159  →  Core  49
+  Task 160  →  Core 107
+  Task 161  →  Core 121
+  Task 162  →  Core  93
+  Task 163  →  Core  90
+  Task 164  →  Core 104
+  Task 165  →  Core 132
+  Task 166  →  Core  64
+  Task 167  →  Core 194
+  Task 168  →  Core   4
+  Task 169  →  Core 179
+  Task 170  →  Core 141
+  Task 171  →  Core   9
+  Task 172  →  Core 140
+  Task 173  →  Core 185
+  Task 174  →  Core 154
+  Task 175  →  Core 172
+  Task 176  →  Core 192
+  Task 177  →  Core  29
+  Task 178  →  Core 186
+  Task 179  →  Core 187
+  Task 180  →  Core  25
+  Task 181  →  Core 155
+  Task 182  →  Core  56
+  Task 183  →  Core 170
+  Task 184  →  Core  70
+  Task 185  →  Core  42
+  Task 186  →  Core  17
+  Task 187  →  Core 158
+  Task 188  →  Core  41
+  Task 189  →  Core  18
+  Task 190  →  Core  11
+  Task 191  →  Core   3
+  Task 192  →  Core 127
+  Task 193  →  Core  12
+  Task 194  →  Core  16
+  Task 195  →  Core 156
+  Task 196  →  Core  55
+Mapping: [(0, 183), (1, 36), (2, 66), (3, 65), (4, 73), (5, 160), (6, 22), (7, 51), (8, 49), (9, 96), (10, 86), (11, 114), (12, 99), (13, 46), (14, 163), (15, 35), (16, 113), (17, 95), (18, 109), (19, 68), (20, 128), (21, 162), (22, 135), (23, 82), (24, 158), (25, 188), (26, 100), (27, 138), (28, 115), (29, 80), (30, 52), (31, 148), (32, 108), (33, 47), (34, 101), (35, 146), (36, 81), (37, 143), (38, 94), (39, 136), (40, 147), (41, 58), (42, 59), (43, 21), (44, 53), (45, 144), (46, 87), (47, 145), (48, 161), (49, 45), (50, 72), (51, 50), (52, 130), (53, 20), (54, 149), (55, 122), (56, 67), (57, 44), (58, 123), (59, 175), (60, 137), (61, 37), (62, 159), (63, 124), (64, 33), (65, 32), (66, 34), (67, 19), (68, 129), (69, 150), (70, 110), (71, 172), (72, 71), (73, 177), (74, 84), (75, 97), (76, 173), (77, 57), (78, 6), (79, 23), (80, 18), (81, 176), (82, 127), (83, 174), (84, 111), (85, 189), (86, 70), (87, 98), (88, 85), (89, 7), (90, 187), (91, 5), (92, 168), (93, 14), (94, 195), (95, 0), (96, 1), (97, 181), (98, 194), (99, 12), (100, 27), (101, 182), (102, 13), (103, 141), (104, 83), (105, 156), (106, 29), (107, 179), (108, 39), (109, 9), (110, 30), (111, 165), (112, 42), (113, 4), (114, 151), (115, 190), (116, 152), (117, 180), (118, 166), (119, 25), (120, 167), (121, 164), (122, 31), (123, 142), (124, 192), (125, 26), (126, 112), (127, 56), (128, 38), (129, 170), (130, 43), (131, 125), (132, 74), (133, 79), (134, 116), (135, 75), (136, 119), (137, 91), (138, 78), (139, 107), (140, 102), (141, 132), (142, 117), (143, 104), (144, 93), (145, 61), (146, 133), (147, 105), (148, 60), (149, 62), (150, 121), (151, 77), (152, 90), (153, 88), (154, 76), (155, 64), (156, 118), (157, 134), (158, 48), (159, 106), (160, 120), (161, 92), (162, 89), (163, 103), (164, 131), (165, 63), (166, 193), (167, 3), (168, 178), (169, 140), (170, 8), (171, 139), (172, 184), (173, 153), (174, 171), (175, 191), (176, 28), (177, 185), (178, 186), (179, 24), (180, 154), (181, 55), (182, 169), (183, 69), (184, 41), (185, 16), (186, 157), (187, 40), (188, 17), (189, 10), (190, 2), (191, 126), (192, 11), (193, 15), (194, 155), (195, 54)]
+Communication cost: 2356771.0
+  [recorded] 'B: IterCC Neuron + L2 edge [final]'  acc=0.6200  cost=2356771  sp_cost=3329663  edges=950,673  neurons=734
+[B: IterCC Neuron + L2 edge] TIMING: total=190.0s  core=172.9s  final grouping+SA=14.8s  neuron=14.6s  edge=29.9s (bridge grouping+SA 0.0s)  finetune=57.1s  eval=3.5s
+
+======================================================================
+  BRANCH: C: IterCC Neuron + L1 edge
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=3:1  FT epochs=2  Max steps=2000
+======================================================================
+[C: IterCC Neuron + L1 edge] Starting accuracy: 0.6364
+[select_neurons] Selected 172 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 75)', '(2, 80)', '(2, 81)', '(2, 84)', '(2, 88)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 96)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 104)', '(2, 107)', '(2, 108)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 115)', '(2, 117)', '(2, 118)', '(2, 119)', '(2, 122)', '(2, 123)', '(2, 127)', '(2, 128)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 135)', '(2, 140)', '(2, 141)', '(2, 145)', '(2, 146)', '(2, 148)', '(2, 150)', '(2, 151)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 157)', '(2, 159)', '(2, 160)', '(2, 161)', '(2, 163)', '(2, 166)', '(2, 168)', '(2, 170)', '(2, 171)', '(2, 176)', '(2, 177)', '(2, 179)', '(2, 181)', '(2, 182)', '(2, 184)', '(2, 186)', '(2, 188)', '(2, 190)', '(2, 191)', '(2, 192)', '(2, 195)', '(2, 197)', '(2, 198)', '(2, 200)', '(2, 201)', '(2, 202)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 209)', '(2, 215)', '(2, 216)', '(2, 221)', '(2, 223)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 229)', '(2, 232)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 239)', '(2, 241)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 250)', '(2, 253)', '(2, 255)', '(2, 256)', '(2, 258)', '(2, 261)', '(2, 263)', '(2, 265)', '(2, 270)', '(2, 271)', '(2, 272)', '(2, 274)', '(2, 275)', '(2, 277)', '(2, 279)', '(2, 280)', '(2, 283)', '(2, 286)', '(2, 288)', '(2, 289)', '(2, 290)', '(2, 292)', '(2, 293)', '(2, 294)', '(2, 298)']
+[select_neurons] Selected 171 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 244)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 249)', '(2, 252)', '(2, 254)', '(2, 255)', '(2, 257)', '(2, 260)', '(2, 262)', '(2, 264)', '(2, 269)', '(2, 270)', '(2, 271)', '(2, 273)', '(2, 274)', '(2, 276)', '(2, 278)', '(2, 279)', '(2, 282)', '(2, 285)', '(2, 287)', '(2, 288)', '(2, 289)', '(2, 291)', '(2, 292)', '(2, 293)', '(2, 297)']
+[select_neurons] Selected 170 neuron(s): ['(2, 1)', '(2, 2)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 10)', '(2, 12)', '(2, 13)', '(2, 16)', '(2, 20)', '(2, 22)', '(2, 24)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 33)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 38)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 45)', '(2, 47)', '(2, 48)', '(2, 49)', '(2, 51)', '(2, 52)', '(2, 53)', '(2, 55)', '(2, 56)', '(2, 59)', '(2, 62)', '(2, 63)', '(2, 65)', '(2, 66)', '(2, 68)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 74)', '(2, 79)', '(2, 80)', '(2, 83)', '(2, 87)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 95)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 103)', '(2, 106)', '(2, 107)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 114)', '(2, 116)', '(2, 117)', '(2, 118)', '(2, 121)', '(2, 122)', '(2, 126)', '(2, 127)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 134)', '(2, 139)', '(2, 140)', '(2, 144)', '(2, 145)', '(2, 147)', '(2, 149)', '(2, 150)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 156)', '(2, 158)', '(2, 159)', '(2, 160)', '(2, 162)', '(2, 165)', '(2, 167)', '(2, 169)', '(2, 170)', '(2, 175)', '(2, 176)', '(2, 178)', '(2, 180)', '(2, 181)', '(2, 183)', '(2, 185)', '(2, 187)', '(2, 189)', '(2, 190)', '(2, 191)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 199)', '(2, 200)', '(2, 201)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 208)', '(2, 214)', '(2, 215)', '(2, 220)', '(2, 222)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 227)', '(2, 228)', '(2, 231)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 238)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 245)', '(2, 246)', '(2, 247)', '(2, 248)', '(2, 251)', '(2, 253)', '(2, 254)', '(2, 256)', '(2, 259)', '(2, 261)', '(2, 263)', '(2, 268)', '(2, 269)', '(2, 270)', '(2, 272)', '(2, 273)', '(2, 275)', '(2, 277)', '(2, 278)', '(2, 281)', '(2, 284)', '(2, 286)', '(2, 287)', '(2, 288)', '(2, 290)', '(2, 291)', '(2, 292)', '(2, 296)']
+[C: IterCC Neuron + L1 edge] Step   1 (neuron): acc=0.6374  drop=+0.0019 pp  neurons=797  edges=1,518,698  scale=1.000
+[select_neurons] Selected 168 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 46)', '(2, 47)', '(2, 48)', '(2, 50)', '(2, 51)', '(2, 52)', '(2, 54)', '(2, 55)', '(2, 58)', '(2, 61)', '(2, 62)', '(2, 64)', '(2, 65)', '(2, 67)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 78)', '(2, 79)', '(2, 82)', '(2, 86)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 105)', '(2, 106)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 115)', '(2, 116)', '(2, 120)', '(2, 121)', '(2, 125)', '(2, 126)', '(2, 127)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 138)', '(2, 139)', '(2, 141)', '(2, 143)', '(2, 144)', '(2, 146)', '(2, 148)', '(2, 149)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 157)', '(2, 158)', '(2, 159)', '(2, 161)', '(2, 164)', '(2, 166)', '(2, 168)', '(2, 169)', '(2, 174)', '(2, 175)', '(2, 177)', '(2, 179)', '(2, 180)', '(2, 182)', '(2, 184)', '(2, 186)', '(2, 188)', '(2, 189)', '(2, 190)', '(2, 193)', '(2, 195)', '(2, 196)', '(2, 198)', '(2, 199)', '(2, 200)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 207)', '(2, 213)', '(2, 214)', '(2, 219)', '(2, 221)', '(2, 223)', '(2, 224)', '(2, 226)', '(2, 227)', '(2, 230)', '(2, 234)', '(2, 235)', '(2, 236)', '(2, 237)', '(2, 239)', '(2, 241)', '(2, 242)', '(2, 244)', '(2, 245)', '(2, 246)', '(2, 247)', '(2, 250)', '(2, 252)', '(2, 253)', '(2, 255)', '(2, 258)', '(2, 260)', '(2, 262)', '(2, 267)', '(2, 268)', '(2, 269)', '(2, 271)', '(2, 272)', '(2, 274)', '(2, 276)', '(2, 277)', '(2, 280)', '(2, 283)', '(2, 285)', '(2, 286)', '(2, 287)', '(2, 289)', '(2, 290)', '(2, 291)', '(2, 295)']
+[select_neurons] Selected 168 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 32)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 37)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 44)', '(2, 46)', '(2, 47)', '(2, 48)', '(2, 50)', '(2, 51)', '(2, 52)', '(2, 54)', '(2, 55)', '(2, 58)', '(2, 61)', '(2, 62)', '(2, 64)', '(2, 65)', '(2, 67)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 73)', '(2, 78)', '(2, 79)', '(2, 82)', '(2, 86)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 94)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 102)', '(2, 105)', '(2, 106)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 113)', '(2, 115)', '(2, 116)', '(2, 120)', '(2, 121)', '(2, 125)', '(2, 126)', '(2, 127)', '(2, 129)', '(2, 131)', '(2, 133)', '(2, 138)', '(2, 139)', '(2, 141)', '(2, 143)', '(2, 144)', '(2, 146)', '(2, 148)', '(2, 149)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 155)', '(2, 157)', '(2, 158)', '(2, 159)', '(2, 161)', '(2, 164)', '(2, 166)', '(2, 168)', '(2, 169)', '(2, 174)', '(2, 175)', '(2, 177)', '(2, 179)', '(2, 180)', '(2, 182)', '(2, 185)', '(2, 187)', '(2, 188)', '(2, 189)', '(2, 192)', '(2, 194)', '(2, 195)', '(2, 197)', '(2, 198)', '(2, 199)', '(2, 201)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 206)', '(2, 212)', '(2, 213)', '(2, 218)', '(2, 220)', '(2, 222)', '(2, 223)', '(2, 224)', '(2, 225)', '(2, 226)', '(2, 229)', '(2, 233)', '(2, 234)', '(2, 235)', '(2, 236)', '(2, 238)', '(2, 240)', '(2, 241)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 246)', '(2, 249)', '(2, 251)', '(2, 252)', '(2, 254)', '(2, 257)', '(2, 259)', '(2, 261)', '(2, 266)', '(2, 267)', '(2, 268)', '(2, 270)', '(2, 271)', '(2, 273)', '(2, 275)', '(2, 276)', '(2, 279)', '(2, 282)', '(2, 284)', '(2, 285)', '(2, 286)', '(2, 288)', '(2, 289)', '(2, 290)', '(2, 294)']
+[select_neurons] Selected 167 neuron(s): ['(2, 1)', '(2, 5)', '(2, 6)', '(2, 7)', '(2, 8)', '(2, 9)', '(2, 11)', '(2, 12)', '(2, 15)', '(2, 19)', '(2, 21)', '(2, 23)', '(2, 28)', '(2, 29)', '(2, 30)', '(2, 31)', '(2, 33)', '(2, 34)', '(2, 35)', '(2, 36)', '(2, 39)', '(2, 40)', '(2, 41)', '(2, 42)', '(2, 43)', '(2, 45)', '(2, 46)', '(2, 47)', '(2, 49)', '(2, 50)', '(2, 51)', '(2, 53)', '(2, 54)', '(2, 57)', '(2, 60)', '(2, 61)', '(2, 63)', '(2, 64)', '(2, 66)', '(2, 68)', '(2, 69)', '(2, 70)', '(2, 71)', '(2, 72)', '(2, 77)', '(2, 78)', '(2, 81)', '(2, 85)', '(2, 87)', '(2, 88)', '(2, 89)', '(2, 90)', '(2, 91)', '(2, 92)', '(2, 93)', '(2, 96)', '(2, 97)', '(2, 98)', '(2, 99)', '(2, 100)', '(2, 101)', '(2, 104)', '(2, 105)', '(2, 107)', '(2, 108)', '(2, 109)', '(2, 110)', '(2, 111)', '(2, 112)', '(2, 114)', '(2, 115)', '(2, 119)', '(2, 120)', '(2, 124)', '(2, 125)', '(2, 126)', '(2, 128)', '(2, 130)', '(2, 132)', '(2, 137)', '(2, 138)', '(2, 140)', '(2, 142)', '(2, 143)', '(2, 145)', '(2, 147)', '(2, 148)', '(2, 150)', '(2, 151)', '(2, 152)', '(2, 153)', '(2, 154)', '(2, 156)', '(2, 157)', '(2, 158)', '(2, 160)', '(2, 163)', '(2, 165)', '(2, 167)', '(2, 168)', '(2, 173)', '(2, 174)', '(2, 176)', '(2, 178)', '(2, 179)', '(2, 181)', '(2, 184)', '(2, 186)', '(2, 187)', '(2, 188)', '(2, 191)', '(2, 193)', '(2, 194)', '(2, 196)', '(2, 197)', '(2, 198)', '(2, 200)', '(2, 201)', '(2, 202)', '(2, 203)', '(2, 204)', '(2, 205)', '(2, 211)', '(2, 212)', '(2, 217)', '(2, 219)', '(2, 221)', '(2, 222)', '(2, 223)', '(2, 224)', '(2, 225)', '(2, 228)', '(2, 232)', '(2, 233)', '(2, 234)', '(2, 235)', '(2, 237)', '(2, 239)', '(2, 240)', '(2, 242)', '(2, 243)', '(2, 244)', '(2, 245)', '(2, 248)', '(2, 250)', '(2, 251)', '(2, 253)', '(2, 256)', '(2, 258)', '(2, 260)', '(2, 265)', '(2, 266)', '(2, 267)', '(2, 269)', '(2, 270)', '(2, 272)', '(2, 274)', '(2, 275)', '(2, 278)', '(2, 281)', '(2, 283)', '(2, 284)', '(2, 285)', '(2, 287)', '(2, 288)', '(2, 289)', '(2, 293)']
+[C: IterCC Neuron + L1 edge] Step   2 (neuron): acc=0.6324  drop=+0.0069 pp  neurons=794  edges=1,517,304  scale=1.000
+[C: IterCC Neuron + L1 edge] Step 2: neuron tolerance cap (drop=0.0069 ≥ 0.0050). Reserving 0.0131 for edge-only (0.0200).
+[C: IterCC Neuron + L1 edge] Step   3 (edge* ): acc=0.6311  drop=+0.0082 pp  neurons=794  edges=1,486,958  scale=1.000
+[C: IterCC Neuron + L1 edge] Step   4 (edge* ): acc=0.6331  drop=+0.0062 pp  neurons=794  edges=1,457,219  scale=1.000
+[C: IterCC Neuron + L1 edge] Step   5 (edge* ): acc=0.6275  drop=+0.0118 pp  neurons=794  edges=1,428,075  scale=1.000
+[C: IterCC Neuron + L1 edge] → Snapshot at drop≤1.0%: 'C: IterCC Neuron + L1 edge @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.39s
+Best communication cost: 3527914.0000
+Mapping (task → core):
+  Task   1  →  Core 137
+  Task   2  →  Core 167
+  Task   3  →  Core 153
+  Task   4  →  Core 139
+  Task   5  →  Core  27
+  Task   6  →  Core  55
+  Task   7  →  Core  82
+  Task   8  →  Core  39
+  Task   9  →  Core  51
+  Task  10  →  Core   6
+  Task  11  →  Core  49
+  Task  12  →  Core 116
+  Task  13  →  Core  83
+  Task  14  →  Core  74
+  Task  15  →  Core  80
+  Task  16  →  Core  24
+  Task  17  →  Core 111
+  Task  18  →  Core  18
+  Task  19  →  Core  98
+  Task  20  →  Core 146
+  Task  21  →  Core 163
+  Task  22  →  Core  25
+  Task  23  →  Core 157
+  Task  24  →  Core 143
+  Task  25  →  Core 156
+  Task  26  →  Core  56
+  Task  27  →  Core 175
+  Task  28  →  Core 192
+  Task  29  →  Core  20
+  Task  30  →  Core  21
+  Task  31  →  Core 142
+  Task  32  →  Core  19
+  Task  33  →  Core 170
+  Task  34  →  Core 194
+  Task  35  →  Core 187
+  Task  36  →  Core  37
+  Task  37  →  Core  88
+  Task  38  →  Core 140
+  Task  39  →  Core  33
+  Task  40  →  Core  71
+  Task  41  →  Core  31
+  Task  42  →  Core   4
+  Task  43  →  Core 128
+  Task  44  →  Core 148
+  Task  45  →  Core 193
+  Task  46  →  Core 109
+  Task  47  →  Core 135
+  Task  48  →  Core 127
+  Task  49  →  Core 123
+  Task  50  →  Core  86
+  Task  51  →  Core  40
+  Task  52  →  Core 172
+  Task  53  →  Core 152
+  Task  54  →  Core  59
+  Task  55  →  Core 141
+  Task  56  →  Core  38
+  Task  57  →  Core 154
+  Task  58  →  Core  95
+  Task  59  →  Core 155
+  Task  60  →  Core 147
+  Task  61  →  Core  44
+  Task  62  →  Core  99
+  Task  63  →  Core 161
+  Task  64  →  Core 131
+  Task  65  →  Core  11
+  Task  66  →  Core 164
+  Task  67  →  Core  54
+  Task  68  →  Core   7
+  Task  69  →  Core 124
+  Task  70  →  Core  43
+  Task  71  →  Core 159
+  Task  72  →  Core 188
+  Task  73  →  Core  68
+  Task  74  →  Core 178
+  Task  75  →  Core 113
+  Task  76  →  Core 101
+  Task  77  →  Core 174
+  Task  78  →  Core  34
+  Task  79  →  Core 122
+  Task  80  →  Core  23
+  Task  81  →  Core  36
+  Task  82  →  Core 149
+  Task  83  →  Core 132
+  Task  84  →  Core 117
+  Task  85  →  Core  58
+  Task  86  →  Core 126
+  Task  87  →  Core 158
+  Task  88  →  Core  17
+  Task  89  →  Core  26
+  Task  90  →  Core 186
+  Task  91  →  Core 100
+  Task  92  →  Core  81
+  Task  93  →  Core  50
+  Task  94  →  Core 177
+  Task  95  →  Core 179
+  Task  96  →  Core  29
+  Task  97  →  Core 173
+  Task  98  →  Core 165
+  Task  99  →  Core 102
+  Task 100  →  Core  61
+  Task 101  →  Core 162
+  Task 102  →  Core  30
+  Task 103  →  Core  67
+  Task 104  →  Core  97
+  Task 105  →  Core 112
+  Task 106  →  Core   8
+  Task 107  →  Core  16
+  Task 108  →  Core  42
+  Task 109  →  Core   9
+  Task 110  →  Core 125
+  Task 111  →  Core  41
+  Task 112  →  Core   3
+  Task 113  →  Core  12
+  Task 114  →  Core  45
+  Task 115  →  Core  22
+  Task 116  →  Core 115
+  Task 117  →  Core  48
+  Task 118  →  Core  72
+  Task 119  →  Core 129
+  Task 120  →  Core 189
+  Task 121  →  Core  70
+  Task 122  →  Core 136
+  Task 123  →  Core  32
+  Task 124  →  Core 176
+  Task 125  →  Core 110
+  Task 126  →  Core 171
+  Task 127  →  Core  69
+  Task 128  →  Core  60
+  Task 129  →  Core  57
+  Task 130  →  Core  35
+  Task 131  →  Core  84
+  Task 132  →  Core 114
+  Task 133  →  Core  96
+  Task 134  →  Core  87
+  Task 135  →  Core   5
+  Task 136  →  Core 138
+  Task 137  →  Core 190
+  Task 138  →  Core 185
+  Task 139  →  Core  73
+  Task 140  →  Core 160
+  Task 141  →  Core 191
+  Task 142  →  Core  10
+  Task 143  →  Core  85
+  Task 144  →  Core  66
+  Task 145  →  Core 166
+  Task 146  →  Core 180
+  Task 147  →  Core 181
+  Task 148  →  Core 169
+  Task 149  →  Core 168
+  Task 150  →  Core 184
+  Task 151  →  Core 182
+  Task 152  →  Core  15
+  Task 153  →  Core 195
+  Task 154  →  Core  13
+  Task 155  →  Core  28
+  Task 156  →  Core  14
+  Task 157  →  Core   1
+  Task 158  →  Core 183
+  Task 159  →  Core   2
+  Task 160  →  Core 196
+  Task 161  →  Core 145
+  Task 162  →  Core  53
+  Task 163  →  Core  47
+  Task 164  →  Core 130
+  Task 165  →  Core  78
+  Task 166  →  Core  75
+  Task 167  →  Core 106
+  Task 168  →  Core  64
+  Task 169  →  Core  63
+  Task 170  →  Core  94
+  Task 171  →  Core  76
+  Task 172  →  Core  92
+  Task 173  →  Core  65
+  Task 174  →  Core  77
+  Task 175  →  Core 120
+  Task 176  →  Core  79
+  Task 177  →  Core  93
+  Task 178  →  Core 103
+  Task 179  →  Core 118
+  Task 180  →  Core 105
+  Task 181  →  Core 134
+  Task 182  →  Core  62
+  Task 183  →  Core  91
+  Task 184  →  Core 108
+  Task 185  →  Core 121
+  Task 186  →  Core 104
+  Task 187  →  Core 107
+  Task 188  →  Core 133
+  Task 189  →  Core 119
+  Task 190  →  Core  89
+  Task 191  →  Core  90
+  Task 192  →  Core  52
+  Task 193  →  Core 151
+  Task 194  →  Core 150
+  Task 195  →  Core  46
+  Task 196  →  Core 144
+Mapping: [(0, 136), (1, 166), (2, 152), (3, 138), (4, 26), (5, 54), (6, 81), (7, 38), (8, 50), (9, 5), (10, 48), (11, 115), (12, 82), (13, 73), (14, 79), (15, 23), (16, 110), (17, 17), (18, 97), (19, 145), (20, 162), (21, 24), (22, 156), (23, 142), (24, 155), (25, 55), (26, 174), (27, 191), (28, 19), (29, 20), (30, 141), (31, 18), (32, 169), (33, 193), (34, 186), (35, 36), (36, 87), (37, 139), (38, 32), (39, 70), (40, 30), (41, 3), (42, 127), (43, 147), (44, 192), (45, 108), (46, 134), (47, 126), (48, 122), (49, 85), (50, 39), (51, 171), (52, 151), (53, 58), (54, 140), (55, 37), (56, 153), (57, 94), (58, 154), (59, 146), (60, 43), (61, 98), (62, 160), (63, 130), (64, 10), (65, 163), (66, 53), (67, 6), (68, 123), (69, 42), (70, 158), (71, 187), (72, 67), (73, 177), (74, 112), (75, 100), (76, 173), (77, 33), (78, 121), (79, 22), (80, 35), (81, 148), (82, 131), (83, 116), (84, 57), (85, 125), (86, 157), (87, 16), (88, 25), (89, 185), (90, 99), (91, 80), (92, 49), (93, 176), (94, 178), (95, 28), (96, 172), (97, 164), (98, 101), (99, 60), (100, 161), (101, 29), (102, 66), (103, 96), (104, 111), (105, 7), (106, 15), (107, 41), (108, 8), (109, 124), (110, 40), (111, 2), (112, 11), (113, 44), (114, 21), (115, 114), (116, 47), (117, 71), (118, 128), (119, 188), (120, 69), (121, 135), (122, 31), (123, 175), (124, 109), (125, 170), (126, 68), (127, 59), (128, 56), (129, 34), (130, 83), (131, 113), (132, 95), (133, 86), (134, 4), (135, 137), (136, 189), (137, 184), (138, 72), (139, 159), (140, 190), (141, 9), (142, 84), (143, 65), (144, 165), (145, 179), (146, 180), (147, 168), (148, 167), (149, 183), (150, 181), (151, 14), (152, 194), (153, 12), (154, 27), (155, 13), (156, 0), (157, 182), (158, 1), (159, 195), (160, 144), (161, 52), (162, 46), (163, 129), (164, 77), (165, 74), (166, 105), (167, 63), (168, 62), (169, 93), (170, 75), (171, 91), (172, 64), (173, 76), (174, 119), (175, 78), (176, 92), (177, 102), (178, 117), (179, 104), (180, 133), (181, 61), (182, 90), (183, 107), (184, 120), (185, 103), (186, 106), (187, 132), (188, 118), (189, 88), (190, 89), (191, 51), (192, 150), (193, 149), (194, 45), (195, 143)]
+Communication cost: 3527914.0
+  [recorded] 'C: IterCC Neuron + L1 edge @ drop≤1.0%'  acc=0.6331  cost=3527914  sp_cost=5424825  edges=1,457,219  neurons=794
+[C: IterCC Neuron + L1 edge] Step   6 (edge* ): acc=0.6296  drop=+0.0097 pp  neurons=794  edges=1,399,514  scale=1.000
+[C: IterCC Neuron + L1 edge] Step   7 (edge* ): acc=0.6292  drop=+0.0101 pp  neurons=794  edges=1,371,524  scale=1.000
+[C: IterCC Neuron + L1 edge] Step   8 (edge* ): acc=0.6322  drop=+0.0071 pp  neurons=794  edges=1,344,094  scale=1.000
+[C: IterCC Neuron + L1 edge] Step   9 (edge* ): acc=0.6292  drop=+0.0101 pp  neurons=794  edges=1,317,213  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  10 (edge* ): acc=0.6301  drop=+0.0092 pp  neurons=794  edges=1,290,869  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  11 (edge* ): acc=0.6292  drop=+0.0101 pp  neurons=794  edges=1,265,052  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  12 (edge* ): acc=0.6270  drop=+0.0123 pp  neurons=794  edges=1,239,751  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  13 (edge* ): acc=0.6284  drop=+0.0109 pp  neurons=794  edges=1,214,956  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  14 (edge* ): acc=0.6242  drop=+0.0151 pp  neurons=794  edges=1,190,657  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  15 (edge* ): acc=0.6267  drop=+0.0126 pp  neurons=794  edges=1,166,844  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  16 (edge* ): acc=0.6253  drop=+0.0140 pp  neurons=794  edges=1,143,508  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  17 (edge* ): acc=0.6214  drop=+0.0179 pp  neurons=794  edges=1,120,638  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  18 (edge* ): acc=0.6247  drop=+0.0146 pp  neurons=794  edges=1,098,226  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  19 (edge* ): acc=0.6287  drop=+0.0106 pp  neurons=794  edges=1,076,262  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  20 (edge* ): acc=0.6243  drop=+0.0150 pp  neurons=794  edges=1,054,737  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  21 (edge* ): acc=0.6246  drop=+0.0147 pp  neurons=794  edges=1,033,643  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  22 (edge* ): acc=0.6229  drop=+0.0164 pp  neurons=794  edges=1,012,971  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  23 (edge* ): acc=0.6194  drop=+0.0199 pp  neurons=794  edges=992,712  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  24 (edge* ): drop=+0.0211 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  24 (edge* ): acc=0.6196  drop=+0.0197 pp  neurons=794  edges=972,858  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  25 (edge* ): acc=0.6200  drop=+0.0193 pp  neurons=794  edges=953,401  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  26 (edge* ): acc=0.6212  drop=+0.0181 pp  neurons=794  edges=934,333  scale=1.000
+[C: IterCC Neuron + L1 edge] Step  27 (edge* ): drop=+0.0217 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  27 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  27: over budget (drop=+0.0208); reverted, step scale -> 0.5000
+[C: IterCC Neuron + L1 edge] Step  28 (edge* ): acc=0.6204  drop=+0.0189 pp  neurons=794  edges=924,990  scale=0.500
+[C: IterCC Neuron + L1 edge] Step  29 (edge* ): drop=+0.0236 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  29 (edge* ): acc=0.6194  drop=+0.0199 pp  neurons=794  edges=915,741  scale=0.500
+[C: IterCC Neuron + L1 edge] Step  30 (edge* ): drop=+0.0239 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  30 (edge* ): drop=+0.0204 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  30: over budget (drop=+0.0226); reverted, step scale -> 0.2500
+[C: IterCC Neuron + L1 edge] Step  31 (edge* ): drop=+0.0234 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  31 (edge* ): drop=+0.0224 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  31: over budget (drop=+0.0229); reverted, step scale -> 0.1250
+[C: IterCC Neuron + L1 edge] Step  32 (edge* ): drop=+0.0232 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  32 (edge* ): drop=+0.0263 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  32: over budget at min step scale (1/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  33 (edge* ): drop=+0.0242 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  33 (edge* ): drop=+0.0258 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  33: over budget at min step scale (2/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  34 (edge* ): acc=0.6233  drop=+0.0160 pp  neurons=794  edges=913,452  scale=0.125
+[C: IterCC Neuron + L1 edge] Step  35 (edge* ): drop=+0.0203 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  35 (edge* ): drop=+0.0203 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  35: over budget at min step scale (1/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  36 (edge* ): acc=0.6217  drop=+0.0176 pp  neurons=794  edges=911,169  scale=0.125
+[C: IterCC Neuron + L1 edge] Step  37 (edge* ): drop=+0.0205 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  37 (edge* ): drop=+0.0222 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  37: over budget at min step scale (1/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  38 (edge* ): drop=+0.0208 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  38 (edge* ): drop=+0.0223 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  38: over budget at min step scale (2/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  39 (edge* ): acc=0.6202  drop=+0.0191 pp  neurons=794  edges=908,892  scale=0.125
+[C: IterCC Neuron + L1 edge] Step  40 (edge* ): drop=+0.0257 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  40 (edge* ): drop=+0.0246 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  40: over budget at min step scale (1/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  41 (edge* ): drop=+0.0220 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  41 (edge* ): drop=+0.0253 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  41: over budget at min step scale (2/3); reverted.
+[C: IterCC Neuron + L1 edge] Step  42 (edge* ): drop=+0.0232 over budget -> recovery round 1/2
+[C: IterCC Neuron + L1 edge] Step  42 (edge* ): drop=+0.0245 over budget -> recovery round 2/2
+[C: IterCC Neuron + L1 edge] Step  42: over budget at min step scale (3/3); reverted.
+[C: IterCC Neuron + L1 edge] Budget consumed. Stopping.
+
+[C: IterCC Neuron + L1 edge] Finished. 31 micro-steps completed.
+  Final: acc=0.6202  neurons=794  edges=908,892
+
+=== Final evaluation: C: IterCC Neuron + L1 edge ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6202
+F1       : 0.6194
+Precision: 0.6195
+Recall   : 0.6202
+Params   : 1688332 trainable
+State size (approx): 6601.27 KB
+Inference time (avg): batch 0.9476 ms | single 0.058079 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.48s
+Best communication cost: 2213852.0000
+Mapping (task → core):
+  Task   1  →  Core 186
+  Task   2  →  Core 110
+  Task   3  →  Core 123
+  Task   4  →  Core 116
+  Task   5  →  Core  59
+  Task   6  →  Core 124
+  Task   7  →  Core  34
+  Task   8  →  Core 137
+  Task   9  →  Core  74
+  Task  10  →  Core 129
+  Task  11  →  Core 115
+  Task  12  →  Core  67
+  Task  13  →  Core  95
+  Task  14  →  Core 132
+  Task  15  →  Core 131
+  Task  16  →  Core  66
+  Task  17  →  Core 109
+  Task  18  →  Core  61
+  Task  19  →  Core 136
+  Task  20  →  Core  33
+  Task  21  →  Core  47
+  Task  22  →  Core  48
+  Task  23  →  Core 149
+  Task  24  →  Core 148
+  Task  25  →  Core  52
+  Task  26  →  Core  51
+  Task  27  →  Core  49
+  Task  28  →  Core  50
+  Task  29  →  Core 160
+  Task  30  →  Core  88
+  Task  31  →  Core  60
+  Task  32  →  Core  87
+  Task  33  →  Core 147
+  Task  34  →  Core 102
+  Task  35  →  Core  35
+  Task  36  →  Core 145
+  Task  37  →  Core 150
+  Task  38  →  Core  73
+  Task  39  →  Core  68
+  Task  40  →  Core 161
+  Task  41  →  Core 162
+  Task  42  →  Core 130
+  Task  43  →  Core 101
+  Task  44  →  Core  81
+  Task  45  →  Core  38
+  Task  46  →  Core 146
+  Task  47  →  Core  36
+  Task  48  →  Core 111
+  Task  49  →  Core  23
+  Task  50  →  Core  21
+  Task  51  →  Core  82
+  Task  52  →  Core  22
+  Task  53  →  Core 163
+  Task  54  →  Core  53
+  Task  55  →  Core 151
+  Task  56  →  Core  37
+  Task  57  →  Core 177
+  Task  58  →  Core 164
+  Task  59  →  Core 100
+  Task  60  →  Core 144
+  Task  61  →  Core  97
+  Task  62  →  Core  58
+  Task  63  →  Core  99
+  Task  64  →  Core 125
+  Task  65  →  Core  83
+  Task  66  →  Core 114
+  Task  67  →  Core  19
+  Task  68  →  Core   8
+  Task  69  →  Core  86
+  Task  70  →  Core 174
+  Task  71  →  Core  69
+  Task  72  →  Core 112
+  Task  73  →  Core   7
+  Task  74  →  Core 190
+  Task  75  →  Core  72
+  Task  76  →  Core 178
+  Task  77  →  Core  98
+  Task  78  →  Core 189
+  Task  79  →  Core  96
+  Task  80  →  Core  46
+  Task  81  →  Core 175
+  Task  82  →  Core 159
+  Task  83  →  Core 122
+  Task  84  →  Core 176
+  Task  85  →  Core  20
+  Task  86  →  Core 138
+  Task  87  →  Core  85
+  Task  88  →  Core 184
+  Task  89  →  Core 195
+  Task  90  →  Core  13
+  Task  91  →  Core  28
+  Task  92  →  Core 183
+  Task  93  →  Core  14
+  Task  94  →  Core   2
+  Task  95  →  Core 169
+  Task  96  →  Core  15
+  Task  97  →  Core 182
+  Task  98  →  Core   1
+  Task  99  →  Core 187
+  Task 100  →  Core  45
+  Task 101  →  Core 166
+  Task 102  →  Core  40
+  Task 103  →  Core  55
+  Task 104  →  Core  39
+  Task 105  →  Core  56
+  Task 106  →  Core 152
+  Task 107  →  Core 158
+  Task 108  →  Core  11
+  Task 109  →  Core 172
+  Task 110  →  Core 143
+  Task 111  →  Core  44
+  Task 112  →  Core 155
+  Task 113  →  Core 141
+  Task 114  →  Core 191
+  Task 115  →  Core  41
+  Task 116  →  Core 171
+  Task 117  →  Core 126
+  Task 118  →  Core  10
+  Task 119  →  Core 179
+  Task 120  →  Core 194
+  Task 121  →  Core  12
+  Task 122  →  Core  70
+  Task 123  →  Core 140
+  Task 124  →  Core  42
+  Task 125  →  Core 153
+  Task 126  →  Core 113
+  Task 127  →  Core  25
+  Task 128  →  Core  17
+  Task 129  →  Core 185
+  Task 130  →  Core  16
+  Task 131  →  Core   9
+  Task 132  →  Core 118
+  Task 133  →  Core 105
+  Task 134  →  Core 104
+  Task 135  →  Core  92
+  Task 136  →  Core 134
+  Task 137  →  Core  63
+  Task 138  →  Core  75
+  Task 139  →  Core  91
+  Task 140  →  Core  64
+  Task 141  →  Core  76
+  Task 142  →  Core 108
+  Task 143  →  Core  90
+  Task 144  →  Core  94
+  Task 145  →  Core 133
+  Task 146  →  Core 117
+  Task 147  →  Core  93
+  Task 148  →  Core 135
+  Task 149  →  Core  89
+  Task 150  →  Core 106
+  Task 151  →  Core 119
+  Task 152  →  Core 107
+  Task 153  →  Core  80
+  Task 154  →  Core 121
+  Task 155  →  Core  77
+  Task 156  →  Core  78
+  Task 157  →  Core  79
+  Task 158  →  Core 103
+  Task 159  →  Core 120
+  Task 160  →  Core  65
+  Task 161  →  Core  62
+  Task 162  →  Core 196
+  Task 163  →  Core  27
+  Task 164  →  Core  57
+  Task 165  →  Core   5
+  Task 166  →  Core 165
+  Task 167  →  Core 128
+  Task 168  →  Core  84
+  Task 169  →  Core  71
+  Task 170  →  Core  29
+  Task 171  →  Core   4
+  Task 172  →  Core 173
+  Task 173  →  Core 167
+  Task 174  →  Core 142
+  Task 175  →  Core 188
+  Task 176  →  Core 192
+  Task 177  →  Core  43
+  Task 178  →  Core 181
+  Task 179  →  Core 180
+  Task 180  →  Core  26
+  Task 181  →  Core 168
+  Task 182  →  Core   6
+  Task 183  →  Core 139
+  Task 184  →  Core  18
+  Task 185  →  Core 154
+  Task 186  →  Core   3
+  Task 187  →  Core  30
+  Task 188  →  Core 156
+  Task 189  →  Core 127
+  Task 190  →  Core 157
+  Task 191  →  Core  24
+  Task 192  →  Core  54
+  Task 193  →  Core  32
+  Task 194  →  Core 193
+  Task 195  →  Core 170
+  Task 196  →  Core  31
+Mapping: [(0, 185), (1, 109), (2, 122), (3, 115), (4, 58), (5, 123), (6, 33), (7, 136), (8, 73), (9, 128), (10, 114), (11, 66), (12, 94), (13, 131), (14, 130), (15, 65), (16, 108), (17, 60), (18, 135), (19, 32), (20, 46), (21, 47), (22, 148), (23, 147), (24, 51), (25, 50), (26, 48), (27, 49), (28, 159), (29, 87), (30, 59), (31, 86), (32, 146), (33, 101), (34, 34), (35, 144), (36, 149), (37, 72), (38, 67), (39, 160), (40, 161), (41, 129), (42, 100), (43, 80), (44, 37), (45, 145), (46, 35), (47, 110), (48, 22), (49, 20), (50, 81), (51, 21), (52, 162), (53, 52), (54, 150), (55, 36), (56, 176), (57, 163), (58, 99), (59, 143), (60, 96), (61, 57), (62, 98), (63, 124), (64, 82), (65, 113), (66, 18), (67, 7), (68, 85), (69, 173), (70, 68), (71, 111), (72, 6), (73, 189), (74, 71), (75, 177), (76, 97), (77, 188), (78, 95), (79, 45), (80, 174), (81, 158), (82, 121), (83, 175), (84, 19), (85, 137), (86, 84), (87, 183), (88, 194), (89, 12), (90, 27), (91, 182), (92, 13), (93, 1), (94, 168), (95, 14), (96, 181), (97, 0), (98, 186), (99, 44), (100, 165), (101, 39), (102, 54), (103, 38), (104, 55), (105, 151), (106, 157), (107, 10), (108, 171), (109, 142), (110, 43), (111, 154), (112, 140), (113, 190), (114, 40), (115, 170), (116, 125), (117, 9), (118, 178), (119, 193), (120, 11), (121, 69), (122, 139), (123, 41), (124, 152), (125, 112), (126, 24), (127, 16), (128, 184), (129, 15), (130, 8), (131, 117), (132, 104), (133, 103), (134, 91), (135, 133), (136, 62), (137, 74), (138, 90), (139, 63), (140, 75), (141, 107), (142, 89), (143, 93), (144, 132), (145, 116), (146, 92), (147, 134), (148, 88), (149, 105), (150, 118), (151, 106), (152, 79), (153, 120), (154, 76), (155, 77), (156, 78), (157, 102), (158, 119), (159, 64), (160, 61), (161, 195), (162, 26), (163, 56), (164, 4), (165, 164), (166, 127), (167, 83), (168, 70), (169, 28), (170, 3), (171, 172), (172, 166), (173, 141), (174, 187), (175, 191), (176, 42), (177, 180), (178, 179), (179, 25), (180, 167), (181, 5), (182, 138), (183, 17), (184, 153), (185, 2), (186, 29), (187, 155), (188, 126), (189, 156), (190, 23), (191, 53), (192, 31), (193, 192), (194, 169), (195, 30)]
+Communication cost: 2213852.0
+  [recorded] 'C: IterCC Neuron + L1 edge [final]'  acc=0.6202  cost=2213852  sp_cost=3162718  edges=908,892  neurons=794
+[C: IterCC Neuron + L1 edge] TIMING: total=236.4s  core=218.7s  final grouping+SA=14.8s  neuron=14.6s  edge=63.5s (bridge grouping+SA 0.0s)  finetune=65.4s  eval=4.0s
+
+======================================================================
+  BRANCH: D: Taylor Neuron + L2 edge
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[D: Taylor Neuron + L2 edge] Starting accuracy: 0.6364
+[D: Taylor Neuron + L2 edge] Step   1 (neuron): acc=0.6368  drop=+0.0025 pp  neurons=739  edges=1,472,166  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   2 (edge  ): acc=0.6368  drop=+0.0025 pp  neurons=738  edges=1,457,287  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   3 (edge  ): acc=0.6352  drop=+0.0041 pp  neurons=736  edges=1,442,712  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   4 (edge  ): acc=0.6353  drop=+0.0040 pp  neurons=736  edges=1,428,285  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   5 (edge  ): acc=0.6295  drop=+0.0098 pp  neurons=736  edges=1,414,003  scale=1.000
+[D: Taylor Neuron + L2 edge] Step 5: neuron tolerance cap (drop=0.0098 ≥ 0.0050). Reserving 0.0102 for edge-only (0.0200).
+[D: Taylor Neuron + L2 edge] Step   6 (edge* ): acc=0.6261  drop=+0.0132 pp  neurons=735  edges=1,385,534  scale=1.000
+[D: Taylor Neuron + L2 edge] → Snapshot at drop≤1.0%: 'D: Taylor Neuron + L2 edge @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.40s
+Best communication cost: 3496070.0000
+Mapping (task → core):
+  Task   1  →  Core 137
+  Task   2  →  Core  41
+  Task   3  →  Core 164
+  Task   4  →  Core  21
+  Task   5  →  Core  26
+  Task   6  →  Core  47
+  Task   7  →  Core 176
+  Task   8  →  Core  10
+  Task   9  →  Core  25
+  Task  10  →  Core 102
+  Task  11  →  Core  65
+  Task  12  →  Core 100
+  Task  13  →  Core 190
+  Task  14  →  Core  85
+  Task  15  →  Core 163
+  Task  16  →  Core 148
+  Task  17  →  Core  56
+  Task  18  →  Core  32
+  Task  19  →  Core  35
+  Task  20  →  Core 112
+  Task  21  →  Core  20
+  Task  22  →  Core  80
+  Task  23  →  Core 138
+  Task  24  →  Core 101
+  Task  25  →  Core 143
+  Task  26  →  Core  72
+  Task  27  →  Core 110
+  Task  28  →  Core 142
+  Task  29  →  Core 114
+  Task  30  →  Core 156
+  Task  31  →  Core   5
+  Task  32  →  Core   7
+  Task  33  →  Core  17
+  Task  34  →  Core 154
+  Task  35  →  Core  74
+  Task  36  →  Core 187
+  Task  37  →  Core  64
+  Task  38  →  Core 109
+  Task  39  →  Core  34
+  Task  40  →  Core  95
+  Task  41  →  Core  71
+  Task  42  →  Core  58
+  Task  43  →  Core  30
+  Task  44  →  Core  55
+  Task  45  →  Core 158
+  Task  46  →  Core 157
+  Task  47  →  Core  73
+  Task  48  →  Core  96
+  Task  49  →  Core 165
+  Task  50  →  Core 131
+  Task  51  →  Core 188
+  Task  52  →  Core 171
+  Task  53  →  Core 146
+  Task  54  →  Core  99
+  Task  55  →  Core 172
+  Task  56  →  Core 123
+  Task  57  →  Core  86
+  Task  58  →  Core 139
+  Task  59  →  Core   8
+  Task  60  →  Core 161
+  Task  61  →  Core 180
+  Task  62  →  Core 173
+  Task  63  →  Core  87
+  Task  64  →  Core 115
+  Task  65  →  Core  57
+  Task  66  →  Core  23
+  Task  67  →  Core  24
+  Task  68  →  Core  98
+  Task  69  →  Core 191
+  Task  70  →  Core 128
+  Task  71  →  Core  83
+  Task  72  →  Core 153
+  Task  73  →  Core 122
+  Task  74  →  Core  59
+  Task  75  →  Core 174
+  Task  76  →  Core 130
+  Task  77  →  Core 166
+  Task  78  →  Core  37
+  Task  79  →  Core 116
+  Task  80  →  Core 152
+  Task  81  →  Core  43
+  Task  82  →  Core 124
+  Task  83  →  Core 140
+  Task  84  →  Core 189
+  Task  85  →  Core  82
+  Task  86  →  Core 177
+  Task  87  →  Core  81
+  Task  88  →  Core  97
+  Task  89  →  Core  51
+  Task  90  →  Core  39
+  Task  91  →  Core 192
+  Task  92  →  Core 155
+  Task  93  →  Core 147
+  Task  94  →  Core  11
+  Task  95  →  Core 194
+  Task  96  →  Core  38
+  Task  97  →  Core  19
+  Task  98  →  Core 175
+  Task  99  →  Core  44
+  Task 100  →  Core 126
+  Task 101  →  Core 178
+  Task 102  →  Core 168
+  Task 103  →  Core 113
+  Task 104  →  Core 160
+  Task 105  →  Core  22
+  Task 106  →  Core 149
+  Task 107  →  Core   6
+  Task 108  →  Core 129
+  Task 109  →  Core 181
+  Task 110  →  Core 159
+  Task 111  →  Core  36
+  Task 112  →  Core  68
+  Task 113  →  Core  54
+  Task 114  →  Core  84
+  Task 115  →  Core  61
+  Task 116  →  Core  69
+  Task 117  →  Core  67
+  Task 118  →  Core  33
+  Task 119  →  Core 185
+  Task 120  →  Core  31
+  Task 121  →  Core 193
+  Task 122  →  Core 170
+  Task 123  →  Core   9
+  Task 124  →  Core  29
+  Task 125  →  Core 186
+  Task 126  →  Core 136
+  Task 127  →  Core  48
+  Task 128  →  Core 141
+  Task 129  →  Core  70
+  Task 130  →  Core  50
+  Task 131  →  Core 132
+  Task 132  →  Core 125
+  Task 133  →  Core 179
+  Task 134  →  Core 162
+  Task 135  →  Core   4
+  Task 136  →  Core 111
+  Task 137  →  Core 127
+  Task 138  →  Core  49
+  Task 139  →  Core  16
+  Task 140  →  Core  45
+  Task 141  →  Core  88
+  Task 142  →  Core  18
+  Task 143  →  Core 167
+  Task 144  →  Core  40
+  Task 145  →  Core   3
+  Task 146  →  Core  15
+  Task 147  →  Core 196
+  Task 148  →  Core  27
+  Task 149  →  Core 169
+  Task 150  →  Core 182
+  Task 151  →  Core  12
+  Task 152  →  Core   2
+  Task 153  →  Core 195
+  Task 154  →  Core 184
+  Task 155  →  Core   1
+  Task 156  →  Core  13
+  Task 157  →  Core  42
+  Task 158  →  Core  28
+  Task 159  →  Core 183
+  Task 160  →  Core  14
+  Task 161  →  Core  66
+  Task 162  →  Core 144
+  Task 163  →  Core 145
+  Task 164  →  Core  60
+  Task 165  →  Core  94
+  Task 166  →  Core 108
+  Task 167  →  Core 106
+  Task 168  →  Core 135
+  Task 169  →  Core 117
+  Task 170  →  Core 104
+  Task 171  →  Core 119
+  Task 172  →  Core 134
+  Task 173  →  Core  78
+  Task 174  →  Core 133
+  Task 175  →  Core 121
+  Task 176  →  Core  62
+  Task 177  →  Core 118
+  Task 178  →  Core 103
+  Task 179  →  Core 120
+  Task 180  →  Core  79
+  Task 181  →  Core  63
+  Task 182  →  Core  77
+  Task 183  →  Core  76
+  Task 184  →  Core 107
+  Task 185  →  Core  75
+  Task 186  →  Core  91
+  Task 187  →  Core  93
+  Task 188  →  Core 105
+  Task 189  →  Core  92
+  Task 190  →  Core  90
+  Task 191  →  Core  89
+  Task 192  →  Core 151
+  Task 193  →  Core  46
+  Task 194  →  Core  53
+  Task 195  →  Core 150
+  Task 196  →  Core  52
+Mapping: [(0, 136), (1, 40), (2, 163), (3, 20), (4, 25), (5, 46), (6, 175), (7, 9), (8, 24), (9, 101), (10, 64), (11, 99), (12, 189), (13, 84), (14, 162), (15, 147), (16, 55), (17, 31), (18, 34), (19, 111), (20, 19), (21, 79), (22, 137), (23, 100), (24, 142), (25, 71), (26, 109), (27, 141), (28, 113), (29, 155), (30, 4), (31, 6), (32, 16), (33, 153), (34, 73), (35, 186), (36, 63), (37, 108), (38, 33), (39, 94), (40, 70), (41, 57), (42, 29), (43, 54), (44, 157), (45, 156), (46, 72), (47, 95), (48, 164), (49, 130), (50, 187), (51, 170), (52, 145), (53, 98), (54, 171), (55, 122), (56, 85), (57, 138), (58, 7), (59, 160), (60, 179), (61, 172), (62, 86), (63, 114), (64, 56), (65, 22), (66, 23), (67, 97), (68, 190), (69, 127), (70, 82), (71, 152), (72, 121), (73, 58), (74, 173), (75, 129), (76, 165), (77, 36), (78, 115), (79, 151), (80, 42), (81, 123), (82, 139), (83, 188), (84, 81), (85, 176), (86, 80), (87, 96), (88, 50), (89, 38), (90, 191), (91, 154), (92, 146), (93, 10), (94, 193), (95, 37), (96, 18), (97, 174), (98, 43), (99, 125), (100, 177), (101, 167), (102, 112), (103, 159), (104, 21), (105, 148), (106, 5), (107, 128), (108, 180), (109, 158), (110, 35), (111, 67), (112, 53), (113, 83), (114, 60), (115, 68), (116, 66), (117, 32), (118, 184), (119, 30), (120, 192), (121, 169), (122, 8), (123, 28), (124, 185), (125, 135), (126, 47), (127, 140), (128, 69), (129, 49), (130, 131), (131, 124), (132, 178), (133, 161), (134, 3), (135, 110), (136, 126), (137, 48), (138, 15), (139, 44), (140, 87), (141, 17), (142, 166), (143, 39), (144, 2), (145, 14), (146, 195), (147, 26), (148, 168), (149, 181), (150, 11), (151, 1), (152, 194), (153, 183), (154, 0), (155, 12), (156, 41), (157, 27), (158, 182), (159, 13), (160, 65), (161, 143), (162, 144), (163, 59), (164, 93), (165, 107), (166, 105), (167, 134), (168, 116), (169, 103), (170, 118), (171, 133), (172, 77), (173, 132), (174, 120), (175, 61), (176, 117), (177, 102), (178, 119), (179, 78), (180, 62), (181, 76), (182, 75), (183, 106), (184, 74), (185, 90), (186, 92), (187, 104), (188, 91), (189, 89), (190, 88), (191, 150), (192, 45), (193, 52), (194, 149), (195, 51)]
+Communication cost: 3496070.0
+  [recorded] 'D: Taylor Neuron + L2 edge @ drop≤1.0%'  acc=0.6295  cost=3496070  sp_cost=5408412  edges=1,414,003  neurons=736
+[D: Taylor Neuron + L2 edge] Step   7 (edge* ): acc=0.6312  drop=+0.0081 pp  neurons=735  edges=1,357,824  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   8 (edge* ): acc=0.6306  drop=+0.0087 pp  neurons=735  edges=1,330,668  scale=1.000
+[D: Taylor Neuron + L2 edge] Step   9 (edge* ): acc=0.6293  drop=+0.0100 pp  neurons=735  edges=1,304,055  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  10 (edge* ): acc=0.6279  drop=+0.0114 pp  neurons=735  edges=1,277,974  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  11 (edge* ): acc=0.6285  drop=+0.0108 pp  neurons=735  edges=1,252,415  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  12 (edge* ): acc=0.6254  drop=+0.0139 pp  neurons=735  edges=1,227,367  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  13 (edge* ): acc=0.6214  drop=+0.0179 pp  neurons=735  edges=1,202,820  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  14 (edge* ): acc=0.6259  drop=+0.0134 pp  neurons=735  edges=1,178,764  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  15 (edge* ): acc=0.6242  drop=+0.0151 pp  neurons=735  edges=1,155,189  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  16 (edge* ): acc=0.6252  drop=+0.0141 pp  neurons=735  edges=1,132,086  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  17 (edge* ): acc=0.6217  drop=+0.0176 pp  neurons=735  edges=1,109,445  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  18 (edge* ): acc=0.6230  drop=+0.0163 pp  neurons=735  edges=1,087,257  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  19 (edge* ): acc=0.6238  drop=+0.0155 pp  neurons=735  edges=1,065,512  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  20 (edge* ): acc=0.6232  drop=+0.0161 pp  neurons=735  edges=1,044,202  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  21 (edge* ): acc=0.6241  drop=+0.0152 pp  neurons=735  edges=1,023,318  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  22 (edge* ): acc=0.6235  drop=+0.0158 pp  neurons=735  edges=1,002,852  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  23 (edge* ): drop=+0.0200 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  23 (edge* ): drop=+0.0232 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  23 (edge* ): acc=0.6198  drop=+0.0195 pp  neurons=735  edges=982,795  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  24 (edge* ): drop=+0.0230 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  24 (edge* ): acc=0.6199  drop=+0.0194 pp  neurons=735  edges=963,140  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  25 (edge* ): acc=0.6199  drop=+0.0194 pp  neurons=735  edges=943,878  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  26 (edge* ): acc=0.6227  drop=+0.0166 pp  neurons=735  edges=925,001  scale=1.000
+[D: Taylor Neuron + L2 edge] Step  27 (edge* ): drop=+0.0243 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  27 (edge* ): drop=+0.0256 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  27: over budget (drop=+0.0260); reverted, step scale -> 0.5000
+[D: Taylor Neuron + L2 edge] Step  28 (edge* ): drop=+0.0223 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  28 (edge* ): drop=+0.0241 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  28: over budget (drop=+0.0219); reverted, step scale -> 0.2500
+[D: Taylor Neuron + L2 edge] Step  29 (edge* ): drop=+0.0228 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  29 (edge* ): drop=+0.0234 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  29: over budget (drop=+0.0253); reverted, step scale -> 0.1250
+[D: Taylor Neuron + L2 edge] Step  30 (edge* ): drop=+0.0252 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  30 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  30: over budget at min step scale (1/3); reverted.
+[D: Taylor Neuron + L2 edge] Step  31 (edge* ): drop=+0.0249 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  31 (edge* ): drop=+0.0228 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  31: over budget at min step scale (2/3); reverted.
+[D: Taylor Neuron + L2 edge] Step  32 (edge* ): drop=+0.0228 over budget -> recovery round 1/2
+[D: Taylor Neuron + L2 edge] Step  32 (edge* ): drop=+0.0247 over budget -> recovery round 2/2
+[D: Taylor Neuron + L2 edge] Step  32: over budget at min step scale (3/3); reverted.
+[D: Taylor Neuron + L2 edge] Budget consumed. Stopping.
+
+[D: Taylor Neuron + L2 edge] Finished. 26 micro-steps completed.
+  Final: acc=0.6227  neurons=735  edges=925,001
+
+=== Final evaluation: D: Taylor Neuron + L2 edge ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6227
+F1       : 0.6225
+Precision: 0.6234
+Recall   : 0.6227
+Params   : 1472035 trainable
+State size (approx): 5755.89 KB
+Inference time (avg): batch 1.0279 ms | single 0.059775 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.50s
+Best communication cost: 2275734.0000
+Mapping (task → core):
+  Task   1  →  Core  41
+  Task   2  →  Core 101
+  Task   3  →  Core 149
+  Task   4  →  Core  48
+  Task   5  →  Core 147
+  Task   6  →  Core  33
+  Task   7  →  Core 116
+  Task   8  →  Core 124
+  Task   9  →  Core  52
+  Task  10  →  Core  87
+  Task  11  →  Core  49
+  Task  12  →  Core  95
+  Task  13  →  Core 177
+  Task  14  →  Core 100
+  Task  15  →  Core   8
+  Task  16  →  Core  21
+  Task  17  →  Core 114
+  Task  18  →  Core  82
+  Task  19  →  Core  50
+  Task  20  →  Core 150
+  Task  21  →  Core 109
+  Task  22  →  Core 110
+  Task  23  →  Core  75
+  Task  24  →  Core  66
+  Task  25  →  Core 130
+  Task  26  →  Core  51
+  Task  27  →  Core 102
+  Task  28  →  Core  96
+  Task  29  →  Core  88
+  Task  30  →  Core  81
+  Task  31  →  Core 123
+  Task  32  →  Core  67
+  Task  33  →  Core 145
+  Task  34  →  Core 135
+  Task  35  →  Core 159
+  Task  36  →  Core  46
+  Task  37  →  Core  60
+  Task  38  →  Core 146
+  Task  39  →  Core 148
+  Task  40  →  Core  61
+  Task  41  →  Core 136
+  Task  42  →  Core 115
+  Task  43  →  Core  23
+  Task  44  →  Core 163
+  Task  45  →  Core 151
+  Task  46  →  Core  68
+  Task  47  →  Core 111
+  Task  48  →  Core 174
+  Task  49  →  Core  35
+  Task  50  →  Core 139
+  Task  51  →  Core 176
+  Task  52  →  Core 137
+  Task  53  →  Core  36
+  Task  54  →  Core 138
+  Task  55  →  Core 161
+  Task  56  →  Core  34
+  Task  57  →  Core 129
+  Task  58  →  Core  97
+  Task  59  →  Core  59
+  Task  60  →  Core 160
+  Task  61  →  Core  74
+  Task  62  →  Core  38
+  Task  63  →  Core  47
+  Task  64  →  Core  24
+  Task  65  →  Core 175
+  Task  66  →  Core  72
+  Task  67  →  Core 144
+  Task  68  →  Core 112
+  Task  69  →  Core 178
+  Task  70  →  Core  83
+  Task  71  →  Core 125
+  Task  72  →  Core 164
+  Task  73  →  Core 190
+  Task  74  →  Core 162
+  Task  75  →  Core  19
+  Task  76  →  Core  58
+  Task  77  →  Core  20
+  Task  78  →  Core 128
+  Task  79  →  Core 173
+  Task  80  →  Core   7
+  Task  81  →  Core  85
+  Task  82  →  Core  98
+  Task  83  →  Core  99
+  Task  84  →  Core 189
+  Task  85  →  Core  53
+  Task  86  →  Core  73
+  Task  87  →  Core  86
+  Task  88  →  Core  37
+  Task  89  →  Core  22
+  Task  90  →  Core  15
+  Task  91  →  Core 183
+  Task  92  →  Core 184
+  Task  93  →  Core 195
+  Task  94  →  Core   2
+  Task  95  →  Core 196
+  Task  96  →  Core  28
+  Task  97  →  Core 182
+  Task  98  →  Core  13
+  Task  99  →  Core   1
+  Task 100  →  Core  14
+  Task 101  →  Core 166
+  Task 102  →  Core 126
+  Task 103  →  Core 191
+  Task 104  →  Core 143
+  Task 105  →  Core  69
+  Task 106  →  Core 179
+  Task 107  →  Core 152
+  Task 108  →  Core  57
+  Task 109  →  Core  17
+  Task 110  →  Core  27
+  Task 111  →  Core   6
+  Task 112  →  Core 157
+  Task 113  →  Core  55
+  Task 114  →  Core 194
+  Task 115  →  Core 181
+  Task 116  →  Core  25
+  Task 117  →  Core 171
+  Task 118  →  Core 185
+  Task 119  →  Core 187
+  Task 120  →  Core 165
+  Task 121  →  Core 127
+  Task 122  →  Core 180
+  Task 123  →  Core  26
+  Task 124  →  Core   5
+  Task 125  →  Core 167
+  Task 126  →  Core  30
+  Task 127  →  Core  32
+  Task 128  →  Core 172
+  Task 129  →  Core 192
+  Task 130  →  Core 142
+  Task 131  →  Core  12
+  Task 132  →  Core   3
+  Task 133  →  Core  79
+  Task 134  →  Core  90
+  Task 135  →  Core 132
+  Task 136  →  Core 103
+  Task 137  →  Core 131
+  Task 138  →  Core 133
+  Task 139  →  Core  78
+  Task 140  →  Core  77
+  Task 141  →  Core  91
+  Task 142  →  Core  76
+  Task 143  →  Core 108
+  Task 144  →  Core 118
+  Task 145  →  Core 104
+  Task 146  →  Core  65
+  Task 147  →  Core 117
+  Task 148  →  Core  94
+  Task 149  →  Core  80
+  Task 150  →  Core  62
+  Task 151  →  Core 106
+  Task 152  →  Core 105
+  Task 153  →  Core 119
+  Task 154  →  Core 122
+  Task 155  →  Core  89
+  Task 156  →  Core 134
+  Task 157  →  Core 121
+  Task 158  →  Core 107
+  Task 159  →  Core 120
+  Task 160  →  Core  93
+  Task 161  →  Core  92
+  Task 162  →  Core  63
+  Task 163  →  Core  64
+  Task 164  →  Core 140
+  Task 165  →  Core  10
+  Task 166  →  Core 158
+  Task 167  →  Core 193
+  Task 168  →  Core  71
+  Task 169  →  Core 168
+  Task 170  →  Core 169
+  Task 171  →  Core  54
+  Task 172  →  Core   9
+  Task 173  →  Core 141
+  Task 174  →  Core  56
+  Task 175  →  Core 186
+  Task 176  →  Core  45
+  Task 177  →  Core 153
+  Task 178  →  Core  29
+  Task 179  →  Core  16
+  Task 180  →  Core   4
+  Task 181  →  Core 154
+  Task 182  →  Core  39
+  Task 183  →  Core 170
+  Task 184  →  Core  31
+  Task 185  →  Core  18
+  Task 186  →  Core  84
+  Task 187  →  Core  42
+  Task 188  →  Core  40
+  Task 189  →  Core 155
+  Task 190  →  Core 113
+  Task 191  →  Core 156
+  Task 192  →  Core 188
+  Task 193  →  Core  44
+  Task 194  →  Core  43
+  Task 195  →  Core  70
+  Task 196  →  Core  11
+Mapping: [(0, 40), (1, 100), (2, 148), (3, 47), (4, 146), (5, 32), (6, 115), (7, 123), (8, 51), (9, 86), (10, 48), (11, 94), (12, 176), (13, 99), (14, 7), (15, 20), (16, 113), (17, 81), (18, 49), (19, 149), (20, 108), (21, 109), (22, 74), (23, 65), (24, 129), (25, 50), (26, 101), (27, 95), (28, 87), (29, 80), (30, 122), (31, 66), (32, 144), (33, 134), (34, 158), (35, 45), (36, 59), (37, 145), (38, 147), (39, 60), (40, 135), (41, 114), (42, 22), (43, 162), (44, 150), (45, 67), (46, 110), (47, 173), (48, 34), (49, 138), (50, 175), (51, 136), (52, 35), (53, 137), (54, 160), (55, 33), (56, 128), (57, 96), (58, 58), (59, 159), (60, 73), (61, 37), (62, 46), (63, 23), (64, 174), (65, 71), (66, 143), (67, 111), (68, 177), (69, 82), (70, 124), (71, 163), (72, 189), (73, 161), (74, 18), (75, 57), (76, 19), (77, 127), (78, 172), (79, 6), (80, 84), (81, 97), (82, 98), (83, 188), (84, 52), (85, 72), (86, 85), (87, 36), (88, 21), (89, 14), (90, 182), (91, 183), (92, 194), (93, 1), (94, 195), (95, 27), (96, 181), (97, 12), (98, 0), (99, 13), (100, 165), (101, 125), (102, 190), (103, 142), (104, 68), (105, 178), (106, 151), (107, 56), (108, 16), (109, 26), (110, 5), (111, 156), (112, 54), (113, 193), (114, 180), (115, 24), (116, 170), (117, 184), (118, 186), (119, 164), (120, 126), (121, 179), (122, 25), (123, 4), (124, 166), (125, 29), (126, 31), (127, 171), (128, 191), (129, 141), (130, 11), (131, 2), (132, 78), (133, 89), (134, 131), (135, 102), (136, 130), (137, 132), (138, 77), (139, 76), (140, 90), (141, 75), (142, 107), (143, 117), (144, 103), (145, 64), (146, 116), (147, 93), (148, 79), (149, 61), (150, 105), (151, 104), (152, 118), (153, 121), (154, 88), (155, 133), (156, 120), (157, 106), (158, 119), (159, 92), (160, 91), (161, 62), (162, 63), (163, 139), (164, 9), (165, 157), (166, 192), (167, 70), (168, 167), (169, 168), (170, 53), (171, 8), (172, 140), (173, 55), (174, 185), (175, 44), (176, 152), (177, 28), (178, 15), (179, 3), (180, 153), (181, 38), (182, 169), (183, 30), (184, 17), (185, 83), (186, 41), (187, 39), (188, 154), (189, 112), (190, 155), (191, 187), (192, 43), (193, 42), (194, 69), (195, 10)]
+Communication cost: 2275734.0
+  [recorded] 'D: Taylor Neuron + L2 edge [final]'  acc=0.6227  cost=2275734  sp_cost=3227300  edges=925,001  neurons=735
+[D: Taylor Neuron + L2 edge] TIMING: total=150.2s  core=133.0s  final grouping+SA=14.8s  neuron=1.6s  edge=25.0s (bridge grouping+SA 0.0s)  finetune=46.2s  eval=2.8s
+
+======================================================================
+  BRANCH: E: Taylor Neuron + L1 edge
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=5  Max steps=2000
+======================================================================
+[E: Taylor Neuron + L1 edge] Starting accuracy: 0.6364
+[E: Taylor Neuron + L1 edge] Step   1 (neuron): acc=0.6372  drop=+0.0021 pp  neurons=739  edges=1,472,166  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   2 (edge  ): acc=0.6324  drop=+0.0069 pp  neurons=739  edges=1,457,445  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   3 (edge  ): acc=0.6327  drop=+0.0066 pp  neurons=739  edges=1,442,871  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   4 (edge  ): acc=0.6285  drop=+0.0108 pp  neurons=739  edges=1,428,443  scale=1.000
+[E: Taylor Neuron + L1 edge] → Snapshot at drop≤1.0%: 'E: Taylor Neuron + L1 edge @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.39s
+Best communication cost: 3496747.0000
+Mapping (task → core):
+  Task   1  →  Core 151
+  Task   2  →  Core 154
+  Task   3  →  Core  56
+  Task   4  →  Core  80
+  Task   5  →  Core  60
+  Task   6  →  Core 112
+  Task   7  →  Core  71
+  Task   8  →  Core 110
+  Task   9  →  Core 188
+  Task  10  →  Core  44
+  Task  11  →  Core 131
+  Task  12  →  Core  95
+  Task  13  →  Core  83
+  Task  14  →  Core  29
+  Task  15  →  Core 193
+  Task  16  →  Core  58
+  Task  17  →  Core  39
+  Task  18  →  Core  99
+  Task  19  →  Core  50
+  Task  20  →  Core  59
+  Task  21  →  Core 113
+  Task  22  →  Core  70
+  Task  23  →  Core  69
+  Task  24  →  Core 128
+  Task  25  →  Core 149
+  Task  26  →  Core 156
+  Task  27  →  Core  66
+  Task  28  →  Core  23
+  Task  29  →  Core  43
+  Task  30  →  Core 140
+  Task  31  →  Core  86
+  Task  32  →  Core  21
+  Task  33  →  Core 181
+  Task  34  →  Core 180
+  Task  35  →  Core   4
+  Task  36  →  Core  48
+  Task  37  →  Core 175
+  Task  38  →  Core   8
+  Task  39  →  Core  30
+  Task  40  →  Core  47
+  Task  41  →  Core 176
+  Task  42  →  Core  81
+  Task  43  →  Core 115
+  Task  44  →  Core  32
+  Task  45  →  Core  97
+  Task  46  →  Core  24
+  Task  47  →  Core  96
+  Task  48  →  Core 174
+  Task  49  →  Core  35
+  Task  50  →  Core 148
+  Task  51  →  Core  87
+  Task  52  →  Core 102
+  Task  53  →  Core  88
+  Task  54  →  Core 101
+  Task  55  →  Core  10
+  Task  56  →  Core   9
+  Task  57  →  Core  68
+  Task  58  →  Core  12
+  Task  59  →  Core 164
+  Task  60  →  Core 177
+  Task  61  →  Core 159
+  Task  62  →  Core  37
+  Task  63  →  Core 162
+  Task  64  →  Core 129
+  Task  65  →  Core 127
+  Task  66  →  Core 158
+  Task  67  →  Core 190
+  Task  68  →  Core  34
+  Task  69  →  Core 139
+  Task  70  →  Core 153
+  Task  71  →  Core  16
+  Task  72  →  Core  45
+  Task  73  →  Core 111
+  Task  74  →  Core  36
+  Task  75  →  Core  84
+  Task  76  →  Core  17
+  Task  77  →  Core 145
+  Task  78  →  Core 192
+  Task  79  →  Core 179
+  Task  80  →  Core 189
+  Task  81  →  Core  82
+  Task  82  →  Core 141
+  Task  83  →  Core  85
+  Task  84  →  Core 160
+  Task  85  →  Core 187
+  Task  86  →  Core 114
+  Task  87  →  Core 178
+  Task  88  →  Core  33
+  Task  89  →  Core 173
+  Task  90  →  Core 142
+  Task  91  →  Core 172
+  Task  92  →  Core 123
+  Task  93  →  Core 124
+  Task  94  →  Core 163
+  Task  95  →  Core  26
+  Task  96  →  Core  40
+  Task  97  →  Core 147
+  Task  98  →  Core 126
+  Task  99  →  Core 167
+  Task 100  →  Core 146
+  Task 101  →  Core  54
+  Task 102  →  Core   3
+  Task 103  →  Core 157
+  Task 104  →  Core  73
+  Task 105  →  Core  11
+  Task 106  →  Core  74
+  Task 107  →  Core  20
+  Task 108  →  Core 194
+  Task 109  →  Core  51
+  Task 110  →  Core 143
+  Task 111  →  Core 166
+  Task 112  →  Core 138
+  Task 113  →  Core 116
+  Task 114  →  Core 168
+  Task 115  →  Core  98
+  Task 116  →  Core 152
+  Task 117  →  Core  27
+  Task 118  →  Core 165
+  Task 119  →  Core 117
+  Task 120  →  Core  18
+  Task 121  →  Core  22
+  Task 122  →  Core  55
+  Task 123  →  Core  38
+  Task 124  →  Core   5
+  Task 125  →  Core  61
+  Task 126  →  Core  49
+  Task 127  →  Core 132
+  Task 128  →  Core 122
+  Task 129  →  Core  41
+  Task 130  →  Core 100
+  Task 131  →  Core   7
+  Task 132  →  Core 125
+  Task 133  →  Core 109
+  Task 134  →  Core  42
+  Task 135  →  Core  31
+  Task 136  →  Core  19
+  Task 137  →  Core 135
+  Task 138  →  Core   6
+  Task 139  →  Core 161
+  Task 140  →  Core  57
+  Task 141  →  Core  72
+  Task 142  →  Core 191
+  Task 143  →  Core  25
+  Task 144  →  Core 186
+  Task 145  →  Core 171
+  Task 146  →  Core 185
+  Task 147  →  Core 195
+  Task 148  →  Core 169
+  Task 149  →  Core 196
+  Task 150  →  Core 184
+  Task 151  →  Core 170
+  Task 152  →  Core 155
+  Task 153  →  Core  13
+  Task 154  →  Core   1
+  Task 155  →  Core 182
+  Task 156  →  Core  28
+  Task 157  →  Core  15
+  Task 158  →  Core   2
+  Task 159  →  Core  14
+  Task 160  →  Core 183
+  Task 161  →  Core 144
+  Task 162  →  Core  67
+  Task 163  →  Core  52
+  Task 164  →  Core 130
+  Task 165  →  Core  79
+  Task 166  →  Core  64
+  Task 167  →  Core  91
+  Task 168  →  Core  92
+  Task 169  →  Core 134
+  Task 170  →  Core 121
+  Task 171  →  Core  89
+  Task 172  →  Core 119
+  Task 173  →  Core 118
+  Task 174  →  Core 105
+  Task 175  →  Core 133
+  Task 176  →  Core 108
+  Task 177  →  Core  62
+  Task 178  →  Core  63
+  Task 179  →  Core  75
+  Task 180  →  Core  93
+  Task 181  →  Core  78
+  Task 182  →  Core  76
+  Task 183  →  Core 104
+  Task 184  →  Core  77
+  Task 185  →  Core  65
+  Task 186  →  Core 106
+  Task 187  →  Core 120
+  Task 188  →  Core 103
+  Task 189  →  Core  90
+  Task 190  →  Core 107
+  Task 191  →  Core  94
+  Task 192  →  Core 150
+  Task 193  →  Core 137
+  Task 194  →  Core  46
+  Task 195  →  Core 136
+  Task 196  →  Core  53
+Mapping: [(0, 150), (1, 153), (2, 55), (3, 79), (4, 59), (5, 111), (6, 70), (7, 109), (8, 187), (9, 43), (10, 130), (11, 94), (12, 82), (13, 28), (14, 192), (15, 57), (16, 38), (17, 98), (18, 49), (19, 58), (20, 112), (21, 69), (22, 68), (23, 127), (24, 148), (25, 155), (26, 65), (27, 22), (28, 42), (29, 139), (30, 85), (31, 20), (32, 180), (33, 179), (34, 3), (35, 47), (36, 174), (37, 7), (38, 29), (39, 46), (40, 175), (41, 80), (42, 114), (43, 31), (44, 96), (45, 23), (46, 95), (47, 173), (48, 34), (49, 147), (50, 86), (51, 101), (52, 87), (53, 100), (54, 9), (55, 8), (56, 67), (57, 11), (58, 163), (59, 176), (60, 158), (61, 36), (62, 161), (63, 128), (64, 126), (65, 157), (66, 189), (67, 33), (68, 138), (69, 152), (70, 15), (71, 44), (72, 110), (73, 35), (74, 83), (75, 16), (76, 144), (77, 191), (78, 178), (79, 188), (80, 81), (81, 140), (82, 84), (83, 159), (84, 186), (85, 113), (86, 177), (87, 32), (88, 172), (89, 141), (90, 171), (91, 122), (92, 123), (93, 162), (94, 25), (95, 39), (96, 146), (97, 125), (98, 166), (99, 145), (100, 53), (101, 2), (102, 156), (103, 72), (104, 10), (105, 73), (106, 19), (107, 193), (108, 50), (109, 142), (110, 165), (111, 137), (112, 115), (113, 167), (114, 97), (115, 151), (116, 26), (117, 164), (118, 116), (119, 17), (120, 21), (121, 54), (122, 37), (123, 4), (124, 60), (125, 48), (126, 131), (127, 121), (128, 40), (129, 99), (130, 6), (131, 124), (132, 108), (133, 41), (134, 30), (135, 18), (136, 134), (137, 5), (138, 160), (139, 56), (140, 71), (141, 190), (142, 24), (143, 185), (144, 170), (145, 184), (146, 194), (147, 168), (148, 195), (149, 183), (150, 169), (151, 154), (152, 12), (153, 0), (154, 181), (155, 27), (156, 14), (157, 1), (158, 13), (159, 182), (160, 143), (161, 66), (162, 51), (163, 129), (164, 78), (165, 63), (166, 90), (167, 91), (168, 133), (169, 120), (170, 88), (171, 118), (172, 117), (173, 104), (174, 132), (175, 107), (176, 61), (177, 62), (178, 74), (179, 92), (180, 77), (181, 75), (182, 103), (183, 76), (184, 64), (185, 105), (186, 119), (187, 102), (188, 89), (189, 106), (190, 93), (191, 149), (192, 136), (193, 45), (194, 135), (195, 52)]
+Communication cost: 3496747.0
+  [recorded] 'E: Taylor Neuron + L1 edge @ drop≤1.0%'  acc=0.6327  cost=3496747  sp_cost=5408472  edges=1,442,871  neurons=739
+[E: Taylor Neuron + L1 edge] Step   5 (edge  ): acc=0.6293  drop=+0.0100 pp  neurons=739  edges=1,414,159  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   6 (edge  ): acc=0.6259  drop=+0.0134 pp  neurons=739  edges=1,400,018  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   7 (edge  ): acc=0.6239  drop=+0.0154 pp  neurons=739  edges=1,386,018  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   8 (edge  ): acc=0.6223  drop=+0.0170 pp  neurons=739  edges=1,372,158  scale=1.000
+[E: Taylor Neuron + L1 edge] Step   9 (edge  ): acc=0.6197  drop=+0.0196 pp  neurons=739  edges=1,358,437  scale=1.000
+[E: Taylor Neuron + L1 edge] Step  10 (edge  ): acc=0.6226  drop=+0.0167 pp  neurons=739  edges=1,344,853  scale=1.000
+[E: Taylor Neuron + L1 edge] Step  11 (edge  ): acc=0.6201  drop=+0.0192 pp  neurons=739  edges=1,331,405  scale=1.000
+[E: Taylor Neuron + L1 edge] Step  12 (edge  ): drop=+0.0233 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  12 (edge  ): drop=+0.0210 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  12: over budget (drop=+0.0213); reverted, step scale -> 0.5000
+[E: Taylor Neuron + L1 edge] Step  13 (edge  ): drop=+0.0242 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  13 (edge  ): drop=+0.0232 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  13: over budget (drop=+0.0228); reverted, step scale -> 0.2500
+[E: Taylor Neuron + L1 edge] Step  14 (edge  ): drop=+0.0229 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  14 (edge  ): drop=+0.0265 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  14: over budget (drop=+0.0289); reverted, step scale -> 0.1250
+[E: Taylor Neuron + L1 edge] Step  15 (edge  ): drop=+0.0223 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  15 (edge  ): drop=+0.0213 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  15: over budget at min step scale (1/3); reverted.
+[E: Taylor Neuron + L1 edge] Step  16 (edge  ): drop=+0.0245 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  16 (edge  ): drop=+0.0261 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  16: over budget at min step scale (2/3); reverted.
+[E: Taylor Neuron + L1 edge] Step  17 (edge  ): drop=+0.0276 over budget -> recovery round 1/2
+[E: Taylor Neuron + L1 edge] Step  17 (edge  ): drop=+0.0234 over budget -> recovery round 2/2
+[E: Taylor Neuron + L1 edge] Step  17: over budget at min step scale (3/3); reverted.
+[E: Taylor Neuron + L1 edge] Budget consumed. Stopping.
+
+[E: Taylor Neuron + L1 edge] Finished. 11 micro-steps completed.
+  Final: acc=0.6201  neurons=739  edges=1,331,405
+
+=== Final evaluation: E: Taylor Neuron + L1 edge ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6201
+F1       : 0.6195
+Precision: 0.6204
+Recall   : 0.6201
+Params   : 1485535 trainable
+State size (approx): 5808.66 KB
+Inference time (avg): batch 1.0396 ms | single 0.060652 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.49s
+Best communication cost: 3505635.0000
+Mapping (task → core):
+  Task   1  →  Core  47
+  Task   2  →  Core  30
+  Task   3  →  Core  45
+  Task   4  →  Core 130
+  Task   5  →  Core 146
+  Task   6  →  Core  59
+  Task   7  →  Core 147
+  Task   8  →  Core  20
+  Task   9  →  Core 109
+  Task  10  →  Core 116
+  Task  11  →  Core  33
+  Task  12  →  Core  49
+  Task  13  →  Core 160
+  Task  14  →  Core 110
+  Task  15  →  Core 124
+  Task  16  →  Core  72
+  Task  17  →  Core 129
+  Task  18  →  Core 188
+  Task  19  →  Core  68
+  Task  20  →  Core 164
+  Task  21  →  Core 138
+  Task  22  →  Core 159
+  Task  23  →  Core   7
+  Task  24  →  Core  21
+  Task  25  →  Core 177
+  Task  26  →  Core 102
+  Task  27  →  Core  74
+  Task  28  →  Core 162
+  Task  29  →  Core  57
+  Task  30  →  Core  24
+  Task  31  →  Core 193
+  Task  32  →  Core 161
+  Task  33  →  Core  88
+  Task  34  →  Core 122
+  Task  35  →  Core 153
+  Task  36  →  Core  50
+  Task  37  →  Core  69
+  Task  38  →  Core  95
+  Task  39  →  Core 191
+  Task  40  →  Core 190
+  Task  41  →  Core  61
+  Task  42  →  Core 148
+  Task  43  →  Core  19
+  Task  44  →  Core 112
+  Task  45  →  Core  43
+  Task  46  →  Core  96
+  Task  47  →  Core  48
+  Task  48  →  Core 115
+  Task  49  →  Core  35
+  Task  50  →  Core 131
+  Task  51  →  Core 125
+  Task  52  →  Core 114
+  Task  53  →  Core 149
+  Task  54  →  Core 111
+  Task  55  →  Core 158
+  Task  56  →  Core  62
+  Task  57  →  Core 189
+  Task  58  →  Core 173
+  Task  59  →  Core  70
+  Task  60  →  Core  83
+  Task  61  →  Core  87
+  Task  62  →  Core 166
+  Task  63  →  Core  23
+  Task  64  →  Core 101
+  Task  65  →  Core  34
+  Task  66  →  Core 100
+  Task  67  →  Core  58
+  Task  68  →  Core 186
+  Task  69  →  Core  10
+  Task  70  →  Core  71
+  Task  71  →  Core 174
+  Task  72  →  Core  98
+  Task  73  →  Core   9
+  Task  74  →  Core 163
+  Task  75  →  Core  55
+  Task  76  →  Core   4
+  Task  77  →  Core  81
+  Task  78  →  Core  32
+  Task  79  →  Core   3
+  Task  80  →  Core  11
+  Task  81  →  Core 143
+  Task  82  →  Core  73
+  Task  83  →  Core 132
+  Task  84  →  Core  41
+  Task  85  →  Core 187
+  Task  86  →  Core  17
+  Task  87  →  Core  18
+  Task  88  →  Core  27
+  Task  89  →  Core  56
+  Task  90  →  Core 142
+  Task  91  →  Core  99
+  Task  92  →  Core  80
+  Task  93  →  Core  82
+  Task  94  →  Core  22
+  Task  95  →  Core 127
+  Task  96  →  Core  97
+  Task  97  →  Core 154
+  Task  98  →  Core  44
+  Task  99  →  Core   5
+  Task 100  →  Core  85
+  Task 101  →  Core 136
+  Task 102  →  Core  36
+  Task 103  →  Core  38
+  Task 104  →  Core 155
+  Task 105  →  Core 172
+  Task 106  →  Core  37
+  Task 107  →  Core   8
+  Task 108  →  Core 123
+  Task 109  →  Core  84
+  Task 110  →  Core 157
+  Task 111  →  Core 139
+  Task 112  →  Core 180
+  Task 113  →  Core  39
+  Task 114  →  Core  25
+  Task 115  →  Core 192
+  Task 116  →  Core  51
+  Task 117  →  Core  12
+  Task 118  →  Core 128
+  Task 119  →  Core 113
+  Task 120  →  Core  65
+  Task 121  →  Core  31
+  Task 122  →  Core  75
+  Task 123  →  Core 141
+  Task 124  →  Core  42
+  Task 125  →  Core 178
+  Task 126  →  Core 179
+  Task 127  →  Core 167
+  Task 128  →  Core 140
+  Task 129  →  Core  26
+  Task 130  →  Core 171
+  Task 131  →  Core 156
+  Task 132  →  Core 176
+  Task 133  →  Core 168
+  Task 134  →  Core   6
+  Task 135  →  Core  86
+  Task 136  →  Core 165
+  Task 137  →  Core 152
+  Task 138  →  Core 185
+  Task 139  →  Core 126
+  Task 140  →  Core  54
+  Task 141  →  Core 170
+  Task 142  →  Core 175
+  Task 143  →  Core 181
+  Task 144  →  Core  40
+  Task 145  →  Core 194
+  Task 146  →  Core 182
+  Task 147  →  Core 183
+  Task 148  →  Core  29
+  Task 149  →  Core 184
+  Task 150  →  Core   2
+  Task 151  →  Core  15
+  Task 152  →  Core  14
+  Task 153  →  Core 195
+  Task 154  →  Core  28
+  Task 155  →  Core 169
+  Task 156  →  Core  16
+  Task 157  →  Core  13
+  Task 158  →  Core 196
+  Task 159  →  Core   1
+  Task 160  →  Core  53
+  Task 161  →  Core 145
+  Task 162  →  Core  60
+  Task 163  →  Core  67
+  Task 164  →  Core 137
+  Task 165  →  Core 120
+  Task 166  →  Core 118
+  Task 167  →  Core  92
+  Task 168  →  Core  79
+  Task 169  →  Core  94
+  Task 170  →  Core 134
+  Task 171  →  Core  91
+  Task 172  →  Core 135
+  Task 173  →  Core  93
+  Task 174  →  Core 133
+  Task 175  →  Core  63
+  Task 176  →  Core 106
+  Task 177  →  Core  77
+  Task 178  →  Core 105
+  Task 179  →  Core 107
+  Task 180  →  Core 108
+  Task 181  →  Core  64
+  Task 182  →  Core 104
+  Task 183  →  Core  78
+  Task 184  →  Core  90
+  Task 185  →  Core  76
+  Task 186  →  Core 117
+  Task 187  →  Core 103
+  Task 188  →  Core 119
+  Task 189  →  Core 121
+  Task 190  →  Core  89
+  Task 191  →  Core  46
+  Task 192  →  Core 151
+  Task 193  →  Core 144
+  Task 194  →  Core 150
+  Task 195  →  Core  66
+  Task 196  →  Core  52
+Mapping: [(0, 46), (1, 29), (2, 44), (3, 129), (4, 145), (5, 58), (6, 146), (7, 19), (8, 108), (9, 115), (10, 32), (11, 48), (12, 159), (13, 109), (14, 123), (15, 71), (16, 128), (17, 187), (18, 67), (19, 163), (20, 137), (21, 158), (22, 6), (23, 20), (24, 176), (25, 101), (26, 73), (27, 161), (28, 56), (29, 23), (30, 192), (31, 160), (32, 87), (33, 121), (34, 152), (35, 49), (36, 68), (37, 94), (38, 190), (39, 189), (40, 60), (41, 147), (42, 18), (43, 111), (44, 42), (45, 95), (46, 47), (47, 114), (48, 34), (49, 130), (50, 124), (51, 113), (52, 148), (53, 110), (54, 157), (55, 61), (56, 188), (57, 172), (58, 69), (59, 82), (60, 86), (61, 165), (62, 22), (63, 100), (64, 33), (65, 99), (66, 57), (67, 185), (68, 9), (69, 70), (70, 173), (71, 97), (72, 8), (73, 162), (74, 54), (75, 3), (76, 80), (77, 31), (78, 2), (79, 10), (80, 142), (81, 72), (82, 131), (83, 40), (84, 186), (85, 16), (86, 17), (87, 26), (88, 55), (89, 141), (90, 98), (91, 79), (92, 81), (93, 21), (94, 126), (95, 96), (96, 153), (97, 43), (98, 4), (99, 84), (100, 135), (101, 35), (102, 37), (103, 154), (104, 171), (105, 36), (106, 7), (107, 122), (108, 83), (109, 156), (110, 138), (111, 179), (112, 38), (113, 24), (114, 191), (115, 50), (116, 11), (117, 127), (118, 112), (119, 64), (120, 30), (121, 74), (122, 140), (123, 41), (124, 177), (125, 178), (126, 166), (127, 139), (128, 25), (129, 170), (130, 155), (131, 175), (132, 167), (133, 5), (134, 85), (135, 164), (136, 151), (137, 184), (138, 125), (139, 53), (140, 169), (141, 174), (142, 180), (143, 39), (144, 193), (145, 181), (146, 182), (147, 28), (148, 183), (149, 1), (150, 14), (151, 13), (152, 194), (153, 27), (154, 168), (155, 15), (156, 12), (157, 195), (158, 0), (159, 52), (160, 144), (161, 59), (162, 66), (163, 136), (164, 119), (165, 117), (166, 91), (167, 78), (168, 93), (169, 133), (170, 90), (171, 134), (172, 92), (173, 132), (174, 62), (175, 105), (176, 76), (177, 104), (178, 106), (179, 107), (180, 63), (181, 103), (182, 77), (183, 89), (184, 75), (185, 116), (186, 102), (187, 118), (188, 120), (189, 88), (190, 45), (191, 150), (192, 143), (193, 149), (194, 65), (195, 51)]
+Communication cost: 3505635.0
+  [recorded] 'E: Taylor Neuron + L1 edge [final]'  acc=0.6201  cost=3505635  sp_cost=5385395  edges=1,331,405  neurons=739
+[E: Taylor Neuron + L1 edge] TIMING: total=169.5s  core=152.1s  final grouping+SA=15.3s  neuron=1.1s  edge=32.9s (bridge grouping+SA 0.0s)  finetune=68.2s  eval=1.8s
+
+======================================================================
+  BRANCH: G: Taylor Neuron + Bridge-Link
+  Anchor=0.6393  Tolerance=0.0200 (2.0 pp)  Floor=0.6193
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['1.0 pp', '2.0 pp']
+  Edge frac (interleaved/post): 0.0100/0.0200  N:E ratio=1:1  FT epochs=2  Max steps=2000
+======================================================================
+[G: Taylor Neuron + Bridge-Link] Starting accuracy: 0.6364
+[G: Taylor Neuron + Bridge-Link] Step   1 (neuron): acc=0.6368  drop=+0.0025 pp  neurons=739  edges=1,472,166  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   2 (edge  ): acc=0.6368  drop=+0.0025 pp  neurons=738  edges=1,457,287  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   3 (edge  ): acc=0.6352  drop=+0.0041 pp  neurons=736  edges=1,442,712  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   4 (edge  ): acc=0.6353  drop=+0.0040 pp  neurons=736  edges=1,428,285  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   5 (edge  ): acc=0.6295  drop=+0.0098 pp  neurons=736  edges=1,414,003  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step 5: neuron tolerance cap (drop=0.0098 ≥ 0.0050). Reserving 0.0102 for edge-only (0.0200).
+[G: Taylor Neuron + Bridge-Link] Step   6 (edge* ): acc=0.6261  drop=+0.0132 pp  neurons=735  edges=1,385,534  scale=1.000
+[G: Taylor Neuron + Bridge-Link] → Snapshot at drop≤1.0%: 'G: Taylor Neuron + Bridge-Link @ drop≤1.0%'
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.44s
+Best communication cost: 3495928.0000
+Mapping (task → core):
+  Task   1  →  Core 130
+  Task   2  →  Core  26
+  Task   3  →  Core   5
+  Task   4  →  Core 113
+  Task   5  →  Core  54
+  Task   6  →  Core  20
+  Task   7  →  Core 129
+  Task   8  →  Core   8
+  Task   9  →  Core  41
+  Task  10  →  Core  67
+  Task  11  →  Core  47
+  Task  12  →  Core 142
+  Task  13  →  Core  85
+  Task  14  →  Core 115
+  Task  15  →  Core 191
+  Task  16  →  Core 125
+  Task  17  →  Core  39
+  Task  18  →  Core 159
+  Task  19  →  Core 112
+  Task  20  →  Core  44
+  Task  21  →  Core  50
+  Task  22  →  Core 100
+  Task  23  →  Core 172
+  Task  24  →  Core 101
+  Task  25  →  Core 156
+  Task  26  →  Core 177
+  Task  27  →  Core 167
+  Task  28  →  Core 163
+  Task  29  →  Core  33
+  Task  30  →  Core  23
+  Task  31  →  Core  71
+  Task  32  →  Core 173
+  Task  33  →  Core  18
+  Task  34  →  Core 155
+  Task  35  →  Core 162
+  Task  36  →  Core  38
+  Task  37  →  Core  83
+  Task  38  →  Core  65
+  Task  39  →  Core  45
+  Task  40  →  Core 154
+  Task  41  →  Core 138
+  Task  42  →  Core  86
+  Task  43  →  Core 157
+  Task  44  →  Core  70
+  Task  45  →  Core  88
+  Task  46  →  Core  87
+  Task  47  →  Core  60
+  Task  48  →  Core 161
+  Task  49  →  Core 123
+  Task  50  →  Core 148
+  Task  51  →  Core 127
+  Task  52  →  Core  35
+  Task  53  →  Core  34
+  Task  54  →  Core 114
+  Task  55  →  Core 152
+  Task  56  →  Core 124
+  Task  57  →  Core   7
+  Task  58  →  Core 143
+  Task  59  →  Core  11
+  Task  60  →  Core 179
+  Task  61  →  Core 141
+  Task  62  →  Core 175
+  Task  63  →  Core 174
+  Task  64  →  Core 166
+  Task  65  →  Core  19
+  Task  66  →  Core   9
+  Task  67  →  Core  68
+  Task  68  →  Core  84
+  Task  69  →  Core 126
+  Task  70  →  Core  58
+  Task  71  →  Core   3
+  Task  72  →  Core  31
+  Task  73  →  Core 190
+  Task  74  →  Core  32
+  Task  75  →  Core 176
+  Task  76  →  Core 180
+  Task  77  →  Core 147
+  Task  78  →  Core 192
+  Task  79  →  Core 102
+  Task  80  →  Core  95
+  Task  81  →  Core 165
+  Task  82  →  Core 189
+  Task  83  →  Core  48
+  Task  84  →  Core  82
+  Task  85  →  Core 131
+  Task  86  →  Core  51
+  Task  87  →  Core 164
+  Task  88  →  Core 110
+  Task  89  →  Core  74
+  Task  90  →  Core  69
+  Task  91  →  Core   6
+  Task  92  →  Core  29
+  Task  93  →  Core  21
+  Task  94  →  Core  56
+  Task  95  →  Core 185
+  Task  96  →  Core 122
+  Task  97  →  Core 160
+  Task  98  →  Core 149
+  Task  99  →  Core  81
+  Task 100  →  Core 132
+  Task 101  →  Core  99
+  Task 102  →  Core  17
+  Task 103  →  Core 188
+  Task 104  →  Core 135
+  Task 105  →  Core  49
+  Task 106  →  Core  22
+  Task 107  →  Core 193
+  Task 108  →  Core 111
+  Task 109  →  Core 171
+  Task 110  →  Core 116
+  Task 111  →  Core  72
+  Task 112  →  Core  43
+  Task 113  →  Core  55
+  Task 114  →  Core  10
+  Task 115  →  Core  36
+  Task 116  →  Core  24
+  Task 117  →  Core  61
+  Task 118  →  Core 109
+  Task 119  →  Core  30
+  Task 120  →  Core  96
+  Task 121  →  Core  16
+  Task 122  →  Core 186
+  Task 123  →  Core  25
+  Task 124  →  Core 170
+  Task 125  →  Core   4
+  Task 126  →  Core 153
+  Task 127  →  Core 140
+  Task 128  →  Core  80
+  Task 129  →  Core  98
+  Task 130  →  Core 128
+  Task 131  →  Core 146
+  Task 132  →  Core  66
+  Task 133  →  Core 139
+  Task 134  →  Core  37
+  Task 135  →  Core  97
+  Task 136  →  Core  59
+  Task 137  →  Core 187
+  Task 138  →  Core 158
+  Task 139  →  Core 181
+  Task 140  →  Core  57
+  Task 141  →  Core  73
+  Task 142  →  Core 178
+  Task 143  →  Core 194
+  Task 144  →  Core  40
+  Task 145  →  Core 168
+  Task 146  →  Core  12
+  Task 147  →  Core 184
+  Task 148  →  Core  13
+  Task 149  →  Core 195
+  Task 150  →  Core   1
+  Task 151  →  Core  42
+  Task 152  →  Core 196
+  Task 153  →  Core   2
+  Task 154  →  Core 169
+  Task 155  →  Core 182
+  Task 156  →  Core  28
+  Task 157  →  Core  27
+  Task 158  →  Core  15
+  Task 159  →  Core 183
+  Task 160  →  Core  14
+  Task 161  →  Core 144
+  Task 162  →  Core 150
+  Task 163  →  Core  53
+  Task 164  →  Core 137
+  Task 165  →  Core 121
+  Task 166  →  Core  90
+  Task 167  →  Core  92
+  Task 168  →  Core  62
+  Task 169  →  Core 108
+  Task 170  →  Core 118
+  Task 171  →  Core 105
+  Task 172  →  Core  75
+  Task 173  →  Core 120
+  Task 174  →  Core 117
+  Task 175  →  Core  89
+  Task 176  →  Core  63
+  Task 177  →  Core 103
+  Task 178  →  Core 106
+  Task 179  →  Core  77
+  Task 180  →  Core  78
+  Task 181  →  Core 134
+  Task 182  →  Core 133
+  Task 183  →  Core  79
+  Task 184  →  Core  76
+  Task 185  →  Core  94
+  Task 186  →  Core 119
+  Task 187  →  Core  91
+  Task 188  →  Core  64
+  Task 189  →  Core 104
+  Task 190  →  Core 107
+  Task 191  →  Core  93
+  Task 192  →  Core  52
+  Task 193  →  Core 151
+  Task 194  →  Core 145
+  Task 195  →  Core  46
+  Task 196  →  Core 136
+Mapping: [(0, 129), (1, 25), (2, 4), (3, 112), (4, 53), (5, 19), (6, 128), (7, 7), (8, 40), (9, 66), (10, 46), (11, 141), (12, 84), (13, 114), (14, 190), (15, 124), (16, 38), (17, 158), (18, 111), (19, 43), (20, 49), (21, 99), (22, 171), (23, 100), (24, 155), (25, 176), (26, 166), (27, 162), (28, 32), (29, 22), (30, 70), (31, 172), (32, 17), (33, 154), (34, 161), (35, 37), (36, 82), (37, 64), (38, 44), (39, 153), (40, 137), (41, 85), (42, 156), (43, 69), (44, 87), (45, 86), (46, 59), (47, 160), (48, 122), (49, 147), (50, 126), (51, 34), (52, 33), (53, 113), (54, 151), (55, 123), (56, 6), (57, 142), (58, 10), (59, 178), (60, 140), (61, 174), (62, 173), (63, 165), (64, 18), (65, 8), (66, 67), (67, 83), (68, 125), (69, 57), (70, 2), (71, 30), (72, 189), (73, 31), (74, 175), (75, 179), (76, 146), (77, 191), (78, 101), (79, 94), (80, 164), (81, 188), (82, 47), (83, 81), (84, 130), (85, 50), (86, 163), (87, 109), (88, 73), (89, 68), (90, 5), (91, 28), (92, 20), (93, 55), (94, 184), (95, 121), (96, 159), (97, 148), (98, 80), (99, 131), (100, 98), (101, 16), (102, 187), (103, 134), (104, 48), (105, 21), (106, 192), (107, 110), (108, 170), (109, 115), (110, 71), (111, 42), (112, 54), (113, 9), (114, 35), (115, 23), (116, 60), (117, 108), (118, 29), (119, 95), (120, 15), (121, 185), (122, 24), (123, 169), (124, 3), (125, 152), (126, 139), (127, 79), (128, 97), (129, 127), (130, 145), (131, 65), (132, 138), (133, 36), (134, 96), (135, 58), (136, 186), (137, 157), (138, 180), (139, 56), (140, 72), (141, 177), (142, 193), (143, 39), (144, 167), (145, 11), (146, 183), (147, 12), (148, 194), (149, 0), (150, 41), (151, 195), (152, 1), (153, 168), (154, 181), (155, 27), (156, 26), (157, 14), (158, 182), (159, 13), (160, 143), (161, 149), (162, 52), (163, 136), (164, 120), (165, 89), (166, 91), (167, 61), (168, 107), (169, 117), (170, 104), (171, 74), (172, 119), (173, 116), (174, 88), (175, 62), (176, 102), (177, 105), (178, 76), (179, 77), (180, 133), (181, 132), (182, 78), (183, 75), (184, 93), (185, 118), (186, 90), (187, 63), (188, 103), (189, 106), (190, 92), (191, 51), (192, 150), (193, 144), (194, 45), (195, 135)]
+Communication cost: 3495928.0
+  [recorded] 'G: Taylor Neuron + Bridge-Link @ drop≤1.0%'  acc=0.6295  cost=3495928  sp_cost=5408412  edges=1,414,003  neurons=736
+[G: Taylor Neuron + Bridge-Link] Step   7 (edge* ): acc=0.6312  drop=+0.0081 pp  neurons=735  edges=1,357,824  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   8 (edge* ): acc=0.6306  drop=+0.0087 pp  neurons=735  edges=1,330,668  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step   9 (edge* ): acc=0.6293  drop=+0.0100 pp  neurons=735  edges=1,304,055  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  10 (edge* ): acc=0.6279  drop=+0.0114 pp  neurons=735  edges=1,277,974  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  11 (edge* ): acc=0.6285  drop=+0.0108 pp  neurons=735  edges=1,252,415  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  12 (edge* ): acc=0.6254  drop=+0.0139 pp  neurons=735  edges=1,227,367  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  13 (edge* ): acc=0.6214  drop=+0.0179 pp  neurons=735  edges=1,202,820  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  14 (edge* ): acc=0.6259  drop=+0.0134 pp  neurons=735  edges=1,178,764  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  15 (edge* ): acc=0.6242  drop=+0.0151 pp  neurons=735  edges=1,155,189  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  16 (edge* ): acc=0.6252  drop=+0.0141 pp  neurons=735  edges=1,132,086  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  17 (edge* ): acc=0.6217  drop=+0.0176 pp  neurons=735  edges=1,109,445  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  18 (edge* ): acc=0.6230  drop=+0.0163 pp  neurons=735  edges=1,087,257  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  19 (edge* ): acc=0.6238  drop=+0.0155 pp  neurons=735  edges=1,065,512  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  20 (edge* ): acc=0.6232  drop=+0.0161 pp  neurons=735  edges=1,044,202  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  21 (edge* ): acc=0.6241  drop=+0.0152 pp  neurons=735  edges=1,023,318  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  22 (edge* ): acc=0.6235  drop=+0.0158 pp  neurons=735  edges=1,002,852  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  23 (edge* ): drop=+0.0200 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  23 (edge* ): drop=+0.0232 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  23 (edge* ): acc=0.6198  drop=+0.0195 pp  neurons=735  edges=982,795  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  24 (edge* ): drop=+0.0230 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  24 (edge* ): acc=0.6199  drop=+0.0194 pp  neurons=735  edges=963,140  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  25 (edge* ): acc=0.6199  drop=+0.0194 pp  neurons=735  edges=943,878  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  26 (edge* ): acc=0.6227  drop=+0.0166 pp  neurons=735  edges=925,001  scale=1.000
+[G: Taylor Neuron + Bridge-Link] Step  27 (edge* ): drop=+0.0243 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  27 (edge* ): drop=+0.0256 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  27: over budget (drop=+0.0260); reverted, step scale -> 0.5000
+[G: Taylor Neuron + Bridge-Link] Step  28 (edge* ): drop=+0.0223 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  28 (edge* ): drop=+0.0241 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  28: over budget (drop=+0.0219); reverted, step scale -> 0.2500
+[G: Taylor Neuron + Bridge-Link] Step  29 (edge* ): drop=+0.0228 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  29 (edge* ): drop=+0.0234 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  29: over budget (drop=+0.0253); reverted, step scale -> 0.1250
+[G: Taylor Neuron + Bridge-Link] Step  30 (edge* ): drop=+0.0252 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  30 (edge* ): drop=+0.0219 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  30: over budget at min step scale (1/3); reverted.
+[G: Taylor Neuron + Bridge-Link] Step  31 (edge* ): drop=+0.0249 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  31 (edge* ): drop=+0.0228 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  31: over budget at min step scale (2/3); reverted.
+[G: Taylor Neuron + Bridge-Link] Step  32 (edge* ): drop=+0.0228 over budget -> recovery round 1/2
+[G: Taylor Neuron + Bridge-Link] Step  32 (edge* ): drop=+0.0247 over budget -> recovery round 2/2
+[G: Taylor Neuron + Bridge-Link] Step  32: over budget at min step scale (3/3); reverted.
+[G: Taylor Neuron + Bridge-Link] Budget consumed. Stopping.
+
+[G: Taylor Neuron + Bridge-Link] Finished. 26 micro-steps completed.
+  Final: acc=0.6227  neurons=735  edges=925,001
+
+=== Final evaluation: G: Taylor Neuron + Bridge-Link ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6227
+F1       : 0.6225
+Precision: 0.6234
+Recall   : 0.6227
+Params   : 1472035 trainable
+State size (approx): 5755.89 KB
+Inference time (avg): batch 1.0327 ms | single 0.059870 ms
+Simulated annealing  [N=196, P=196, iters=200,000]
+
+Done in 13.43s
+Best communication cost: 2275464.0000
+Mapping (task → core):
+  Task   1  →  Core  10
+  Task   2  →  Core 115
+  Task   3  →  Core  37
+  Task   4  →  Core  95
+  Task   5  →  Core  87
+  Task   6  →  Core 159
+  Task   7  →  Core  88
+  Task   8  →  Core  33
+  Task   9  →  Core  49
+  Task  10  →  Core 161
+  Task  11  →  Core 110
+  Task  12  →  Core  74
+  Task  13  →  Core 176
+  Task  14  →  Core 164
+  Task  15  →  Core   7
+  Task  16  →  Core  98
+  Task  17  →  Core  97
+  Task  18  →  Core  52
+  Task  19  →  Core 137
+  Task  20  →  Core 148
+  Task  21  →  Core 102
+  Task  22  →  Core  50
+  Task  23  →  Core 116
+  Task  24  →  Core 109
+  Task  25  →  Core 144
+  Task  26  →  Core  46
+  Task  27  →  Core 149
+  Task  28  →  Core  60
+  Task  29  →  Core  65
+  Task  30  →  Core  96
+  Task  31  →  Core 101
+  Task  32  →  Core  66
+  Task  33  →  Core 136
+  Task  34  →  Core 123
+  Task  35  →  Core 151
+  Task  36  →  Core 145
+  Task  37  →  Core 130
+  Task  38  →  Core 131
+  Task  39  →  Core  81
+  Task  40  →  Core 147
+  Task  41  →  Core  61
+  Task  42  →  Core 124
+  Task  43  →  Core  36
+  Task  44  →  Core 111
+  Task  45  →  Core  53
+  Task  46  →  Core  47
+  Task  47  →  Core  35
+  Task  48  →  Core 173
+  Task  49  →  Core  82
+  Task  50  →  Core  72
+  Task  51  →  Core 162
+  Task  52  →  Core  48
+  Task  53  →  Core  51
+  Task  54  →  Core  34
+  Task  55  →  Core 163
+  Task  56  →  Core 146
+  Task  57  →  Core 125
+  Task  58  →  Core  21
+  Task  59  →  Core  19
+  Task  60  →  Core 175
+  Task  61  →  Core 150
+  Task  62  →  Core  73
+  Task  63  →  Core 174
+  Task  64  →  Core  83
+  Task  65  →  Core 138
+  Task  66  →  Core  20
+  Task  67  →  Core  58
+  Task  68  →  Core  68
+  Task  69  →  Core 112
+  Task  70  →  Core  59
+  Task  71  →  Core  22
+  Task  72  →  Core 160
+  Task  73  →  Core  24
+  Task  74  →  Core 100
+  Task  75  →  Core 178
+  Task  76  →  Core 128
+  Task  77  →  Core  86
+  Task  78  →  Core 189
+  Task  79  →  Core  99
+  Task  80  →  Core 139
+  Task  81  →  Core 114
+  Task  82  →  Core   8
+  Task  83  →  Core 190
+  Task  84  →  Core  85
+  Task  85  →  Core  38
+  Task  86  →  Core 129
+  Task  87  →  Core 177
+  Task  88  →  Core  67
+  Task  89  →  Core  23
+  Task  90  →  Core 183
+  Task  91  →  Core 184
+  Task  92  →  Core 195
+  Task  93  →  Core 196
+  Task  94  →  Core   2
+  Task  95  →  Core   1
+  Task  96  →  Core  28
+  Task  97  →  Core  13
+  Task  98  →  Core 182
+  Task  99  →  Core  15
+  Task 100  →  Core  14
+  Task 101  →  Core  25
+  Task 102  →  Core  32
+  Task 103  →  Core  40
+  Task 104  →  Core 152
+  Task 105  →  Core   5
+  Task 106  →  Core  69
+  Task 107  →  Core  45
+  Task 108  →  Core 180
+  Task 109  →  Core 153
+  Task 110  →  Core  29
+  Task 111  →  Core 154
+  Task 112  →  Core 113
+  Task 113  →  Core   6
+  Task 114  →  Core 168
+  Task 115  →  Core   4
+  Task 116  →  Core  56
+  Task 117  →  Core 179
+  Task 118  →  Core 194
+  Task 119  →  Core  84
+  Task 120  →  Core  44
+  Task 121  →  Core 157
+  Task 122  →  Core 193
+  Task 123  →  Core 155
+  Task 124  →  Core 165
+  Task 125  →  Core 181
+  Task 126  →  Core 127
+  Task 127  →  Core 143
+  Task 128  →  Core 158
+  Task 129  →  Core  70
+  Task 130  →  Core 172
+  Task 131  →  Core  42
+  Task 132  →  Core 169
+  Task 133  →  Core  63
+  Task 134  →  Core 135
+  Task 135  →  Core 105
+  Task 136  →  Core 134
+  Task 137  →  Core 118
+  Task 138  →  Core 107
+  Task 139  →  Core  79
+  Task 140  →  Core  93
+  Task 141  →  Core 120
+  Task 142  →  Core 103
+  Task 143  →  Core 104
+  Task 144  →  Core  89
+  Task 145  →  Core  77
+  Task 146  →  Core  80
+  Task 147  →  Core 132
+  Task 148  →  Core  64
+  Task 149  →  Core 117
+  Task 150  →  Core 122
+  Task 151  →  Core 121
+  Task 152  →  Core 106
+  Task 153  →  Core 108
+  Task 154  →  Core  75
+  Task 155  →  Core  62
+  Task 156  →  Core 133
+  Task 157  →  Core  90
+  Task 158  →  Core  78
+  Task 159  →  Core 119
+  Task 160  →  Core  92
+  Task 161  →  Core  91
+  Task 162  →  Core  94
+  Task 163  →  Core  76
+  Task 164  →  Core  26
+  Task 165  →  Core  18
+  Task 166  →  Core 166
+  Task 167  →  Core  41
+  Task 168  →  Core  71
+  Task 169  →  Core  43
+  Task 170  →  Core 170
+  Task 171  →  Core  55
+  Task 172  →  Core   9
+  Task 173  →  Core 140
+  Task 174  →  Core   3
+  Task 175  →  Core 126
+  Task 176  →  Core  54
+  Task 177  →  Core  31
+  Task 178  →  Core 185
+  Task 179  →  Core 167
+  Task 180  →  Core  27
+  Task 181  →  Core  30
+  Task 182  →  Core  39
+  Task 183  →  Core 186
+  Task 184  →  Core 191
+  Task 185  →  Core 141
+  Task 186  →  Core  11
+  Task 187  →  Core  12
+  Task 188  →  Core  17
+  Task 189  →  Core 192
+  Task 190  →  Core 188
+  Task 191  →  Core 171
+  Task 192  →  Core  57
+  Task 193  →  Core 142
+  Task 194  →  Core 156
+  Task 195  →  Core  16
+  Task 196  →  Core 187
+Mapping: [(0, 9), (1, 114), (2, 36), (3, 94), (4, 86), (5, 158), (6, 87), (7, 32), (8, 48), (9, 160), (10, 109), (11, 73), (12, 175), (13, 163), (14, 6), (15, 97), (16, 96), (17, 51), (18, 136), (19, 147), (20, 101), (21, 49), (22, 115), (23, 108), (24, 143), (25, 45), (26, 148), (27, 59), (28, 64), (29, 95), (30, 100), (31, 65), (32, 135), (33, 122), (34, 150), (35, 144), (36, 129), (37, 130), (38, 80), (39, 146), (40, 60), (41, 123), (42, 35), (43, 110), (44, 52), (45, 46), (46, 34), (47, 172), (48, 81), (49, 71), (50, 161), (51, 47), (52, 50), (53, 33), (54, 162), (55, 145), (56, 124), (57, 20), (58, 18), (59, 174), (60, 149), (61, 72), (62, 173), (63, 82), (64, 137), (65, 19), (66, 57), (67, 67), (68, 111), (69, 58), (70, 21), (71, 159), (72, 23), (73, 99), (74, 177), (75, 127), (76, 85), (77, 188), (78, 98), (79, 138), (80, 113), (81, 7), (82, 189), (83, 84), (84, 37), (85, 128), (86, 176), (87, 66), (88, 22), (89, 182), (90, 183), (91, 194), (92, 195), (93, 1), (94, 0), (95, 27), (96, 12), (97, 181), (98, 14), (99, 13), (100, 24), (101, 31), (102, 39), (103, 151), (104, 4), (105, 68), (106, 44), (107, 179), (108, 152), (109, 28), (110, 153), (111, 112), (112, 5), (113, 167), (114, 3), (115, 55), (116, 178), (117, 193), (118, 83), (119, 43), (120, 156), (121, 192), (122, 154), (123, 164), (124, 180), (125, 126), (126, 142), (127, 157), (128, 69), (129, 171), (130, 41), (131, 168), (132, 62), (133, 134), (134, 104), (135, 133), (136, 117), (137, 106), (138, 78), (139, 92), (140, 119), (141, 102), (142, 103), (143, 88), (144, 76), (145, 79), (146, 131), (147, 63), (148, 116), (149, 121), (150, 120), (151, 105), (152, 107), (153, 74), (154, 61), (155, 132), (156, 89), (157, 77), (158, 118), (159, 91), (160, 90), (161, 93), (162, 75), (163, 25), (164, 17), (165, 165), (166, 40), (167, 70), (168, 42), (169, 169), (170, 54), (171, 8), (172, 139), (173, 2), (174, 125), (175, 53), (176, 30), (177, 184), (178, 166), (179, 26), (180, 29), (181, 38), (182, 185), (183, 190), (184, 140), (185, 10), (186, 11), (187, 16), (188, 191), (189, 187), (190, 170), (191, 56), (192, 141), (193, 155), (194, 15), (195, 186)]
+Communication cost: 2275464.0
+  [recorded] 'G: Taylor Neuron + Bridge-Link [final]'  acc=0.6227  cost=2275464  sp_cost=3227300  edges=925,001  neurons=735
+[G: Taylor Neuron + Bridge-Link] TIMING: total=174.8s  core=157.6s  final grouping+SA=14.7s  neuron=1.6s  edge=52.1s (bridge grouping+SA 0.1s)  finetune=46.3s  eval=2.8s
+
+
+==========================================================================================================================================================================================================================================================================================================
+  ISO-ACCURACY TABLE — snapshot at each accuracy-drop threshold
+  Snapshot interval: every 1.0 pp
+  Model: LeNet 3072-500-300-10 | Dataset: CIFAR-10
+  Tolerance: ≤2.0 pp drop from BASELINE
+  A=IterCC+Bridge  B=IterCC+L2  C=IterCC+L1  D=Taylor+L2  E=Taylor+L1  F=L1Neuron+L2  G=Taylor+Bridge  H=Random+L2  I=Activation+L2  K=L2Neuron+L2
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.005)
+  Deltas: accuracy/F1/precision/recall in pp; cost/edges/FLOPs/size relative to Baseline.
+==========================================================================================================================================================================================================================================================================================================
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                   Stage                    |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                    |    0.6393  (baseline)|3685373.0000  (baseline)|6052119.0000  (baseline)| 1,689,000  (baseline)|     3,882  (baseline)|   0.96 ms  (baseline)| 3,378,000  (baseline)|6613.34 KB  (baseline)|    0.6352  (baseline)|    0.6353  (baseline)|    0.6393  (baseline)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|A: IterCC Neuron + Bridge-Link @ drop≤1.0%  |    0.6297  (-0.96 pp)|3487492.0000  (-5.37%)|5349894.0000  (-11.60%)|  1,278,773  (-24.29%)|       3,822  (-1.55%)|     1.04 ms  (+8.43%)|  2,990,874  (-11.46%)| 5856.06 KB  (-11.45%)|    0.6276  (-0.76 pp)|    0.6280  (-0.73 pp)|    0.6297  (-0.96 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|B: IterCC Neuron + L2 edge @ drop≤1.0%      |    0.6314  (-0.79 pp)|3511767.0000  (-4.71%)|5390412.0000  (-10.93%)|  1,398,671  (-17.19%)|       3,816  (-1.70%)|     1.02 ms  (+6.07%)|  2,967,960  (-12.14%)| 5811.19 KB  (-12.13%)|    0.6302  (-0.51 pp)|    0.6298  (-0.55 pp)|    0.6314  (-0.79 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|C: IterCC Neuron + L1 edge @ drop≤1.0%      |    0.6331  (-0.62 pp)|3527914.0000  (-4.27%)|5424825.0000  (-10.36%)|  1,457,219  (-13.72%)|       3,876  (-0.15%)|     0.94 ms  (-1.99%)|   3,371,880  (-0.18%)|  6601.27 KB  (-0.18%)|    0.6325  (-0.28 pp)|    0.6327  (-0.26 pp)|    0.6331  (-0.62 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|D: Taylor Neuron + L2 edge @ drop≤1.0%      |    0.6295  (-0.98 pp)|3496070.0000  (-5.14%)|5408412.0000  (-10.64%)|  1,414,003  (-16.28%)|       3,818  (-1.65%)|     1.02 ms  (+6.57%)|  2,946,384  (-12.78%)| 5769.09 KB  (-12.77%)|    0.6290  (-0.62 pp)|    0.6302  (-0.50 pp)|    0.6295  (-0.98 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|E: Taylor Neuron + L1 edge @ drop≤1.0%      |    0.6327  (-0.66 pp)|3496747.0000  (-5.12%)|5408472.0000  (-10.64%)|  1,442,871  (-14.57%)|       3,821  (-1.57%)|    1.06 ms  (+10.48%)|  2,966,616  (-12.18%)| 5808.66 KB  (-12.17%)|    0.6311  (-0.41 pp)|    0.6313  (-0.39 pp)|    0.6327  (-0.66 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|G: Taylor Neuron + Bridge-Link @ drop≤1.0%  |    0.6295  (-0.98 pp)|3495928.0000  (-5.14%)|5408412.0000  (-10.64%)|  1,414,003  (-16.28%)|       3,818  (-1.65%)|     1.02 ms  (+6.99%)|  2,946,384  (-12.78%)| 5769.09 KB  (-12.77%)|    0.6290  (-0.62 pp)|    0.6302  (-0.50 pp)|    0.6295  (-0.98 pp)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+
+======================================================================================================================================================================================================================================================================================================
+  FINAL TABLE — each branch at its stopping point (last within tolerance)
+  Model: LeNet 3072-500-300-10 | Dataset: CIFAR-10
+  Tolerance: ≤2.0 pp drop from BASELINE
+  A=IterCC+Bridge  B=IterCC+L2  C=IterCC+L1  D=Taylor+L2  E=Taylor+L1  F=L1Neuron+L2  G=Taylor+Bridge  H=Random+L2  I=Activation+L2  K=L2Neuron+L2
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.005)
+  Deltas: accuracy/F1/precision/recall in pp; cost/edges/FLOPs/size relative to Baseline.
+======================================================================================================================================================================================================================================================================================================
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                 Stage                  |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                |    0.6393  (baseline)|3685373.0000  (baseline)|6052119.0000  (baseline)| 1,689,000  (baseline)|     3,882  (baseline)|   0.96 ms  (baseline)| 3,378,000  (baseline)|6613.34 KB  (baseline)|    0.6352  (baseline)|    0.6353  (baseline)|    0.6393  (baseline)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|After L1 10% pre-pruning                |    0.6364  (-0.29 pp)|3566428.0000  (-3.23%)|5596883.0000  (-7.52%)|  1,520,100  (-10.00%)|       3,882  (+0.00%)|     0.96 ms  (+0.73%)|   3,378,000  (+0.00%)|  6613.34 KB  (+0.00%)|    0.6365  (+0.13 pp)|    0.6379  (+0.26 pp)|    0.6364  (-0.29 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|A: IterCC Neuron + Bridge-Link [final]  |    0.6202  (-1.91 pp)|2221014.0000  (-39.73%)|3163878.0000  (-47.72%)|    907,211  (-46.29%)|       3,820  (-1.60%)|     1.05 ms  (+9.61%)|  2,977,398  (-11.86%)| 5829.70 KB  (-11.85%)|    0.6197  (-1.55 pp)|    0.6206  (-1.47 pp)|    0.6202  (-1.91 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|B: IterCC Neuron + L2 edge [final]      |    0.6200  (-1.93 pp)|2356771.0000  (-36.05%)|3329663.0000  (-44.98%)|    950,673  (-43.71%)|       3,816  (-1.70%)|     1.03 ms  (+7.31%)|  2,967,960  (-12.14%)| 5811.19 KB  (-12.13%)|    0.6189  (-1.63 pp)|    0.6195  (-1.57 pp)|    0.6200  (-1.93 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|C: IterCC Neuron + L1 edge [final]      |    0.6202  (-1.91 pp)|2213852.0000  (-39.93%)|3162718.0000  (-47.74%)|    908,892  (-46.19%)|       3,876  (-0.15%)|     0.96 ms  (-0.10%)|   3,371,880  (-0.18%)|  6601.27 KB  (-0.18%)|    0.6194  (-1.58 pp)|    0.6195  (-1.57 pp)|    0.6202  (-1.91 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|D: Taylor Neuron + L2 edge [final]      |    0.6227  (-1.66 pp)|2275734.0000  (-38.25%)|3227300.0000  (-46.67%)|    925,001  (-45.23%)|       3,817  (-1.67%)|     1.04 ms  (+8.34%)|  2,939,640  (-12.98%)| 5755.89 KB  (-12.97%)|    0.6225  (-1.28 pp)|    0.6234  (-1.18 pp)|    0.6227  (-1.66 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|E: Taylor Neuron + L1 edge [final]      |    0.6201  (-1.92 pp)|3505635.0000  (-4.88%)|5385395.0000  (-11.02%)|  1,331,405  (-21.17%)|       3,821  (-1.57%)|     1.05 ms  (+9.71%)|  2,966,616  (-12.18%)| 5808.66 KB  (-12.17%)|    0.6195  (-1.57 pp)|    0.6204  (-1.49 pp)|    0.6201  (-1.92 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|G: Taylor Neuron + Bridge-Link [final]  |    0.6227  (-1.66 pp)|2275464.0000  (-38.26%)|3227300.0000  (-46.67%)|    925,001  (-45.23%)|       3,817  (-1.67%)|     1.04 ms  (+8.14%)|  2,939,640  (-12.98%)| 5755.89 KB  (-12.97%)|    0.6225  (-1.28 pp)|    0.6234  (-1.18 pp)|    0.6227  (-1.66 pp)|
++----------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+==========================================================================================================================================================================
+  WALL-CLOCK TIMING per branch (seconds, seed 42).  Total = whole branch incl. snapshots/logging/final eval;  Core = Total minus snapshots and trajectory logging.
+  Shared L1 pre-pruning (not in any branch): 45.5s
+==========================================================================================================================================================================
+Branch                                              Total             Core     Final grp+SA           Neuron             Edge  (Bridge grp+SA)        Fine-tune       Graph sync             Eval        Snapshots         Traj log            Steps        FT rounds
+A: IterCC Neuron + Bridge-Link                      223.5            206.2             14.8              7.4             67.5              0.1             59.7             47.8              3.7             17.2              0.1               31               60
+B: IterCC Neuron + L2 edge                          190.0            172.9             14.8             14.6             29.9              0.0             57.1             48.7              3.5             17.1              0.1               30               58
+C: IterCC Neuron + L1 edge                          236.4            218.7             14.8             14.6             63.5              0.0             65.4             50.3              4.0             17.5              0.1               31               66
+D: Taylor Neuron + L2 edge                          150.2            133.0             14.8              1.6             25.0              0.0             46.2             38.9              2.8             17.1              0.1               26               47
+E: Taylor Neuron + L1 edge                          169.5            152.1             15.3              1.1             32.9              0.0             68.2             27.7              1.8             17.3              0.0               11               29
+G: Taylor Neuron + Bridge-Link                      174.8            157.6             14.7              1.6             52.1              0.1             46.3             35.7              2.8             17.1              0.1               26               47
+[timing] Saved timing_LeNet500_300_CIFAR10_v3_seed42.json / .csv
+[trajectory] Saved 155 rows → trajectory_LeNet500_300_CIFAR10_Meta_v3_seed42.csv
+[trajectory] Saved 155 rows → trajectory_LeNet500_300_CIFAR10_Meta_v3_seed42.json

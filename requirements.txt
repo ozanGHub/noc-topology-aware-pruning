@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+gurobipy==13.0.1
+matplotlib==3.10.8
+networkx==3.6.1
+numpy==2.4.2
+pandas==3.0.1
+scikit_learn==1.8.0
+torch==2.10.0+cu126

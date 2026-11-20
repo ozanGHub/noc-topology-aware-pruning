@@ -1,0 +1,29 @@
+{
+  "seed": 10042,
+  "shared_pre": {
+    "l1_stage_total_s": 139.1330239480012,
+    "l1_grouping_sa_s": 93.91133097198326
+  },
+  "branches": [
+    {
+      "branch": "Ir: Random Neuron + L2 edge",
+      "seed": 10042,
+      "final_grouping_sa_s": 89.68964225600939,
+      "final_cost_eval_s": 1.0833814889774658,
+      "total_wall_s": 686.7408287710277,
+      "core_wall_s": 591.295964564546,
+      "loop_wall_s": 593.2793729730183,
+      "final_eval_s": 93.46063118195161,
+      "neuron_step_s": 7.197516340005677,
+      "edge_step_s": 141.90885062766029,
+      "bridge_grouping_sa_s": 0.0,
+      "finetune_s": 181.47518949612277,
+      "eval_s": 5.860537567990832,
+      "graph_sync_s": 157.4682192831533,
+      "snapshot_s": 94.64381746802246,
+      "trajectory_log_s": 0.801046738459263,
+      "accepted_steps": 88,
+      "finetune_rounds": 117
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+done lr5e-5_n30 Sun Nov  8 12:30:54 PM +03 2026
+done lr1e-4_n30 Sun Nov  8 01:03:52 PM +03 2026
+done lr5e-5_n15 Sun Nov  8 01:24:24 PM +03 2026
+done lr1e-4_n15 Sun Nov  8 01:38:47 PM +03 2026
+done lr5e-5_n15 seed 10042 Sun Nov  8 02:24:05 PM +03 2026
+done lr5e-5_n15 seed 20042 Sun Nov  8 02:38:19 PM +03 2026
+done lr5e-5_n10 seed 42 Sun Nov  8 02:54:07 PM +03 2026
+done lr5e-5_n10 seed 10042 Sun Nov  8 03:10:43 PM +03 2026
+done lr5e-5_n10 seed 20042 Sun Nov  8 03:27:43 PM +03 2026

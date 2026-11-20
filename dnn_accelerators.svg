@@ -1,0 +1,152 @@
+<svg width="680" height="560" viewBox="0 0 680 560" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>DNN Accelerator Comparison Chart</title>
+  <desc>3D oblique scatter: ASIC, FPGA, NоC-based DNN, CPU/GPU vs Reconfigurability, Flexibility, Power Efficiency.</desc>
+  <rect width="680" height="560" fill="white"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <radialGradient id="gASIC" cx="36%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#7ecfb0"/>
+      <stop offset="55%" stop-color="#3aaa80"/>
+      <stop offset="100%" stop-color="#1a6650"/>
+    </radialGradient>
+    <radialGradient id="gFPGA" cx="36%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#d0da82"/>
+      <stop offset="55%" stop-color="#9eb842"/>
+      <stop offset="100%" stop-color="#5e6e1e"/>
+    </radialGradient>
+    <radialGradient id="gNoC" cx="36%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#eabf80"/>
+      <stop offset="55%" stop-color="#c08840"/>
+      <stop offset="100%" stop-color="#855818"/>
+    </radialGradient>
+    <radialGradient id="gCPU" cx="36%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#d6afc6"/>
+      <stop offset="55%" stop-color="#a87898"/>
+      <stop offset="100%" stop-color="#6e4462"/>
+    </radialGradient>
+    <radialGradient id="gHL" cx="32%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="imagine-text-gaps-owau5k" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="690" height="560" fill="white"/>
+      <rect x="9.59375" y="357.3333435058594" width="83.6982650756836" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="14.458333969116211" y="276.3333435058594" width="78.83076477050781" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="29.072917938232422" y="195.33334350585938" width="64.21727752685547" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="115.84375" y="428.3333435058594" width="99.7362289428711" height="18" fill="black" rx="2"/>
+      <rect x="316.828125" y="428.3333435058594" width="94.6365966796875" height="18" fill="black" rx="2"/>
+      <rect x="464" y="387.3333435058594" width="31.870647430419922" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="511" y="370.3333435058594" width="50.375" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="558" y="353.3333435058594" width="29.6588134765625" height="17.33333396911621" fill="black" rx="2"/>
+      <rect x="-57.40625" y="-14.666666984558105" width="115.25492858886719" height="20" fill="black" rx="2"/>
+      <rect x="230.6979217529297" y="445.3333435058594" width="69.04642868041992" height="20" fill="black" rx="2"/>
+      <rect x="612.8499755859375" y="329.3333435058594" width="46.26041793823242" height="20" fill="black" rx="2"/>
+      <rect x="612.8499755859375" y="344.3333435058594" width="71.61397552490234" height="20" fill="black" rx="2"/>
+      <rect x="175.53646850585938" y="339.3333435058594" width="42.81298828125" height="21.33333396911621" fill="black" rx="2"/>
+      <rect x="263.6302185058594" y="250.33334350585938" width="47.515342712402344" height="21.33333396911621" fill="black" rx="2"/>
+      <rect x="362.88543701171875" y="164" width="76.22915649414062" height="33.33332824707031" fill="black" rx="2"/>
+      <rect x="504.890625" y="131" width="40.21881103515625" height="33.33332824707031" fill="black" rx="2"/>
+    </mask>
+  </defs>
+
+  <!-- FACE PLANES -->
+<polygon points="100,420 430,420 586,362 256,362" fill="#888780" fill-opacity="0.05" stroke="#888780" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.32"/>
+<polygon points="100,420 100,150 256,92 256,362" fill="#888780" fill-opacity="0.04" stroke="#888780" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.32"/>
+<polygon points="256,362 586,362 586,92 256,92" fill="#888780" fill-opacity="0.05" stroke="#888780" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.32"/>
+
+  <!-- LABEL GRID LINES -->
+<line x1="166" y1="420" x2="322" y2="362" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.26"/>
+<line x1="364" y1="420" x2="520" y2="362" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.26"/>
+<line x1="131" y1="408" x2="461" y2="408" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.26"/>
+<line x1="225" y1="374" x2="555" y2="374" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.26"/>
+<line x1="131" y1="420" x2="131" y2="150" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.22"/>
+<line x1="225" y1="408" x2="225" y2="138" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.22"/>
+<line x1="100" y1="366" x2="256" y2="308" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.22"/>
+<line x1="100" y1="204" x2="256" y2="146" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.22"/>
+<line x1="256" y1="308" x2="586" y2="308" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.18"/>
+<line x1="256" y1="146" x2="586" y2="146" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.18"/>
+<line x1="322" y1="362" x2="322" y2="92" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.18"/>
+<line x1="520" y1="362" x2="520" y2="92" stroke="#888780" stroke-width="0.6" stroke-dasharray="4 5" stroke-opacity="0.18"/>
+
+  <!-- BOX EDGES -->
+<line x1="100" y1="420" x2="430" y2="420" stroke="#5F5E5A" stroke-width="1.2" stroke-opacity="0.55"/>
+<line x1="100" y1="420" x2="100" y2="150" stroke="#5F5E5A" stroke-width="1.2" stroke-opacity="0.55"/>
+<line x1="100" y1="150" x2="430" y2="150" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="430" y1="420" x2="430" y2="150" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="100" y1="420" x2="256" y2="362" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="430" y1="420" x2="586" y2="362" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="100" y1="150" x2="256" y2="92" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="430" y1="150" x2="586" y2="92" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="256" y1="362" x2="586" y2="362" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="256" y1="92" x2="586" y2="92" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="256" y1="362" x2="256" y2="92" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+<line x1="586" y1="362" x2="586" y2="92" stroke="#5F5E5A" stroke-width="0.8" stroke-dasharray="5 4" stroke-opacity="0.38"/>
+
+  <!-- AXES -->
+<line x1="100" y1="434" x2="100" y2="134" stroke="#2C2C2A" stroke-width="1.8" stroke-opacity="0.8" marker-end="url(#arrow)"/>
+<line x1="86" y1="420" x2="446" y2="420" stroke="#2C2C2A" stroke-width="1.8" stroke-opacity="0.8" marker-end="url(#arrow)"/>
+<line x1="430" y1="420" x2="617" y2="350" stroke="#2C2C2A" stroke-width="1.8" stroke-opacity="0.8" marker-end="url(#arrow)"/>
+
+  <!-- Y AXIS TICKS & LABELS -->
+<line x1="95" y1="366" x2="105" y2="366" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="89" y="370" text-anchor="end" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">At design time</text>
+<line x1="95" y1="285" x2="105" y2="285" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="89" y="289" text-anchor="end" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">At boost time</text>
+<line x1="95" y1="204" x2="105" y2="204" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="89" y="208" text-anchor="end" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">At runtime</text>
+
+  <!-- X AXIS TICKS & LABELS -->
+<line x1="166" y1="415" x2="166" y2="427" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="166" y="441" text-anchor="middle" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">Single application</text>
+<line x1="364" y1="415" x2="364" y2="427" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="364" y="441" text-anchor="middle" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">General purpose</text>
+
+  <!-- Z AXIS TICKS & LABELS -->
+<line x1="461" y1="408" x2="465" y2="400" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="468" y="413" text-anchor="start" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">High</text>
+<line x1="508" y1="391" x2="512" y2="383" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="515" y="396" text-anchor="start" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">Medium</text>
+<line x1="555" y1="374" x2="559" y2="366" stroke="#5F5E5A" stroke-width="1" stroke-opacity="0.6"/>
+<text x="562" y="379" text-anchor="start" font-size="11" font-weight="normal" fill="#5F5E5A" font-family="Arial, sans-serif">Low</text>
+
+  <!-- AXIS MAIN LABELS -->
+<text font-size="13" font-weight="500" fill="#2C2C2A" font-family="Arial, sans-serif" transform="translate(10,285) rotate(-90)"><tspan text-anchor="middle">Reconfigurability</tspan></text>
+<text x="265" y="460" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A" font-family="Arial, sans-serif">Flexibility</text>
+<text x="619" y="344" text-anchor="start" font-size="13" font-weight="500" fill="#2C2C2A" font-family="Arial, sans-serif">Power</text>
+<text x="619" y="359" text-anchor="start" font-size="13" font-weight="500" fill="#2C2C2A" font-family="Arial, sans-serif">Efficiency</text>
+
+  <!-- FLOOR SHADOW ELLIPSES -->
+<ellipse cx="197" cy="416" rx="46" ry="12" fill="#000" fill-opacity="0.1"/>
+<ellipse cx="287" cy="406" rx="36" ry="10" fill="#000" fill-opacity="0.09"/>
+<ellipse cx="401" cy="398" rx="30" ry="9" fill="#000" fill-opacity="0.08"/>
+<ellipse cx="554" cy="372" rx="25" ry="7" fill="#000" fill-opacity="0.11"/>
+
+  <!-- SPHERES -->
+
+  <!-- ASIC -->
+<circle cx="197" cy="354" r="50" fill="url(#gASIC)"/>
+<circle cx="197" cy="354" r="50" fill="url(#gHL)"/>
+<circle cx="197" cy="354" r="50" fill="none" stroke="#1a6650" stroke-width="1" opacity="0.4"/>
+<text x="197" y="358" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="white" font-family="Arial, sans-serif">ASIC</text>
+
+  <!-- FPGA -->
+<circle cx="287" cy="265" r="42" fill="url(#gFPGA)"/>
+<circle cx="287" cy="265" r="42" fill="url(#gHL)"/>
+<circle cx="287" cy="265" r="42" fill="none" stroke="#5e6e1e" stroke-width="1" opacity="0.4"/>
+<text x="287" y="269" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="white" font-family="Arial, sans-serif">FPGA</text>
+
+  <!-- NоC-based DNN -->
+<circle cx="401" cy="207" r="37" fill="url(#gNoC)"/>
+<circle cx="401" cy="207" r="37" fill="url(#gHL)"/>
+<circle cx="401" cy="207" r="37" fill="none" stroke="#855818" stroke-width="1" opacity="0.4"/>
+<text x="401" y="204" text-anchor="middle" font-size="12" font-weight="600" fill="white" font-family="Arial, sans-serif"><tspan x="401" dy="0">NоC-based</tspan><tspan x="401" dy="14">DNN</tspan></text>
+
+  <!-- CPU/ GPU -->
+<circle cx="525" cy="151" r="31" fill="url(#gCPU)"/>
+<circle cx="525" cy="151" r="31" fill="url(#gHL)"/>
+<circle cx="525" cy="151" r="31" fill="none" stroke="#6e4462" stroke-width="1" opacity="0.4"/>
+<text x="525" y="148" text-anchor="middle" font-size="12" font-weight="600" fill="white" font-family="Arial, sans-serif"><tspan x="525" dy="0">CPU/</tspan><tspan x="525" dy="14">GPU</tspan></text>
+
+</svg>

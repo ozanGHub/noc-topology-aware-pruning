@@ -1,0 +1,1 @@
+MNIST, Fashion-MNIST, and CIFAR-10 are publicly available datasets.

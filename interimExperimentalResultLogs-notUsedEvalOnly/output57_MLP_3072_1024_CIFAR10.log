@@ -1,0 +1,4371 @@
+nohup: ignoring input
+
+=== Initial model ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.6605
+F1       : 0.6602
+Precision: 0.6616
+Recall   : 0.6605
+Params   : 4206602 trainable
+State size (approx): 16432.04 KB
+Inference time (avg): batch 2.0570 ms | single 0.032597 ms
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 83.85s
+Best communication cost: 12363424.0000
+Mapping (task → core):
+  Task   1  →  Core 211
+  Task   2  →  Core  10
+  Task   3  →  Core 311
+  Task   4  →  Core 308
+  Task   5  →  Core 306
+  Task   6  →  Core 476
+  Task   7  →  Core 366
+  Task   8  →  Core 448
+  Task   9  →  Core 248
+  Task  10  →  Core 351
+  Task  11  →  Core 279
+  Task  12  →  Core 389
+  Task  13  →  Core 150
+  Task  14  →  Core 299
+  Task  15  →  Core 371
+  Task  16  →  Core  51
+  Task  17  →  Core 405
+  Task  18  →  Core 223
+  Task  19  →  Core 162
+  Task  20  →  Core 149
+  Task  21  →  Core 273
+  Task  22  →  Core 143
+  Task  23  →  Core 362
+  Task  24  →  Core 471
+  Task  25  →  Core 404
+  Task  26  →  Core  76
+  Task  27  →  Core 453
+  Task  28  →  Core 427
+  Task  29  →  Core 433
+  Task  30  →  Core  82
+  Task  31  →  Core  77
+  Task  32  →  Core 105
+  Task  33  →  Core 403
+  Task  34  →  Core 390
+  Task  35  →  Core 432
+  Task  36  →  Core 337
+  Task  37  →  Core 336
+  Task  38  →  Core 170
+  Task  39  →  Core  53
+  Task  40  →  Core  93
+  Task  41  →  Core 294
+  Task  42  →  Core 402
+  Task  43  →  Core 406
+  Task  44  →  Core 129
+  Task  45  →  Core  12
+  Task  46  →  Core 383
+  Task  47  →  Core 100
+  Task  48  →  Core 428
+  Task  49  →  Core 326
+  Task  50  →  Core 158
+  Task  51  →  Core 392
+  Task  52  →  Core  37
+  Task  53  →  Core 177
+  Task  54  →  Core  79
+  Task  55  →  Core 426
+  Task  56  →  Core 206
+  Task  57  →  Core 288
+  Task  58  →  Core 264
+  Task  59  →  Core 282
+  Task  60  →  Core 173
+  Task  61  →  Core  96
+  Task  62  →  Core 182
+  Task  63  →  Core 302
+  Task  64  →  Core 258
+  Task  65  →  Core 121
+  Task  66  →  Core 410
+  Task  67  →  Core 265
+  Task  68  →  Core 242
+  Task  69  →  Core 117
+  Task  70  →  Core 205
+  Task  71  →  Core 126
+  Task  72  →  Core 101
+  Task  73  →  Core 215
+  Task  74  →  Core 262
+  Task  75  →  Core 195
+  Task  76  →  Core 413
+  Task  77  →  Core 203
+  Task  78  →  Core  75
+  Task  79  →  Core 321
+  Task  80  →  Core 322
+  Task  81  →  Core   8
+  Task  82  →  Core 378
+  Task  83  →  Core 184
+  Task  84  →  Core 333
+  Task  85  →  Core 329
+  Task  86  →  Core  58
+  Task  87  →  Core 156
+  Task  88  →  Core 452
+  Task  89  →  Core 141
+  Task  90  →  Core 361
+  Task  91  →  Core 247
+  Task  92  →  Core 202
+  Task  93  →  Core 107
+  Task  94  →  Core  52
+  Task  95  →  Core 346
+  Task  96  →  Core 280
+  Task  97  →  Core 424
+  Task  98  →  Core 200
+  Task  99  →  Core  74
+  Task 100  →  Core 246
+  Task 101  →  Core 303
+  Task 102  →  Core 256
+  Task 103  →  Core  14
+  Task 104  →  Core 359
+  Task 105  →  Core 113
+  Task 106  →  Core 142
+  Task 107  →  Core 104
+  Task 108  →  Core 293
+  Task 109  →  Core 347
+  Task 110  →  Core 122
+  Task 111  →  Core 137
+  Task 112  →  Core 164
+  Task 113  →  Core 201
+  Task 114  →  Core 174
+  Task 115  →  Core 342
+  Task 116  →  Core 318
+  Task 117  →  Core 166
+  Task 118  →  Core 103
+  Task 119  →  Core 139
+  Task 120  →  Core 259
+  Task 121  →  Core 135
+  Task 122  →  Core 339
+  Task 123  →  Core 324
+  Task 124  →  Core 449
+  Task 125  →  Core 370
+  Task 126  →  Core 305
+  Task 127  →  Core 237
+  Task 128  →  Core 388
+  Task 129  →  Core  98
+  Task 130  →  Core 317
+  Task 131  →  Core  61
+  Task 132  →  Core  50
+  Task 133  →  Core 168
+  Task 134  →  Core 268
+  Task 135  →  Core 332
+  Task 136  →  Core 287
+  Task 137  →  Core 155
+  Task 138  →  Core 214
+  Task 139  →  Core 285
+  Task 140  →  Core 296
+  Task 141  →  Core 401
+  Task 142  →  Core 343
+  Task 143  →  Core 267
+  Task 144  →  Core 157
+  Task 145  →  Core 153
+  Task 146  →  Core 176
+  Task 147  →  Core 249
+  Task 148  →  Core 159
+  Task 149  →  Core 192
+  Task 150  →  Core 260
+  Task 151  →  Core 175
+  Task 152  →  Core 408
+  Task 153  →  Core  56
+  Task 154  →  Core  54
+  Task 155  →  Core 183
+  Task 156  →  Core 140
+  Task 157  →  Core 266
+  Task 158  →  Core 429
+  Task 159  →  Core 144
+  Task 160  →  Core 345
+  Task 161  →  Core  78
+  Task 162  →  Core  35
+  Task 163  →  Core  13
+  Task 164  →  Core 434
+  Task 165  →  Core 315
+  Task 166  →  Core 151
+  Task 167  →  Core 447
+  Task 168  →  Core 221
+  Task 169  →  Core 261
+  Task 170  →  Core  73
+  Task 171  →  Core 472
+  Task 172  →  Core 236
+  Task 173  →  Core 216
+  Task 174  →  Core 349
+  Task 175  →  Core 147
+  Task 176  →  Core 225
+  Task 177  →  Core  57
+  Task 178  →  Core 328
+  Task 179  →  Core 198
+  Task 180  →  Core  97
+  Task 181  →  Core  15
+  Task 182  →  Core 301
+  Task 183  →  Core 368
+  Task 184  →  Core  84
+  Task 185  →  Core 145
+  Task 186  →  Core 360
+  Task 187  →  Core 314
+  Task 188  →  Core 102
+  Task 189  →  Core 196
+  Task 190  →  Core 226
+  Task 191  →  Core 330
+  Task 192  →  Core 286
+  Task 193  →  Core 369
+  Task 194  →  Core 194
+  Task 195  →  Core  81
+  Task 196  →  Core 384
+  Task 197  →  Core  99
+  Task 198  →  Core  31
+  Task 199  →  Core 190
+  Task 200  →  Core 325
+  Task 201  →  Core  71
+  Task 202  →  Core 391
+  Task 203  →  Core 327
+  Task 204  →  Core 407
+  Task 205  →  Core 217
+  Task 206  →  Core 124
+  Task 207  →  Core 128
+  Task 208  →  Core 134
+  Task 209  →  Core 120
+  Task 210  →  Core 475
+  Task 211  →  Core 450
+  Task 212  →  Core 455
+  Task 213  →  Core 240
+  Task 214  →  Core 430
+  Task 215  →  Core  92
+  Task 216  →  Core 295
+  Task 217  →  Core 160
+  Task 218  →  Core  80
+  Task 219  →  Core 119
+  Task 220  →  Core 218
+  Task 221  →  Core 304
+  Task 222  →  Core 125
+  Task 223  →  Core 271
+  Task 224  →  Core 292
+  Task 225  →  Core 350
+  Task 226  →  Core 412
+  Task 227  →  Core   7
+  Task 228  →  Core  83
+  Task 229  →  Core 355
+  Task 230  →  Core 130
+  Task 231  →  Core 341
+  Task 232  →  Core 307
+  Task 233  →  Core 123
+  Task 234  →  Core  59
+  Task 235  →  Core 310
+  Task 236  →  Core 238
+  Task 237  →  Core 313
+  Task 238  →  Core 309
+  Task 239  →  Core 300
+  Task 240  →  Core  94
+  Task 241  →  Core 148
+  Task 242  →  Core 114
+  Task 243  →  Core 228
+  Task 244  →  Core 348
+  Task 245  →  Core 199
+  Task 246  →  Core 169
+  Task 247  →  Core 165
+  Task 248  →  Core 344
+  Task 249  →  Core  30
+  Task 250  →  Core 181
+  Task 251  →  Core 470
+  Task 252  →  Core 171
+  Task 253  →  Core 411
+  Task 254  →  Core  29
+  Task 255  →  Core 357
+  Task 256  →  Core 213
+  Task 257  →  Core 380
+  Task 258  →  Core  32
+  Task 259  →  Core 386
+  Task 260  →  Core 363
+  Task 261  →  Core 224
+  Task 262  →  Core 191
+  Task 263  →  Core 115
+  Task 264  →  Core 239
+  Task 265  →  Core 241
+  Task 266  →  Core 409
+  Task 267  →  Core 127
+  Task 268  →  Core 338
+  Task 269  →  Core 385
+  Task 270  →  Core 161
+  Task 271  →  Core 431
+  Task 272  →  Core 272
+  Task 273  →  Core 356
+  Task 274  →  Core 222
+  Task 275  →  Core  55
+  Task 276  →  Core 204
+  Task 277  →  Core 220
+  Task 278  →  Core 290
+  Task 279  →  Core 278
+  Task 280  →  Core 136
+  Task 281  →  Core  34
+  Task 282  →  Core 364
+  Task 283  →  Core  38
+  Task 284  →  Core  33
+  Task 285  →  Core 270
+  Task 286  →  Core  72
+  Task 287  →  Core 235
+  Task 288  →  Core 473
+  Task 289  →  Core 167
+  Task 290  →  Core 367
+  Task 291  →  Core 118
+  Task 292  →  Core 283
+  Task 293  →  Core 381
+  Task 294  →  Core 269
+  Task 295  →  Core 212
+  Task 296  →  Core 379
+  Task 297  →  Core  36
+  Task 298  →  Core  11
+  Task 299  →  Core 335
+  Task 300  →  Core 323
+  Task 301  →  Core 146
+  Task 302  →  Core 319
+  Task 303  →  Core 250
+  Task 304  →  Core 116
+  Task 305  →  Core 340
+  Task 306  →  Core 244
+  Task 307  →  Core  95
+  Task 308  →  Core 243
+  Task 309  →  Core 312
+  Task 310  →  Core 245
+  Task 311  →  Core   9
+  Task 312  →  Core 320
+  Task 313  →  Core 474
+  Task 314  →  Core 106
+  Task 315  →  Core 180
+  Task 316  →  Core 387
+  Task 317  →  Core 172
+  Task 318  →  Core 291
+  Task 319  →  Core 334
+  Task 320  →  Core 284
+  Task 321  →  Core 316
+  Task 322  →  Core 227
+  Task 323  →  Core 193
+  Task 324  →  Core 454
+  Task 325  →  Core  60
+  Task 326  →  Core 281
+  Task 327  →  Core 178
+  Task 328  →  Core 451
+  Task 329  →  Core 138
+  Task 330  →  Core 382
+  Task 331  →  Core 425
+  Task 332  →  Core 197
+  Task 333  →  Core 365
+  Task 334  →  Core 152
+  Task 335  →  Core 289
+  Task 336  →  Core 257
+  Task 337  →  Core 358
+  Task 338  →  Core 219
+  Task 339  →  Core 179
+  Task 340  →  Core 185
+  Task 341  →  Core 163
+  Task 342  →  Core 263
+  Task 343  →  Core 133
+  Task 344  →  Core  27
+  Task 345  →  Core 438
+  Task 346  →  Core 456
+  Task 347  →  Core 419
+  Task 348  →  Core 443
+  Task 349  →  Core 445
+  Task 350  →  Core  41
+  Task 351  →  Core 417
+  Task 352  →  Core  90
+  Task 353  →  Core 482
+  Task 354  →  Core 444
+  Task 355  →  Core  25
+  Task 356  →  Core  62
+  Task 357  →  Core  49
+  Task 358  →  Core 458
+  Task 359  →  Core 375
+  Task 360  →  Core 415
+  Task 361  →  Core  39
+  Task 362  →  Core  68
+  Task 363  →  Core  67
+  Task 364  →  Core 463
+  Task 365  →  Core 461
+  Task 366  →  Core  85
+  Task 367  →  Core 422
+  Task 368  →  Core  45
+  Task 369  →  Core 376
+  Task 370  →  Core 446
+  Task 371  →  Core 396
+  Task 372  →  Core 331
+  Task 373  →  Core 393
+  Task 374  →  Core 436
+  Task 375  →  Core  43
+  Task 376  →  Core 435
+  Task 377  →  Core 480
+  Task 378  →  Core  66
+  Task 379  →  Core  23
+  Task 380  →  Core 440
+  Task 381  →  Core  42
+  Task 382  →  Core 111
+  Task 383  →  Core 421
+  Task 384  →  Core 399
+  Task 385  →  Core 479
+  Task 386  →  Core 478
+  Task 387  →  Core 354
+  Task 388  →  Core  26
+  Task 389  →  Core 373
+  Task 390  →  Core  63
+  Task 391  →  Core 468
+  Task 392  →  Core 377
+  Task 393  →  Core 131
+  Task 394  →  Core   2
+  Task 395  →  Core 464
+  Task 396  →  Core 395
+  Task 397  →  Core 460
+  Task 398  →  Core 398
+  Task 399  →  Core 154
+  Task 400  →  Core 400
+  Task 401  →  Core 418
+  Task 402  →  Core 459
+  Task 403  →  Core  46
+  Task 404  →  Core 108
+  Task 405  →  Core 352
+  Task 406  →  Core 462
+  Task 407  →  Core  89
+  Task 408  →  Core  20
+  Task 409  →  Core 416
+  Task 410  →  Core   4
+  Task 411  →  Core 467
+  Task 412  →  Core  91
+  Task 413  →  Core  22
+  Task 414  →  Core 442
+  Task 415  →  Core  44
+  Task 416  →  Core  65
+  Task 417  →  Core  47
+  Task 418  →  Core 465
+  Task 419  →  Core 477
+  Task 420  →  Core   6
+  Task 421  →  Core  17
+  Task 422  →  Core 397
+  Task 423  →  Core  24
+  Task 424  →  Core 394
+  Task 425  →  Core 457
+  Task 426  →  Core 439
+  Task 427  →  Core 374
+  Task 428  →  Core  69
+  Task 429  →  Core  48
+  Task 430  →  Core  28
+  Task 431  →  Core  19
+  Task 432  →  Core 469
+  Task 433  →  Core 420
+  Task 434  →  Core 353
+  Task 435  →  Core  87
+  Task 436  →  Core 441
+  Task 437  →  Core 112
+  Task 438  →  Core  18
+  Task 439  →  Core 132
+  Task 440  →  Core 437
+  Task 441  →  Core 481
+  Task 442  →  Core 109
+  Task 443  →  Core  70
+  Task 444  →  Core  86
+  Task 445  →  Core  21
+  Task 446  →  Core 423
+  Task 447  →  Core 466
+  Task 448  →  Core  64
+  Task 449  →  Core   3
+  Task 450  →  Core 414
+  Task 451  →  Core   5
+  Task 452  →  Core 110
+  Task 453  →  Core  40
+  Task 454  →  Core 372
+  Task 455  →  Core  88
+  Task 456  →  Core  16
+  Task 457  →  Core   1
+  Task 458  →  Core 483
+  Task 459  →  Core 484
+  Task 460  →  Core 274
+  Task 461  →  Core 234
+  Task 462  →  Core 252
+  Task 463  →  Core 188
+  Task 464  →  Core 276
+  Task 465  →  Core 189
+  Task 466  →  Core 209
+  Task 467  →  Core 186
+  Task 468  →  Core 298
+  Task 469  →  Core 253
+  Task 470  →  Core 230
+  Task 471  →  Core 210
+  Task 472  →  Core 232
+  Task 473  →  Core 231
+  Task 474  →  Core 254
+  Task 475  →  Core 233
+  Task 476  →  Core 277
+  Task 477  →  Core 251
+  Task 478  →  Core 255
+  Task 479  →  Core 297
+  Task 480  →  Core 187
+  Task 481  →  Core 229
+  Task 482  →  Core 208
+  Task 483  →  Core 207
+  Task 484  →  Core 275
+Mapping: [(0, 210), (1, 9), (2, 310), (3, 307), (4, 305), (5, 475), (6, 365), (7, 447), (8, 247), (9, 350), (10, 278), (11, 388), (12, 149), (13, 298), (14, 370), (15, 50), (16, 404), (17, 222), (18, 161), (19, 148), (20, 272), (21, 142), (22, 361), (23, 470), (24, 403), (25, 75), (26, 452), (27, 426), (28, 432), (29, 81), (30, 76), (31, 104), (32, 402), (33, 389), (34, 431), (35, 336), (36, 335), (37, 169), (38, 52), (39, 92), (40, 293), (41, 401), (42, 405), (43, 128), (44, 11), (45, 382), (46, 99), (47, 427), (48, 325), (49, 157), (50, 391), (51, 36), (52, 176), (53, 78), (54, 425), (55, 205), (56, 287), (57, 263), (58, 281), (59, 172), (60, 95), (61, 181), (62, 301), (63, 257), (64, 120), (65, 409), (66, 264), (67, 241), (68, 116), (69, 204), (70, 125), (71, 100), (72, 214), (73, 261), (74, 194), (75, 412), (76, 202), (77, 74), (78, 320), (79, 321), (80, 7), (81, 377), (82, 183), (83, 332), (84, 328), (85, 57), (86, 155), (87, 451), (88, 140), (89, 360), (90, 246), (91, 201), (92, 106), (93, 51), (94, 345), (95, 279), (96, 423), (97, 199), (98, 73), (99, 245), (100, 302), (101, 255), (102, 13), (103, 358), (104, 112), (105, 141), (106, 103), (107, 292), (108, 346), (109, 121), (110, 136), (111, 163), (112, 200), (113, 173), (114, 341), (115, 317), (116, 165), (117, 102), (118, 138), (119, 258), (120, 134), (121, 338), (122, 323), (123, 448), (124, 369), (125, 304), (126, 236), (127, 387), (128, 97), (129, 316), (130, 60), (131, 49), (132, 167), (133, 267), (134, 331), (135, 286), (136, 154), (137, 213), (138, 284), (139, 295), (140, 400), (141, 342), (142, 266), (143, 156), (144, 152), (145, 175), (146, 248), (147, 158), (148, 191), (149, 259), (150, 174), (151, 407), (152, 55), (153, 53), (154, 182), (155, 139), (156, 265), (157, 428), (158, 143), (159, 344), (160, 77), (161, 34), (162, 12), (163, 433), (164, 314), (165, 150), (166, 446), (167, 220), (168, 260), (169, 72), (170, 471), (171, 235), (172, 215), (173, 348), (174, 146), (175, 224), (176, 56), (177, 327), (178, 197), (179, 96), (180, 14), (181, 300), (182, 367), (183, 83), (184, 144), (185, 359), (186, 313), (187, 101), (188, 195), (189, 225), (190, 329), (191, 285), (192, 368), (193, 193), (194, 80), (195, 383), (196, 98), (197, 30), (198, 189), (199, 324), (200, 70), (201, 390), (202, 326), (203, 406), (204, 216), (205, 123), (206, 127), (207, 133), (208, 119), (209, 474), (210, 449), (211, 454), (212, 239), (213, 429), (214, 91), (215, 294), (216, 159), (217, 79), (218, 118), (219, 217), (220, 303), (221, 124), (222, 270), (223, 291), (224, 349), (225, 411), (226, 6), (227, 82), (228, 354), (229, 129), (230, 340), (231, 306), (232, 122), (233, 58), (234, 309), (235, 237), (236, 312), (237, 308), (238, 299), (239, 93), (240, 147), (241, 113), (242, 227), (243, 347), (244, 198), (245, 168), (246, 164), (247, 343), (248, 29), (249, 180), (250, 469), (251, 170), (252, 410), (253, 28), (254, 356), (255, 212), (256, 379), (257, 31), (258, 385), (259, 362), (260, 223), (261, 190), (262, 114), (263, 238), (264, 240), (265, 408), (266, 126), (267, 337), (268, 384), (269, 160), (270, 430), (271, 271), (272, 355), (273, 221), (274, 54), (275, 203), (276, 219), (277, 289), (278, 277), (279, 135), (280, 33), (281, 363), (282, 37), (283, 32), (284, 269), (285, 71), (286, 234), (287, 472), (288, 166), (289, 366), (290, 117), (291, 282), (292, 380), (293, 268), (294, 211), (295, 378), (296, 35), (297, 10), (298, 334), (299, 322), (300, 145), (301, 318), (302, 249), (303, 115), (304, 339), (305, 243), (306, 94), (307, 242), (308, 311), (309, 244), (310, 8), (311, 319), (312, 473), (313, 105), (314, 179), (315, 386), (316, 171), (317, 290), (318, 333), (319, 283), (320, 315), (321, 226), (322, 192), (323, 453), (324, 59), (325, 280), (326, 177), (327, 450), (328, 137), (329, 381), (330, 424), (331, 196), (332, 364), (333, 151), (334, 288), (335, 256), (336, 357), (337, 218), (338, 178), (339, 184), (340, 162), (341, 262), (342, 132), (343, 26), (344, 437), (345, 455), (346, 418), (347, 442), (348, 444), (349, 40), (350, 416), (351, 89), (352, 481), (353, 443), (354, 24), (355, 61), (356, 48), (357, 457), (358, 374), (359, 414), (360, 38), (361, 67), (362, 66), (363, 462), (364, 460), (365, 84), (366, 421), (367, 44), (368, 375), (369, 445), (370, 395), (371, 330), (372, 392), (373, 435), (374, 42), (375, 434), (376, 479), (377, 65), (378, 22), (379, 439), (380, 41), (381, 110), (382, 420), (383, 398), (384, 478), (385, 477), (386, 353), (387, 25), (388, 372), (389, 62), (390, 467), (391, 376), (392, 130), (393, 1), (394, 463), (395, 394), (396, 459), (397, 397), (398, 153), (399, 399), (400, 417), (401, 458), (402, 45), (403, 107), (404, 351), (405, 461), (406, 88), (407, 19), (408, 415), (409, 3), (410, 466), (411, 90), (412, 21), (413, 441), (414, 43), (415, 64), (416, 46), (417, 464), (418, 476), (419, 5), (420, 16), (421, 396), (422, 23), (423, 393), (424, 456), (425, 438), (426, 373), (427, 68), (428, 47), (429, 27), (430, 18), (431, 468), (432, 419), (433, 352), (434, 86), (435, 440), (436, 111), (437, 17), (438, 131), (439, 436), (440, 480), (441, 108), (442, 69), (443, 85), (444, 20), (445, 422), (446, 465), (447, 63), (448, 2), (449, 413), (450, 4), (451, 109), (452, 39), (453, 371), (454, 87), (455, 15), (456, 0), (457, 482), (458, 483), (459, 273), (460, 233), (461, 251), (462, 187), (463, 275), (464, 188), (465, 208), (466, 185), (467, 297), (468, 252), (469, 229), (470, 209), (471, 231), (472, 230), (473, 253), (474, 232), (475, 276), (476, 250), (477, 254), (478, 296), (479, 186), (480, 228), (481, 207), (482, 206), (483, 274)]
+Communication cost: 12363424.0
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 83.94s
+Best communication cost: 12362228.0000
+Mapping (task → core):
+  Task   1  →  Core 230
+  Task   2  →  Core 203
+  Task   3  →  Core 263
+  Task   4  →  Core 248
+  Task   5  →  Core 272
+  Task   6  →  Core 137
+  Task   7  →  Core 348
+  Task   8  →  Core 183
+  Task   9  →  Core  51
+  Task  10  →  Core  77
+  Task  11  →  Core 366
+  Task  12  →  Core  54
+  Task  13  →  Core 293
+  Task  14  →  Core 324
+  Task  15  →  Core 141
+  Task  16  →  Core 144
+  Task  17  →  Core  83
+  Task  18  →  Core 128
+  Task  19  →  Core 156
+  Task  20  →  Core  32
+  Task  21  →  Core  58
+  Task  22  →  Core  12
+  Task  23  →  Core 431
+  Task  24  →  Core 388
+  Task  25  →  Core  14
+  Task  26  →  Core 382
+  Task  27  →  Core 287
+  Task  28  →  Core 320
+  Task  29  →  Core 168
+  Task  30  →  Core 182
+  Task  31  →  Core 426
+  Task  32  →  Core 225
+  Task  33  →  Core 323
+  Task  34  →  Core 134
+  Task  35  →  Core 146
+  Task  36  →  Core 338
+  Task  37  →  Core  38
+  Task  38  →  Core 247
+  Task  39  →  Core 360
+  Task  40  →  Core 270
+  Task  41  →  Core 308
+  Task  42  →  Core  95
+  Task  43  →  Core  81
+  Task  44  →  Core 178
+  Task  45  →  Core 228
+  Task  46  →  Core 356
+  Task  47  →  Core 243
+  Task  48  →  Core 349
+  Task  49  →  Core 433
+  Task  50  →  Core 260
+  Task  51  →  Core  99
+  Task  52  →  Core 189
+  Task  53  →  Core  11
+  Task  54  →  Core 246
+  Task  55  →  Core 180
+  Task  56  →  Core 401
+  Task  57  →  Core 173
+  Task  58  →  Core 475
+  Task  59  →  Core  75
+  Task  60  →  Core 371
+  Task  61  →  Core 329
+  Task  62  →  Core 104
+  Task  63  →  Core 165
+  Task  64  →  Core 434
+  Task  65  →  Core 392
+  Task  66  →  Core 163
+  Task  67  →  Core 169
+  Task  68  →  Core 343
+  Task  69  →  Core 339
+  Task  70  →  Core 451
+  Task  71  →  Core  74
+  Task  72  →  Core 212
+  Task  73  →  Core 249
+  Task  74  →  Core 201
+  Task  75  →  Core  73
+  Task  76  →  Core 159
+  Task  77  →  Core  36
+  Task  78  →  Core 143
+  Task  79  →  Core 292
+  Task  80  →  Core 472
+  Task  81  →  Core 325
+  Task  82  →  Core  80
+  Task  83  →  Core 259
+  Task  84  →  Core 365
+  Task  85  →  Core 314
+  Task  86  →  Core 177
+  Task  87  →  Core 174
+  Task  88  →  Core 391
+  Task  89  →  Core 306
+  Task  90  →  Core 186
+  Task  91  →  Core 193
+  Task  92  →  Core  92
+  Task  93  →  Core 328
+  Task  94  →  Core 432
+  Task  95  →  Core 404
+  Task  96  →  Core 119
+  Task  97  →  Core 221
+  Task  98  →  Core 303
+  Task  99  →  Core 370
+  Task 100  →  Core 155
+  Task 101  →  Core 216
+  Task 102  →  Core 300
+  Task 103  →  Core 330
+  Task 104  →  Core 289
+  Task 105  →  Core 409
+  Task 106  →  Core 288
+  Task 107  →  Core 321
+  Task 108  →  Core 153
+  Task 109  →  Core 204
+  Task 110  →  Core 364
+  Task 111  →  Core 160
+  Task 112  →  Core 265
+  Task 113  →  Core 357
+  Task 114  →  Core 425
+  Task 115  →  Core 393
+  Task 116  →  Core  29
+  Task 117  →  Core 301
+  Task 118  →  Core 151
+  Task 119  →  Core 222
+  Task 120  →  Core 414
+  Task 121  →  Core 158
+  Task 122  →  Core  50
+  Task 123  →  Core 206
+  Task 124  →  Core 283
+  Task 125  →  Core 302
+  Task 126  →  Core 405
+  Task 127  →  Core 290
+  Task 128  →  Core 271
+  Task 129  →  Core 336
+  Task 130  →  Core 474
+  Task 131  →  Core 152
+  Task 132  →  Core 304
+  Task 133  →  Core 424
+  Task 134  →  Core 103
+  Task 135  →  Core 102
+  Task 136  →  Core 285
+  Task 137  →  Core 170
+  Task 138  →  Core 333
+  Task 139  →  Core 390
+  Task 140  →  Core 316
+  Task 141  →  Core 326
+  Task 142  →  Core 413
+  Task 143  →  Core 138
+  Task 144  →  Core 179
+  Task 145  →  Core 219
+  Task 146  →  Core 322
+  Task 147  →  Core 410
+  Task 148  →  Core 105
+  Task 149  →  Core 389
+  Task 150  →  Core 313
+  Task 151  →  Core 217
+  Task 152  →  Core 166
+  Task 153  →  Core 266
+  Task 154  →  Core 347
+  Task 155  →  Core 473
+  Task 156  →  Core 280
+  Task 157  →  Core 239
+  Task 158  →  Core 191
+  Task 159  →  Core 427
+  Task 160  →  Core  55
+  Task 161  →  Core  35
+  Task 162  →  Core 350
+  Task 163  →  Core 449
+  Task 164  →  Core 136
+  Task 165  →  Core 126
+  Task 166  →  Core 428
+  Task 167  →  Core 223
+  Task 168  →  Core 408
+  Task 169  →  Core 117
+  Task 170  →  Core 171
+  Task 171  →  Core 269
+  Task 172  →  Core 161
+  Task 173  →  Core 381
+  Task 174  →  Core 281
+  Task 175  →  Core 282
+  Task 176  →  Core 386
+  Task 177  →  Core 200
+  Task 178  →  Core 215
+  Task 179  →  Core 235
+  Task 180  →  Core 455
+  Task 181  →  Core 453
+  Task 182  →  Core  33
+  Task 183  →  Core 305
+  Task 184  →  Core 278
+  Task 185  →  Core 372
+  Task 186  →  Core 262
+  Task 187  →  Core 477
+  Task 188  →  Core 332
+  Task 189  →  Core  98
+  Task 190  →  Core 100
+  Task 191  →  Core  96
+  Task 192  →  Core 162
+  Task 193  →  Core 355
+  Task 194  →  Core 194
+  Task 195  →  Core  53
+  Task 196  →  Core 150
+  Task 197  →  Core  56
+  Task 198  →  Core 361
+  Task 199  →  Core 387
+  Task 200  →  Core 335
+  Task 201  →  Core  78
+  Task 202  →  Core 279
+  Task 203  →  Core 402
+  Task 204  →  Core 227
+  Task 205  →  Core 198
+  Task 206  →  Core 236
+  Task 207  →  Core 411
+  Task 208  →  Core 337
+  Task 209  →  Core 383
+  Task 210  →  Core 340
+  Task 211  →  Core 192
+  Task 212  →  Core 181
+  Task 213  →  Core 345
+  Task 214  →  Core  60
+  Task 215  →  Core 242
+  Task 216  →  Core 261
+  Task 217  →  Core  93
+  Task 218  →  Core 237
+  Task 219  →  Core 149
+  Task 220  →  Core 142
+  Task 221  →  Core 315
+  Task 222  →  Core 245
+  Task 223  →  Core 214
+  Task 224  →  Core 291
+  Task 225  →  Core 167
+  Task 226  →  Core 129
+  Task 227  →  Core 176
+  Task 228  →  Core 318
+  Task 229  →  Core 121
+  Task 230  →  Core 241
+  Task 231  →  Core  94
+  Task 232  →  Core 195
+  Task 233  →  Core  31
+  Task 234  →  Core 403
+  Task 235  →  Core  76
+  Task 236  →  Core 218
+  Task 237  →  Core 342
+  Task 238  →  Core 197
+  Task 239  →  Core 311
+  Task 240  →  Core   8
+  Task 241  →  Core 125
+  Task 242  →  Core 139
+  Task 243  →  Core 384
+  Task 244  →  Core 257
+  Task 245  →  Core  57
+  Task 246  →  Core  71
+  Task 247  →  Core 358
+  Task 248  →  Core 220
+  Task 249  →  Core 294
+  Task 250  →  Core 157
+  Task 251  →  Core 205
+  Task 252  →  Core 407
+  Task 253  →  Core  34
+  Task 254  →  Core 244
+  Task 255  →  Core 412
+  Task 256  →  Core  79
+  Task 257  →  Core 190
+  Task 258  →  Core 115
+  Task 259  →  Core 359
+  Task 260  →  Core 334
+  Task 261  →  Core  15
+  Task 262  →  Core 456
+  Task 263  →  Core 327
+  Task 264  →  Core 447
+  Task 265  →  Core 341
+  Task 266  →  Core 454
+  Task 267  →  Core 123
+  Task 268  →  Core  82
+  Task 269  →  Core 238
+  Task 270  →  Core 213
+  Task 271  →  Core 101
+  Task 272  →  Core 113
+  Task 273  →  Core 471
+  Task 274  →  Core 378
+  Task 275  →  Core 184
+  Task 276  →  Core 116
+  Task 277  →  Core 309
+  Task 278  →  Core 120
+  Task 279  →  Core 202
+  Task 280  →  Core  59
+  Task 281  →  Core 164
+  Task 282  →  Core 452
+  Task 283  →  Core 346
+  Task 284  →  Core 147
+  Task 285  →  Core 148
+  Task 286  →  Core 310
+  Task 287  →  Core 379
+  Task 288  →  Core 127
+  Task 289  →  Core  52
+  Task 290  →  Core 369
+  Task 291  →  Core 363
+  Task 292  →  Core 118
+  Task 293  →  Core 286
+  Task 294  →  Core  37
+  Task 295  →  Core 226
+  Task 296  →  Core 435
+  Task 297  →  Core 317
+  Task 298  →  Core  72
+  Task 299  →  Core 312
+  Task 300  →  Core 135
+  Task 301  →  Core 124
+  Task 302  →  Core 122
+  Task 303  →  Core 406
+  Task 304  →  Core  97
+  Task 305  →  Core 476
+  Task 306  →  Core 196
+  Task 307  →  Core 448
+  Task 308  →  Core  13
+  Task 309  →  Core 450
+  Task 310  →  Core 295
+  Task 311  →  Core 114
+  Task 312  →  Core 172
+  Task 313  →  Core 267
+  Task 314  →  Core 368
+  Task 315  →  Core   9
+  Task 316  →  Core 319
+  Task 317  →  Core 284
+  Task 318  →  Core 140
+  Task 319  →  Core 367
+  Task 320  →  Core 362
+  Task 321  →  Core 207
+  Task 322  →  Core 351
+  Task 323  →  Core 250
+  Task 324  →  Core 106
+  Task 325  →  Core 307
+  Task 326  →  Core 258
+  Task 327  →  Core 268
+  Task 328  →  Core 185
+  Task 329  →  Core 264
+  Task 330  →  Core 240
+  Task 331  →  Core 385
+  Task 332  →  Core 224
+  Task 333  →  Core 344
+  Task 334  →  Core 145
+  Task 335  →  Core 299
+  Task 336  →  Core  30
+  Task 337  →  Core 429
+  Task 338  →  Core 380
+  Task 339  →  Core 199
+  Task 340  →  Core  10
+  Task 341  →  Core 175
+  Task 342  →  Core 430
+  Task 343  →  Core 470
+  Task 344  →  Core  27
+  Task 345  →  Core  22
+  Task 346  →  Core 108
+  Task 347  →  Core 419
+  Task 348  →  Core 354
+  Task 349  →  Core   5
+  Task 350  →  Core 459
+  Task 351  →  Core 436
+  Task 352  →  Core 443
+  Task 353  →  Core 438
+  Task 354  →  Core 399
+  Task 355  →  Core  49
+  Task 356  →  Core 445
+  Task 357  →  Core  88
+  Task 358  →  Core  66
+  Task 359  →  Core 467
+  Task 360  →  Core  23
+  Task 361  →  Core   7
+  Task 362  →  Core 463
+  Task 363  →  Core 464
+  Task 364  →  Core 439
+  Task 365  →  Core 396
+  Task 366  →  Core 421
+  Task 367  →  Core 352
+  Task 368  →  Core 465
+  Task 369  →  Core  89
+  Task 370  →  Core  39
+  Task 371  →  Core  64
+  Task 372  →  Core 446
+  Task 373  →  Core 415
+  Task 374  →  Core  18
+  Task 375  →  Core  25
+  Task 376  →  Core  87
+  Task 377  →  Core   1
+  Task 378  →  Core 397
+  Task 379  →  Core 111
+  Task 380  →  Core 423
+  Task 381  →  Core  43
+  Task 382  →  Core  63
+  Task 383  →  Core 466
+  Task 384  →  Core 469
+  Task 385  →  Core 373
+  Task 386  →  Core 132
+  Task 387  →  Core  70
+  Task 388  →  Core   4
+  Task 389  →  Core 484
+  Task 390  →  Core 483
+  Task 391  →  Core  40
+  Task 392  →  Core 133
+  Task 393  →  Core  19
+  Task 394  →  Core  26
+  Task 395  →  Core 395
+  Task 396  →  Core  48
+  Task 397  →  Core 394
+  Task 398  →  Core  69
+  Task 399  →  Core 442
+  Task 400  →  Core 376
+  Task 401  →  Core 377
+  Task 402  →  Core   6
+  Task 403  →  Core 460
+  Task 404  →  Core 437
+  Task 405  →  Core 417
+  Task 406  →  Core 398
+  Task 407  →  Core 107
+  Task 408  →  Core 374
+  Task 409  →  Core 480
+  Task 410  →  Core  91
+  Task 411  →  Core 440
+  Task 412  →  Core  28
+  Task 413  →  Core 457
+  Task 414  →  Core   3
+  Task 415  →  Core  45
+  Task 416  →  Core  84
+  Task 417  →  Core 468
+  Task 418  →  Core 482
+  Task 419  →  Core 109
+  Task 420  →  Core  47
+  Task 421  →  Core 131
+  Task 422  →  Core  61
+  Task 423  →  Core  86
+  Task 424  →  Core 418
+  Task 425  →  Core 110
+  Task 426  →  Core  65
+  Task 427  →  Core 458
+  Task 428  →  Core  68
+  Task 429  →  Core 375
+  Task 430  →  Core  46
+  Task 431  →  Core  62
+  Task 432  →  Core 479
+  Task 433  →  Core 461
+  Task 434  →  Core  24
+  Task 435  →  Core 353
+  Task 436  →  Core  85
+  Task 437  →  Core  20
+  Task 438  →  Core 444
+  Task 439  →  Core 331
+  Task 440  →  Core  90
+  Task 441  →  Core   2
+  Task 442  →  Core 481
+  Task 443  →  Core  41
+  Task 444  →  Core 130
+  Task 445  →  Core  67
+  Task 446  →  Core  17
+  Task 447  →  Core 478
+  Task 448  →  Core 112
+  Task 449  →  Core  16
+  Task 450  →  Core 400
+  Task 451  →  Core 462
+  Task 452  →  Core 154
+  Task 453  →  Core 420
+  Task 454  →  Core  42
+  Task 455  →  Core 422
+  Task 456  →  Core 416
+  Task 457  →  Core 441
+  Task 458  →  Core  44
+  Task 459  →  Core  21
+  Task 460  →  Core 298
+  Task 461  →  Core 208
+  Task 462  →  Core 296
+  Task 463  →  Core 273
+  Task 464  →  Core 274
+  Task 465  →  Core 211
+  Task 466  →  Core 233
+  Task 467  →  Core 210
+  Task 468  →  Core 251
+  Task 469  →  Core 253
+  Task 470  →  Core 254
+  Task 471  →  Core 231
+  Task 472  →  Core 232
+  Task 473  →  Core 275
+  Task 474  →  Core 276
+  Task 475  →  Core 187
+  Task 476  →  Core 209
+  Task 477  →  Core 256
+  Task 478  →  Core 188
+  Task 479  →  Core 252
+  Task 480  →  Core 234
+  Task 481  →  Core 255
+  Task 482  →  Core 277
+  Task 483  →  Core 297
+  Task 484  →  Core 229
+Mapping: [(0, 229), (1, 202), (2, 262), (3, 247), (4, 271), (5, 136), (6, 347), (7, 182), (8, 50), (9, 76), (10, 365), (11, 53), (12, 292), (13, 323), (14, 140), (15, 143), (16, 82), (17, 127), (18, 155), (19, 31), (20, 57), (21, 11), (22, 430), (23, 387), (24, 13), (25, 381), (26, 286), (27, 319), (28, 167), (29, 181), (30, 425), (31, 224), (32, 322), (33, 133), (34, 145), (35, 337), (36, 37), (37, 246), (38, 359), (39, 269), (40, 307), (41, 94), (42, 80), (43, 177), (44, 227), (45, 355), (46, 242), (47, 348), (48, 432), (49, 259), (50, 98), (51, 188), (52, 10), (53, 245), (54, 179), (55, 400), (56, 172), (57, 474), (58, 74), (59, 370), (60, 328), (61, 103), (62, 164), (63, 433), (64, 391), (65, 162), (66, 168), (67, 342), (68, 338), (69, 450), (70, 73), (71, 211), (72, 248), (73, 200), (74, 72), (75, 158), (76, 35), (77, 142), (78, 291), (79, 471), (80, 324), (81, 79), (82, 258), (83, 364), (84, 313), (85, 176), (86, 173), (87, 390), (88, 305), (89, 185), (90, 192), (91, 91), (92, 327), (93, 431), (94, 403), (95, 118), (96, 220), (97, 302), (98, 369), (99, 154), (100, 215), (101, 299), (102, 329), (103, 288), (104, 408), (105, 287), (106, 320), (107, 152), (108, 203), (109, 363), (110, 159), (111, 264), (112, 356), (113, 424), (114, 392), (115, 28), (116, 300), (117, 150), (118, 221), (119, 413), (120, 157), (121, 49), (122, 205), (123, 282), (124, 301), (125, 404), (126, 289), (127, 270), (128, 335), (129, 473), (130, 151), (131, 303), (132, 423), (133, 102), (134, 101), (135, 284), (136, 169), (137, 332), (138, 389), (139, 315), (140, 325), (141, 412), (142, 137), (143, 178), (144, 218), (145, 321), (146, 409), (147, 104), (148, 388), (149, 312), (150, 216), (151, 165), (152, 265), (153, 346), (154, 472), (155, 279), (156, 238), (157, 190), (158, 426), (159, 54), (160, 34), (161, 349), (162, 448), (163, 135), (164, 125), (165, 427), (166, 222), (167, 407), (168, 116), (169, 170), (170, 268), (171, 160), (172, 380), (173, 280), (174, 281), (175, 385), (176, 199), (177, 214), (178, 234), (179, 454), (180, 452), (181, 32), (182, 304), (183, 277), (184, 371), (185, 261), (186, 476), (187, 331), (188, 97), (189, 99), (190, 95), (191, 161), (192, 354), (193, 193), (194, 52), (195, 149), (196, 55), (197, 360), (198, 386), (199, 334), (200, 77), (201, 278), (202, 401), (203, 226), (204, 197), (205, 235), (206, 410), (207, 336), (208, 382), (209, 339), (210, 191), (211, 180), (212, 344), (213, 59), (214, 241), (215, 260), (216, 92), (217, 236), (218, 148), (219, 141), (220, 314), (221, 244), (222, 213), (223, 290), (224, 166), (225, 128), (226, 175), (227, 317), (228, 120), (229, 240), (230, 93), (231, 194), (232, 30), (233, 402), (234, 75), (235, 217), (236, 341), (237, 196), (238, 310), (239, 7), (240, 124), (241, 138), (242, 383), (243, 256), (244, 56), (245, 70), (246, 357), (247, 219), (248, 293), (249, 156), (250, 204), (251, 406), (252, 33), (253, 243), (254, 411), (255, 78), (256, 189), (257, 114), (258, 358), (259, 333), (260, 14), (261, 455), (262, 326), (263, 446), (264, 340), (265, 453), (266, 122), (267, 81), (268, 237), (269, 212), (270, 100), (271, 112), (272, 470), (273, 377), (274, 183), (275, 115), (276, 308), (277, 119), (278, 201), (279, 58), (280, 163), (281, 451), (282, 345), (283, 146), (284, 147), (285, 309), (286, 378), (287, 126), (288, 51), (289, 368), (290, 362), (291, 117), (292, 285), (293, 36), (294, 225), (295, 434), (296, 316), (297, 71), (298, 311), (299, 134), (300, 123), (301, 121), (302, 405), (303, 96), (304, 475), (305, 195), (306, 447), (307, 12), (308, 449), (309, 294), (310, 113), (311, 171), (312, 266), (313, 367), (314, 8), (315, 318), (316, 283), (317, 139), (318, 366), (319, 361), (320, 206), (321, 350), (322, 249), (323, 105), (324, 306), (325, 257), (326, 267), (327, 184), (328, 263), (329, 239), (330, 384), (331, 223), (332, 343), (333, 144), (334, 298), (335, 29), (336, 428), (337, 379), (338, 198), (339, 9), (340, 174), (341, 429), (342, 469), (343, 26), (344, 21), (345, 107), (346, 418), (347, 353), (348, 4), (349, 458), (350, 435), (351, 442), (352, 437), (353, 398), (354, 48), (355, 444), (356, 87), (357, 65), (358, 466), (359, 22), (360, 6), (361, 462), (362, 463), (363, 438), (364, 395), (365, 420), (366, 351), (367, 464), (368, 88), (369, 38), (370, 63), (371, 445), (372, 414), (373, 17), (374, 24), (375, 86), (376, 0), (377, 396), (378, 110), (379, 422), (380, 42), (381, 62), (382, 465), (383, 468), (384, 372), (385, 131), (386, 69), (387, 3), (388, 483), (389, 482), (390, 39), (391, 132), (392, 18), (393, 25), (394, 394), (395, 47), (396, 393), (397, 68), (398, 441), (399, 375), (400, 376), (401, 5), (402, 459), (403, 436), (404, 416), (405, 397), (406, 106), (407, 373), (408, 479), (409, 90), (410, 439), (411, 27), (412, 456), (413, 2), (414, 44), (415, 83), (416, 467), (417, 481), (418, 108), (419, 46), (420, 130), (421, 60), (422, 85), (423, 417), (424, 109), (425, 64), (426, 457), (427, 67), (428, 374), (429, 45), (430, 61), (431, 478), (432, 460), (433, 23), (434, 352), (435, 84), (436, 19), (437, 443), (438, 330), (439, 89), (440, 1), (441, 480), (442, 40), (443, 129), (444, 66), (445, 16), (446, 477), (447, 111), (448, 15), (449, 399), (450, 461), (451, 153), (452, 419), (453, 41), (454, 421), (455, 415), (456, 440), (457, 43), (458, 20), (459, 297), (460, 207), (461, 295), (462, 272), (463, 273), (464, 210), (465, 232), (466, 209), (467, 250), (468, 252), (469, 253), (470, 230), (471, 231), (472, 274), (473, 275), (474, 186), (475, 208), (476, 255), (477, 187), (478, 251), (479, 233), (480, 254), (481, 276), (482, 296), (483, 228)]
+Communication cost: 12362228.0
+  [recorded] 'Baseline'  acc=0.6605  cost=12362228  sp_cost=23839181  edges=4,204,544  neurons=2048
+L1 loop: 1
+  [fine-tune] Epoch   1 | loss 0.6865 | acc 0.8199 f1 0.8203 prec 0.8234 rec 0.8199
+  [fine-tune] Epoch   5 | loss 0.3490 | acc 0.9040 f1 0.9039 prec 0.9050 rec 0.9040
+  [fine-tune] Epoch  10 | loss 0.2150 | acc 0.9345 f1 0.9347 prec 0.9360 rec 0.9345
+  [Step 1/5] Edges removed: 210227/4204544 (5.0%)
+L1 loop: 2
+  [fine-tune] Epoch   1 | loss 0.2290 | acc 0.9453 f1 0.9453 prec 0.9458 rec 0.9453
+  [fine-tune] Epoch   5 | loss 0.1904 | acc 0.9451 f1 0.9450 prec 0.9455 rec 0.9451
+  [fine-tune] Epoch  10 | loss 0.1464 | acc 0.9485 f1 0.9485 prec 0.9496 rec 0.9485
+  [Step 2/5] Edges removed: 420454/4204544 (10.0%)
+L1 loop: 3
+  [fine-tune] Epoch   1 | loss 0.1603 | acc 0.9641 f1 0.9641 prec 0.9643 rec 0.9641
+  [fine-tune] Epoch   5 | loss 0.1298 | acc 0.9553 f1 0.9554 prec 0.9561 rec 0.9553
+  [fine-tune] Epoch  10 | loss 0.1048 | acc 0.9632 f1 0.9632 prec 0.9636 rec 0.9632
+  [Step 3/5] Edges removed: 630681/4204544 (15.0%)
+L1 loop: 4
+  [fine-tune] Epoch   1 | loss 0.1244 | acc 0.9611 f1 0.9612 prec 0.9616 rec 0.9611
+  [fine-tune] Epoch   5 | loss 0.1184 | acc 0.9629 f1 0.9629 prec 0.9634 rec 0.9629
+  [fine-tune] Epoch  10 | loss 0.0821 | acc 0.9763 f1 0.9763 prec 0.9764 rec 0.9763
+  [Step 4/5] Edges removed: 840909/4204544 (20.0%)
+L1 loop: 5
+  [fine-tune] Epoch   1 | loss 0.1071 | acc 0.9796 f1 0.9796 prec 0.9797 rec 0.9796
+  [fine-tune] Epoch   5 | loss 0.0781 | acc 0.9818 f1 0.9818 prec 0.9818 rec 0.9818
+  [fine-tune] Epoch  10 | loss 0.0736 | acc 0.9765 f1 0.9766 prec 0.9767 rec 0.9765
+  [Step 5/5] Edges removed: 1051136/4204544 (25.0%)
+
+=== After iterative L1 pruning (25% removed) ===
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.5998
+F1       : 0.6018
+Precision: 0.6060
+Recall   : 0.5998
+Params   : 3797777 trainable
+State size (approx): 14835.07 KB
+Inference time (avg): batch 1.9078 ms | single 0.033030 ms
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 84.56s
+Best communication cost: 12643159.0000
+Mapping (task → core):
+  Task   1  →  Core 193
+  Task   2  →  Core 429
+  Task   3  →  Core 267
+  Task   4  →  Core 183
+  Task   5  →  Core 310
+  Task   6  →  Core 475
+  Task   7  →  Core 326
+  Task   8  →  Core 240
+  Task   9  →  Core 291
+  Task  10  →  Core 431
+  Task  11  →  Core 448
+  Task  12  →  Core 413
+  Task  13  →  Core 386
+  Task  14  →  Core 405
+  Task  15  →  Core 435
+  Task  16  →  Core 406
+  Task  17  →  Core 392
+  Task  18  →  Core 342
+  Task  19  →  Core 373
+  Task  20  →  Core 306
+  Task  21  →  Core 329
+  Task  22  →  Core 175
+  Task  23  →  Core 305
+  Task  24  →  Core 385
+  Task  25  →  Core 356
+  Task  26  →  Core 244
+  Task  27  →  Core 430
+  Task  28  →  Core 371
+  Task  29  →  Core 261
+  Task  30  →  Core 177
+  Task  31  →  Core 176
+  Task  32  →  Core 414
+  Task  33  →  Core 454
+  Task  34  →  Core 450
+  Task  35  →  Core 476
+  Task  36  →  Core 432
+  Task  37  →  Core 262
+  Task  38  →  Core 286
+  Task  39  →  Core 323
+  Task  40  →  Core 216
+  Task  41  →  Core 327
+  Task  42  →  Core 425
+  Task  43  →  Core 436
+  Task  44  →  Core 407
+  Task  45  →  Core 172
+  Task  46  →  Core 446
+  Task  47  →  Core 403
+  Task  48  →  Core 408
+  Task  49  →  Core 424
+  Task  50  →  Core 304
+  Task  51  →  Core 218
+  Task  52  →  Core 434
+  Task  53  →  Core 384
+  Task  54  →  Core 379
+  Task  55  →  Core 411
+  Task  56  →  Core 238
+  Task  57  →  Core 449
+  Task  58  →  Core 269
+  Task  59  →  Core 350
+  Task  60  →  Core 348
+  Task  61  →  Core 401
+  Task  62  →  Core 308
+  Task  63  →  Core 472
+  Task  64  →  Core 259
+  Task  65  →  Core 309
+  Task  66  →  Core 416
+  Task  67  →  Core 268
+  Task  68  →  Core 194
+  Task  69  →  Core 283
+  Task  70  →  Core 402
+  Task  71  →  Core 404
+  Task  72  →  Core 459
+  Task  73  →  Core 383
+  Task  74  →  Core 266
+  Task  75  →  Core 263
+  Task  76  →  Core 473
+  Task  77  →  Core 390
+  Task  78  →  Core 198
+  Task  79  →  Core 331
+  Task  80  →  Core 355
+  Task  81  →  Core 217
+  Task  82  →  Core 311
+  Task  83  →  Core 284
+  Task  84  →  Core 288
+  Task  85  →  Core 410
+  Task  86  →  Core 334
+  Task  87  →  Core 370
+  Task  88  →  Core 393
+  Task  89  →  Core 349
+  Task  90  →  Core 242
+  Task  91  →  Core 427
+  Task  92  →  Core 364
+  Task  93  →  Core 225
+  Task  94  →  Core 313
+  Task  95  →  Core 382
+  Task  96  →  Core 174
+  Task  97  →  Core 352
+  Task  98  →  Core 328
+  Task  99  →  Core 380
+  Task 100  →  Core 387
+  Task 101  →  Core 451
+  Task 102  →  Core 453
+  Task 103  →  Core 389
+  Task 104  →  Core 372
+  Task 105  →  Core 412
+  Task 106  →  Core 437
+  Task 107  →  Core 289
+  Task 108  →  Core 357
+  Task 109  →  Core 428
+  Task 110  →  Core 294
+  Task 111  →  Core 423
+  Task 112  →  Core 335
+  Task 113  →  Core 274
+  Task 114  →  Core 221
+  Task 115  →  Core 353
+  Task 116  →  Core 447
+  Task 117  →  Core 395
+  Task 118  →  Core 248
+  Task 119  →  Core 307
+  Task 120  →  Core 150
+  Task 121  →  Core 222
+  Task 122  →  Core 409
+  Task 123  →  Core 243
+  Task 124  →  Core 234
+  Task 125  →  Core 471
+  Task 126  →  Core 378
+  Task 127  →  Core 391
+  Task 128  →  Core 445
+  Task 129  →  Core 351
+  Task 130  →  Core 332
+  Task 131  →  Core 282
+  Task 132  →  Core 239
+  Task 133  →  Core 173
+  Task 134  →  Core 426
+  Task 135  →  Core 457
+  Task 136  →  Core 241
+  Task 137  →  Core 197
+  Task 138  →  Core 153
+  Task 139  →  Core 290
+  Task 140  →  Core 374
+  Task 141  →  Core 196
+  Task 142  →  Core 354
+  Task 143  →  Core 455
+  Task 144  →  Core 478
+  Task 145  →  Core 247
+  Task 146  →  Core 415
+  Task 147  →  Core 474
+  Task 148  →  Core 312
+  Task 149  →  Core 219
+  Task 150  →  Core 456
+  Task 151  →  Core 285
+  Task 152  →  Core 151
+  Task 153  →  Core 330
+  Task 154  →  Core 394
+  Task 155  →  Core 452
+  Task 156  →  Core 477
+  Task 157  →  Core 433
+  Task 158  →  Core 336
+  Task 159  →  Core 458
+  Task 160  →  Core 470
+  Task 161  →  Core 469
+  Task 162  →  Core 388
+  Task 163  →  Core 220
+  Task 164  →  Core 376
+  Task 165  →  Core 467
+  Task 166  →  Core 479
+  Task 167  →  Core 260
+  Task 168  →  Core 417
+  Task 169  →  Core 245
+  Task 170  →  Core 422
+  Task 171  →  Core 195
+  Task 172  →  Core 287
+  Task 173  →  Core 154
+  Task 174  →  Core 265
+  Task 175  →  Core 396
+  Task 176  →  Core 199
+  Task 177  →  Core 468
+  Task 178  →  Core 264
+  Task 179  →  Core 438
+  Task 180  →  Core 204
+  Task 181  →  Core  77
+  Task 182  →  Core 181
+  Task 183  →  Core  98
+  Task 184  →  Core 121
+  Task 185  →  Core 141
+  Task 186  →  Core 123
+  Task 187  →  Core 160
+  Task 188  →  Core 125
+  Task 189  →  Core 203
+  Task 190  →  Core 104
+  Task 191  →  Core 333
+  Task 192  →  Core 138
+  Task 193  →  Core 126
+  Task 194  →  Core  75
+  Task 195  →  Core 159
+  Task 196  →  Core  50
+  Task 197  →  Core  79
+  Task 198  →  Core 128
+  Task 199  →  Core 100
+  Task 200  →  Core  97
+  Task 201  →  Core  99
+  Task 202  →  Core 246
+  Task 203  →  Core  11
+  Task 204  →  Core 224
+  Task 205  →  Core  32
+  Task 206  →  Core 202
+  Task 207  →  Core  81
+  Task 208  →  Core  31
+  Task 209  →  Core  96
+  Task 210  →  Core 129
+  Task 211  →  Core   9
+  Task 212  →  Core  74
+  Task 213  →  Core  76
+  Task 214  →  Core 180
+  Task 215  →  Core  78
+  Task 216  →  Core   8
+  Task 217  →  Core  71
+  Task 218  →  Core 130
+  Task 219  →  Core  58
+  Task 220  →  Core  55
+  Task 221  →  Core 102
+  Task 222  →  Core  33
+  Task 223  →  Core 136
+  Task 224  →  Core 131
+  Task 225  →  Core 135
+  Task 226  →  Core 105
+  Task 227  →  Core 117
+  Task 228  →  Core 200
+  Task 229  →  Core  95
+  Task 230  →  Core 137
+  Task 231  →  Core 178
+  Task 232  →  Core  38
+  Task 233  →  Core 133
+  Task 234  →  Core  12
+  Task 235  →  Core  36
+  Task 236  →  Core  52
+  Task 237  →  Core  92
+  Task 238  →  Core 112
+  Task 239  →  Core 179
+  Task 240  →  Core  73
+  Task 241  →  Core  93
+  Task 242  →  Core  10
+  Task 243  →  Core  39
+  Task 244  →  Core  80
+  Task 245  →  Core 103
+  Task 246  →  Core  51
+  Task 247  →  Core 223
+  Task 248  →  Core 106
+  Task 249  →  Core 399
+  Task 250  →  Core 157
+  Task 251  →  Core   7
+  Task 252  →  Core  28
+  Task 253  →  Core 101
+  Task 254  →  Core 400
+  Task 255  →  Core 116
+  Task 256  →  Core  84
+  Task 257  →  Core  34
+  Task 258  →  Core  35
+  Task 259  →  Core 113
+  Task 260  →  Core 158
+  Task 261  →  Core 201
+  Task 262  →  Core  37
+  Task 263  →  Core 134
+  Task 264  →  Core  17
+  Task 265  →  Core 377
+  Task 266  →  Core 107
+  Task 267  →  Core  60
+  Task 268  →  Core 156
+  Task 269  →  Core  53
+  Task 270  →  Core  14
+  Task 271  →  Core 132
+  Task 272  →  Core  94
+  Task 273  →  Core  82
+  Task 274  →  Core  56
+  Task 275  →  Core  83
+  Task 276  →  Core 109
+  Task 277  →  Core 115
+  Task 278  →  Core 108
+  Task 279  →  Core  13
+  Task 280  →  Core  57
+  Task 281  →  Core  85
+  Task 282  →  Core 114
+  Task 283  →  Core  29
+  Task 284  →  Core   6
+  Task 285  →  Core  61
+  Task 286  →  Core  91
+  Task 287  →  Core  86
+  Task 288  →  Core  54
+  Task 289  →  Core  59
+  Task 290  →  Core 152
+  Task 291  →  Core  70
+  Task 292  →  Core  30
+  Task 293  →  Core  72
+  Task 294  →  Core 155
+  Task 295  →  Core  63
+  Task 296  →  Core  15
+  Task 297  →  Core  62
+  Task 298  →  Core  49
+  Task 299  →  Core  16
+  Task 300  →  Core 111
+  Task 301  →  Core  40
+  Task 302  →  Core 480
+  Task 303  →  Core   2
+  Task 304  →  Core  24
+  Task 305  →  Core  23
+  Task 306  →  Core 481
+  Task 307  →  Core 439
+  Task 308  →  Core  44
+  Task 309  →  Core  43
+  Task 310  →  Core  21
+  Task 311  →  Core  69
+  Task 312  →  Core 484
+  Task 313  →  Core 463
+  Task 314  →  Core  89
+  Task 315  →  Core 398
+  Task 316  →  Core 375
+  Task 317  →  Core 465
+  Task 318  →  Core 443
+  Task 319  →  Core  64
+  Task 320  →  Core 466
+  Task 321  →  Core 464
+  Task 322  →  Core 420
+  Task 323  →  Core 419
+  Task 324  →  Core 442
+  Task 325  →  Core 421
+  Task 326  →  Core  42
+  Task 327  →  Core  66
+  Task 328  →  Core 444
+  Task 329  →  Core  87
+  Task 330  →  Core  65
+  Task 331  →  Core 460
+  Task 332  →  Core  47
+  Task 333  →  Core  19
+  Task 334  →  Core  88
+  Task 335  →  Core 110
+  Task 336  →  Core  20
+  Task 337  →  Core  22
+  Task 338  →  Core  46
+  Task 339  →  Core 440
+  Task 340  →  Core 397
+  Task 341  →  Core 482
+  Task 342  →  Core 418
+  Task 343  →  Core 462
+  Task 344  →  Core  18
+  Task 345  →  Core 461
+  Task 346  →  Core 483
+  Task 347  →  Core 441
+  Task 348  →  Core  90
+  Task 349  →  Core  48
+  Task 350  →  Core   5
+  Task 351  →  Core  26
+  Task 352  →  Core  27
+  Task 353  →  Core  68
+  Task 354  →  Core  25
+  Task 355  →  Core   4
+  Task 356  →  Core  45
+  Task 357  →  Core   3
+  Task 358  →  Core  67
+  Task 359  →  Core  41
+  Task 360  →  Core   1
+  Task 361  →  Core 344
+  Task 362  →  Core 207
+  Task 363  →  Core 165
+  Task 364  →  Core 276
+  Task 365  →  Core 362
+  Task 366  →  Core 256
+  Task 367  →  Core 339
+  Task 368  →  Core 236
+  Task 369  →  Core 142
+  Task 370  →  Core 316
+  Task 371  →  Core 118
+  Task 372  →  Core 188
+  Task 373  →  Core 167
+  Task 374  →  Core 361
+  Task 375  →  Core 257
+  Task 376  →  Core 275
+  Task 377  →  Core 139
+  Task 378  →  Core 148
+  Task 379  →  Core 229
+  Task 380  →  Core 146
+  Task 381  →  Core 322
+  Task 382  →  Core 319
+  Task 383  →  Core 127
+  Task 384  →  Core 192
+  Task 385  →  Core 143
+  Task 386  →  Core 314
+  Task 387  →  Core 166
+  Task 388  →  Core 211
+  Task 389  →  Core 293
+  Task 390  →  Core 315
+  Task 391  →  Core 120
+  Task 392  →  Core 171
+  Task 393  →  Core 365
+  Task 394  →  Core 161
+  Task 395  →  Core 189
+  Task 396  →  Core 187
+  Task 397  →  Core 281
+  Task 398  →  Core 325
+  Task 399  →  Core 208
+  Task 400  →  Core 149
+  Task 401  →  Core 168
+  Task 402  →  Core 345
+  Task 403  →  Core 164
+  Task 404  →  Core 233
+  Task 405  →  Core 163
+  Task 406  →  Core 320
+  Task 407  →  Core 358
+  Task 408  →  Core 249
+  Task 409  →  Core 251
+  Task 410  →  Core 190
+  Task 411  →  Core 144
+  Task 412  →  Core 209
+  Task 413  →  Core 303
+  Task 414  →  Core 363
+  Task 415  →  Core 280
+  Task 416  →  Core 279
+  Task 417  →  Core 169
+  Task 418  →  Core 258
+  Task 419  →  Core 212
+  Task 420  →  Core 299
+  Task 421  →  Core 254
+  Task 422  →  Core 253
+  Task 423  →  Core 232
+  Task 424  →  Core 147
+  Task 425  →  Core 381
+  Task 426  →  Core 206
+  Task 427  →  Core 228
+  Task 428  →  Core 321
+  Task 429  →  Core 367
+  Task 430  →  Core 302
+  Task 431  →  Core 252
+  Task 432  →  Core 170
+  Task 433  →  Core 210
+  Task 434  →  Core 292
+  Task 435  →  Core 346
+  Task 436  →  Core 277
+  Task 437  →  Core 182
+  Task 438  →  Core 341
+  Task 439  →  Core 272
+  Task 440  →  Core 227
+  Task 441  →  Core 237
+  Task 442  →  Core 340
+  Task 443  →  Core 230
+  Task 444  →  Core 271
+  Task 445  →  Core 369
+  Task 446  →  Core 337
+  Task 447  →  Core 235
+  Task 448  →  Core 295
+  Task 449  →  Core 231
+  Task 450  →  Core 226
+  Task 451  →  Core 215
+  Task 452  →  Core 191
+  Task 453  →  Core 297
+  Task 454  →  Core 162
+  Task 455  →  Core 122
+  Task 456  →  Core 124
+  Task 457  →  Core 317
+  Task 458  →  Core 300
+  Task 459  →  Core 186
+  Task 460  →  Core 273
+  Task 461  →  Core 301
+  Task 462  →  Core 368
+  Task 463  →  Core 343
+  Task 464  →  Core 214
+  Task 465  →  Core 213
+  Task 466  →  Core 347
+  Task 467  →  Core 298
+  Task 468  →  Core 250
+  Task 469  →  Core 255
+  Task 470  →  Core 366
+  Task 471  →  Core 360
+  Task 472  →  Core 140
+  Task 473  →  Core 359
+  Task 474  →  Core 119
+  Task 475  →  Core 278
+  Task 476  →  Core 184
+  Task 477  →  Core 324
+  Task 478  →  Core 338
+  Task 479  →  Core 318
+  Task 480  →  Core 185
+  Task 481  →  Core 296
+  Task 482  →  Core 270
+  Task 483  →  Core 205
+  Task 484  →  Core 145
+Mapping: [(0, 192), (1, 428), (2, 266), (3, 182), (4, 309), (5, 474), (6, 325), (7, 239), (8, 290), (9, 430), (10, 447), (11, 412), (12, 385), (13, 404), (14, 434), (15, 405), (16, 391), (17, 341), (18, 372), (19, 305), (20, 328), (21, 174), (22, 304), (23, 384), (24, 355), (25, 243), (26, 429), (27, 370), (28, 260), (29, 176), (30, 175), (31, 413), (32, 453), (33, 449), (34, 475), (35, 431), (36, 261), (37, 285), (38, 322), (39, 215), (40, 326), (41, 424), (42, 435), (43, 406), (44, 171), (45, 445), (46, 402), (47, 407), (48, 423), (49, 303), (50, 217), (51, 433), (52, 383), (53, 378), (54, 410), (55, 237), (56, 448), (57, 268), (58, 349), (59, 347), (60, 400), (61, 307), (62, 471), (63, 258), (64, 308), (65, 415), (66, 267), (67, 193), (68, 282), (69, 401), (70, 403), (71, 458), (72, 382), (73, 265), (74, 262), (75, 472), (76, 389), (77, 197), (78, 330), (79, 354), (80, 216), (81, 310), (82, 283), (83, 287), (84, 409), (85, 333), (86, 369), (87, 392), (88, 348), (89, 241), (90, 426), (91, 363), (92, 224), (93, 312), (94, 381), (95, 173), (96, 351), (97, 327), (98, 379), (99, 386), (100, 450), (101, 452), (102, 388), (103, 371), (104, 411), (105, 436), (106, 288), (107, 356), (108, 427), (109, 293), (110, 422), (111, 334), (112, 273), (113, 220), (114, 352), (115, 446), (116, 394), (117, 247), (118, 306), (119, 149), (120, 221), (121, 408), (122, 242), (123, 233), (124, 470), (125, 377), (126, 390), (127, 444), (128, 350), (129, 331), (130, 281), (131, 238), (132, 172), (133, 425), (134, 456), (135, 240), (136, 196), (137, 152), (138, 289), (139, 373), (140, 195), (141, 353), (142, 454), (143, 477), (144, 246), (145, 414), (146, 473), (147, 311), (148, 218), (149, 455), (150, 284), (151, 150), (152, 329), (153, 393), (154, 451), (155, 476), (156, 432), (157, 335), (158, 457), (159, 469), (160, 468), (161, 387), (162, 219), (163, 375), (164, 466), (165, 478), (166, 259), (167, 416), (168, 244), (169, 421), (170, 194), (171, 286), (172, 153), (173, 264), (174, 395), (175, 198), (176, 467), (177, 263), (178, 437), (179, 203), (180, 76), (181, 180), (182, 97), (183, 120), (184, 140), (185, 122), (186, 159), (187, 124), (188, 202), (189, 103), (190, 332), (191, 137), (192, 125), (193, 74), (194, 158), (195, 49), (196, 78), (197, 127), (198, 99), (199, 96), (200, 98), (201, 245), (202, 10), (203, 223), (204, 31), (205, 201), (206, 80), (207, 30), (208, 95), (209, 128), (210, 8), (211, 73), (212, 75), (213, 179), (214, 77), (215, 7), (216, 70), (217, 129), (218, 57), (219, 54), (220, 101), (221, 32), (222, 135), (223, 130), (224, 134), (225, 104), (226, 116), (227, 199), (228, 94), (229, 136), (230, 177), (231, 37), (232, 132), (233, 11), (234, 35), (235, 51), (236, 91), (237, 111), (238, 178), (239, 72), (240, 92), (241, 9), (242, 38), (243, 79), (244, 102), (245, 50), (246, 222), (247, 105), (248, 398), (249, 156), (250, 6), (251, 27), (252, 100), (253, 399), (254, 115), (255, 83), (256, 33), (257, 34), (258, 112), (259, 157), (260, 200), (261, 36), (262, 133), (263, 16), (264, 376), (265, 106), (266, 59), (267, 155), (268, 52), (269, 13), (270, 131), (271, 93), (272, 81), (273, 55), (274, 82), (275, 108), (276, 114), (277, 107), (278, 12), (279, 56), (280, 84), (281, 113), (282, 28), (283, 5), (284, 60), (285, 90), (286, 85), (287, 53), (288, 58), (289, 151), (290, 69), (291, 29), (292, 71), (293, 154), (294, 62), (295, 14), (296, 61), (297, 48), (298, 15), (299, 110), (300, 39), (301, 479), (302, 1), (303, 23), (304, 22), (305, 480), (306, 438), (307, 43), (308, 42), (309, 20), (310, 68), (311, 483), (312, 462), (313, 88), (314, 397), (315, 374), (316, 464), (317, 442), (318, 63), (319, 465), (320, 463), (321, 419), (322, 418), (323, 441), (324, 420), (325, 41), (326, 65), (327, 443), (328, 86), (329, 64), (330, 459), (331, 46), (332, 18), (333, 87), (334, 109), (335, 19), (336, 21), (337, 45), (338, 439), (339, 396), (340, 481), (341, 417), (342, 461), (343, 17), (344, 460), (345, 482), (346, 440), (347, 89), (348, 47), (349, 4), (350, 25), (351, 26), (352, 67), (353, 24), (354, 3), (355, 44), (356, 2), (357, 66), (358, 40), (359, 0), (360, 343), (361, 206), (362, 164), (363, 275), (364, 361), (365, 255), (366, 338), (367, 235), (368, 141), (369, 315), (370, 117), (371, 187), (372, 166), (373, 360), (374, 256), (375, 274), (376, 138), (377, 147), (378, 228), (379, 145), (380, 321), (381, 318), (382, 126), (383, 191), (384, 142), (385, 313), (386, 165), (387, 210), (388, 292), (389, 314), (390, 119), (391, 170), (392, 364), (393, 160), (394, 188), (395, 186), (396, 280), (397, 324), (398, 207), (399, 148), (400, 167), (401, 344), (402, 163), (403, 232), (404, 162), (405, 319), (406, 357), (407, 248), (408, 250), (409, 189), (410, 143), (411, 208), (412, 302), (413, 362), (414, 279), (415, 278), (416, 168), (417, 257), (418, 211), (419, 298), (420, 253), (421, 252), (422, 231), (423, 146), (424, 380), (425, 205), (426, 227), (427, 320), (428, 366), (429, 301), (430, 251), (431, 169), (432, 209), (433, 291), (434, 345), (435, 276), (436, 181), (437, 340), (438, 271), (439, 226), (440, 236), (441, 339), (442, 229), (443, 270), (444, 368), (445, 336), (446, 234), (447, 294), (448, 230), (449, 225), (450, 214), (451, 190), (452, 296), (453, 161), (454, 121), (455, 123), (456, 316), (457, 299), (458, 185), (459, 272), (460, 300), (461, 367), (462, 342), (463, 213), (464, 212), (465, 346), (466, 297), (467, 249), (468, 254), (469, 365), (470, 359), (471, 139), (472, 358), (473, 118), (474, 277), (475, 183), (476, 323), (477, 337), (478, 317), (479, 184), (480, 295), (481, 269), (482, 204), (483, 144)]
+Communication cost: 12643159.0
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 84.09s
+Best communication cost: 12643549.0000
+Mapping (task → core):
+  Task   1  →  Core 140
+  Task   2  →  Core  76
+  Task   3  →  Core 261
+  Task   4  →  Core 247
+  Task   5  →  Core  15
+  Task   6  →  Core  81
+  Task   7  →  Core 115
+  Task   8  →  Core 195
+  Task   9  →  Core  96
+  Task  10  →  Core 319
+  Task  11  →  Core  59
+  Task  12  →  Core   7
+  Task  13  →  Core 181
+  Task  14  →  Core 222
+  Task  15  →  Core 114
+  Task  16  →  Core 180
+  Task  17  →  Core 116
+  Task  18  →  Core 100
+  Task  19  →  Core  70
+  Task  20  →  Core 177
+  Task  21  →  Core 218
+  Task  22  →  Core 175
+  Task  23  →  Core 164
+  Task  24  →  Core  98
+  Task  25  →  Core  33
+  Task  26  →  Core  37
+  Task  27  →  Core 212
+  Task  28  →  Core 246
+  Task  29  →  Core  79
+  Task  30  →  Core  40
+  Task  31  →  Core 309
+  Task  32  →  Core  60
+  Task  33  →  Core  73
+  Task  34  →  Core  57
+  Task  35  →  Core 106
+  Task  36  →  Core  93
+  Task  37  →  Core 225
+  Task  38  →  Core 201
+  Task  39  →  Core 224
+  Task  40  →  Core 268
+  Task  41  →  Core 156
+  Task  42  →  Core 135
+  Task  43  →  Core  10
+  Task  44  →  Core 188
+  Task  45  →  Core 216
+  Task  46  →  Core  69
+  Task  47  →  Core 291
+  Task  48  →  Core 295
+  Task  49  →  Core  14
+  Task  50  →  Core 203
+  Task  51  →  Core 178
+  Task  52  →  Core  32
+  Task  53  →  Core 229
+  Task  54  →  Core  31
+  Task  55  →  Core 313
+  Task  56  →  Core 237
+  Task  57  →  Core  53
+  Task  58  →  Core 145
+  Task  59  →  Core  71
+  Task  60  →  Core 137
+  Task  61  →  Core  12
+  Task  62  →  Core 153
+  Task  63  →  Core  13
+  Task  64  →  Core  99
+  Task  65  →  Core  85
+  Task  66  →  Core 331
+  Task  67  →  Core 245
+  Task  68  →  Core 223
+  Task  69  →  Core 217
+  Task  70  →  Core  95
+  Task  71  →  Core  58
+  Task  72  →  Core  18
+  Task  73  →  Core 101
+  Task  74  →  Core 221
+  Task  75  →  Core 128
+  Task  76  →  Core  27
+  Task  77  →  Core 104
+  Task  78  →  Core 220
+  Task  79  →  Core 131
+  Task  80  →  Core  38
+  Task  81  →  Core 290
+  Task  82  →  Core 241
+  Task  83  →  Core 289
+  Task  84  →  Core 151
+  Task  85  →  Core 159
+  Task  86  →  Core  36
+  Task  87  →  Core 179
+  Task  88  →  Core  51
+  Task  89  →  Core  72
+  Task  90  →  Core  39
+  Task  91  →  Core 127
+  Task  92  →  Core 202
+  Task  93  →  Core 194
+  Task  94  →  Core 238
+  Task  95  →  Core  80
+  Task  96  →  Core 354
+  Task  97  →  Core 133
+  Task  98  →  Core  50
+  Task  99  →  Core  56
+  Task 100  →  Core  55
+  Task 101  →  Core 200
+  Task 102  →  Core 113
+  Task 103  →  Core 157
+  Task 104  →  Core 134
+  Task 105  →  Core 105
+  Task 106  →  Core  92
+  Task 107  →  Core 173
+  Task 108  →  Core 172
+  Task 109  →  Core  30
+  Task 110  →  Core  77
+  Task 111  →  Core  16
+  Task 112  →  Core  82
+  Task 113  →  Core  54
+  Task 114  →  Core 109
+  Task 115  →  Core   6
+  Task 116  →  Core 107
+  Task 117  →  Core   9
+  Task 118  →  Core  35
+  Task 119  →  Core 129
+  Task 120  →  Core 266
+  Task 121  →  Core 334
+  Task 122  →  Core  78
+  Task 123  →  Core 311
+  Task 124  →  Core 136
+  Task 125  →  Core  28
+  Task 126  →  Core 155
+  Task 127  →  Core  52
+  Task 128  →  Core  63
+  Task 129  →  Core 112
+  Task 130  →  Core  62
+  Task 131  →  Core  74
+  Task 132  →  Core 267
+  Task 133  →  Core 197
+  Task 134  →  Core 103
+  Task 135  →  Core  34
+  Task 136  →  Core 288
+  Task 137  →  Core 243
+  Task 138  →  Core 332
+  Task 139  →  Core  11
+  Task 140  →  Core 310
+  Task 141  →  Core 198
+  Task 142  →  Core  17
+  Task 143  →  Core  83
+  Task 144  →  Core 154
+  Task 145  →  Core 244
+  Task 146  →  Core   8
+  Task 147  →  Core 335
+  Task 148  →  Core 150
+  Task 149  →  Core 219
+  Task 150  →  Core  29
+  Task 151  →  Core 312
+  Task 152  →  Core 287
+  Task 153  →  Core  61
+  Task 154  →  Core  49
+  Task 155  →  Core  84
+  Task 156  →  Core 111
+  Task 157  →  Core  75
+  Task 158  →  Core 158
+  Task 159  →  Core  47
+  Task 160  →  Core  91
+  Task 161  →  Core 242
+  Task 162  →  Core  97
+  Task 163  →  Core  90
+  Task 164  →  Core 353
+  Task 165  →  Core 110
+  Task 166  →  Core  68
+  Task 167  →  Core 269
+  Task 168  →  Core 176
+  Task 169  →  Core 360
+  Task 170  →  Core  87
+  Task 171  →  Core 196
+  Task 172  →  Core 264
+  Task 173  →  Core 265
+  Task 174  →  Core 199
+  Task 175  →  Core  26
+  Task 176  →  Core 286
+  Task 177  →  Core  48
+  Task 178  →  Core 132
+  Task 179  →  Core  89
+  Task 180  →  Core 259
+  Task 181  →  Core 366
+  Task 182  →  Core 282
+  Task 183  →  Core 364
+  Task 184  →  Core 281
+  Task 185  →  Core 386
+  Task 186  →  Core 385
+  Task 187  →  Core 384
+  Task 188  →  Core 407
+  Task 189  →  Core 406
+  Task 190  →  Core 404
+  Task 191  →  Core 239
+  Task 192  →  Core 367
+  Task 193  →  Core 405
+  Task 194  →  Core 432
+  Task 195  →  Core 358
+  Task 196  →  Core 330
+  Task 197  →  Core 347
+  Task 198  →  Core 403
+  Task 199  →  Core 383
+  Task 200  →  Core 368
+  Task 201  →  Core 388
+  Task 202  →  Core 326
+  Task 203  →  Core 263
+  Task 204  →  Core 304
+  Task 205  →  Core 426
+  Task 206  →  Core 359
+  Task 207  →  Core 429
+  Task 208  →  Core 329
+  Task 209  →  Core 387
+  Task 210  →  Core 240
+  Task 211  →  Core 414
+  Task 212  →  Core 260
+  Task 213  →  Core 389
+  Task 214  →  Core 431
+  Task 215  →  Core 305
+  Task 216  →  Core 401
+  Task 217  →  Core 371
+  Task 218  →  Core 455
+  Task 219  →  Core 428
+  Task 220  →  Core 357
+  Task 221  →  Core 409
+  Task 222  →  Core 328
+  Task 223  →  Core 356
+  Task 224  →  Core 394
+  Task 225  →  Core 411
+  Task 226  →  Core 369
+  Task 227  →  Core 408
+  Task 228  →  Core 262
+  Task 229  →  Core 306
+  Task 230  →  Core 333
+  Task 231  →  Core 284
+  Task 232  →  Core 392
+  Task 233  →  Core 435
+  Task 234  →  Core 451
+  Task 235  →  Core 450
+  Task 236  →  Core 390
+  Task 237  →  Core 436
+  Task 238  →  Core 352
+  Task 239  →  Core 410
+  Task 240  →  Core 425
+  Task 241  →  Core 433
+  Task 242  →  Core 400
+  Task 243  →  Core 456
+  Task 244  →  Core 391
+  Task 245  →  Core 430
+  Task 246  →  Core 372
+  Task 247  →  Core 382
+  Task 248  →  Core 370
+  Task 249  →  Core 174
+  Task 250  →  Core 452
+  Task 251  →  Core 393
+  Task 252  →  Core 469
+  Task 253  →  Core 427
+  Task 254  →  Core 355
+  Task 255  →  Core 348
+  Task 256  →  Core 413
+  Task 257  →  Core 473
+  Task 258  →  Core 453
+  Task 259  →  Core 285
+  Task 260  →  Core 327
+  Task 261  →  Core 283
+  Task 262  →  Core 378
+  Task 263  →  Core 476
+  Task 264  →  Core 399
+  Task 265  →  Core 152
+  Task 266  →  Core 449
+  Task 267  →  Core 380
+  Task 268  →  Core 130
+  Task 269  →  Core 350
+  Task 270  →  Core 471
+  Task 271  →  Core 445
+  Task 272  →  Core 349
+  Task 273  →  Core 307
+  Task 274  →  Core 381
+  Task 275  →  Core 468
+  Task 276  →  Core 422
+  Task 277  →  Core 454
+  Task 278  →  Core 377
+  Task 279  →  Core 448
+  Task 280  →  Core 402
+  Task 281  →  Core 472
+  Task 282  →  Core 412
+  Task 283  →  Core 108
+  Task 284  →  Core 373
+  Task 285  →  Core 424
+  Task 286  →  Core 457
+  Task 287  →  Core 423
+  Task 288  →  Core 379
+  Task 289  →  Core 470
+  Task 290  →  Core 447
+  Task 291  →  Core 434
+  Task 292  →  Core 477
+  Task 293  →  Core 351
+  Task 294  →  Core 308
+  Task 295  →  Core 446
+  Task 296  →  Core 474
+  Task 297  →  Core 478
+  Task 298  →  Core  86
+  Task 299  →  Core 415
+  Task 300  →  Core 475
+  Task 301  →  Core 376
+  Task 302  →  Core   5
+  Task 303  →  Core 482
+  Task 304  →  Core 440
+  Task 305  →  Core 462
+  Task 306  →  Core 467
+  Task 307  →  Core 479
+  Task 308  →  Core  67
+  Task 309  →  Core  66
+  Task 310  →  Core  20
+  Task 311  →  Core  23
+  Task 312  →  Core  41
+  Task 313  →  Core 421
+  Task 314  →  Core 459
+  Task 315  →  Core  21
+  Task 316  →  Core 420
+  Task 317  →  Core 375
+  Task 318  →  Core  22
+  Task 319  →  Core  65
+  Task 320  →  Core 398
+  Task 321  →  Core 397
+  Task 322  →  Core  25
+  Task 323  →  Core   3
+  Task 324  →  Core 466
+  Task 325  →  Core 443
+  Task 326  →  Core  88
+  Task 327  →  Core  45
+  Task 328  →  Core 442
+  Task 329  →  Core 395
+  Task 330  →  Core   1
+  Task 331  →  Core 419
+  Task 332  →  Core 480
+  Task 333  →  Core  46
+  Task 334  →  Core   2
+  Task 335  →  Core 464
+  Task 336  →  Core  44
+  Task 337  →  Core  19
+  Task 338  →  Core 438
+  Task 339  →  Core  43
+  Task 340  →  Core 465
+  Task 341  →  Core   4
+  Task 342  →  Core 444
+  Task 343  →  Core  64
+  Task 344  →  Core  42
+  Task 345  →  Core 441
+  Task 346  →  Core 374
+  Task 347  →  Core  24
+  Task 348  →  Core 437
+  Task 349  →  Core 460
+  Task 350  →  Core 439
+  Task 351  →  Core 396
+  Task 352  →  Core 458
+  Task 353  →  Core 416
+  Task 354  →  Core 417
+  Task 355  →  Core 481
+  Task 356  →  Core 461
+  Task 357  →  Core 483
+  Task 358  →  Core 418
+  Task 359  →  Core 463
+  Task 360  →  Core 484
+  Task 361  →  Core 165
+  Task 362  →  Core 321
+  Task 363  →  Core 294
+  Task 364  →  Core 187
+  Task 365  →  Core 117
+  Task 366  →  Core 316
+  Task 367  →  Core 122
+  Task 368  →  Core 292
+  Task 369  →  Core 323
+  Task 370  →  Core 170
+  Task 371  →  Core 236
+  Task 372  →  Core 363
+  Task 373  →  Core 338
+  Task 374  →  Core 143
+  Task 375  →  Core 169
+  Task 376  →  Core 337
+  Task 377  →  Core 280
+  Task 378  →  Core 344
+  Task 379  →  Core 234
+  Task 380  →  Core 340
+  Task 381  →  Core 142
+  Task 382  →  Core 167
+  Task 383  →  Core 361
+  Task 384  →  Core 293
+  Task 385  →  Core 345
+  Task 386  →  Core 186
+  Task 387  →  Core 273
+  Task 388  →  Core 275
+  Task 389  →  Core 148
+  Task 390  →  Core 102
+  Task 391  →  Core 346
+  Task 392  →  Core 336
+  Task 393  →  Core 141
+  Task 394  →  Core 298
+  Task 395  →  Core 276
+  Task 396  →  Core 300
+  Task 397  →  Core 204
+  Task 398  →  Core 314
+  Task 399  →  Core 256
+  Task 400  →  Core 230
+  Task 401  →  Core 318
+  Task 402  →  Core 120
+  Task 403  →  Core 278
+  Task 404  →  Core 277
+  Task 405  →  Core 254
+  Task 406  →  Core 146
+  Task 407  →  Core  94
+  Task 408  →  Core 235
+  Task 409  →  Core 248
+  Task 410  →  Core 274
+  Task 411  →  Core 320
+  Task 412  →  Core 255
+  Task 413  →  Core 184
+  Task 414  →  Core 123
+  Task 415  →  Core 163
+  Task 416  →  Core 166
+  Task 417  →  Core 297
+  Task 418  →  Core 210
+  Task 419  →  Core 211
+  Task 420  →  Core 270
+  Task 421  →  Core 232
+  Task 422  →  Core 231
+  Task 423  →  Core 253
+  Task 424  →  Core 362
+  Task 425  →  Core 138
+  Task 426  →  Core 299
+  Task 427  →  Core 341
+  Task 428  →  Core 125
+  Task 429  →  Core 139
+  Task 430  →  Core 226
+  Task 431  →  Core 257
+  Task 432  →  Core 317
+  Task 433  →  Core 343
+  Task 434  →  Core 149
+  Task 435  →  Core 162
+  Task 436  →  Core 296
+  Task 437  →  Core 228
+  Task 438  →  Core 206
+  Task 439  →  Core 192
+  Task 440  →  Core 258
+  Task 441  →  Core 147
+  Task 442  →  Core 160
+  Task 443  →  Core 213
+  Task 444  →  Core 191
+  Task 445  →  Core 161
+  Task 446  →  Core 171
+  Task 447  →  Core 227
+  Task 448  →  Core 233
+  Task 449  →  Core 209
+  Task 450  →  Core 303
+  Task 451  →  Core 271
+  Task 452  →  Core 251
+  Task 453  →  Core 250
+  Task 454  →  Core 214
+  Task 455  →  Core 342
+  Task 456  →  Core 272
+  Task 457  →  Core 190
+  Task 458  →  Core 249
+  Task 459  →  Core 339
+  Task 460  →  Core 325
+  Task 461  →  Core 207
+  Task 462  →  Core 126
+  Task 463  →  Core 119
+  Task 464  →  Core 315
+  Task 465  →  Core 252
+  Task 466  →  Core 182
+  Task 467  →  Core 168
+  Task 468  →  Core 205
+  Task 469  →  Core 208
+  Task 470  →  Core 183
+  Task 471  →  Core 118
+  Task 472  →  Core 301
+  Task 473  →  Core 144
+  Task 474  →  Core 322
+  Task 475  →  Core 185
+  Task 476  →  Core 279
+  Task 477  →  Core 121
+  Task 478  →  Core 124
+  Task 479  →  Core 193
+  Task 480  →  Core 324
+  Task 481  →  Core 189
+  Task 482  →  Core 215
+  Task 483  →  Core 302
+  Task 484  →  Core 365
+Mapping: [(0, 139), (1, 75), (2, 260), (3, 246), (4, 14), (5, 80), (6, 114), (7, 194), (8, 95), (9, 318), (10, 58), (11, 6), (12, 180), (13, 221), (14, 113), (15, 179), (16, 115), (17, 99), (18, 69), (19, 176), (20, 217), (21, 174), (22, 163), (23, 97), (24, 32), (25, 36), (26, 211), (27, 245), (28, 78), (29, 39), (30, 308), (31, 59), (32, 72), (33, 56), (34, 105), (35, 92), (36, 224), (37, 200), (38, 223), (39, 267), (40, 155), (41, 134), (42, 9), (43, 187), (44, 215), (45, 68), (46, 290), (47, 294), (48, 13), (49, 202), (50, 177), (51, 31), (52, 228), (53, 30), (54, 312), (55, 236), (56, 52), (57, 144), (58, 70), (59, 136), (60, 11), (61, 152), (62, 12), (63, 98), (64, 84), (65, 330), (66, 244), (67, 222), (68, 216), (69, 94), (70, 57), (71, 17), (72, 100), (73, 220), (74, 127), (75, 26), (76, 103), (77, 219), (78, 130), (79, 37), (80, 289), (81, 240), (82, 288), (83, 150), (84, 158), (85, 35), (86, 178), (87, 50), (88, 71), (89, 38), (90, 126), (91, 201), (92, 193), (93, 237), (94, 79), (95, 353), (96, 132), (97, 49), (98, 55), (99, 54), (100, 199), (101, 112), (102, 156), (103, 133), (104, 104), (105, 91), (106, 172), (107, 171), (108, 29), (109, 76), (110, 15), (111, 81), (112, 53), (113, 108), (114, 5), (115, 106), (116, 8), (117, 34), (118, 128), (119, 265), (120, 333), (121, 77), (122, 310), (123, 135), (124, 27), (125, 154), (126, 51), (127, 62), (128, 111), (129, 61), (130, 73), (131, 266), (132, 196), (133, 102), (134, 33), (135, 287), (136, 242), (137, 331), (138, 10), (139, 309), (140, 197), (141, 16), (142, 82), (143, 153), (144, 243), (145, 7), (146, 334), (147, 149), (148, 218), (149, 28), (150, 311), (151, 286), (152, 60), (153, 48), (154, 83), (155, 110), (156, 74), (157, 157), (158, 46), (159, 90), (160, 241), (161, 96), (162, 89), (163, 352), (164, 109), (165, 67), (166, 268), (167, 175), (168, 359), (169, 86), (170, 195), (171, 263), (172, 264), (173, 198), (174, 25), (175, 285), (176, 47), (177, 131), (178, 88), (179, 258), (180, 365), (181, 281), (182, 363), (183, 280), (184, 385), (185, 384), (186, 383), (187, 406), (188, 405), (189, 403), (190, 238), (191, 366), (192, 404), (193, 431), (194, 357), (195, 329), (196, 346), (197, 402), (198, 382), (199, 367), (200, 387), (201, 325), (202, 262), (203, 303), (204, 425), (205, 358), (206, 428), (207, 328), (208, 386), (209, 239), (210, 413), (211, 259), (212, 388), (213, 430), (214, 304), (215, 400), (216, 370), (217, 454), (218, 427), (219, 356), (220, 408), (221, 327), (222, 355), (223, 393), (224, 410), (225, 368), (226, 407), (227, 261), (228, 305), (229, 332), (230, 283), (231, 391), (232, 434), (233, 450), (234, 449), (235, 389), (236, 435), (237, 351), (238, 409), (239, 424), (240, 432), (241, 399), (242, 455), (243, 390), (244, 429), (245, 371), (246, 381), (247, 369), (248, 173), (249, 451), (250, 392), (251, 468), (252, 426), (253, 354), (254, 347), (255, 412), (256, 472), (257, 452), (258, 284), (259, 326), (260, 282), (261, 377), (262, 475), (263, 398), (264, 151), (265, 448), (266, 379), (267, 129), (268, 349), (269, 470), (270, 444), (271, 348), (272, 306), (273, 380), (274, 467), (275, 421), (276, 453), (277, 376), (278, 447), (279, 401), (280, 471), (281, 411), (282, 107), (283, 372), (284, 423), (285, 456), (286, 422), (287, 378), (288, 469), (289, 446), (290, 433), (291, 476), (292, 350), (293, 307), (294, 445), (295, 473), (296, 477), (297, 85), (298, 414), (299, 474), (300, 375), (301, 4), (302, 481), (303, 439), (304, 461), (305, 466), (306, 478), (307, 66), (308, 65), (309, 19), (310, 22), (311, 40), (312, 420), (313, 458), (314, 20), (315, 419), (316, 374), (317, 21), (318, 64), (319, 397), (320, 396), (321, 24), (322, 2), (323, 465), (324, 442), (325, 87), (326, 44), (327, 441), (328, 394), (329, 0), (330, 418), (331, 479), (332, 45), (333, 1), (334, 463), (335, 43), (336, 18), (337, 437), (338, 42), (339, 464), (340, 3), (341, 443), (342, 63), (343, 41), (344, 440), (345, 373), (346, 23), (347, 436), (348, 459), (349, 438), (350, 395), (351, 457), (352, 415), (353, 416), (354, 480), (355, 460), (356, 482), (357, 417), (358, 462), (359, 483), (360, 164), (361, 320), (362, 293), (363, 186), (364, 116), (365, 315), (366, 121), (367, 291), (368, 322), (369, 169), (370, 235), (371, 362), (372, 337), (373, 142), (374, 168), (375, 336), (376, 279), (377, 343), (378, 233), (379, 339), (380, 141), (381, 166), (382, 360), (383, 292), (384, 344), (385, 185), (386, 272), (387, 274), (388, 147), (389, 101), (390, 345), (391, 335), (392, 140), (393, 297), (394, 275), (395, 299), (396, 203), (397, 313), (398, 255), (399, 229), (400, 317), (401, 119), (402, 277), (403, 276), (404, 253), (405, 145), (406, 93), (407, 234), (408, 247), (409, 273), (410, 319), (411, 254), (412, 183), (413, 122), (414, 162), (415, 165), (416, 296), (417, 209), (418, 210), (419, 269), (420, 231), (421, 230), (422, 252), (423, 361), (424, 137), (425, 298), (426, 340), (427, 124), (428, 138), (429, 225), (430, 256), (431, 316), (432, 342), (433, 148), (434, 161), (435, 295), (436, 227), (437, 205), (438, 191), (439, 257), (440, 146), (441, 159), (442, 212), (443, 190), (444, 160), (445, 170), (446, 226), (447, 232), (448, 208), (449, 302), (450, 270), (451, 250), (452, 249), (453, 213), (454, 341), (455, 271), (456, 189), (457, 248), (458, 338), (459, 324), (460, 206), (461, 125), (462, 118), (463, 314), (464, 251), (465, 181), (466, 167), (467, 204), (468, 207), (469, 182), (470, 117), (471, 300), (472, 143), (473, 321), (474, 184), (475, 278), (476, 120), (477, 123), (478, 192), (479, 323), (480, 188), (481, 214), (482, 301), (483, 364)]
+Communication cost: 12643549.0
+  [recorded] 'After L1 25% pre-pruning'  acc=0.5998  cost=12643549  sp_cost=18897120  edges=3,153,406  neurons=1653
+
+[Checkpoint] L1 model: 1653 neurons, 3,153,406 edges.
+[Checkpoint] Tolerance anchor: POST-L1 = 0.5998
+[Checkpoint] Hard stop floor : 0.5898 (post-L1 - 1.0%)
+
+======================================================================
+  BRANCH: Q: GA CC_Biased v2 + Bridge-Link
+  Anchor=0.5998  Tolerance=0.0100  Floor=0.5898
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0500  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[Q: GA CC_Biased v2 + Bridge-Link] Starting accuracy: 0.5998
+  [fine-tune] Epoch   1 | loss 0.1096 | acc 0.9710 f1 0.9711 prec 0.9715 rec 0.9710
+  [fine-tune] Epoch   2 | loss 0.0895 | acc 0.9733 f1 0.9733 prec 0.9733 rec 0.9733
+[Q: GA CC_Biased v2 + Bridge-Link] Step   1 (neuron): acc=0.6007  drop=-0.0009  neurons=1650  edges=3,143,266
+  [fine-tune] Epoch   1 | loss 0.1002 | acc 0.9698 f1 0.9698 prec 0.9701 rec 0.9698
+  [fine-tune] Epoch   2 | loss 0.0870 | acc 0.9671 f1 0.9672 prec 0.9678 rec 0.9671
+[Q: GA CC_Biased v2 + Bridge-Link] Step   2 (edge  ): acc=0.5965  drop=+0.0033  neurons=1650  edges=3,080,401
+  [fine-tune] Epoch   1 | loss 0.0959 | acc 0.9793 f1 0.9793 prec 0.9794 rec 0.9793
+  [fine-tune] Epoch   2 | loss 0.0886 | acc 0.9777 f1 0.9777 prec 0.9778 rec 0.9777
+[Q: GA CC_Biased v2 + Bridge-Link] Step   3 (edge  ): acc=0.6014  drop=-0.0016  neurons=1635  edges=3,018,793
+  [fine-tune] Epoch   1 | loss 0.0888 | acc 0.9792 f1 0.9792 prec 0.9793 rec 0.9792
+  [fine-tune] Epoch   2 | loss 0.0854 | acc 0.9815 f1 0.9815 prec 0.9815 rec 0.9815
+[Q: GA CC_Biased v2 + Bridge-Link] Step   4 (edge  ): acc=0.5962  drop=+0.0036  neurons=1628  edges=2,958,418
+  [fine-tune] Epoch   1 | loss 0.0949 | acc 0.9790 f1 0.9790 prec 0.9791 rec 0.9790
+  [fine-tune] Epoch   2 | loss 0.0675 | acc 0.9775 f1 0.9774 prec 0.9776 rec 0.9775
+[Q: GA CC_Biased v2 + Bridge-Link] Step   5 (edge  ): acc=0.5977  drop=+0.0021  neurons=1621  edges=2,899,250
+  [fine-tune] Epoch   1 | loss 0.0924 | acc 0.9808 f1 0.9808 prec 0.9810 rec 0.9808
+  [fine-tune] Epoch   2 | loss 0.0819 | acc 0.9749 f1 0.9749 prec 0.9751 rec 0.9749
+[Q: GA CC_Biased v2 + Bridge-Link] Step   6 (edge  ): acc=0.5928  drop=+0.0070  neurons=1618  edges=2,841,265
+[Q: GA CC_Biased v2 + Bridge-Link] Step 6: neuron tolerance cap (drop=0.0070 ≥ 0.0050). Reserving 0.0030 for edge-only (0.0500).
+[Q: GA CC_Biased v2 + Bridge-Link] → Snapshot at drop≤0.5%: 'Q: GA CC_Biased v2 + Bridge-Link @ drop≤0.5%'
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 79.59s
+Best communication cost: 10397287.0000
+Mapping (task → core):
+  Task   1  →  Core 357
+  Task   2  →  Core 286
+  Task   3  →  Core 307
+  Task   4  →  Core 220
+  Task   5  →  Core 198
+  Task   6  →  Core 242
+  Task   7  →  Core 264
+  Task   8  →  Core 285
+  Task   9  →  Core 308
+  Task  10  →  Core 329
+  Task  11  →  Core 182
+  Task  12  →  Core 214
+  Task  13  →  Core 124
+  Task  14  →  Core 406
+  Task  15  →  Core 140
+  Task  16  →  Core 148
+  Task  17  →  Core 172
+  Task  18  →  Core 145
+  Task  19  →  Core 314
+  Task  20  →  Core 340
+  Task  21  →  Core 101
+  Task  22  →  Core 249
+  Task  23  →  Core 284
+  Task  24  →  Core 326
+  Task  25  →  Core  55
+  Task  26  →  Core  13
+  Task  27  →  Core 174
+  Task  28  →  Core 369
+  Task  29  →  Core 205
+  Task  30  →  Core 346
+  Task  31  →  Core 281
+  Task  32  →  Core 367
+  Task  33  →  Core 142
+  Task  34  →  Core 239
+  Task  35  →  Core 143
+  Task  36  →  Core 119
+  Task  37  →  Core 324
+  Task  38  →  Core 389
+  Task  39  →  Core 408
+  Task  40  →  Core 386
+  Task  41  →  Core 348
+  Task  42  →  Core 151
+  Task  43  →  Core 292
+  Task  44  →  Core 315
+  Task  45  →  Core 343
+  Task  46  →  Core 407
+  Task  47  →  Core 360
+  Task  48  →  Core 388
+  Task  49  →  Core 169
+  Task  50  →  Core 217
+  Task  51  →  Core 196
+  Task  52  →  Core 345
+  Task  53  →  Core 104
+  Task  54  →  Core 100
+  Task  55  →  Core 262
+  Task  56  →  Core 411
+  Task  57  →  Core 368
+  Task  58  →  Core 339
+  Task  59  →  Core 362
+  Task  60  →  Core 197
+  Task  61  →  Core 103
+  Task  62  →  Core 192
+  Task  63  →  Core 183
+  Task  64  →  Core 338
+  Task  65  →  Core  79
+  Task  66  →  Core 271
+  Task  67  →  Core 384
+  Task  68  →  Core 283
+  Task  69  →  Core  99
+  Task  70  →  Core 147
+  Task  71  →  Core 170
+  Task  72  →  Core 327
+  Task  73  →  Core 240
+  Task  74  →  Core  35
+  Task  75  →  Core  36
+  Task  76  →  Core 336
+  Task  77  →  Core 390
+  Task  78  →  Core 364
+  Task  79  →  Core 412
+  Task  80  →  Core 150
+  Task  81  →  Core  78
+  Task  82  →  Core 194
+  Task  83  →  Core 409
+  Task  84  →  Core 282
+  Task  85  →  Core 366
+  Task  86  →  Core 263
+  Task  87  →  Core 451
+  Task  88  →  Core 161
+  Task  89  →  Core 381
+  Task  90  →  Core 385
+  Task  91  →  Core 248
+  Task  92  →  Core  12
+  Task  93  →  Core 126
+  Task  94  →  Core 305
+  Task  95  →  Core 387
+  Task  96  →  Core  98
+  Task  97  →  Core 193
+  Task  98  →  Core 325
+  Task  99  →  Core 473
+  Task 100  →  Core 122
+  Task 101  →  Core 431
+  Task 102  →  Core 383
+  Task 103  →  Core 261
+  Task 104  →  Core 125
+  Task 105  →  Core  77
+  Task 106  →  Core 102
+  Task 107  →  Core 370
+  Task 108  →  Core 259
+  Task 109  →  Core 303
+  Task 110  →  Core 347
+  Task 111  →  Core 215
+  Task 112  →  Core 359
+  Task 113  →  Core 306
+  Task 114  →  Core 316
+  Task 115  →  Core 195
+  Task 116  →  Core 328
+  Task 117  →  Core 226
+  Task 118  →  Core 391
+  Task 119  →  Core 365
+  Task 120  →  Core 474
+  Task 121  →  Core 429
+  Task 122  →  Core  58
+  Task 123  →  Core 344
+  Task 124  →  Core 120
+  Task 125  →  Core 237
+  Task 126  →  Core 141
+  Task 127  →  Core 238
+  Task 128  →  Core 455
+  Task 129  →  Core 432
+  Task 130  →  Core 121
+  Task 131  →  Core 149
+  Task 132  →  Core 363
+  Task 133  →  Core 337
+  Task 134  →  Core 475
+  Task 135  →  Core 173
+  Task 136  →  Core 428
+  Task 137  →  Core 175
+  Task 138  →  Core 171
+  Task 139  →  Core  80
+  Task 140  →  Core 452
+  Task 141  →  Core 241
+  Task 142  →  Core 293
+  Task 143  →  Core 219
+  Task 144  →  Core  97
+  Task 145  →  Core 454
+  Task 146  →  Core 269
+  Task 147  →  Core 302
+  Task 148  →  Core 146
+  Task 149  →  Core 361
+  Task 150  →  Core  57
+  Task 151  →  Core  76
+  Task 152  →  Core 430
+  Task 153  →  Core 123
+  Task 154  →  Core 427
+  Task 155  →  Core 405
+  Task 156  →  Core  81
+  Task 157  →  Core 410
+  Task 158  →  Core 216
+  Task 159  →  Core 453
+  Task 160  →  Core  34
+  Task 161  →  Core 127
+  Task 162  →  Core 105
+  Task 163  →  Core 218
+  Task 164  →  Core 260
+  Task 165  →  Core 304
+  Task 166  →  Core 270
+  Task 167  →  Core 433
+  Task 168  →  Core 349
+  Task 169  →  Core 382
+  Task 170  →  Core 476
+  Task 171  →  Core  82
+  Task 172  →  Core 204
+  Task 173  →  Core  59
+  Task 174  →  Core 162
+  Task 175  →  Core 434
+  Task 176  →  Core 450
+  Task 177  →  Core 472
+  Task 178  →  Core  56
+  Task 179  →  Core  37
+  Task 180  →  Core 160
+  Task 181  →  Core 225
+  Task 182  →  Core 245
+  Task 183  →  Core 291
+  Task 184  →  Core 181
+  Task 185  →  Core 404
+  Task 186  →  Core 139
+  Task 187  →  Core 290
+  Task 188  →  Core 247
+  Task 189  →  Core 403
+  Task 190  →  Core 224
+  Task 191  →  Core  11
+  Task 192  →  Core 267
+  Task 193  →  Core 180
+  Task 194  →  Core 116
+  Task 195  →  Core  75
+  Task 196  →  Core 358
+  Task 197  →  Core 313
+  Task 198  →  Core 118
+  Task 199  →  Core 223
+  Task 200  →  Core  96
+  Task 201  →  Core 246
+  Task 202  →  Core 138
+  Task 203  →  Core 137
+  Task 204  →  Core  53
+  Task 205  →  Core  33
+  Task 206  →  Core 117
+  Task 207  →  Core 158
+  Task 208  →  Core 157
+  Task 209  →  Core  74
+  Task 210  →  Core 289
+  Task 211  →  Core 159
+  Task 212  →  Core 202
+  Task 213  →  Core 244
+  Task 214  →  Core 335
+  Task 215  →  Core  31
+  Task 216  →  Core  95
+  Task 217  →  Core 200
+  Task 218  →  Core 287
+  Task 219  →  Core 222
+  Task 220  →  Core 201
+  Task 221  →  Core 243
+  Task 222  →  Core 334
+  Task 223  →  Core 178
+  Task 224  →  Core 203
+  Task 225  →  Core 310
+  Task 226  →  Core 268
+  Task 227  →  Core 426
+  Task 228  →  Core  54
+  Task 229  →  Core 177
+  Task 230  →  Core 449
+  Task 231  →  Core  30
+  Task 232  →  Core 312
+  Task 233  →  Core 266
+  Task 234  →  Core  32
+  Task 235  →  Core 311
+  Task 236  →  Core 265
+  Task 237  →  Core 199
+  Task 238  →  Core 221
+  Task 239  →  Core 288
+  Task 240  →  Core  10
+  Task 241  →  Core 179
+  Task 242  →  Core  52
+  Task 243  →  Core   9
+  Task 244  →  Core  23
+  Task 245  →  Core  24
+  Task 246  →  Core 397
+  Task 247  →  Core 398
+  Task 248  →  Core  21
+  Task 249  →  Core 440
+  Task 250  →  Core  44
+  Task 251  →  Core  43
+  Task 252  →  Core 465
+  Task 253  →  Core 421
+  Task 254  →  Core 483
+  Task 255  →  Core 467
+  Task 256  →  Core 420
+  Task 257  →  Core 461
+  Task 258  →  Core  68
+  Task 259  →  Core  18
+  Task 260  →  Core   6
+  Task 261  →  Core  88
+  Task 262  →  Core  89
+  Task 263  →  Core 441
+  Task 264  →  Core 460
+  Task 265  →  Core 442
+  Task 266  →  Core 111
+  Task 267  →  Core 481
+  Task 268  →  Core  47
+  Task 269  →  Core 419
+  Task 270  →  Core 444
+  Task 271  →  Core  26
+  Task 272  →  Core  66
+  Task 273  →  Core 375
+  Task 274  →  Core  65
+  Task 275  →  Core  42
+  Task 276  →  Core 463
+  Task 277  →  Core 464
+  Task 278  →  Core   5
+  Task 279  →  Core 484
+  Task 280  →  Core 466
+  Task 281  →  Core 439
+  Task 282  →  Core 418
+  Task 283  →  Core 462
+  Task 284  →  Core  19
+  Task 285  →  Core 482
+  Task 286  →  Core  20
+  Task 287  →  Core 443
+  Task 288  →  Core  90
+  Task 289  →  Core  45
+  Task 290  →  Core  46
+  Task 291  →  Core  67
+  Task 292  →  Core   3
+  Task 293  →  Core   2
+  Task 294  →  Core  25
+  Task 295  →  Core   4
+  Task 296  →  Core  22
+  Task 297  →  Core   1
+  Task 298  →  Core 131
+  Task 299  →  Core 130
+  Task 300  →  Core 354
+  Task 301  →  Core  17
+  Task 302  →  Core 154
+  Task 303  →  Core 471
+  Task 304  →  Core 437
+  Task 305  →  Core 355
+  Task 306  →  Core 373
+  Task 307  →  Core 109
+  Task 308  →  Core 478
+  Task 309  →  Core 377
+  Task 310  →  Core 395
+  Task 311  →  Core  41
+  Task 312  →  Core 459
+  Task 313  →  Core 468
+  Task 314  →  Core 435
+  Task 315  →  Core 372
+  Task 316  →  Core  62
+  Task 317  →  Core 469
+  Task 318  →  Core 413
+  Task 319  →  Core 351
+  Task 320  →  Core 445
+  Task 321  →  Core 457
+  Task 322  →  Core 350
+  Task 323  →  Core 436
+  Task 324  →  Core 424
+  Task 325  →  Core 379
+  Task 326  →  Core 415
+  Task 327  →  Core 396
+  Task 328  →  Core 133
+  Task 329  →  Core 470
+  Task 330  →  Core  64
+  Task 331  →  Core 447
+  Task 332  →  Core 353
+  Task 333  →  Core  39
+  Task 334  →  Core 448
+  Task 335  →  Core 132
+  Task 336  →  Core 417
+  Task 337  →  Core 371
+  Task 338  →  Core  15
+  Task 339  →  Core 416
+  Task 340  →  Core 399
+  Task 341  →  Core 112
+  Task 342  →  Core 129
+  Task 343  →  Core  61
+  Task 344  →  Core 110
+  Task 345  →  Core 108
+  Task 346  →  Core 401
+  Task 347  →  Core 309
+  Task 348  →  Core 356
+  Task 349  →  Core 331
+  Task 350  →  Core  85
+  Task 351  →  Core  87
+  Task 352  →  Core  50
+  Task 353  →  Core 446
+  Task 354  →  Core 400
+  Task 355  →  Core 392
+  Task 356  →  Core 477
+  Task 357  →  Core 206
+  Task 358  →  Core 208
+  Task 359  →  Core 184
+  Task 360  →  Core 272
+  Task 361  →  Core 227
+  Task 362  →  Core 168
+  Task 363  →  Core 294
+  Task 364  →  Core 296
+  Task 365  →  Core 188
+  Task 366  →  Core 191
+  Task 367  →  Core 167
+  Task 368  →  Core 280
+  Task 369  →  Core 229
+  Task 370  →  Core 233
+  Task 371  →  Core 235
+  Task 372  →  Core 322
+  Task 373  →  Core 230
+  Task 374  →  Core 187
+  Task 375  →  Core 342
+  Task 376  →  Core 190
+  Task 377  →  Core 253
+  Task 378  →  Core 231
+  Task 379  →  Core 232
+  Task 380  →  Core 228
+  Task 381  →  Core 274
+  Task 382  →  Core 298
+  Task 383  →  Core 279
+  Task 384  →  Core 144
+  Task 385  →  Core 276
+  Task 386  →  Core 210
+  Task 387  →  Core 318
+  Task 388  →  Core 212
+  Task 389  →  Core 299
+  Task 390  →  Core 317
+  Task 391  →  Core 211
+  Task 392  →  Core 251
+  Task 393  →  Core 207
+  Task 394  →  Core 323
+  Task 395  →  Core 273
+  Task 396  →  Core 250
+  Task 397  →  Core 164
+  Task 398  →  Core 213
+  Task 399  →  Core 166
+  Task 400  →  Core 236
+  Task 401  →  Core 189
+  Task 402  →  Core 252
+  Task 403  →  Core 258
+  Task 404  →  Core 257
+  Task 405  →  Core 319
+  Task 406  →  Core 255
+  Task 407  →  Core 341
+  Task 408  →  Core 321
+  Task 409  →  Core 275
+  Task 410  →  Core 278
+  Task 411  →  Core 234
+  Task 412  →  Core 185
+  Task 413  →  Core 209
+  Task 414  →  Core 277
+  Task 415  →  Core 301
+  Task 416  →  Core 300
+  Task 417  →  Core 165
+  Task 418  →  Core 297
+  Task 419  →  Core 295
+  Task 420  →  Core 256
+  Task 421  →  Core 186
+  Task 422  →  Core 254
+  Task 423  →  Core 320
+  Task 424  →  Core 163
+  Task 425  →  Core 153
+  Task 426  →  Core  40
+  Task 427  →  Core  73
+  Task 428  →  Core  29
+  Task 429  →  Core 155
+  Task 430  →  Core  91
+  Task 431  →  Core  63
+  Task 432  →  Core 393
+  Task 433  →  Core 134
+  Task 434  →  Core  27
+  Task 435  →  Core  16
+  Task 436  →  Core 376
+  Task 437  →  Core 333
+  Task 438  →  Core 425
+  Task 439  →  Core 414
+  Task 440  →  Core 456
+  Task 441  →  Core 438
+  Task 442  →  Core  69
+  Task 443  →  Core  83
+  Task 444  →  Core  93
+  Task 445  →  Core  92
+  Task 446  →  Core   7
+  Task 447  →  Core 352
+  Task 448  →  Core  49
+  Task 449  →  Core  38
+  Task 450  →  Core  60
+  Task 451  →  Core  84
+  Task 452  →  Core  70
+  Task 453  →  Core 114
+  Task 454  →  Core 106
+  Task 455  →  Core 374
+  Task 456  →  Core 113
+  Task 457  →  Core  86
+  Task 458  →  Core  72
+  Task 459  →  Core 380
+  Task 460  →  Core 115
+  Task 461  →  Core 136
+  Task 462  →  Core 423
+  Task 463  →  Core 422
+  Task 464  →  Core 394
+  Task 465  →  Core 378
+  Task 466  →  Core  94
+  Task 467  →  Core 330
+  Task 468  →  Core   8
+  Task 469  →  Core  48
+  Task 470  →  Core 128
+  Task 471  →  Core 176
+  Task 472  →  Core 458
+  Task 473  →  Core 479
+  Task 474  →  Core 332
+  Task 475  →  Core 156
+  Task 476  →  Core 402
+  Task 477  →  Core  51
+  Task 478  →  Core 107
+  Task 479  →  Core  28
+  Task 480  →  Core  14
+  Task 481  →  Core 152
+  Task 482  →  Core 135
+  Task 483  →  Core 480
+  Task 484  →  Core  71
+Mapping: [(0, 356), (1, 285), (2, 306), (3, 219), (4, 197), (5, 241), (6, 263), (7, 284), (8, 307), (9, 328), (10, 181), (11, 213), (12, 123), (13, 405), (14, 139), (15, 147), (16, 171), (17, 144), (18, 313), (19, 339), (20, 100), (21, 248), (22, 283), (23, 325), (24, 54), (25, 12), (26, 173), (27, 368), (28, 204), (29, 345), (30, 280), (31, 366), (32, 141), (33, 238), (34, 142), (35, 118), (36, 323), (37, 388), (38, 407), (39, 385), (40, 347), (41, 150), (42, 291), (43, 314), (44, 342), (45, 406), (46, 359), (47, 387), (48, 168), (49, 216), (50, 195), (51, 344), (52, 103), (53, 99), (54, 261), (55, 410), (56, 367), (57, 338), (58, 361), (59, 196), (60, 102), (61, 191), (62, 182), (63, 337), (64, 78), (65, 270), (66, 383), (67, 282), (68, 98), (69, 146), (70, 169), (71, 326), (72, 239), (73, 34), (74, 35), (75, 335), (76, 389), (77, 363), (78, 411), (79, 149), (80, 77), (81, 193), (82, 408), (83, 281), (84, 365), (85, 262), (86, 450), (87, 160), (88, 380), (89, 384), (90, 247), (91, 11), (92, 125), (93, 304), (94, 386), (95, 97), (96, 192), (97, 324), (98, 472), (99, 121), (100, 430), (101, 382), (102, 260), (103, 124), (104, 76), (105, 101), (106, 369), (107, 258), (108, 302), (109, 346), (110, 214), (111, 358), (112, 305), (113, 315), (114, 194), (115, 327), (116, 225), (117, 390), (118, 364), (119, 473), (120, 428), (121, 57), (122, 343), (123, 119), (124, 236), (125, 140), (126, 237), (127, 454), (128, 431), (129, 120), (130, 148), (131, 362), (132, 336), (133, 474), (134, 172), (135, 427), (136, 174), (137, 170), (138, 79), (139, 451), (140, 240), (141, 292), (142, 218), (143, 96), (144, 453), (145, 268), (146, 301), (147, 145), (148, 360), (149, 56), (150, 75), (151, 429), (152, 122), (153, 426), (154, 404), (155, 80), (156, 409), (157, 215), (158, 452), (159, 33), (160, 126), (161, 104), (162, 217), (163, 259), (164, 303), (165, 269), (166, 432), (167, 348), (168, 381), (169, 475), (170, 81), (171, 203), (172, 58), (173, 161), (174, 433), (175, 449), (176, 471), (177, 55), (178, 36), (179, 159), (180, 224), (181, 244), (182, 290), (183, 180), (184, 403), (185, 138), (186, 289), (187, 246), (188, 402), (189, 223), (190, 10), (191, 266), (192, 179), (193, 115), (194, 74), (195, 357), (196, 312), (197, 117), (198, 222), (199, 95), (200, 245), (201, 137), (202, 136), (203, 52), (204, 32), (205, 116), (206, 157), (207, 156), (208, 73), (209, 288), (210, 158), (211, 201), (212, 243), (213, 334), (214, 30), (215, 94), (216, 199), (217, 286), (218, 221), (219, 200), (220, 242), (221, 333), (222, 177), (223, 202), (224, 309), (225, 267), (226, 425), (227, 53), (228, 176), (229, 448), (230, 29), (231, 311), (232, 265), (233, 31), (234, 310), (235, 264), (236, 198), (237, 220), (238, 287), (239, 9), (240, 178), (241, 51), (242, 8), (243, 22), (244, 23), (245, 396), (246, 397), (247, 20), (248, 439), (249, 43), (250, 42), (251, 464), (252, 420), (253, 482), (254, 466), (255, 419), (256, 460), (257, 67), (258, 17), (259, 5), (260, 87), (261, 88), (262, 440), (263, 459), (264, 441), (265, 110), (266, 480), (267, 46), (268, 418), (269, 443), (270, 25), (271, 65), (272, 374), (273, 64), (274, 41), (275, 462), (276, 463), (277, 4), (278, 483), (279, 465), (280, 438), (281, 417), (282, 461), (283, 18), (284, 481), (285, 19), (286, 442), (287, 89), (288, 44), (289, 45), (290, 66), (291, 2), (292, 1), (293, 24), (294, 3), (295, 21), (296, 0), (297, 130), (298, 129), (299, 353), (300, 16), (301, 153), (302, 470), (303, 436), (304, 354), (305, 372), (306, 108), (307, 477), (308, 376), (309, 394), (310, 40), (311, 458), (312, 467), (313, 434), (314, 371), (315, 61), (316, 468), (317, 412), (318, 350), (319, 444), (320, 456), (321, 349), (322, 435), (323, 423), (324, 378), (325, 414), (326, 395), (327, 132), (328, 469), (329, 63), (330, 446), (331, 352), (332, 38), (333, 447), (334, 131), (335, 416), (336, 370), (337, 14), (338, 415), (339, 398), (340, 111), (341, 128), (342, 60), (343, 109), (344, 107), (345, 400), (346, 308), (347, 355), (348, 330), (349, 84), (350, 86), (351, 49), (352, 445), (353, 399), (354, 391), (355, 476), (356, 205), (357, 207), (358, 183), (359, 271), (360, 226), (361, 167), (362, 293), (363, 295), (364, 187), (365, 190), (366, 166), (367, 279), (368, 228), (369, 232), (370, 234), (371, 321), (372, 229), (373, 186), (374, 341), (375, 189), (376, 252), (377, 230), (378, 231), (379, 227), (380, 273), (381, 297), (382, 278), (383, 143), (384, 275), (385, 209), (386, 317), (387, 211), (388, 298), (389, 316), (390, 210), (391, 250), (392, 206), (393, 322), (394, 272), (395, 249), (396, 163), (397, 212), (398, 165), (399, 235), (400, 188), (401, 251), (402, 257), (403, 256), (404, 318), (405, 254), (406, 340), (407, 320), (408, 274), (409, 277), (410, 233), (411, 184), (412, 208), (413, 276), (414, 300), (415, 299), (416, 164), (417, 296), (418, 294), (419, 255), (420, 185), (421, 253), (422, 319), (423, 162), (424, 152), (425, 39), (426, 72), (427, 28), (428, 154), (429, 90), (430, 62), (431, 392), (432, 133), (433, 26), (434, 15), (435, 375), (436, 332), (437, 424), (438, 413), (439, 455), (440, 437), (441, 68), (442, 82), (443, 92), (444, 91), (445, 6), (446, 351), (447, 48), (448, 37), (449, 59), (450, 83), (451, 69), (452, 113), (453, 105), (454, 373), (455, 112), (456, 85), (457, 71), (458, 379), (459, 114), (460, 135), (461, 422), (462, 421), (463, 393), (464, 377), (465, 93), (466, 329), (467, 7), (468, 47), (469, 127), (470, 175), (471, 457), (472, 478), (473, 331), (474, 155), (475, 401), (476, 50), (477, 106), (478, 27), (479, 13), (480, 151), (481, 134), (482, 479), (483, 70)]
+Communication cost: 10397287.0
+  [recorded] 'Q: GA CC_Biased v2 + Bridge-Link @ drop≤0.5%'  acc=0.5928  cost=10397287  sp_cost=15184029  edges=2,841,265  neurons=1618
+  [fine-tune] Epoch   1 | loss 0.0881 | acc 0.9797 f1 0.9797 prec 0.9799 rec 0.9797
+  [fine-tune] Epoch   2 | loss 0.0710 | acc 0.9772 f1 0.9772 prec 0.9773 rec 0.9772
+[Q: GA CC_Biased v2 + Bridge-Link] Step   7 (edge* ): acc=0.6030  drop=-0.0032  neurons=1616  edges=2,699,202
+  [fine-tune] Epoch   1 | loss 0.0810 | acc 0.9821 f1 0.9821 prec 0.9822 rec 0.9821
+  [fine-tune] Epoch   2 | loss 0.0712 | acc 0.9832 f1 0.9832 prec 0.9833 rec 0.9832
+[Q: GA CC_Biased v2 + Bridge-Link] Step   8 (edge* ): acc=0.6059  drop=-0.0061  neurons=1612  edges=2,564,242
+  [fine-tune] Epoch   1 | loss 0.0736 | acc 0.9780 f1 0.9779 prec 0.9781 rec 0.9780
+  [fine-tune] Epoch   2 | loss 0.0846 | acc 0.9807 f1 0.9807 prec 0.9809 rec 0.9807
+[Q: GA CC_Biased v2 + Bridge-Link] Step   9 (edge* ): acc=0.6083  drop=-0.0085  neurons=1607  edges=2,436,030
+  [fine-tune] Epoch   1 | loss 0.0763 | acc 0.9846 f1 0.9846 prec 0.9847 rec 0.9846
+  [fine-tune] Epoch   2 | loss 0.0592 | acc 0.9738 f1 0.9738 prec 0.9739 rec 0.9738
+[Q: GA CC_Biased v2 + Bridge-Link] Step  10 (edge* ): acc=0.5960  drop=+0.0038  neurons=1605  edges=2,314,229
+  [fine-tune] Epoch   1 | loss 0.0729 | acc 0.9836 f1 0.9837 prec 0.9838 rec 0.9836
+  [fine-tune] Epoch   2 | loss 0.0597 | acc 0.9827 f1 0.9827 prec 0.9828 rec 0.9827
+[Q: GA CC_Biased v2 + Bridge-Link] Step  11 (edge* ): acc=0.6033  drop=-0.0035  neurons=1603  edges=2,198,518
+  [fine-tune] Epoch   1 | loss 0.0683 | acc 0.9785 f1 0.9785 prec 0.9787 rec 0.9785
+  [fine-tune] Epoch   2 | loss 0.0558 | acc 0.9765 f1 0.9765 prec 0.9768 rec 0.9765
+[Q: GA CC_Biased v2 + Bridge-Link] Step  12 (edge* ): acc=0.5958  drop=+0.0040  neurons=1603  edges=2,088,593
+  [fine-tune] Epoch   1 | loss 0.0679 | acc 0.9833 f1 0.9833 prec 0.9835 rec 0.9833
+  [fine-tune] Epoch   2 | loss 0.0577 | acc 0.9796 f1 0.9796 prec 0.9799 rec 0.9796
+[Q: GA CC_Biased v2 + Bridge-Link] Step  13 (edge* ): acc=0.5958  drop=+0.0040  neurons=1602  edges=1,984,164
+  [fine-tune] Epoch   1 | loss 0.0646 | acc 0.9862 f1 0.9862 prec 0.9862 rec 0.9862
+  [fine-tune] Epoch   2 | loss 0.0635 | acc 0.9721 f1 0.9721 prec 0.9725 rec 0.9721
+[Q: GA CC_Biased v2 + Bridge-Link] Step  14 (edge* ): acc=0.5895  drop=+0.0103  neurons=1602  edges=1,884,956
+[Q: GA CC_Biased v2 + Bridge-Link] Tolerance exceeded (drop=0.0103). Reverting.
+
+[Q: GA CC_Biased v2 + Bridge-Link] Finished. 14 steps. Final: acc=0.5958  neurons=1602  edges=1,984,164
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.5958
+F1       : 0.5970
+Precision: 0.6008
+Recall   : 0.5958
+Params   : 3737135 trainable
+State size (approx): 14598.18 KB
+Inference time (avg): batch 1.8951 ms | single 0.030958 ms
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 81.43s
+Best communication cost: 7630110.0000
+Mapping (task → core):
+  Task   1  →  Core 432
+  Task   2  →  Core 238
+  Task   3  →  Core 127
+  Task   4  →  Core 215
+  Task   5  →  Core 260
+  Task   6  →  Core 194
+  Task   7  →  Core 149
+  Task   8  →  Core 169
+  Task   9  →  Core 103
+  Task  10  →  Core 123
+  Task  11  →  Core 126
+  Task  12  →  Core 106
+  Task  13  →  Core 190
+  Task  14  →  Core 170
+  Task  15  →  Core 129
+  Task  16  →  Core 239
+  Task  17  →  Core 172
+  Task  18  →  Core  78
+  Task  19  →  Core 166
+  Task  20  →  Core 101
+  Task  21  →  Core 167
+  Task  22  →  Core 171
+  Task  23  →  Core 168
+  Task  24  →  Core 125
+  Task  25  →  Core  79
+  Task  26  →  Core 283
+  Task  27  →  Core  55
+  Task  28  →  Core 193
+  Task  29  →  Core 105
+  Task  30  →  Core 236
+  Task  31  →  Core 212
+  Task  32  →  Core 192
+  Task  33  →  Core  57
+  Task  34  →  Core  82
+  Task  35  →  Core  81
+  Task  36  →  Core 100
+  Task  37  →  Core  84
+  Task  38  →  Core  85
+  Task  39  →  Core  99
+  Task  40  →  Core  76
+  Task  41  →  Core 120
+  Task  42  →  Core 148
+  Task  43  →  Core 146
+  Task  44  →  Core  77
+  Task  45  →  Core 108
+  Task  46  →  Core 216
+  Task  47  →  Core 124
+  Task  48  →  Core 144
+  Task  49  →  Core 102
+  Task  50  →  Core  83
+  Task  51  →  Core 128
+  Task  52  →  Core 150
+  Task  53  →  Core 143
+  Task  54  →  Core 104
+  Task  55  →  Core 217
+  Task  56  →  Core 213
+  Task  57  →  Core 261
+  Task  58  →  Core 107
+  Task  59  →  Core 189
+  Task  60  →  Core 122
+  Task  61  →  Core 173
+  Task  62  →  Core  75
+  Task  63  →  Core 121
+  Task  64  →  Core 214
+  Task  65  →  Core 145
+  Task  66  →  Core 298
+  Task  67  →  Core 151
+  Task  68  →  Core 259
+  Task  69  →  Core 195
+  Task  70  →  Core 345
+  Task  71  →  Core 210
+  Task  72  →  Core 228
+  Task  73  →  Core 280
+  Task  74  →  Core 275
+  Task  75  →  Core 235
+  Task  76  →  Core 303
+  Task  77  →  Core 161
+  Task  78  →  Core 274
+  Task  79  →  Core 252
+  Task  80  →  Core 297
+  Task  81  →  Core 256
+  Task  82  →  Core 322
+  Task  83  →  Core 232
+  Task  84  →  Core 319
+  Task  85  →  Core 300
+  Task  86  →  Core 320
+  Task  87  →  Core 208
+  Task  88  →  Core 254
+  Task  89  →  Core  72
+  Task  90  →  Core 226
+  Task  91  →  Core 164
+  Task  92  →  Core 318
+  Task  93  →  Core 140
+  Task  94  →  Core 278
+  Task  95  →  Core 211
+  Task  96  →  Core 142
+  Task  97  →  Core 257
+  Task  98  →  Core 186
+  Task  99  →  Core 279
+  Task 100  →  Core 304
+  Task 101  →  Core 367
+  Task 102  →  Core 184
+  Task 103  →  Core 323
+  Task 104  →  Core 207
+  Task 105  →  Core 183
+  Task 106  →  Core 346
+  Task 107  →  Core  96
+  Task 108  →  Core 231
+  Task 109  →  Core 205
+  Task 110  →  Core 325
+  Task 111  →  Core 277
+  Task 112  →  Core 302
+  Task 113  →  Core 273
+  Task 114  →  Core 253
+  Task 115  →  Core 342
+  Task 116  →  Core 248
+  Task 117  →  Core 187
+  Task 118  →  Core 233
+  Task 119  →  Core 182
+  Task 120  →  Core 230
+  Task 121  →  Core 348
+  Task 122  →  Core 366
+  Task 123  →  Core 118
+  Task 124  →  Core 272
+  Task 125  →  Core 296
+  Task 126  →  Core 255
+  Task 127  →  Core 163
+  Task 128  →  Core 227
+  Task 129  →  Core 249
+  Task 130  →  Core 281
+  Task 131  →  Core 292
+  Task 132  →  Core 269
+  Task 133  →  Core 339
+  Task 134  →  Core 291
+  Task 135  →  Core 338
+  Task 136  →  Core 383
+  Task 137  →  Core 290
+  Task 138  →  Core 312
+  Task 139  →  Core 337
+  Task 140  →  Core 382
+  Task 141  →  Core 361
+  Task 142  →  Core 313
+  Task 143  →  Core 336
+  Task 144  →  Core 314
+  Task 145  →  Core 405
+  Task 146  →  Core 404
+  Task 147  →  Core 381
+  Task 148  →  Core 359
+  Task 149  →  Core 335
+  Task 150  →  Core 334
+  Task 151  →  Core 380
+  Task 152  →  Core 357
+  Task 153  →  Core 358
+  Task 154  →  Core 360
+  Task 155  →  Core 403
+  Task 156  →  Core 379
+  Task 157  →  Core 311
+  Task 158  →  Core 356
+  Task 159  →  Core 289
+  Task 160  →  Core 333
+  Task 161  →  Core 402
+  Task 162  →  Core 416
+  Task 163  →  Core 449
+  Task 164  →  Core 401
+  Task 165  →  Core  22
+  Task 166  →  Core 400
+  Task 167  →  Core 466
+  Task 168  →  Core 422
+  Task 169  →  Core 421
+  Task 170  →  Core 332
+  Task 171  →  Core 445
+  Task 172  →  Core 377
+  Task 173  →  Core 375
+  Task 174  →  Core 467
+  Task 175  →  Core 376
+  Task 176  →  Core 443
+  Task 177  →  Core 399
+  Task 178  →  Core 310
+  Task 179  →  Core 331
+  Task 180  →  Core 353
+  Task 181  →  Core 469
+  Task 182  →  Core 423
+  Task 183  →  Core 287
+  Task 184  →  Core 447
+  Task 185  →  Core 465
+  Task 186  →  Core 444
+  Task 187  →  Core 420
+  Task 188  →  Core 419
+  Task 189  →  Core 441
+  Task 190  →  Core 464
+  Task 191  →  Core 398
+  Task 192  →  Core 397
+  Task 193  →  Core 442
+  Task 194  →  Core 354
+  Task 195  →  Core 440
+  Task 196  →  Core 480
+  Task 197  →  Core 468
+  Task 198  →  Core  45
+  Task 199  →  Core 462
+  Task 200  →  Core 439
+  Task 201  →  Core 482
+  Task 202  →  Core 481
+  Task 203  →  Core 484
+  Task 204  →  Core 483
+  Task 205  →  Core 463
+  Task 206  →  Core 134
+  Task 207  →  Core 434
+  Task 208  →  Core 459
+  Task 209  →  Core 413
+  Task 210  →  Core  65
+  Task 211  →  Core  48
+  Task 212  →  Core 197
+  Task 213  →  Core 452
+  Task 214  →  Core 178
+  Task 215  →  Core 175
+  Task 216  →  Core  62
+  Task 217  →  Core 137
+  Task 218  →  Core  98
+  Task 219  →  Core  43
+  Task 220  →  Core 374
+  Task 221  →  Core  97
+  Task 222  →  Core 395
+  Task 223  →  Core 157
+  Task 224  →  Core 265
+  Task 225  →  Core  92
+  Task 226  →  Core  33
+  Task 227  →  Core  38
+  Task 228  →  Core 180
+  Task 229  →  Core 373
+  Task 230  →  Core 457
+  Task 231  →  Core  59
+  Task 232  →  Core 244
+  Task 233  →  Core 116
+  Task 234  →  Core 263
+  Task 235  →  Core  26
+  Task 236  →  Core 406
+  Task 237  →  Core 370
+  Task 238  →  Core  27
+  Task 239  →  Core 329
+  Task 240  →  Core 276
+  Task 241  →  Core 240
+  Task 242  →  Core  15
+  Task 243  →  Core 394
+  Task 244  →  Core  14
+  Task 245  →  Core 113
+  Task 246  →  Core 351
+  Task 247  →  Core 264
+  Task 248  →  Core 262
+  Task 249  →  Core 474
+  Task 250  →  Core 191
+  Task 251  →  Core 196
+  Task 252  →  Core  18
+  Task 253  →  Core  29
+  Task 254  →  Core 177
+  Task 255  →  Core 154
+  Task 256  →  Core 179
+  Task 257  →  Core 327
+  Task 258  →  Core 417
+  Task 259  →  Core  35
+  Task 260  →  Core 111
+  Task 261  →  Core 326
+  Task 262  →  Core 139
+  Task 263  →  Core  66
+  Task 264  →  Core 200
+  Task 265  →  Core 181
+  Task 266  →  Core 258
+  Task 267  →  Core 453
+  Task 268  →  Core 202
+  Task 269  →  Core 412
+  Task 270  →  Core  89
+  Task 271  →  Core 431
+  Task 272  →  Core 408
+  Task 273  →  Core 369
+  Task 274  →  Core 165
+  Task 275  →  Core 188
+  Task 276  →  Core  36
+  Task 277  →  Core 475
+  Task 278  →  Core 245
+  Task 279  →  Core  12
+  Task 280  →  Core 136
+  Task 281  →  Core 384
+  Task 282  →  Core 203
+  Task 283  →  Core 396
+  Task 284  →  Core 176
+  Task 285  →  Core 286
+  Task 286  →  Core 435
+  Task 287  →  Core 225
+  Task 288  →  Core 266
+  Task 289  →  Core 223
+  Task 290  →  Core 477
+  Task 291  →  Core 174
+  Task 292  →  Core 201
+  Task 293  →  Core 352
+  Task 294  →  Core 430
+  Task 295  →  Core  49
+  Task 296  →  Core 455
+  Task 297  →  Core 341
+  Task 298  →  Core 209
+  Task 299  →  Core 386
+  Task 300  →  Core 340
+  Task 301  →  Core 141
+  Task 302  →  Core 153
+  Task 303  →  Core 473
+  Task 304  →  Core 364
+  Task 305  →  Core 119
+  Task 306  →  Core   8
+  Task 307  →  Core 372
+  Task 308  →  Core   5
+  Task 309  →  Core 365
+  Task 310  →  Core 138
+  Task 311  →  Core  88
+  Task 312  →  Core 350
+  Task 313  →  Core 368
+  Task 314  →  Core 117
+  Task 315  →  Core  69
+  Task 316  →  Core 198
+  Task 317  →  Core  31
+  Task 318  →  Core 390
+  Task 319  →  Core 114
+  Task 320  →  Core 321
+  Task 321  →  Core 206
+  Task 322  →  Core  94
+  Task 323  →  Core  34
+  Task 324  →  Core  51
+  Task 325  →  Core 393
+  Task 326  →  Core 451
+  Task 327  →  Core  11
+  Task 328  →  Core 391
+  Task 329  →  Core 204
+  Task 330  →  Core 237
+  Task 331  →  Core 229
+  Task 332  →  Core 428
+  Task 333  →  Core 458
+  Task 334  →  Core  13
+  Task 335  →  Core 246
+  Task 336  →  Core 295
+  Task 337  →  Core 115
+  Task 338  →  Core  54
+  Task 339  →  Core  71
+  Task 340  →  Core 456
+  Task 341  →  Core 250
+  Task 342  →  Core 160
+  Task 343  →  Core 436
+  Task 344  →  Core  93
+  Task 345  →  Core 316
+  Task 346  →  Core 288
+  Task 347  →  Core 285
+  Task 348  →  Core 349
+  Task 349  →  Core  60
+  Task 350  →  Core 267
+  Task 351  →  Core 222
+  Task 352  →  Core 362
+  Task 353  →  Core 299
+  Task 354  →  Core   7
+  Task 355  →  Core 330
+  Task 356  →  Core 347
+  Task 357  →  Core 147
+  Task 358  →  Core 234
+  Task 359  →  Core 156
+  Task 360  →  Core 271
+  Task 361  →  Core 293
+  Task 362  →  Core 305
+  Task 363  →  Core  47
+  Task 364  →  Core 268
+  Task 365  →  Core  16
+  Task 366  →  Core 199
+  Task 367  →  Core 450
+  Task 368  →  Core 385
+  Task 369  →  Core 224
+  Task 370  →  Core 437
+  Task 371  →  Core 159
+  Task 372  →  Core  61
+  Task 373  →  Core 343
+  Task 374  →  Core 270
+  Task 375  →  Core  53
+  Task 376  →  Core 389
+  Task 377  →  Core 363
+  Task 378  →  Core 251
+  Task 379  →  Core 478
+  Task 380  →  Core 132
+  Task 381  →  Core  64
+  Task 382  →  Core 433
+  Task 383  →  Core 387
+  Task 384  →  Core 317
+  Task 385  →  Core 344
+  Task 386  →  Core 112
+  Task 387  →  Core  95
+  Task 388  →  Core  50
+  Task 389  →  Core 221
+  Task 390  →  Core 301
+  Task 391  →  Core  80
+  Task 392  →  Core 247
+  Task 393  →  Core 294
+  Task 394  →  Core 185
+  Task 395  →  Core 407
+  Task 396  →  Core 162
+  Task 397  →  Core 315
+  Task 398  →  Core 242
+  Task 399  →  Core  74
+  Task 400  →  Core  28
+  Task 401  →  Core  56
+  Task 402  →  Core  19
+  Task 403  →  Core 307
+  Task 404  →  Core  44
+  Task 405  →  Core 414
+  Task 406  →  Core  30
+  Task 407  →  Core  87
+  Task 408  →  Core 131
+  Task 409  →  Core 243
+  Task 410  →  Core 284
+  Task 411  →  Core  20
+  Task 412  →  Core  37
+  Task 413  →  Core 388
+  Task 414  →  Core 438
+  Task 415  →  Core  39
+  Task 416  →  Core  70
+  Task 417  →  Core 282
+  Task 418  →  Core  58
+  Task 419  →  Core 218
+  Task 420  →  Core 371
+  Task 421  →  Core 476
+  Task 422  →  Core 328
+  Task 423  →  Core  17
+  Task 424  →  Core 306
+  Task 425  →  Core  91
+  Task 426  →  Core 155
+  Task 427  →  Core 308
+  Task 428  →  Core 429
+  Task 429  →  Core 409
+  Task 430  →  Core  42
+  Task 431  →  Core 158
+  Task 432  →  Core  52
+  Task 433  →  Core  68
+  Task 434  →  Core 109
+  Task 435  →  Core 130
+  Task 436  →  Core  40
+  Task 437  →  Core 392
+  Task 438  →  Core 135
+  Task 439  →  Core  21
+  Task 440  →  Core   6
+  Task 441  →  Core 411
+  Task 442  →  Core 133
+  Task 443  →  Core 110
+  Task 444  →  Core  41
+  Task 445  →  Core 410
+  Task 446  →  Core 241
+  Task 447  →  Core  10
+  Task 448  →  Core 152
+  Task 449  →  Core 219
+  Task 450  →  Core  86
+  Task 451  →  Core  63
+  Task 452  →  Core   9
+  Task 453  →  Core 454
+  Task 454  →  Core 479
+  Task 455  →  Core 220
+  Task 456  →  Core 324
+  Task 457  →  Core 415
+  Task 458  →  Core  32
+  Task 459  →  Core  90
+  Task 460  →  Core  73
+  Task 461  →  Core  23
+  Task 462  →  Core  24
+  Task 463  →  Core   1
+  Task 464  →  Core 378
+  Task 465  →  Core   3
+  Task 466  →  Core 309
+  Task 467  →  Core 470
+  Task 468  →  Core  67
+  Task 469  →  Core 472
+  Task 470  →  Core  46
+  Task 471  →  Core   4
+  Task 472  →  Core 460
+  Task 473  →  Core 425
+  Task 474  →  Core 426
+  Task 475  →  Core 427
+  Task 476  →  Core 424
+  Task 477  →  Core 355
+  Task 478  →  Core 471
+  Task 479  →  Core 448
+  Task 480  →  Core  25
+  Task 481  →  Core 418
+  Task 482  →  Core 446
+  Task 483  →  Core   2
+  Task 484  →  Core 461
+Mapping: [(0, 431), (1, 237), (2, 126), (3, 214), (4, 259), (5, 193), (6, 148), (7, 168), (8, 102), (9, 122), (10, 125), (11, 105), (12, 189), (13, 169), (14, 128), (15, 238), (16, 171), (17, 77), (18, 165), (19, 100), (20, 166), (21, 170), (22, 167), (23, 124), (24, 78), (25, 282), (26, 54), (27, 192), (28, 104), (29, 235), (30, 211), (31, 191), (32, 56), (33, 81), (34, 80), (35, 99), (36, 83), (37, 84), (38, 98), (39, 75), (40, 119), (41, 147), (42, 145), (43, 76), (44, 107), (45, 215), (46, 123), (47, 143), (48, 101), (49, 82), (50, 127), (51, 149), (52, 142), (53, 103), (54, 216), (55, 212), (56, 260), (57, 106), (58, 188), (59, 121), (60, 172), (61, 74), (62, 120), (63, 213), (64, 144), (65, 297), (66, 150), (67, 258), (68, 194), (69, 344), (70, 209), (71, 227), (72, 279), (73, 274), (74, 234), (75, 302), (76, 160), (77, 273), (78, 251), (79, 296), (80, 255), (81, 321), (82, 231), (83, 318), (84, 299), (85, 319), (86, 207), (87, 253), (88, 71), (89, 225), (90, 163), (91, 317), (92, 139), (93, 277), (94, 210), (95, 141), (96, 256), (97, 185), (98, 278), (99, 303), (100, 366), (101, 183), (102, 322), (103, 206), (104, 182), (105, 345), (106, 95), (107, 230), (108, 204), (109, 324), (110, 276), (111, 301), (112, 272), (113, 252), (114, 341), (115, 247), (116, 186), (117, 232), (118, 181), (119, 229), (120, 347), (121, 365), (122, 117), (123, 271), (124, 295), (125, 254), (126, 162), (127, 226), (128, 248), (129, 280), (130, 291), (131, 268), (132, 338), (133, 290), (134, 337), (135, 382), (136, 289), (137, 311), (138, 336), (139, 381), (140, 360), (141, 312), (142, 335), (143, 313), (144, 404), (145, 403), (146, 380), (147, 358), (148, 334), (149, 333), (150, 379), (151, 356), (152, 357), (153, 359), (154, 402), (155, 378), (156, 310), (157, 355), (158, 288), (159, 332), (160, 401), (161, 415), (162, 448), (163, 400), (164, 21), (165, 399), (166, 465), (167, 421), (168, 420), (169, 331), (170, 444), (171, 376), (172, 374), (173, 466), (174, 375), (175, 442), (176, 398), (177, 309), (178, 330), (179, 352), (180, 468), (181, 422), (182, 286), (183, 446), (184, 464), (185, 443), (186, 419), (187, 418), (188, 440), (189, 463), (190, 397), (191, 396), (192, 441), (193, 353), (194, 439), (195, 479), (196, 467), (197, 44), (198, 461), (199, 438), (200, 481), (201, 480), (202, 483), (203, 482), (204, 462), (205, 133), (206, 433), (207, 458), (208, 412), (209, 64), (210, 47), (211, 196), (212, 451), (213, 177), (214, 174), (215, 61), (216, 136), (217, 97), (218, 42), (219, 373), (220, 96), (221, 394), (222, 156), (223, 264), (224, 91), (225, 32), (226, 37), (227, 179), (228, 372), (229, 456), (230, 58), (231, 243), (232, 115), (233, 262), (234, 25), (235, 405), (236, 369), (237, 26), (238, 328), (239, 275), (240, 239), (241, 14), (242, 393), (243, 13), (244, 112), (245, 350), (246, 263), (247, 261), (248, 473), (249, 190), (250, 195), (251, 17), (252, 28), (253, 176), (254, 153), (255, 178), (256, 326), (257, 416), (258, 34), (259, 110), (260, 325), (261, 138), (262, 65), (263, 199), (264, 180), (265, 257), (266, 452), (267, 201), (268, 411), (269, 88), (270, 430), (271, 407), (272, 368), (273, 164), (274, 187), (275, 35), (276, 474), (277, 244), (278, 11), (279, 135), (280, 383), (281, 202), (282, 395), (283, 175), (284, 285), (285, 434), (286, 224), (287, 265), (288, 222), (289, 476), (290, 173), (291, 200), (292, 351), (293, 429), (294, 48), (295, 454), (296, 340), (297, 208), (298, 385), (299, 339), (300, 140), (301, 152), (302, 472), (303, 363), (304, 118), (305, 7), (306, 371), (307, 4), (308, 364), (309, 137), (310, 87), (311, 349), (312, 367), (313, 116), (314, 68), (315, 197), (316, 30), (317, 389), (318, 113), (319, 320), (320, 205), (321, 93), (322, 33), (323, 50), (324, 392), (325, 450), (326, 10), (327, 390), (328, 203), (329, 236), (330, 228), (331, 427), (332, 457), (333, 12), (334, 245), (335, 294), (336, 114), (337, 53), (338, 70), (339, 455), (340, 249), (341, 159), (342, 435), (343, 92), (344, 315), (345, 287), (346, 284), (347, 348), (348, 59), (349, 266), (350, 221), (351, 361), (352, 298), (353, 6), (354, 329), (355, 346), (356, 146), (357, 233), (358, 155), (359, 270), (360, 292), (361, 304), (362, 46), (363, 267), (364, 15), (365, 198), (366, 449), (367, 384), (368, 223), (369, 436), (370, 158), (371, 60), (372, 342), (373, 269), (374, 52), (375, 388), (376, 362), (377, 250), (378, 477), (379, 131), (380, 63), (381, 432), (382, 386), (383, 316), (384, 343), (385, 111), (386, 94), (387, 49), (388, 220), (389, 300), (390, 79), (391, 246), (392, 293), (393, 184), (394, 406), (395, 161), (396, 314), (397, 241), (398, 73), (399, 27), (400, 55), (401, 18), (402, 306), (403, 43), (404, 413), (405, 29), (406, 86), (407, 130), (408, 242), (409, 283), (410, 19), (411, 36), (412, 387), (413, 437), (414, 38), (415, 69), (416, 281), (417, 57), (418, 217), (419, 370), (420, 475), (421, 327), (422, 16), (423, 305), (424, 90), (425, 154), (426, 307), (427, 428), (428, 408), (429, 41), (430, 157), (431, 51), (432, 67), (433, 108), (434, 129), (435, 39), (436, 391), (437, 134), (438, 20), (439, 5), (440, 410), (441, 132), (442, 109), (443, 40), (444, 409), (445, 240), (446, 9), (447, 151), (448, 218), (449, 85), (450, 62), (451, 8), (452, 453), (453, 478), (454, 219), (455, 323), (456, 414), (457, 31), (458, 89), (459, 72), (460, 22), (461, 23), (462, 0), (463, 377), (464, 2), (465, 308), (466, 469), (467, 66), (468, 471), (469, 45), (470, 3), (471, 459), (472, 424), (473, 425), (474, 426), (475, 423), (476, 354), (477, 470), (478, 447), (479, 24), (480, 417), (481, 445), (482, 1), (483, 460)]
+Communication cost: 7630110.0
+  [recorded] 'Q: GA CC_Biased v2 + Bridge-Link [final]'  acc=0.5958  cost=7630110  sp_cost=10294241  edges=1,984,164  neurons=1602
+
+======================================================================
+  BRANCH: V: GA Memetic Biased + Bridge-Link
+  Anchor=0.5998  Tolerance=0.0100  Floor=0.5898
+  Neuron phase cap: 0.0050
+  Snapshot thresholds: ['0.5%', '1.0%']
+  Edge frac (interleaved/post): 0.0200/0.0500  N:E ratio=1:1  FT=2  Max=1000
+======================================================================
+[V: GA Memetic Biased + Bridge-Link] Starting accuracy: 0.5998
+  [fine-tune] Epoch   1 | loss 0.1070 | acc 0.9664 f1 0.9665 prec 0.9668 rec 0.9664
+  [fine-tune] Epoch   2 | loss 0.0877 | acc 0.9734 f1 0.9734 prec 0.9735 rec 0.9734
+[V: GA Memetic Biased + Bridge-Link] Step   1 (neuron): acc=0.5944  drop=+0.0054  neurons=1650  edges=3,143,444
+[V: GA Memetic Biased + Bridge-Link] Step 1: neuron tolerance cap (drop=0.0054 ≥ 0.0050). Reserving 0.0046 for edge-only (0.0500).
+[V: GA Memetic Biased + Bridge-Link] → Snapshot at drop≤0.5%: 'V: GA Memetic Biased + Bridge-Link @ drop≤0.5%'
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 83.89s
+Best communication cost: 12622155.0000
+Mapping (task → core):
+  Task   1  →  Core 324
+  Task   2  →  Core 225
+  Task   3  →  Core 138
+  Task   4  →  Core 238
+  Task   5  →  Core 153
+  Task   6  →  Core 388
+  Task   7  →  Core 326
+  Task   8  →  Core 204
+  Task   9  →  Core 172
+  Task  10  →  Core 217
+  Task  11  →  Core 242
+  Task  12  →  Core  34
+  Task  13  →  Core 239
+  Task  14  →  Core 325
+  Task  15  →  Core 262
+  Task  16  →  Core 276
+  Task  17  →  Core 304
+  Task  18  →  Core 229
+  Task  19  →  Core  62
+  Task  20  →  Core 222
+  Task  21  →  Core  96
+  Task  22  →  Core   7
+  Task  23  →  Core 255
+  Task  24  →  Core  78
+  Task  25  →  Core 348
+  Task  26  →  Core  53
+  Task  27  →  Core 366
+  Task  28  →  Core  55
+  Task  29  →  Core 261
+  Task  30  →  Core  29
+  Task  31  →  Core  15
+  Task  32  →  Core 178
+  Task  33  →  Core 306
+  Task  34  →  Core 104
+  Task  35  →  Core 197
+  Task  36  →  Core 128
+  Task  37  →  Core 260
+  Task  38  →  Core  11
+  Task  39  →  Core  99
+  Task  40  →  Core 452
+  Task  41  →  Core  35
+  Task  42  →  Core 349
+  Task  43  →  Core  30
+  Task  44  →  Core 195
+  Task  45  →  Core  97
+  Task  46  →  Core  39
+  Task  47  →  Core 284
+  Task  48  →  Core 103
+  Task  49  →  Core  37
+  Task  50  →  Core  79
+  Task  51  →  Core  57
+  Task  52  →  Core 159
+  Task  53  →  Core 122
+  Task  54  →  Core  58
+  Task  55  →  Core  77
+  Task  56  →  Core 386
+  Task  57  →  Core  59
+  Task  58  →  Core 259
+  Task  59  →  Core 329
+  Task  60  →  Core 150
+  Task  61  →  Core  12
+  Task  62  →  Core  13
+  Task  63  →  Core 129
+  Task  64  →  Core 121
+  Task  65  →  Core 307
+  Task  66  →  Core 351
+  Task  67  →  Core 387
+  Task  68  →  Core 282
+  Task  69  →  Core 160
+  Task  70  →  Core 105
+  Task  71  →  Core 127
+  Task  72  →  Core  18
+  Task  73  →  Core 194
+  Task  74  →  Core 130
+  Task  75  →  Core  32
+  Task  76  →  Core  16
+  Task  77  →  Core  80
+  Task  78  →  Core 476
+  Task  79  →  Core 430
+  Task  80  →  Core 175
+  Task  81  →  Core 224
+  Task  82  →  Core  51
+  Task  83  →  Core 328
+  Task  84  →  Core  74
+  Task  85  →  Core 192
+  Task  86  →  Core  81
+  Task  87  →  Core  75
+  Task  88  →  Core  60
+  Task  89  →  Core 173
+  Task  90  →  Core  10
+  Task  91  →  Core 283
+  Task  92  →  Core  98
+  Task  93  →  Core 362
+  Task  94  →  Core  76
+  Task  95  →  Core 246
+  Task  96  →  Core 474
+  Task  97  →  Core 198
+  Task  98  →  Core  54
+  Task  99  →  Core  82
+  Task 100  →  Core 218
+  Task 101  →  Core 240
+  Task 102  →  Core 241
+  Task 103  →  Core 180
+  Task 104  →  Core 106
+  Task 105  →  Core 203
+  Task 106  →  Core 131
+  Task 107  →  Core 179
+  Task 108  →  Core 151
+  Task 109  →  Core 327
+  Task 110  →  Core 196
+  Task 111  →  Core  63
+  Task 112  →  Core 305
+  Task 113  →  Core 102
+  Task 114  →  Core 221
+  Task 115  →  Core 176
+  Task 116  →  Core 200
+  Task 117  →  Core  52
+  Task 118  →  Core  33
+  Task 119  →  Core  73
+  Task 120  →  Core 137
+  Task 121  →  Core 263
+  Task 122  →  Core 100
+  Task 123  →  Core 471
+  Task 124  →  Core 152
+  Task 125  →  Core 454
+  Task 126  →  Core 473
+  Task 127  →  Core  31
+  Task 128  →  Core  17
+  Task 129  →  Core 350
+  Task 130  →  Core 132
+  Task 131  →  Core 220
+  Task 132  →  Core 174
+  Task 133  →  Core 199
+  Task 134  →  Core  36
+  Task 135  →  Core 155
+  Task 136  →  Core  95
+  Task 137  →  Core   9
+  Task 138  →  Core 287
+  Task 139  →  Core 389
+  Task 140  →  Core 285
+  Task 141  →  Core  84
+  Task 142  →  Core 216
+  Task 143  →  Core 367
+  Task 144  →  Core   6
+  Task 145  →  Core 453
+  Task 146  →  Core  94
+  Task 147  →  Core 352
+  Task 148  →  Core  83
+  Task 149  →  Core 154
+  Task 150  →  Core  40
+  Task 151  →  Core 133
+  Task 152  →  Core 292
+  Task 153  →  Core 411
+  Task 154  →  Core 108
+  Task 155  →  Core  85
+  Task 156  →  Core 243
+  Task 157  →  Core 219
+  Task 158  →  Core 472
+  Task 159  →  Core 477
+  Task 160  →  Core  61
+  Task 161  →  Core 107
+  Task 162  →  Core  14
+  Task 163  →  Core  38
+  Task 164  →  Core  56
+  Task 165  →  Core 265
+  Task 166  →  Core 101
+  Task 167  →  Core 308
+  Task 168  →  Core 177
+  Task 169  →  Core 109
+  Task 170  →  Core 223
+  Task 171  →  Core  28
+  Task 172  →  Core   8
+  Task 173  →  Core 264
+  Task 174  →  Core 374
+  Task 175  →  Core 475
+  Task 176  →  Core 286
+  Task 177  →  Core 330
+  Task 178  →  Core 110
+  Task 179  →  Core 247
+  Task 180  →  Core 360
+  Task 181  →  Core 390
+  Task 182  →  Core 384
+  Task 183  →  Core 269
+  Task 184  →  Core 337
+  Task 185  →  Core 410
+  Task 186  →  Core 385
+  Task 187  →  Core 313
+  Task 188  →  Core 382
+  Task 189  →  Core 449
+  Task 190  →  Core 412
+  Task 191  →  Core 181
+  Task 192  →  Core 407
+  Task 193  →  Core 428
+  Task 194  →  Core 291
+  Task 195  →  Core 332
+  Task 196  →  Core 115
+  Task 197  →  Core 402
+  Task 198  →  Core 202
+  Task 199  →  Core 268
+  Task 200  →  Core 406
+  Task 201  →  Core 158
+  Task 202  →  Core 435
+  Task 203  →  Core 136
+  Task 204  →  Core 373
+  Task 205  →  Core 290
+  Task 206  →  Core 370
+  Task 207  →  Core 266
+  Task 208  →  Core 383
+  Task 209  →  Core  93
+  Task 210  →  Core 331
+  Task 211  →  Core  72
+  Task 212  →  Core 409
+  Task 213  →  Core 429
+  Task 214  →  Core 312
+  Task 215  →  Core 448
+  Task 216  →  Core 380
+  Task 217  →  Core 433
+  Task 218  →  Core 432
+  Task 219  →  Core 450
+  Task 220  →  Core 201
+  Task 221  →  Core 392
+  Task 222  →  Core 451
+  Task 223  →  Core 424
+  Task 224  →  Core  86
+  Task 225  →  Core 267
+  Task 226  →  Core 405
+  Task 227  →  Core 135
+  Task 228  →  Core 404
+  Task 229  →  Core 413
+  Task 230  →  Core 372
+  Task 231  →  Core 379
+  Task 232  →  Core 479
+  Task 233  →  Core 455
+  Task 234  →  Core 403
+  Task 235  →  Core 357
+  Task 236  →  Core  91
+  Task 237  →  Core 446
+  Task 238  →  Core 289
+  Task 239  →  Core 434
+  Task 240  →  Core 113
+  Task 241  →  Core 401
+  Task 242  →  Core  70
+  Task 243  →  Core 456
+  Task 244  →  Core 381
+  Task 245  →  Core 436
+  Task 246  →  Core 431
+  Task 247  →  Core 134
+  Task 248  →  Core 478
+  Task 249  →  Core 393
+  Task 250  →  Core 309
+  Task 251  →  Core 470
+  Task 252  →  Core 408
+  Task 253  →  Core 414
+  Task 254  →  Core 334
+  Task 255  →  Core  71
+  Task 256  →  Core 371
+  Task 257  →  Core 244
+  Task 258  →  Core 415
+  Task 259  →  Core 157
+  Task 260  →  Core 391
+  Task 261  →  Core 356
+  Task 262  →  Core  27
+  Task 263  →  Core 469
+  Task 264  →  Core  50
+  Task 265  →  Core  49
+  Task 266  →  Core 426
+  Task 267  →  Core 394
+  Task 268  →  Core 310
+  Task 269  →  Core 400
+  Task 270  →  Core 416
+  Task 271  →  Core 245
+  Task 272  →  Core  92
+  Task 273  →  Core 335
+  Task 274  →  Core 447
+  Task 275  →  Core 399
+  Task 276  →  Core 311
+  Task 277  →  Core 423
+  Task 278  →  Core 425
+  Task 279  →  Core 457
+  Task 280  →  Core  90
+  Task 281  →  Core 114
+  Task 282  →  Core 156
+  Task 283  →  Core  48
+  Task 284  →  Core 355
+  Task 285  →  Core 111
+  Task 286  →  Core 354
+  Task 287  →  Core 427
+  Task 288  →  Core 378
+  Task 289  →  Core 458
+  Task 290  →  Core 377
+  Task 291  →  Core 333
+  Task 292  →  Core 112
+  Task 293  →  Core  69
+  Task 294  →  Core 376
+  Task 295  →  Core 288
+  Task 296  →  Core 445
+  Task 297  →  Core 395
+  Task 298  →  Core 353
+  Task 299  →  Core 422
+  Task 300  →  Core 437
+  Task 301  →  Core 468
+  Task 302  →  Core  44
+  Task 303  →  Core  20
+  Task 304  →  Core  21
+  Task 305  →  Core 438
+  Task 306  →  Core 443
+  Task 307  →  Core 481
+  Task 308  →  Core  68
+  Task 309  →  Core  64
+  Task 310  →  Core  25
+  Task 311  →  Core 420
+  Task 312  →  Core 467
+  Task 313  →  Core 375
+  Task 314  →  Core 442
+  Task 315  →  Core  47
+  Task 316  →  Core 398
+  Task 317  →  Core 483
+  Task 318  →  Core 484
+  Task 319  →  Core  45
+  Task 320  →  Core 441
+  Task 321  →  Core 464
+  Task 322  →  Core   1
+  Task 323  →  Core 482
+  Task 324  →  Core 439
+  Task 325  →  Core   2
+  Task 326  →  Core  23
+  Task 327  →  Core 421
+  Task 328  →  Core 419
+  Task 329  →  Core 440
+  Task 330  →  Core 461
+  Task 331  →  Core 462
+  Task 332  →  Core  89
+  Task 333  →  Core 396
+  Task 334  →  Core  67
+  Task 335  →  Core 397
+  Task 336  →  Core 466
+  Task 337  →  Core 480
+  Task 338  →  Core 459
+  Task 339  →  Core 465
+  Task 340  →  Core  24
+  Task 341  →  Core  46
+  Task 342  →  Core 460
+  Task 343  →  Core   5
+  Task 344  →  Core   4
+  Task 345  →  Core 444
+  Task 346  →  Core 417
+  Task 347  →  Core  42
+  Task 348  →  Core   3
+  Task 349  →  Core  26
+  Task 350  →  Core  87
+  Task 351  →  Core  41
+  Task 352  →  Core 418
+  Task 353  →  Core  43
+  Task 354  →  Core  19
+  Task 355  →  Core  66
+  Task 356  →  Core  65
+  Task 357  →  Core  88
+  Task 358  →  Core 463
+  Task 359  →  Core  22
+  Task 360  →  Core 170
+  Task 361  →  Core 295
+  Task 362  →  Core 298
+  Task 363  →  Core 227
+  Task 364  →  Core 215
+  Task 365  →  Core 209
+  Task 366  →  Core 167
+  Task 367  →  Core 272
+  Task 368  →  Core 228
+  Task 369  →  Core 185
+  Task 370  →  Core 213
+  Task 371  →  Core 341
+  Task 372  →  Core 249
+  Task 373  →  Core 369
+  Task 374  →  Core 120
+  Task 375  →  Core 339
+  Task 376  →  Core 182
+  Task 377  →  Core 139
+  Task 378  →  Core 184
+  Task 379  →  Core 319
+  Task 380  →  Core 230
+  Task 381  →  Core 279
+  Task 382  →  Core 358
+  Task 383  →  Core 344
+  Task 384  →  Core 274
+  Task 385  →  Core 142
+  Task 386  →  Core 299
+  Task 387  →  Core 273
+  Task 388  →  Core 164
+  Task 389  →  Core 125
+  Task 390  →  Core 250
+  Task 391  →  Core 316
+  Task 392  →  Core 368
+  Task 393  →  Core 300
+  Task 394  →  Core 317
+  Task 395  →  Core 340
+  Task 396  →  Core 234
+  Task 397  →  Core 256
+  Task 398  →  Core 323
+  Task 399  →  Core 363
+  Task 400  →  Core 338
+  Task 401  →  Core 146
+  Task 402  →  Core 210
+  Task 403  →  Core 314
+  Task 404  →  Core 231
+  Task 405  →  Core 336
+  Task 406  →  Core 193
+  Task 407  →  Core 162
+  Task 408  →  Core 346
+  Task 409  →  Core 206
+  Task 410  →  Core 361
+  Task 411  →  Core 207
+  Task 412  →  Core 364
+  Task 413  →  Core 303
+  Task 414  →  Core 235
+  Task 415  →  Core 166
+  Task 416  →  Core 320
+  Task 417  →  Core 123
+  Task 418  →  Core 297
+  Task 419  →  Core 345
+  Task 420  →  Core 226
+  Task 421  →  Core 232
+  Task 422  →  Core 254
+  Task 423  →  Core 270
+  Task 424  →  Core 281
+  Task 425  →  Core 296
+  Task 426  →  Core 343
+  Task 427  →  Core 116
+  Task 428  →  Core 302
+  Task 429  →  Core 191
+  Task 430  →  Core 118
+  Task 431  →  Core 161
+  Task 432  →  Core 253
+  Task 433  →  Core 124
+  Task 434  →  Core 147
+  Task 435  →  Core 318
+  Task 436  →  Core 342
+  Task 437  →  Core 214
+  Task 438  →  Core 258
+  Task 439  →  Core 183
+  Task 440  →  Core 119
+  Task 441  →  Core 271
+  Task 442  →  Core 165
+  Task 443  →  Core 237
+  Task 444  →  Core 144
+  Task 445  →  Core 188
+  Task 446  →  Core 187
+  Task 447  →  Core 186
+  Task 448  →  Core 168
+  Task 449  →  Core 236
+  Task 450  →  Core 293
+  Task 451  →  Core 233
+  Task 452  →  Core 190
+  Task 453  →  Core 248
+  Task 454  →  Core 359
+  Task 455  →  Core 365
+  Task 456  →  Core 141
+  Task 457  →  Core 277
+  Task 458  →  Core 275
+  Task 459  →  Core 280
+  Task 460  →  Core 143
+  Task 461  →  Core 149
+  Task 462  →  Core 145
+  Task 463  →  Core 315
+  Task 464  →  Core 257
+  Task 465  →  Core 347
+  Task 466  →  Core 211
+  Task 467  →  Core 321
+  Task 468  →  Core 301
+  Task 469  →  Core 189
+  Task 470  →  Core 148
+  Task 471  →  Core 251
+  Task 472  →  Core 140
+  Task 473  →  Core 208
+  Task 474  →  Core 322
+  Task 475  →  Core 294
+  Task 476  →  Core 163
+  Task 477  →  Core 169
+  Task 478  →  Core 171
+  Task 479  →  Core 205
+  Task 480  →  Core 278
+  Task 481  →  Core 126
+  Task 482  →  Core 212
+  Task 483  →  Core 252
+  Task 484  →  Core 117
+Mapping: [(0, 323), (1, 224), (2, 137), (3, 237), (4, 152), (5, 387), (6, 325), (7, 203), (8, 171), (9, 216), (10, 241), (11, 33), (12, 238), (13, 324), (14, 261), (15, 275), (16, 303), (17, 228), (18, 61), (19, 221), (20, 95), (21, 6), (22, 254), (23, 77), (24, 347), (25, 52), (26, 365), (27, 54), (28, 260), (29, 28), (30, 14), (31, 177), (32, 305), (33, 103), (34, 196), (35, 127), (36, 259), (37, 10), (38, 98), (39, 451), (40, 34), (41, 348), (42, 29), (43, 194), (44, 96), (45, 38), (46, 283), (47, 102), (48, 36), (49, 78), (50, 56), (51, 158), (52, 121), (53, 57), (54, 76), (55, 385), (56, 58), (57, 258), (58, 328), (59, 149), (60, 11), (61, 12), (62, 128), (63, 120), (64, 306), (65, 350), (66, 386), (67, 281), (68, 159), (69, 104), (70, 126), (71, 17), (72, 193), (73, 129), (74, 31), (75, 15), (76, 79), (77, 475), (78, 429), (79, 174), (80, 223), (81, 50), (82, 327), (83, 73), (84, 191), (85, 80), (86, 74), (87, 59), (88, 172), (89, 9), (90, 282), (91, 97), (92, 361), (93, 75), (94, 245), (95, 473), (96, 197), (97, 53), (98, 81), (99, 217), (100, 239), (101, 240), (102, 179), (103, 105), (104, 202), (105, 130), (106, 178), (107, 150), (108, 326), (109, 195), (110, 62), (111, 304), (112, 101), (113, 220), (114, 175), (115, 199), (116, 51), (117, 32), (118, 72), (119, 136), (120, 262), (121, 99), (122, 470), (123, 151), (124, 453), (125, 472), (126, 30), (127, 16), (128, 349), (129, 131), (130, 219), (131, 173), (132, 198), (133, 35), (134, 154), (135, 94), (136, 8), (137, 286), (138, 388), (139, 284), (140, 83), (141, 215), (142, 366), (143, 5), (144, 452), (145, 93), (146, 351), (147, 82), (148, 153), (149, 39), (150, 132), (151, 291), (152, 410), (153, 107), (154, 84), (155, 242), (156, 218), (157, 471), (158, 476), (159, 60), (160, 106), (161, 13), (162, 37), (163, 55), (164, 264), (165, 100), (166, 307), (167, 176), (168, 108), (169, 222), (170, 27), (171, 7), (172, 263), (173, 373), (174, 474), (175, 285), (176, 329), (177, 109), (178, 246), (179, 359), (180, 389), (181, 383), (182, 268), (183, 336), (184, 409), (185, 384), (186, 312), (187, 381), (188, 448), (189, 411), (190, 180), (191, 406), (192, 427), (193, 290), (194, 331), (195, 114), (196, 401), (197, 201), (198, 267), (199, 405), (200, 157), (201, 434), (202, 135), (203, 372), (204, 289), (205, 369), (206, 265), (207, 382), (208, 92), (209, 330), (210, 71), (211, 408), (212, 428), (213, 311), (214, 447), (215, 379), (216, 432), (217, 431), (218, 449), (219, 200), (220, 391), (221, 450), (222, 423), (223, 85), (224, 266), (225, 404), (226, 134), (227, 403), (228, 412), (229, 371), (230, 378), (231, 478), (232, 454), (233, 402), (234, 356), (235, 90), (236, 445), (237, 288), (238, 433), (239, 112), (240, 400), (241, 69), (242, 455), (243, 380), (244, 435), (245, 430), (246, 133), (247, 477), (248, 392), (249, 308), (250, 469), (251, 407), (252, 413), (253, 333), (254, 70), (255, 370), (256, 243), (257, 414), (258, 156), (259, 390), (260, 355), (261, 26), (262, 468), (263, 49), (264, 48), (265, 425), (266, 393), (267, 309), (268, 399), (269, 415), (270, 244), (271, 91), (272, 334), (273, 446), (274, 398), (275, 310), (276, 422), (277, 424), (278, 456), (279, 89), (280, 113), (281, 155), (282, 47), (283, 354), (284, 110), (285, 353), (286, 426), (287, 377), (288, 457), (289, 376), (290, 332), (291, 111), (292, 68), (293, 375), (294, 287), (295, 444), (296, 394), (297, 352), (298, 421), (299, 436), (300, 467), (301, 43), (302, 19), (303, 20), (304, 437), (305, 442), (306, 480), (307, 67), (308, 63), (309, 24), (310, 419), (311, 466), (312, 374), (313, 441), (314, 46), (315, 397), (316, 482), (317, 483), (318, 44), (319, 440), (320, 463), (321, 0), (322, 481), (323, 438), (324, 1), (325, 22), (326, 420), (327, 418), (328, 439), (329, 460), (330, 461), (331, 88), (332, 395), (333, 66), (334, 396), (335, 465), (336, 479), (337, 458), (338, 464), (339, 23), (340, 45), (341, 459), (342, 4), (343, 3), (344, 443), (345, 416), (346, 41), (347, 2), (348, 25), (349, 86), (350, 40), (351, 417), (352, 42), (353, 18), (354, 65), (355, 64), (356, 87), (357, 462), (358, 21), (359, 169), (360, 294), (361, 297), (362, 226), (363, 214), (364, 208), (365, 166), (366, 271), (367, 227), (368, 184), (369, 212), (370, 340), (371, 248), (372, 368), (373, 119), (374, 338), (375, 181), (376, 138), (377, 183), (378, 318), (379, 229), (380, 278), (381, 357), (382, 343), (383, 273), (384, 141), (385, 298), (386, 272), (387, 163), (388, 124), (389, 249), (390, 315), (391, 367), (392, 299), (393, 316), (394, 339), (395, 233), (396, 255), (397, 322), (398, 362), (399, 337), (400, 145), (401, 209), (402, 313), (403, 230), (404, 335), (405, 192), (406, 161), (407, 345), (408, 205), (409, 360), (410, 206), (411, 363), (412, 302), (413, 234), (414, 165), (415, 319), (416, 122), (417, 296), (418, 344), (419, 225), (420, 231), (421, 253), (422, 269), (423, 280), (424, 295), (425, 342), (426, 115), (427, 301), (428, 190), (429, 117), (430, 160), (431, 252), (432, 123), (433, 146), (434, 317), (435, 341), (436, 213), (437, 257), (438, 182), (439, 118), (440, 270), (441, 164), (442, 236), (443, 143), (444, 187), (445, 186), (446, 185), (447, 167), (448, 235), (449, 292), (450, 232), (451, 189), (452, 247), (453, 358), (454, 364), (455, 140), (456, 276), (457, 274), (458, 279), (459, 142), (460, 148), (461, 144), (462, 314), (463, 256), (464, 346), (465, 210), (466, 320), (467, 300), (468, 188), (469, 147), (470, 250), (471, 139), (472, 207), (473, 321), (474, 293), (475, 162), (476, 168), (477, 170), (478, 204), (479, 277), (480, 125), (481, 211), (482, 251), (483, 116)]
+Communication cost: 12622155.0
+  [recorded] 'V: GA Memetic Biased + Bridge-Link @ drop≤0.5%'  acc=0.5944  cost=12622155  sp_cost=18825105  edges=3,143,444  neurons=1650
+  [fine-tune] Epoch   1 | loss 0.0962 | acc 0.9760 f1 0.9760 prec 0.9762 rec 0.9760
+  [fine-tune] Epoch   2 | loss 0.0838 | acc 0.9686 f1 0.9685 prec 0.9687 rec 0.9686
+[V: GA Memetic Biased + Bridge-Link] Step   2 (edge* ): acc=0.6000  drop=-0.0002  neurons=1650  edges=2,986,272
+  [fine-tune] Epoch   1 | loss 0.0986 | acc 0.9666 f1 0.9666 prec 0.9670 rec 0.9666
+  [fine-tune] Epoch   2 | loss 0.0699 | acc 0.9774 f1 0.9774 prec 0.9775 rec 0.9774
+[V: GA Memetic Biased + Bridge-Link] Step   3 (edge* ): acc=0.6025  drop=-0.0027  neurons=1628  edges=2,836,959
+  [fine-tune] Epoch   1 | loss 0.0850 | acc 0.9717 f1 0.9717 prec 0.9719 rec 0.9717
+  [fine-tune] Epoch   2 | loss 0.0708 | acc 0.9707 f1 0.9707 prec 0.9710 rec 0.9707
+[V: GA Memetic Biased + Bridge-Link] Step   4 (edge* ): acc=0.5923  drop=+0.0075  neurons=1619  edges=2,695,112
+  [fine-tune] Epoch   1 | loss 0.0798 | acc 0.9825 f1 0.9825 prec 0.9826 rec 0.9825
+  [fine-tune] Epoch   2 | loss 0.0795 | acc 0.9765 f1 0.9765 prec 0.9766 rec 0.9765
+[V: GA Memetic Biased + Bridge-Link] Step   5 (edge* ): acc=0.5988  drop=+0.0010  neurons=1614  edges=2,560,357
+  [fine-tune] Epoch   1 | loss 0.0809 | acc 0.9843 f1 0.9843 prec 0.9844 rec 0.9843
+  [fine-tune] Epoch   2 | loss 0.0636 | acc 0.9771 f1 0.9771 prec 0.9772 rec 0.9771
+[V: GA Memetic Biased + Bridge-Link] Step   6 (edge* ): acc=0.5973  drop=+0.0025  neurons=1608  edges=2,432,340
+  [fine-tune] Epoch   1 | loss 0.0775 | acc 0.9793 f1 0.9793 prec 0.9794 rec 0.9793
+  [fine-tune] Epoch   2 | loss 0.0784 | acc 0.9794 f1 0.9794 prec 0.9795 rec 0.9794
+[V: GA Memetic Biased + Bridge-Link] Step   7 (edge* ): acc=0.5992  drop=+0.0006  neurons=1606  edges=2,310,723
+  [fine-tune] Epoch   1 | loss 0.0742 | acc 0.9841 f1 0.9841 prec 0.9842 rec 0.9841
+  [fine-tune] Epoch   2 | loss 0.0685 | acc 0.9732 f1 0.9732 prec 0.9735 rec 0.9732
+[V: GA Memetic Biased + Bridge-Link] Step   8 (edge* ): acc=0.5916  drop=+0.0082  neurons=1605  edges=2,195,187
+  [fine-tune] Epoch   1 | loss 0.0733 | acc 0.9837 f1 0.9837 prec 0.9837 rec 0.9837
+  [fine-tune] Epoch   2 | loss 0.0671 | acc 0.9732 f1 0.9732 prec 0.9735 rec 0.9732
+[V: GA Memetic Biased + Bridge-Link] Step   9 (edge* ): acc=0.5961  drop=+0.0037  neurons=1604  edges=2,085,428
+  [fine-tune] Epoch   1 | loss 0.0644 | acc 0.9864 f1 0.9864 prec 0.9865 rec 0.9864
+  [fine-tune] Epoch   2 | loss 0.0592 | acc 0.9762 f1 0.9762 prec 0.9764 rec 0.9762
+[V: GA Memetic Biased + Bridge-Link] Step  10 (edge* ): acc=0.5947  drop=+0.0051  neurons=1603  edges=1,981,157
+  [fine-tune] Epoch   1 | loss 0.0652 | acc 0.9814 f1 0.9814 prec 0.9815 rec 0.9814
+  [fine-tune] Epoch   2 | loss 0.0607 | acc 0.9714 f1 0.9714 prec 0.9716 rec 0.9714
+[V: GA Memetic Biased + Bridge-Link] Step  11 (edge* ): acc=0.5966  drop=+0.0032  neurons=1602  edges=1,882,100
+  [fine-tune] Epoch   1 | loss 0.0658 | acc 0.9867 f1 0.9867 prec 0.9867 rec 0.9867
+  [fine-tune] Epoch   2 | loss 0.0587 | acc 0.9818 f1 0.9818 prec 0.9820 rec 0.9818
+[V: GA Memetic Biased + Bridge-Link] Step  12 (edge* ): acc=0.5995  drop=+0.0003  neurons=1602  edges=1,787,995
+  [fine-tune] Epoch   1 | loss 0.0638 | acc 0.9871 f1 0.9871 prec 0.9872 rec 0.9871
+  [fine-tune] Epoch   2 | loss 0.0520 | acc 0.9738 f1 0.9738 prec 0.9740 rec 0.9738
+[V: GA Memetic Biased + Bridge-Link] Step  13 (edge* ): acc=0.5914  drop=+0.0084  neurons=1602  edges=1,698,596
+  [fine-tune] Epoch   1 | loss 0.0662 | acc 0.9859 f1 0.9859 prec 0.9860 rec 0.9859
+  [fine-tune] Epoch   2 | loss 0.0562 | acc 0.9890 f1 0.9890 prec 0.9891 rec 0.9890
+[V: GA Memetic Biased + Bridge-Link] Step  14 (edge* ): acc=0.6011  drop=-0.0013  neurons=1602  edges=1,613,667
+  [fine-tune] Epoch   1 | loss 0.0600 | acc 0.9882 f1 0.9882 prec 0.9883 rec 0.9882
+  [fine-tune] Epoch   2 | loss 0.0471 | acc 0.9815 f1 0.9815 prec 0.9816 rec 0.9815
+[V: GA Memetic Biased + Bridge-Link] Step  15 (edge* ): acc=0.6046  drop=-0.0048  neurons=1602  edges=1,532,984
+  [fine-tune] Epoch   1 | loss 0.0623 | acc 0.9821 f1 0.9821 prec 0.9822 rec 0.9821
+  [fine-tune] Epoch   2 | loss 0.0488 | acc 0.9853 f1 0.9853 prec 0.9854 rec 0.9853
+[V: GA Memetic Biased + Bridge-Link] Step  16 (edge* ): acc=0.5995  drop=+0.0003  neurons=1602  edges=1,456,335
+  [fine-tune] Epoch   1 | loss 0.0542 | acc 0.9859 f1 0.9859 prec 0.9860 rec 0.9859
+  [fine-tune] Epoch   2 | loss 0.0535 | acc 0.9830 f1 0.9830 prec 0.9832 rec 0.9830
+[V: GA Memetic Biased + Bridge-Link] Step  17 (edge* ): acc=0.6030  drop=-0.0032  neurons=1602  edges=1,383,519
+  [fine-tune] Epoch   1 | loss 0.0548 | acc 0.9882 f1 0.9882 prec 0.9882 rec 0.9882
+  [fine-tune] Epoch   2 | loss 0.0403 | acc 0.9835 f1 0.9835 prec 0.9837 rec 0.9835
+[V: GA Memetic Biased + Bridge-Link] Step  18 (edge* ): acc=0.6053  drop=-0.0055  neurons=1602  edges=1,314,344
+  [fine-tune] Epoch   1 | loss 0.0494 | acc 0.9867 f1 0.9867 prec 0.9868 rec 0.9867
+  [fine-tune] Epoch   2 | loss 0.0438 | acc 0.9809 f1 0.9809 prec 0.9810 rec 0.9809
+[V: GA Memetic Biased + Bridge-Link] Step  19 (edge* ): acc=0.5901  drop=+0.0097  neurons=1583  edges=1,248,627
+  [fine-tune] Epoch   1 | loss 0.0540 | acc 0.9928 f1 0.9928 prec 0.9929 rec 0.9928
+  [fine-tune] Epoch   2 | loss 0.0301 | acc 0.9872 f1 0.9873 prec 0.9873 rec 0.9872
+[V: GA Memetic Biased + Bridge-Link] Step  20 (edge* ): acc=0.5963  drop=+0.0035  neurons=1313  edges=1,186,196
+  [fine-tune] Epoch   1 | loss 0.0486 | acc 0.9922 f1 0.9922 prec 0.9922 rec 0.9922
+  [fine-tune] Epoch   2 | loss 0.0374 | acc 0.9829 f1 0.9830 prec 0.9831 rec 0.9829
+[V: GA Memetic Biased + Bridge-Link] Step  21 (edge* ): acc=0.5975  drop=+0.0023  neurons=1140  edges=1,126,887
+  [fine-tune] Epoch   1 | loss 0.0442 | acc 0.9915 f1 0.9915 prec 0.9915 rec 0.9915
+  [fine-tune] Epoch   2 | loss 0.0354 | acc 0.9856 f1 0.9856 prec 0.9857 rec 0.9856
+[V: GA Memetic Biased + Bridge-Link] Step  22 (edge* ): acc=0.5993  drop=+0.0005  neurons=1122  edges=1,070,543
+  [fine-tune] Epoch   1 | loss 0.0389 | acc 0.9919 f1 0.9919 prec 0.9920 rec 0.9919
+  [fine-tune] Epoch   2 | loss 0.0394 | acc 0.9881 f1 0.9881 prec 0.9881 rec 0.9881
+[V: GA Memetic Biased + Bridge-Link] Step  23 (edge* ): acc=0.6007  drop=-0.0009  neurons=1113  edges=1,017,016
+  [fine-tune] Epoch   1 | loss 0.0398 | acc 0.9898 f1 0.9898 prec 0.9899 rec 0.9898
+  [fine-tune] Epoch   2 | loss 0.0337 | acc 0.9937 f1 0.9937 prec 0.9937 rec 0.9937
+[V: GA Memetic Biased + Bridge-Link] Step  24 (edge* ): acc=0.6084  drop=-0.0086  neurons=1109  edges=966,166
+  [fine-tune] Epoch   1 | loss 0.0419 | acc 0.9829 f1 0.9829 prec 0.9834 rec 0.9829
+  [fine-tune] Epoch   2 | loss 0.0245 | acc 0.9973 f1 0.9973 prec 0.9973 rec 0.9973
+[V: GA Memetic Biased + Bridge-Link] Step  25 (edge* ): acc=0.6081  drop=-0.0083  neurons=1107  edges=917,858
+  [fine-tune] Epoch   1 | loss 0.0371 | acc 0.9883 f1 0.9883 prec 0.9884 rec 0.9883
+  [fine-tune] Epoch   2 | loss 0.0334 | acc 0.9922 f1 0.9922 prec 0.9922 rec 0.9922
+[V: GA Memetic Biased + Bridge-Link] Step  26 (edge* ): acc=0.6004  drop=-0.0006  neurons=1103  edges=871,966
+  [fine-tune] Epoch   1 | loss 0.0355 | acc 0.9922 f1 0.9922 prec 0.9922 rec 0.9922
+  [fine-tune] Epoch   2 | loss 0.0313 | acc 0.9894 f1 0.9894 prec 0.9895 rec 0.9894
+[V: GA Memetic Biased + Bridge-Link] Step  27 (edge* ): acc=0.5980  drop=+0.0018  neurons=1102  edges=828,368
+  [fine-tune] Epoch   1 | loss 0.0337 | acc 0.9915 f1 0.9915 prec 0.9916 rec 0.9915
+  [fine-tune] Epoch   2 | loss 0.0247 | acc 0.9940 f1 0.9940 prec 0.9941 rec 0.9940
+[V: GA Memetic Biased + Bridge-Link] Step  28 (edge* ): acc=0.6034  drop=-0.0036  neurons=1101  edges=786,950
+  [fine-tune] Epoch   1 | loss 0.0285 | acc 0.9948 f1 0.9948 prec 0.9948 rec 0.9948
+  [fine-tune] Epoch   2 | loss 0.0246 | acc 0.9887 f1 0.9887 prec 0.9888 rec 0.9887
+[V: GA Memetic Biased + Bridge-Link] Step  29 (edge* ): acc=0.5943  drop=+0.0055  neurons=1100  edges=747,603
+  [fine-tune] Epoch   1 | loss 0.0280 | acc 0.9958 f1 0.9958 prec 0.9958 rec 0.9958
+  [fine-tune] Epoch   2 | loss 0.0271 | acc 0.9965 f1 0.9965 prec 0.9966 rec 0.9965
+[V: GA Memetic Biased + Bridge-Link] Step  30 (edge* ): acc=0.6109  drop=-0.0111  neurons=1097  edges=710,223
+  [fine-tune] Epoch   1 | loss 0.0343 | acc 0.9933 f1 0.9933 prec 0.9933 rec 0.9933
+  [fine-tune] Epoch   2 | loss 0.0142 | acc 0.9994 f1 0.9994 prec 0.9994 rec 0.9994
+[V: GA Memetic Biased + Bridge-Link] Step  31 (edge* ): acc=0.6175  drop=-0.0177  neurons=1096  edges=674,712
+  [fine-tune] Epoch   1 | loss 0.0263 | acc 0.9986 f1 0.9986 prec 0.9986 rec 0.9986
+  [fine-tune] Epoch   2 | loss 0.0246 | acc 0.9769 f1 0.9769 prec 0.9771 rec 0.9769
+[V: GA Memetic Biased + Bridge-Link] Step  32 (edge* ): acc=0.5911  drop=+0.0087  neurons=1095  edges=640,977
+  [fine-tune] Epoch   1 | loss 0.0253 | acc 0.9980 f1 0.9980 prec 0.9980 rec 0.9980
+  [fine-tune] Epoch   2 | loss 0.0212 | acc 0.9883 f1 0.9883 prec 0.9883 rec 0.9883
+[V: GA Memetic Biased + Bridge-Link] Step  33 (edge* ): acc=0.6036  drop=-0.0038  neurons=1094  edges=608,929
+  [fine-tune] Epoch   1 | loss 0.0242 | acc 0.9943 f1 0.9943 prec 0.9943 rec 0.9943
+  [fine-tune] Epoch   2 | loss 0.0339 | acc 0.9952 f1 0.9952 prec 0.9952 rec 0.9952
+[V: GA Memetic Biased + Bridge-Link] Step  34 (edge* ): acc=0.6112  drop=-0.0114  neurons=1092  edges=578,483
+  [fine-tune] Epoch   1 | loss 0.0252 | acc 0.9979 f1 0.9979 prec 0.9979 rec 0.9979
+  [fine-tune] Epoch   2 | loss 0.0223 | acc 0.9919 f1 0.9919 prec 0.9919 rec 0.9919
+[V: GA Memetic Biased + Bridge-Link] Step  35 (edge* ): acc=0.6018  drop=-0.0020  neurons=1089  edges=549,559
+  [fine-tune] Epoch   1 | loss 0.0234 | acc 0.9980 f1 0.9980 prec 0.9980 rec 0.9980
+  [fine-tune] Epoch   2 | loss 0.0161 | acc 0.9929 f1 0.9929 prec 0.9930 rec 0.9929
+[V: GA Memetic Biased + Bridge-Link] Step  36 (edge* ): acc=0.6014  drop=-0.0016  neurons=1085  edges=522,082
+  [fine-tune] Epoch   1 | loss 0.0197 | acc 0.9972 f1 0.9972 prec 0.9972 rec 0.9972
+  [fine-tune] Epoch   2 | loss 0.0281 | acc 0.9945 f1 0.9945 prec 0.9945 rec 0.9945
+[V: GA Memetic Biased + Bridge-Link] Step  37 (edge* ): acc=0.6095  drop=-0.0097  neurons=1081  edges=495,978
+  [fine-tune] Epoch   1 | loss 0.0252 | acc 0.9979 f1 0.9979 prec 0.9979 rec 0.9979
+  [fine-tune] Epoch   2 | loss 0.0110 | acc 0.9982 f1 0.9982 prec 0.9982 rec 0.9982
+[V: GA Memetic Biased + Bridge-Link] Step  38 (edge* ): acc=0.6184  drop=-0.0186  neurons=1078  edges=471,180
+  [fine-tune] Epoch   1 | loss 0.0228 | acc 0.9971 f1 0.9971 prec 0.9971 rec 0.9971
+  [fine-tune] Epoch   2 | loss 0.0188 | acc 0.9993 f1 0.9993 prec 0.9993 rec 0.9993
+[V: GA Memetic Biased + Bridge-Link] Step  39 (edge* ): acc=0.6169  drop=-0.0171  neurons=1071  edges=447,621
+  [fine-tune] Epoch   1 | loss 0.0223 | acc 0.9996 f1 0.9996 prec 0.9996 rec 0.9996
+  [fine-tune] Epoch   2 | loss 0.0111 | acc 0.9899 f1 0.9899 prec 0.9901 rec 0.9899
+[V: GA Memetic Biased + Bridge-Link] Step  40 (edge* ): acc=0.6067  drop=-0.0069  neurons=1069  edges=425,240
+  [fine-tune] Epoch   1 | loss 0.0163 | acc 0.9992 f1 0.9992 prec 0.9992 rec 0.9992
+  [fine-tune] Epoch   2 | loss 0.0429 | acc 0.9961 f1 0.9961 prec 0.9961 rec 0.9961
+[V: GA Memetic Biased + Bridge-Link] Step  41 (edge* ): acc=0.6135  drop=-0.0137  neurons=1068  edges=403,978
+  [fine-tune] Epoch   1 | loss 0.0263 | acc 0.9990 f1 0.9990 prec 0.9990 rec 0.9990
+  [fine-tune] Epoch   2 | loss 0.0081 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  42 (edge* ): acc=0.6299  drop=-0.0301  neurons=1068  edges=383,780
+  [fine-tune] Epoch   1 | loss 0.0208 | acc 0.9952 f1 0.9952 prec 0.9952 rec 0.9952
+  [fine-tune] Epoch   2 | loss 0.0181 | acc 0.9975 f1 0.9975 prec 0.9975 rec 0.9975
+[V: GA Memetic Biased + Bridge-Link] Step  43 (edge* ): acc=0.6117  drop=-0.0119  neurons=1067  edges=364,591
+  [fine-tune] Epoch   1 | loss 0.0209 | acc 0.9981 f1 0.9981 prec 0.9981 rec 0.9981
+  [fine-tune] Epoch   2 | loss 0.0121 | acc 0.9989 f1 0.9989 prec 0.9989 rec 0.9989
+[V: GA Memetic Biased + Bridge-Link] Step  44 (edge* ): acc=0.6202  drop=-0.0204  neurons=1065  edges=346,362
+  [fine-tune] Epoch   1 | loss 0.0196 | acc 0.9994 f1 0.9994 prec 0.9994 rec 0.9994
+  [fine-tune] Epoch   2 | loss 0.0087 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  45 (edge* ): acc=0.6247  drop=-0.0249  neurons=1062  edges=329,044
+  [fine-tune] Epoch   1 | loss 0.0213 | acc 0.9989 f1 0.9989 prec 0.9989 rec 0.9989
+  [fine-tune] Epoch   2 | loss 0.0105 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  46 (edge* ): acc=0.6258  drop=-0.0260  neurons=1055  edges=312,592
+  [fine-tune] Epoch   1 | loss 0.0175 | acc 0.9997 f1 0.9997 prec 0.9997 rec 0.9997
+  [fine-tune] Epoch   2 | loss 0.0151 | acc 0.9922 f1 0.9922 prec 0.9923 rec 0.9922
+[V: GA Memetic Biased + Bridge-Link] Step  47 (edge* ): acc=0.6126  drop=-0.0128  neurons=1052  edges=296,963
+  [fine-tune] Epoch   1 | loss 0.0196 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0083 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  48 (edge* ): acc=0.6249  drop=-0.0251  neurons=1048  edges=282,115
+  [fine-tune] Epoch   1 | loss 0.0192 | acc 0.9972 f1 0.9972 prec 0.9972 rec 0.9972
+  [fine-tune] Epoch   2 | loss 0.0141 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  49 (edge* ): acc=0.6262  drop=-0.0264  neurons=1044  edges=268,010
+  [fine-tune] Epoch   1 | loss 0.0202 | acc 0.9995 f1 0.9995 prec 0.9995 rec 0.9995
+  [fine-tune] Epoch   2 | loss 0.0097 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  50 (edge* ): acc=0.6291  drop=-0.0293  neurons=1043  edges=254,610
+  [fine-tune] Epoch   1 | loss 0.0201 | acc 0.9994 f1 0.9994 prec 0.9994 rec 0.9994
+  [fine-tune] Epoch   2 | loss 0.0108 | acc 0.9997 f1 0.9997 prec 0.9997 rec 0.9997
+[V: GA Memetic Biased + Bridge-Link] Step  51 (edge* ): acc=0.6253  drop=-0.0255  neurons=1041  edges=241,880
+  [fine-tune] Epoch   1 | loss 0.0179 | acc 0.9993 f1 0.9993 prec 0.9993 rec 0.9993
+  [fine-tune] Epoch   2 | loss 0.0116 | acc 0.9993 f1 0.9993 prec 0.9993 rec 0.9993
+[V: GA Memetic Biased + Bridge-Link] Step  52 (edge* ): acc=0.6249  drop=-0.0251  neurons=1040  edges=229,786
+  [fine-tune] Epoch   1 | loss 0.0176 | acc 0.9996 f1 0.9996 prec 0.9996 rec 0.9996
+  [fine-tune] Epoch   2 | loss 0.0103 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  53 (edge* ): acc=0.6256  drop=-0.0258  neurons=1036  edges=218,297
+  [fine-tune] Epoch   1 | loss 0.0189 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0102 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+[V: GA Memetic Biased + Bridge-Link] Step  54 (edge* ): acc=0.6241  drop=-0.0243  neurons=1034  edges=207,383
+  [fine-tune] Epoch   1 | loss 0.0202 | acc 0.9990 f1 0.9990 prec 0.9990 rec 0.9990
+  [fine-tune] Epoch   2 | loss 0.0120 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  55 (edge* ): acc=0.6278  drop=-0.0280  neurons=1031  edges=197,014
+  [fine-tune] Epoch   1 | loss 0.0192 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+  [fine-tune] Epoch   2 | loss 0.0129 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  56 (edge* ): acc=0.6219  drop=-0.0221  neurons=1029  edges=187,164
+  [fine-tune] Epoch   1 | loss 0.0191 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0119 | acc 0.9996 f1 0.9996 prec 0.9996 rec 0.9996
+[V: GA Memetic Biased + Bridge-Link] Step  57 (edge* ): acc=0.6194  drop=-0.0196  neurons=1027  edges=177,806
+  [fine-tune] Epoch   1 | loss 0.0209 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+  [fine-tune] Epoch   2 | loss 0.0113 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  58 (edge* ): acc=0.6229  drop=-0.0231  neurons=1025  edges=168,916
+  [fine-tune] Epoch   1 | loss 0.0204 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0118 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  59 (edge* ): acc=0.6221  drop=-0.0223  neurons=1025  edges=160,471
+  [fine-tune] Epoch   1 | loss 0.0216 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+  [fine-tune] Epoch   2 | loss 0.0127 | acc 0.9993 f1 0.9993 prec 0.9993 rec 0.9993
+[V: GA Memetic Biased + Bridge-Link] Step  60 (edge* ): acc=0.6193  drop=-0.0195  neurons=1024  edges=152,448
+  [fine-tune] Epoch   1 | loss 0.0220 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0128 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  61 (edge* ): acc=0.6201  drop=-0.0203  neurons=1021  edges=144,826
+  [fine-tune] Epoch   1 | loss 0.0230 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0138 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  62 (edge* ): acc=0.6196  drop=-0.0198  neurons=1020  edges=137,585
+  [fine-tune] Epoch   1 | loss 0.0252 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+  [fine-tune] Epoch   2 | loss 0.0142 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  63 (edge* ): acc=0.6168  drop=-0.0170  neurons=1018  edges=130,706
+  [fine-tune] Epoch   1 | loss 0.0260 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+  [fine-tune] Epoch   2 | loss 0.0151 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  64 (edge* ): acc=0.6162  drop=-0.0164  neurons=1015  edges=124,171
+  [fine-tune] Epoch   1 | loss 0.0273 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+  [fine-tune] Epoch   2 | loss 0.0158 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  65 (edge* ): acc=0.6170  drop=-0.0172  neurons=1011  edges=117,963
+  [fine-tune] Epoch   1 | loss 0.0285 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+  [fine-tune] Epoch   2 | loss 0.0166 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  66 (edge* ): acc=0.6130  drop=-0.0132  neurons=1010  edges=112,065
+  [fine-tune] Epoch   1 | loss 0.0307 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0178 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  67 (edge* ): acc=0.6125  drop=-0.0127  neurons=1009  edges=106,462
+  [fine-tune] Epoch   1 | loss 0.0327 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0191 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  68 (edge* ): acc=0.6159  drop=-0.0161  neurons=1007  edges=101,139
+  [fine-tune] Epoch   1 | loss 0.0357 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+  [fine-tune] Epoch   2 | loss 0.0201 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  69 (edge* ): acc=0.6134  drop=-0.0136  neurons=1004  edges=96,083
+  [fine-tune] Epoch   1 | loss 0.0390 | acc 0.9997 f1 0.9997 prec 0.9997 rec 0.9997
+  [fine-tune] Epoch   2 | loss 0.0223 | acc 1.0000 f1 1.0000 prec 1.0000 rec 1.0000
+[V: GA Memetic Biased + Bridge-Link] Step  70 (edge* ): acc=0.6116  drop=-0.0118  neurons=1004  edges=91,279
+  [fine-tune] Epoch   1 | loss 0.0423 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0240 | acc 0.9998 f1 0.9998 prec 0.9998 rec 0.9998
+[V: GA Memetic Biased + Bridge-Link] Step  71 (edge* ): acc=0.6118  drop=-0.0120  neurons=1004  edges=86,716
+  [fine-tune] Epoch   1 | loss 0.0463 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+  [fine-tune] Epoch   2 | loss 0.0262 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  72 (edge* ): acc=0.6100  drop=-0.0102  neurons=1001  edges=82,381
+  [fine-tune] Epoch   1 | loss 0.0512 | acc 0.9997 f1 0.9997 prec 0.9997 rec 0.9997
+  [fine-tune] Epoch   2 | loss 0.0295 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  73 (edge* ): acc=0.6078  drop=-0.0080  neurons=1000  edges=78,262
+  [fine-tune] Epoch   1 | loss 0.0545 | acc 0.9994 f1 0.9994 prec 0.9994 rec 0.9994
+  [fine-tune] Epoch   2 | loss 0.0320 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  74 (edge* ): acc=0.6090  drop=-0.0092  neurons=1000  edges=74,349
+  [fine-tune] Epoch   1 | loss 0.0610 | acc 0.9995 f1 0.9995 prec 0.9995 rec 0.9995
+  [fine-tune] Epoch   2 | loss 0.0360 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  75 (edge* ): acc=0.6038  drop=-0.0040  neurons=999  edges=70,632
+  [fine-tune] Epoch   1 | loss 0.0665 | acc 0.9990 f1 0.9990 prec 0.9990 rec 0.9990
+  [fine-tune] Epoch   2 | loss 0.0395 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  76 (edge* ): acc=0.6050  drop=-0.0052  neurons=993  edges=67,101
+  [fine-tune] Epoch   1 | loss 0.0730 | acc 0.9989 f1 0.9989 prec 0.9989 rec 0.9989
+  [fine-tune] Epoch   2 | loss 0.0437 | acc 0.9999 f1 0.9999 prec 0.9999 rec 0.9999
+[V: GA Memetic Biased + Bridge-Link] Step  77 (edge* ): acc=0.6001  drop=-0.0003  neurons=991  edges=63,746
+  [fine-tune] Epoch   1 | loss 0.0800 | acc 0.9988 f1 0.9988 prec 0.9988 rec 0.9988
+  [fine-tune] Epoch   2 | loss 0.0490 | acc 0.9996 f1 0.9996 prec 0.9996 rec 0.9996
+[V: GA Memetic Biased + Bridge-Link] Step  78 (edge* ): acc=0.5987  drop=+0.0011  neurons=989  edges=60,559
+  [fine-tune] Epoch   1 | loss 0.0893 | acc 0.9977 f1 0.9977 prec 0.9977 rec 0.9977
+  [fine-tune] Epoch   2 | loss 0.0557 | acc 0.9997 f1 0.9997 prec 0.9997 rec 0.9997
+[V: GA Memetic Biased + Bridge-Link] Step  79 (edge* ): acc=0.5976  drop=+0.0022  neurons=988  edges=57,532
+  [fine-tune] Epoch   1 | loss 0.0995 | acc 0.9972 f1 0.9972 prec 0.9972 rec 0.9972
+  [fine-tune] Epoch   2 | loss 0.0636 | acc 0.9989 f1 0.9989 prec 0.9989 rec 0.9989
+[V: GA Memetic Biased + Bridge-Link] Step  80 (edge* ): acc=0.5972  drop=+0.0026  neurons=986  edges=54,656
+  [fine-tune] Epoch   1 | loss 0.1137 | acc 0.9961 f1 0.9961 prec 0.9961 rec 0.9961
+  [fine-tune] Epoch   2 | loss 0.0724 | acc 0.9985 f1 0.9985 prec 0.9985 rec 0.9985
+[V: GA Memetic Biased + Bridge-Link] Step  81 (edge* ): acc=0.5948  drop=+0.0050  neurons=986  edges=51,924
+  [fine-tune] Epoch   1 | loss 0.1269 | acc 0.9920 f1 0.9920 prec 0.9920 rec 0.9920
+  [fine-tune] Epoch   2 | loss 0.0845 | acc 0.9972 f1 0.9972 prec 0.9972 rec 0.9972
+[V: GA Memetic Biased + Bridge-Link] Step  82 (edge* ): acc=0.5898  drop=+0.0100  neurons=985  edges=49,328
+[V: GA Memetic Biased + Bridge-Link] Tolerance exceeded (drop=0.0100). Reverting.
+
+[V: GA Memetic Biased + Bridge-Link] Finished. 82 steps. Final: acc=0.5948  neurons=986  edges=51,924
+Device   : cuda
+Loaded?  : True
+Test size: 10000 samples
+Accuracy : 0.5948
+F1       : 0.5952
+Precision: 0.5962
+Recall   : 0.5948
+Params   : 1572968 trainable
+State size (approx): 6144.41 KB
+Inference time (avg): batch 1.0463 ms | single 0.033827 ms
+Simulated annealing  [N=484, P=484, iters=200,000]
+
+Done in 87.99s
+Best communication cost: 351127.0000
+Mapping (task → core):
+  Task   1  →  Core 439
+  Task   2  →  Core 232
+  Task   3  →  Core 255
+  Task   4  →  Core 256
+  Task   5  →  Core 231
+  Task   6  →  Core 319
+  Task   7  →  Core 122
+  Task   8  →  Core 273
+  Task   9  →  Core  62
+  Task  10  →  Core 400
+  Task  11  →  Core 457
+  Task  12  →  Core  83
+  Task  13  →  Core  20
+  Task  14  →  Core 222
+  Task  15  →  Core  18
+  Task  16  →  Core  69
+  Task  17  →  Core  61
+  Task  18  →  Core 460
+  Task  19  →  Core  46
+  Task  20  →  Core 243
+  Task  21  →  Core 415
+  Task  22  →  Core 459
+  Task  23  →  Core  50
+  Task  24  →  Core 248
+  Task  25  →  Core 418
+  Task  26  →  Core   3
+  Task  27  →  Core 115
+  Task  28  →  Core  12
+  Task  29  →  Core 310
+  Task  30  →  Core 373
+  Task  31  →  Core 352
+  Task  32  →  Core 466
+  Task  33  →  Core 440
+  Task  34  →  Core   5
+  Task  35  →  Core 461
+  Task  36  →  Core 134
+  Task  37  →  Core 470
+  Task  38  →  Core 351
+  Task  39  →  Core   8
+  Task  40  →  Core   4
+  Task  41  →  Core 294
+  Task  42  →  Core 314
+  Task  43  →  Core 189
+  Task  44  →  Core  26
+  Task  45  →  Core 249
+  Task  46  →  Core 280
+  Task  47  →  Core 343
+  Task  48  →  Core  41
+  Task  49  →  Core  19
+  Task  50  →  Core 308
+  Task  51  →  Core 354
+  Task  52  →  Core  63
+  Task  53  →  Core 395
+  Task  54  →  Core 456
+  Task  55  →  Core  88
+  Task  56  →  Core 417
+  Task  57  →  Core  24
+  Task  58  →  Core 484
+  Task  59  →  Core 109
+  Task  60  →  Core 423
+  Task  61  →  Core 475
+  Task  62  →  Core 463
+  Task  63  →  Core  67
+  Task  64  →  Core 221
+  Task  65  →  Core   6
+  Task  66  →  Core 399
+  Task  67  →  Core  29
+  Task  68  →  Core 329
+  Task  69  →  Core 265
+  Task  70  →  Core  49
+  Task  71  →  Core 468
+  Task  72  →  Core  86
+  Task  73  →  Core 174
+  Task  74  →  Core 482
+  Task  75  →  Core  71
+  Task  76  →  Core 478
+  Task  77  →  Core 330
+  Task  78  →  Core 422
+  Task  79  →  Core  48
+  Task  80  →  Core 298
+  Task  81  →  Core 230
+  Task  82  →  Core 235
+  Task  83  →  Core 250
+  Task  84  →  Core 320
+  Task  85  →  Core 274
+  Task  86  →  Core 247
+  Task  87  →  Core 282
+  Task  88  →  Core 228
+  Task  89  →  Core 162
+  Task  90  →  Core 323
+  Task  91  →  Core 362
+  Task  92  →  Core 187
+  Task  93  →  Core 191
+  Task  94  →  Core 374
+  Task  95  →  Core  44
+  Task  96  →  Core 284
+  Task  97  →  Core 217
+  Task  98  →  Core 137
+  Task  99  →  Core 393
+  Task 100  →  Core  82
+  Task 101  →  Core 353
+  Task 102  →  Core 197
+  Task 103  →  Core 107
+  Task 104  →  Core 377
+  Task 105  →  Core  38
+  Task 106  →  Core 103
+  Task 107  →  Core  60
+  Task 108  →  Core  45
+  Task 109  →  Core  65
+  Task 110  →  Core 372
+  Task 111  →  Core  11
+  Task 112  →  Core 453
+  Task 113  →  Core 218
+  Task 114  →  Core 157
+  Task 115  →  Core 433
+  Task 116  →  Core 132
+  Task 117  →  Core 480
+  Task 118  →  Core 178
+  Task 119  →  Core  84
+  Task 120  →  Core 449
+  Task 121  →  Core 116
+  Task 122  →  Core 391
+  Task 123  →  Core 196
+  Task 124  →  Core 156
+  Task 125  →  Core 483
+  Task 126  →  Core 479
+  Task 127  →  Core  23
+  Task 128  →  Core 198
+  Task 129  →  Core 104
+  Task 130  →  Core  33
+  Task 131  →  Core 454
+  Task 132  →  Core  34
+  Task 133  →  Core  94
+  Task 134  →  Core 451
+  Task 135  →  Core  36
+  Task 136  →  Core 333
+  Task 137  →  Core 155
+  Task 138  →  Core 266
+  Task 139  →  Core  74
+  Task 140  →  Core 376
+  Task 141  →  Core  31
+  Task 142  →  Core 263
+  Task 143  →  Core  87
+  Task 144  →  Core 474
+  Task 145  →  Core  77
+  Task 146  →  Core 170
+  Task 147  →  Core 336
+  Task 148  →  Core  55
+  Task 149  →  Core 413
+  Task 150  →  Core 203
+  Task 151  →  Core  78
+  Task 152  →  Core 386
+  Task 153  →  Core 119
+  Task 154  →  Core 146
+  Task 155  →  Core 325
+  Task 156  →  Core 224
+  Task 157  →  Core 327
+  Task 158  →  Core 233
+  Task 159  →  Core 296
+  Task 160  →  Core 234
+  Task 161  →  Core 227
+  Task 162  →  Core 210
+  Task 163  →  Core 186
+  Task 164  →  Core 316
+  Task 165  →  Core 142
+  Task 166  →  Core 276
+  Task 167  →  Core 212
+  Task 168  →  Core 253
+  Task 169  →  Core 208
+  Task 170  →  Core 361
+  Task 171  →  Core 285
+  Task 172  →  Core 237
+  Task 173  →  Core 267
+  Task 174  →  Core 144
+  Task 175  →  Core 270
+  Task 176  →  Core 184
+  Task 177  →  Core 344
+  Task 178  →  Core 188
+  Task 179  →  Core 293
+  Task 180  →  Core 257
+  Task 181  →  Core 258
+  Task 182  →  Core 164
+  Task 183  →  Core 295
+  Task 184  →  Core 277
+  Task 185  →  Core 214
+  Task 186  →  Core 290
+  Task 187  →  Core 225
+  Task 188  →  Core 324
+  Task 189  →  Core 387
+  Task 190  →  Core  98
+  Task 191  →  Core 408
+  Task 192  →  Core  79
+  Task 193  →  Core 389
+  Task 194  →  Core 365
+  Task 195  →  Core 193
+  Task 196  →  Core 428
+  Task 197  →  Core 125
+  Task 198  →  Core 388
+  Task 199  →  Core 124
+  Task 200  →  Core 450
+  Task 201  →  Core 126
+  Task 202  →  Core 269
+  Task 203  →  Core  54
+  Task 204  →  Core 383
+  Task 205  →  Core 140
+  Task 206  →  Core 216
+  Task 207  →  Core 315
+  Task 208  →  Core 160
+  Task 209  →  Core 446
+  Task 210  →  Core 138
+  Task 211  →  Core  96
+  Task 212  →  Core 337
+  Task 213  →  Core 148
+  Task 214  →  Core 238
+  Task 215  →  Core 259
+  Task 216  →  Core 117
+  Task 217  →  Core 242
+  Task 218  →  Core 129
+  Task 219  →  Core  56
+  Task 220  →  Core 100
+  Task 221  →  Core 169
+  Task 222  →  Core 101
+  Task 223  →  Core 260
+  Task 224  →  Core 139
+  Task 225  →  Core 431
+  Task 226  →  Core 407
+  Task 227  →  Core 102
+  Task 228  →  Core 335
+  Task 229  →  Core 171
+  Task 230  →  Core 281
+  Task 231  →  Core 304
+  Task 232  →  Core 447
+  Task 233  →  Core 158
+  Task 234  →  Core 195
+  Task 235  →  Core  95
+  Task 236  →  Core 346
+  Task 237  →  Core  99
+  Task 238  →  Core 182
+  Task 239  →  Core 303
+  Task 240  →  Core 181
+  Task 241  →  Core 368
+  Task 242  →  Core 161
+  Task 243  →  Core 149
+  Task 244  →  Core 292
+  Task 245  →  Core 123
+  Task 246  →  Core 215
+  Task 247  →  Core 147
+  Task 248  →  Core 311
+  Task 249  →  Core 118
+  Task 250  →  Core 334
+  Task 251  →  Core  58
+  Task 252  →  Core 313
+  Task 253  →  Core 246
+  Task 254  →  Core 172
+  Task 255  →  Core 348
+  Task 256  →  Core 291
+  Task 257  →  Core 402
+  Task 258  →  Core 357
+  Task 259  →  Core 202
+  Task 260  →  Core 448
+  Task 261  →  Core  73
+  Task 262  →  Core 358
+  Task 263  →  Core  35
+  Task 264  →  Core 370
+  Task 265  →  Core 404
+  Task 266  →  Core 264
+  Task 267  →  Core  80
+  Task 268  →  Core 390
+  Task 269  →  Core  76
+  Task 270  →  Core 406
+  Task 271  →  Core 347
+  Task 272  →  Core 261
+  Task 273  →  Core 130
+  Task 274  →  Core 289
+  Task 275  →  Core  53
+  Task 276  →  Core 403
+  Task 277  →  Core 201
+  Task 278  →  Core 410
+  Task 279  →  Core 369
+  Task 280  →  Core 200
+  Task 281  →  Core 452
+  Task 282  →  Core 245
+  Task 283  →  Core  57
+  Task 284  →  Core 381
+  Task 285  →  Core 427
+  Task 286  →  Core  75
+  Task 287  →  Core 359
+  Task 288  →  Core  97
+  Task 289  →  Core 473
+  Task 290  →  Core 382
+  Task 291  →  Core 240
+  Task 292  →  Core 426
+  Task 293  →  Core 159
+  Task 294  →  Core 384
+  Task 295  →  Core 411
+  Task 296  →  Core 309
+  Task 297  →  Core  72
+  Task 298  →  Core 306
+  Task 299  →  Core 219
+  Task 300  →  Core 429
+  Task 301  →  Core 305
+  Task 302  →  Core 239
+  Task 303  →  Core 360
+  Task 304  →  Core 180
+  Task 305  →  Core 241
+  Task 306  →  Core 405
+  Task 307  →  Core 307
+  Task 308  →  Core 379
+  Task 309  →  Core 244
+  Task 310  →  Core 409
+  Task 311  →  Core 194
+  Task 312  →  Core 312
+  Task 313  →  Core 326
+  Task 314  →  Core 278
+  Task 315  →  Core 301
+  Task 316  →  Core 251
+  Task 317  →  Core 141
+  Task 318  →  Core 190
+  Task 319  →  Core 209
+  Task 320  →  Core 318
+  Task 321  →  Core 300
+  Task 322  →  Core 207
+  Task 323  →  Core 254
+  Task 324  →  Core 297
+  Task 325  →  Core 321
+  Task 326  →  Core 252
+  Task 327  →  Core 185
+  Task 328  →  Core 342
+  Task 329  →  Core 204
+  Task 330  →  Core 275
+  Task 331  →  Core 167
+  Task 332  →  Core 317
+  Task 333  →  Core 366
+  Task 334  →  Core 229
+  Task 335  →  Core 299
+  Task 336  →  Core 272
+  Task 337  →  Core 363
+  Task 338  →  Core 111
+  Task 339  →  Core 367
+  Task 340  →  Core 283
+  Task 341  →  Core 206
+  Task 342  →  Core 120
+  Task 343  →  Core 471
+  Task 344  →  Core 340
+  Task 345  →  Core 183
+  Task 346  →  Core 163
+  Task 347  →  Core 302
+  Task 348  →  Core 364
+  Task 349  →  Core 385
+  Task 350  →  Core 268
+  Task 351  →  Core 226
+  Task 352  →  Core 145
+  Task 353  →  Core 236
+  Task 354  →  Core 322
+  Task 355  →  Core 192
+  Task 356  →  Core 121
+  Task 357  →  Core 339
+  Task 358  →  Core 168
+  Task 359  →  Core 345
+  Task 360  →  Core 205
+  Task 361  →  Core 271
+  Task 362  →  Core 211
+  Task 363  →  Core 338
+  Task 364  →  Core 166
+  Task 365  →  Core 341
+  Task 366  →  Core 213
+  Task 367  →  Core 279
+  Task 368  →  Core 165
+  Task 369  →  Core 143
+  Task 370  →  Core 420
+  Task 371  →  Core  89
+  Task 372  →  Core 173
+  Task 373  →  Core  81
+  Task 374  →  Core  59
+  Task 375  →  Core 331
+  Task 376  →  Core  51
+  Task 377  →  Core  42
+  Task 378  →  Core 288
+  Task 379  →  Core  13
+  Task 380  →  Core 397
+  Task 381  →  Core  14
+  Task 382  →  Core 380
+  Task 383  →  Core 176
+  Task 384  →  Core 442
+  Task 385  →  Core  64
+  Task 386  →  Core 443
+  Task 387  →  Core   7
+  Task 388  →  Core 416
+  Task 389  →  Core 127
+  Task 390  →  Core 455
+  Task 391  →  Core 476
+  Task 392  →  Core  92
+  Task 393  →  Core 398
+  Task 394  →  Core 133
+  Task 395  →  Core  15
+  Task 396  →  Core 113
+  Task 397  →  Core 114
+  Task 398  →  Core 412
+  Task 399  →  Core 349
+  Task 400  →  Core 199
+  Task 401  →  Core  66
+  Task 402  →  Core   1
+  Task 403  →  Core  47
+  Task 404  →  Core 175
+  Task 405  →  Core  52
+  Task 406  →  Core  93
+  Task 407  →  Core 458
+  Task 408  →  Core 177
+  Task 409  →  Core 332
+  Task 410  →  Core 401
+  Task 411  →  Core 220
+  Task 412  →  Core 444
+  Task 413  →  Core  37
+  Task 414  →  Core 151
+  Task 415  →  Core 394
+  Task 416  →  Core 464
+  Task 417  →  Core  28
+  Task 418  →  Core  43
+  Task 419  →  Core 112
+  Task 420  →  Core 432
+  Task 421  →  Core 152
+  Task 422  →  Core 262
+  Task 423  →  Core 434
+  Task 424  →  Core   9
+  Task 425  →  Core  21
+  Task 426  →  Core 355
+  Task 427  →  Core  85
+  Task 428  →  Core  70
+  Task 429  →  Core 223
+  Task 430  →  Core 105
+  Task 431  →  Core  16
+  Task 432  →  Core 419
+  Task 433  →  Core 469
+  Task 434  →  Core  22
+  Task 435  →  Core  25
+  Task 436  →  Core 472
+  Task 437  →  Core 179
+  Task 438  →  Core 135
+  Task 439  →  Core 445
+  Task 440  →  Core 106
+  Task 441  →  Core 467
+  Task 442  →  Core 414
+  Task 443  →  Core 286
+  Task 444  →  Core 424
+  Task 445  →  Core  10
+  Task 446  →  Core 371
+  Task 447  →  Core 131
+  Task 448  →  Core 465
+  Task 449  →  Core 154
+  Task 450  →  Core 396
+  Task 451  →  Core  40
+  Task 452  →  Core 425
+  Task 453  →  Core 430
+  Task 454  →  Core 150
+  Task 455  →  Core  32
+  Task 456  →  Core  90
+  Task 457  →  Core 375
+  Task 458  →  Core 421
+  Task 459  →  Core  27
+  Task 460  →  Core 437
+  Task 461  →  Core 128
+  Task 462  →  Core 328
+  Task 463  →  Core 153
+  Task 464  →  Core  30
+  Task 465  →  Core 462
+  Task 466  →  Core   2
+  Task 467  →  Core  91
+  Task 468  →  Core 287
+  Task 469  →  Core 477
+  Task 470  →  Core 136
+  Task 471  →  Core 436
+  Task 472  →  Core 392
+  Task 473  →  Core 378
+  Task 474  →  Core 435
+  Task 475  →  Core  39
+  Task 476  →  Core 438
+  Task 477  →  Core 108
+  Task 478  →  Core 356
+  Task 479  →  Core  17
+  Task 480  →  Core 441
+  Task 481  →  Core 110
+  Task 482  →  Core  68
+  Task 483  →  Core 481
+  Task 484  →  Core 350
+Mapping: [(0, 438), (1, 231), (2, 254), (3, 255), (4, 230), (5, 318), (6, 121), (7, 272), (8, 61), (9, 399), (10, 456), (11, 82), (12, 19), (13, 221), (14, 17), (15, 68), (16, 60), (17, 459), (18, 45), (19, 242), (20, 414), (21, 458), (22, 49), (23, 247), (24, 417), (25, 2), (26, 114), (27, 11), (28, 309), (29, 372), (30, 351), (31, 465), (32, 439), (33, 4), (34, 460), (35, 133), (36, 469), (37, 350), (38, 7), (39, 3), (40, 293), (41, 313), (42, 188), (43, 25), (44, 248), (45, 279), (46, 342), (47, 40), (48, 18), (49, 307), (50, 353), (51, 62), (52, 394), (53, 455), (54, 87), (55, 416), (56, 23), (57, 483), (58, 108), (59, 422), (60, 474), (61, 462), (62, 66), (63, 220), (64, 5), (65, 398), (66, 28), (67, 328), (68, 264), (69, 48), (70, 467), (71, 85), (72, 173), (73, 481), (74, 70), (75, 477), (76, 329), (77, 421), (78, 47), (79, 297), (80, 229), (81, 234), (82, 249), (83, 319), (84, 273), (85, 246), (86, 281), (87, 227), (88, 161), (89, 322), (90, 361), (91, 186), (92, 190), (93, 373), (94, 43), (95, 283), (96, 216), (97, 136), (98, 392), (99, 81), (100, 352), (101, 196), (102, 106), (103, 376), (104, 37), (105, 102), (106, 59), (107, 44), (108, 64), (109, 371), (110, 10), (111, 452), (112, 217), (113, 156), (114, 432), (115, 131), (116, 479), (117, 177), (118, 83), (119, 448), (120, 115), (121, 390), (122, 195), (123, 155), (124, 482), (125, 478), (126, 22), (127, 197), (128, 103), (129, 32), (130, 453), (131, 33), (132, 93), (133, 450), (134, 35), (135, 332), (136, 154), (137, 265), (138, 73), (139, 375), (140, 30), (141, 262), (142, 86), (143, 473), (144, 76), (145, 169), (146, 335), (147, 54), (148, 412), (149, 202), (150, 77), (151, 385), (152, 118), (153, 145), (154, 324), (155, 223), (156, 326), (157, 232), (158, 295), (159, 233), (160, 226), (161, 209), (162, 185), (163, 315), (164, 141), (165, 275), (166, 211), (167, 252), (168, 207), (169, 360), (170, 284), (171, 236), (172, 266), (173, 143), (174, 269), (175, 183), (176, 343), (177, 187), (178, 292), (179, 256), (180, 257), (181, 163), (182, 294), (183, 276), (184, 213), (185, 289), (186, 224), (187, 323), (188, 386), (189, 97), (190, 407), (191, 78), (192, 388), (193, 364), (194, 192), (195, 427), (196, 124), (197, 387), (198, 123), (199, 449), (200, 125), (201, 268), (202, 53), (203, 382), (204, 139), (205, 215), (206, 314), (207, 159), (208, 445), (209, 137), (210, 95), (211, 336), (212, 147), (213, 237), (214, 258), (215, 116), (216, 241), (217, 128), (218, 55), (219, 99), (220, 168), (221, 100), (222, 259), (223, 138), (224, 430), (225, 406), (226, 101), (227, 334), (228, 170), (229, 280), (230, 303), (231, 446), (232, 157), (233, 194), (234, 94), (235, 345), (236, 98), (237, 181), (238, 302), (239, 180), (240, 367), (241, 160), (242, 148), (243, 291), (244, 122), (245, 214), (246, 146), (247, 310), (248, 117), (249, 333), (250, 57), (251, 312), (252, 245), (253, 171), (254, 347), (255, 290), (256, 401), (257, 356), (258, 201), (259, 447), (260, 72), (261, 357), (262, 34), (263, 369), (264, 403), (265, 263), (266, 79), (267, 389), (268, 75), (269, 405), (270, 346), (271, 260), (272, 129), (273, 288), (274, 52), (275, 402), (276, 200), (277, 409), (278, 368), (279, 199), (280, 451), (281, 244), (282, 56), (283, 380), (284, 426), (285, 74), (286, 358), (287, 96), (288, 472), (289, 381), (290, 239), (291, 425), (292, 158), (293, 383), (294, 410), (295, 308), (296, 71), (297, 305), (298, 218), (299, 428), (300, 304), (301, 238), (302, 359), (303, 179), (304, 240), (305, 404), (306, 306), (307, 378), (308, 243), (309, 408), (310, 193), (311, 311), (312, 325), (313, 277), (314, 300), (315, 250), (316, 140), (317, 189), (318, 208), (319, 317), (320, 299), (321, 206), (322, 253), (323, 296), (324, 320), (325, 251), (326, 184), (327, 341), (328, 203), (329, 274), (330, 166), (331, 316), (332, 365), (333, 228), (334, 298), (335, 271), (336, 362), (337, 110), (338, 366), (339, 282), (340, 205), (341, 119), (342, 470), (343, 339), (344, 182), (345, 162), (346, 301), (347, 363), (348, 384), (349, 267), (350, 225), (351, 144), (352, 235), (353, 321), (354, 191), (355, 120), (356, 338), (357, 167), (358, 344), (359, 204), (360, 270), (361, 210), (362, 337), (363, 165), (364, 340), (365, 212), (366, 278), (367, 164), (368, 142), (369, 419), (370, 88), (371, 172), (372, 80), (373, 58), (374, 330), (375, 50), (376, 41), (377, 287), (378, 12), (379, 396), (380, 13), (381, 379), (382, 175), (383, 441), (384, 63), (385, 442), (386, 6), (387, 415), (388, 126), (389, 454), (390, 475), (391, 91), (392, 397), (393, 132), (394, 14), (395, 112), (396, 113), (397, 411), (398, 348), (399, 198), (400, 65), (401, 0), (402, 46), (403, 174), (404, 51), (405, 92), (406, 457), (407, 176), (408, 331), (409, 400), (410, 219), (411, 443), (412, 36), (413, 150), (414, 393), (415, 463), (416, 27), (417, 42), (418, 111), (419, 431), (420, 151), (421, 261), (422, 433), (423, 8), (424, 20), (425, 354), (426, 84), (427, 69), (428, 222), (429, 104), (430, 15), (431, 418), (432, 468), (433, 21), (434, 24), (435, 471), (436, 178), (437, 134), (438, 444), (439, 105), (440, 466), (441, 413), (442, 285), (443, 423), (444, 9), (445, 370), (446, 130), (447, 464), (448, 153), (449, 395), (450, 39), (451, 424), (452, 429), (453, 149), (454, 31), (455, 89), (456, 374), (457, 420), (458, 26), (459, 436), (460, 127), (461, 327), (462, 152), (463, 29), (464, 461), (465, 1), (466, 90), (467, 286), (468, 476), (469, 135), (470, 435), (471, 391), (472, 377), (473, 434), (474, 38), (475, 437), (476, 107), (477, 355), (478, 16), (479, 440), (480, 109), (481, 67), (482, 480), (483, 349)]
+Communication cost: 351127.0
+  [recorded] 'V: GA Memetic Biased + Bridge-Link [final]'  acc=0.5948  cost=351127  sp_cost=519954  edges=51,924  neurons=986
+
+
+==============================================================================================================================================================================================================================================================================================================
+  ISO-ACCURACY TABLE — snapshot at each accuracy-drop threshold
+  Snapshot interval: every 0.5%
+  Model: MLP 3072-1024-1024-10 | Dataset: CIFAR-10
+  Tolerance: ≤1.0% drop from POST-L1 anchor
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2  G=Random+Taylor
+  I=Random+L2  J=StructL2+Taylor  K=StructL2+L2  L=StructL2+Bridge
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.01)
+  Deltas relative to Baseline.
+==============================================================================================================================================================================================================================================================================================================
++------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                     Stage                      |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                        |    0.6605  (baseline)|12362228.0000  (baseline)|23839181.0000  (baseline)| 4,204,544  (baseline)|     5,130  (baseline)|   2.05 ms  (baseline)| 8,409,088  (baseline)|16432.04 KB  (baseline)|    0.6602  (baseline)|    0.6616  (baseline)|    0.6605  (baseline)|
++------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Q: GA CC_Biased v2 + Bridge-Link @ drop≤0.5%    |     0.5928  (-10.25%)|10397287.0000  (-15.89%)|15184029.0000  (-36.31%)|  2,841,265  (-32.42%)|       4,700  (-8.38%)|     1.92 ms  (-6.45%)|  7,504,038  (-10.76%)|14662.68 KB  (-10.77%)|     0.5926  (-10.25%)|     0.5947  (-10.11%)|     0.5928  (-10.25%)|
++------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V: GA Memetic Biased + Bridge-Link @ drop≤0.5%  |     0.5944  (-10.01%)|12622155.0000  (+2.10%)|18825105.0000  (-21.03%)|  3,143,444  (-25.24%)|       4,732  (-7.76%)|     1.93 ms  (-5.97%)|   7,570,022  (-9.98%)| 14791.68 KB  (-9.98%)|      0.5944  (-9.97%)|      0.5961  (-9.90%)|     0.5944  (-10.01%)|
++------------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+
+==========================================================================================================================================================================================================================================================================================================
+  FINAL TABLE — each branch at its stopping point (last within tolerance)
+  Model: MLP 3072-1024-1024-10 | Dataset: CIFAR-10
+  Tolerance: ≤1.0% drop from POST-L1 anchor
+  A=IterCC+Bridge  B=IterCC+L2  D=Taylor+L2  G=Random+Taylor
+  I=Random+L2  J=StructL2+Taylor  K=StructL2+L2  L=StructL2+Bridge
+  Q=GABiasedv2+Bridge  V=GAMemBiased+Bridge  W=GAMemBiased+L2  V2=GAMemBiased+Bridge(0.01)
+  Deltas relative to Baseline.
+==========================================================================================================================================================================================================================================================================================================
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|                   Stage                    |       Accuracy       |Comm. Cost (WCTG n2n) |Cross Group Comm. Cost|        Edges         |       Neurons        |   Batch Inf. (ms)    |        FLOPs         |   Model Size (KB)    |          F1          |      Precision       |        Recall        |
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Baseline                                    |    0.6605  (baseline)|12362228.0000  (baseline)|23839181.0000  (baseline)| 4,204,544  (baseline)|     5,130  (baseline)|   2.05 ms  (baseline)| 8,409,088  (baseline)|16432.04 KB  (baseline)|    0.6602  (baseline)|    0.6616  (baseline)|    0.6605  (baseline)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|After L1 25% pre-pruning                    |      0.5998  (-9.19%)|12643549.0000  (+2.28%)|18897120.0000  (-20.73%)|  3,153,406  (-25.00%)|       4,735  (-7.70%)|     1.90 ms  (-7.38%)|   7,592,228  (-9.71%)| 14835.07 KB  (-9.72%)|      0.6018  (-8.84%)|      0.6060  (-8.41%)|      0.5998  (-9.19%)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|Q: GA CC_Biased v2 + Bridge-Link [final]    |      0.5958  (-9.80%)|7630110.0000  (-38.28%)|10294241.0000  (-56.82%)|  1,984,164  (-52.81%)|       4,684  (-8.69%)|     1.91 ms  (-6.97%)|  7,471,046  (-11.16%)|14598.18 KB  (-11.16%)|      0.5970  (-9.58%)|      0.6008  (-9.20%)|      0.5958  (-9.80%)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|V: GA Memetic Biased + Bridge-Link [final]  |      0.5948  (-9.95%)|351127.0000  (-97.16%)|519954.0000  (-97.82%)|     51,924  (-98.77%)|      4,068  (-20.70%)|    1.05 ms  (-48.85%)|  3,143,944  (-62.61%)| 6144.41 KB  (-62.61%)|      0.5952  (-9.85%)|      0.5962  (-9.89%)|      0.5948  (-9.95%)|
++--------------------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+[trajectory] Saved 96 rows → trajectory_MLP3072_1024_CIFAR10_Meta_Q-V.csv
+[trajectory] Saved 96 rows → trajectory_MLP3072_1024_CIFAR10_Meta_Q-V.json
